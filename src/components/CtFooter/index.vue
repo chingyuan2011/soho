@@ -87,6 +87,13 @@ export default {
   }
 
   &__logoWrap {
+    .pic {
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+    }
+
     .note {
       margin-top: 10px;
       font-size: 12px;
@@ -133,13 +140,6 @@ export default {
     .CtFooter__logoWrap {
       margin-bottom: 20px;
     }
-
-    .pic {
-      img {
-        display: block;
-        margin: 0 auto;
-      }
-    }
   }
 
   @include screen(sm) {
@@ -153,43 +153,38 @@ export default {
       margin-bottom: 20px;
     }
 
-    .pic {
-      img {
-        display: block;
-        margin: 0 auto;
+    &__content {
+      .webMap {
+        justify-content: flex-start;
+
+        li {
+          width: 33.33%;
+          margin: 5px 0px;
+          text-align: center;
+        }
       }
-    }
 
-    .webMap {
-      justify-content: flex-start;
+      .time {
+        flex-wrap: wrap;
+        margin-right: 0px;
+        margin-bottom: 20px;
 
-      li {
-        width: 33.33%;
-        margin: 5px 0px;
-        text-align: center;
+        .title {
+          width: 100%;
+        }
+
+        p {
+          margin-left: 20px;
+        }
       }
-    }
 
-    .time {
-      flex-wrap: wrap;
-      margin-right: 0px;
-      margin-bottom: 20px;
-
-      .title {
+      .links {
+        justify-content: center;
         width: 100%;
-      }
 
-      p {
-        margin-left: 20px;
-      }
-    }
-
-    .links {
-      justify-content: center;
-      width: 100%;
-
-      .linkBtn {
-        margin: 0 10px;
+        .linkBtn {
+          margin: 0 10px;
+        }
       }
     }
   }
