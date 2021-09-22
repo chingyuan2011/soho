@@ -9,17 +9,12 @@
     <h2 class="">
       MSOHO
     </h2>
-    <CTFooter></CTFooter>
   </div>
 </template>
 
 <script>
-import CTFooter from '@/components/CtFooter'
 export default {
   name: 'Index',
-  components: {
-    CTFooter
-  },
   data () {
     return {
     }

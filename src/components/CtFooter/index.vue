@@ -7,6 +7,7 @@
             <img
               src="@/assets/img/logo.png"
               alt="logo"
+              draggable="false"
             >
           </div>
           <div class="note">
@@ -37,7 +38,7 @@
             >
               <img
                 src="@/assets/img/btn_fb.jpg"
-                alt=""
+                draggable="false"
               >
             </a>
             <a
@@ -46,7 +47,7 @@
             >
               <img
                 src="@/assets/img/btn_line.jpg"
-                alt=""
+                draggable="false"
               >
             </a>
             <a
@@ -55,7 +56,7 @@
             >
               <img
                 src="@/assets/img/btn_message.jpg"
-                alt=""
+                draggable="false"
               >
             </a>
           </div>
