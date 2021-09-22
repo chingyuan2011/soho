@@ -1,0 +1,57 @@
+$gutter: 20px;
+
+$breakpoints: (
+  xl: 1400,
+  lg: 1200,
+  md: 768,
+  sm: 576,
+);
+
+$containerW: (
+  xl: 1200px,
+  lg: 1000px,
+  md: 600px,
+  sm: 100%,
+);
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+@each $key, $value in $containerW {
+  @media (max-width: #{map-get($breakpoints, $key)}px) {
+    @for $i from 1 through 12 {
+      .container {
+        max-width: $value;
+      }
+    }
+  }
+}
+
+.row {
+  display: flex;
+  margin: 0 -$gutter;
+  padding: 0 $gutter;
+}
+
+*[class*='col-'] {
+  padding: 0 $gutter;
+}
+
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    width: calc(100% / 12 * #{$i});
+  }
+}
+
+@each $key, $value in $breakpoints {
+  @media (max-width: #{$value}px) {
+    @for $i from 1 through 12 {
+      .col-#{$key}-#{$i} {
+        width: calc(100% / 12 * #{$i});
+        padding: 0 $gutter;
+      }
+    }
+  }
+}

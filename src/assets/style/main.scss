@@ -1,6 +1,7 @@
 @forward './base/reset';
 @forward './animation/v-transition';
 @use './base/font-face';
+@use './base/grid';
 
 body {
   min-width: 320px;
