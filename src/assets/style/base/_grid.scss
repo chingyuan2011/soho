@@ -1,11 +1,6 @@
-$gutter: 20px;
+@import '../abstract/breakpoints';
 
-$breakpoints: (
-  xl: 1400,
-  lg: 1200,
-  md: 768,
-  sm: 576,
-);
+$gutter: 20px;
 
 $containerW: (
   xl: 1200px,
@@ -17,6 +12,7 @@ $containerW: (
 .container {
   max-width: 1500px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 @each $key, $value in $containerW {
@@ -31,8 +27,8 @@ $containerW: (
 
 .row {
   display: flex;
-  margin: 0 -$gutter;
-  padding: 0 $gutter;
+  flex-wrap: wrap;
+  margin: 0px -#{$gutter};
 }
 
 *[class*='col-'] {

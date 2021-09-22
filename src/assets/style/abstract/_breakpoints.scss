@@ -5,10 +5,18 @@ $design: (
 
 $type: 'desktop-first';
 
+// $breakpoints: (
+//   sm: 360,
+//   md: 576,
+//   lg: 768,
+//   xl: 1200,
+//   xxl: 1400
+// );
+
 $breakpoints: (
-  sm: 360,
-  md: 576,
-  lg: 768,
+  xxl: 1400,
   xl: 1200,
-  xxl: 1400
+  lg: 960,
+  md: 768,
+  sm: 576,
 );
