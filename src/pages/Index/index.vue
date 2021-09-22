@@ -1,6 +1,14 @@
 <template>
   <div class="Index">
-    <h1>soho</h1>
+    <h2 class="futuraBT">
+      MSOHO
+    </h2>
+    <h2 class="futuraExtraBlack">
+      MSOHO
+    </h2>
+    <h2 class="">
+      MSOHO
+    </h2>
   </div>
 </template>
 

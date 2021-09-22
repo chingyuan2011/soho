@@ -18,3 +18,15 @@
   src: local('Microsoft JhengHei UI'),
     local('Microsoft JhengHei');
 }
+
+@font-face {
+  font-family: 'futura BT';
+  src: local('Futura Extra Black'),
+    url('/font/FuturaBoldFont.ttf') format('opentype');
+}
+
+@font-face {
+  font-family: 'FuturaExtraBlack';
+  src: local('FuturaExtraBlack'),
+    url('/font/FuturaExtraBlack.ttf') format('opentype');
+}
