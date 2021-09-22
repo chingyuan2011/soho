@@ -25,3 +25,31 @@ button {
 .futuraExtraBlack {
   font-family: 'futuraExtraBlack', sans-serif;
 }
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #951e23;
+
+  &__link {
+    display: block;
+    align-items: center;
+    margin-left: 10px;
+    letter-spacing: 2px;
+  }
+
+  &__home {
+    width: 16px;
+    height: 16px;
+    margin-left: 0;
+  }
+}
+
+.footer__deco-brown {
+  padding-top: 320px;
+  background-image: url('~@/assets/img/bg_brown.jpg');
+  background-repeat: repeat-x;
+  background-position: left bottom;
+  background-size: cover;
+}
