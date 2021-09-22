@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Index from '@/pages/Index'
+import Contact from '@/pages/Contact'
 
 Vue.use(VueRouter)
 
@@ -9,6 +10,11 @@ const routes = [
     path: '/',
     name: 'index',
     component: Index
+  },
+  {
+    path: '/contact',
+    name: 'contact',
+    component: Contact
   },
   {
     path: '*',
