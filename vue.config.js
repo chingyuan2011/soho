@@ -57,7 +57,7 @@ module.exports = {
     // 如有動態param請完整定義在這裡
     // eg. `/user/:id` -> `/user/alex`
       const renderRoutes = [
-        '/'
+        '/index.html', '/contact.html'
       ]
 
       const prerender = new PrerenderSPAPlugin({
@@ -73,11 +73,21 @@ module.exports = {
           injectProperty: '__PRERENDER_PROCESSING',
           inject: true,
           headless: true
-        })
+        }),
+        postProcess (renderedRoute) {
+          if (renderedRoute.route.endsWith('.html')) {
+            renderedRoute.outputPath = path.join(
+              __dirname,
+              'dist',
+              process.env.PROJECT_NAME,
+              renderedRoute.route
+            )
+          }
+          return renderedRoute
+        }
       })
 
       customConfig.plugins.push(prerender)
-
       // 壓縮 css
       customConfig.optimization.minimize = false
       customConfig.optimization.minimizer = [new CssMinimizerPlugin()]
