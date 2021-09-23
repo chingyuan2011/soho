@@ -1,6 +1,8 @@
 .Contact {
-  position: relative;
-  padding: 20px 0 0 0;
+  &__content {
+    position: relative;
+    padding: 20px 0 0 0;
+  }
 
   .breadcrumbs {
     margin-bottom: 120px;

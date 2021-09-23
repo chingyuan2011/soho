@@ -1,4 +1,4 @@
-# CONTACT futuraExtraBlack 181px #fff 30%
+# CONTACT futuraExtraBlack 181px -> 180px #fff 30%
 - 標題字過多
 - 標題沒有字
 - 內容字過多
