@@ -5,7 +5,7 @@
         <div class="CtFooter__logoWrap col-4 col-lg-12">
           <div class="pic">
             <img
-              src="@/assets/img/logo.png"
+              src="/img/logo.png"
               alt="logo"
               draggable="false"
             >
@@ -37,7 +37,7 @@
               href=""
             >
               <img
-                src="@/assets/img/btn_fb.jpg"
+                src="/img/btn_fb.jpg"
                 draggable="false"
               >
             </a>
@@ -46,7 +46,7 @@
               href=""
             >
               <img
-                src="@/assets/img/btn_line.jpg"
+                src="/img/btn_line.jpg"
                 draggable="false"
               >
             </a>
@@ -55,7 +55,7 @@
               href=""
             >
               <img
-                src="@/assets/img/btn_message.jpg"
+                src="/img/btn_message.jpg"
                 draggable="false"
               >
             </a>

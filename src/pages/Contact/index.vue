@@ -10,7 +10,7 @@
           :to="{name: 'index'}"
         >
           <img
-            src="@/assets/img/breadcrumbs_home.png"
+            src="/img/breadcrumbs_home.png"
             alt="home"
           >
         </router-link>

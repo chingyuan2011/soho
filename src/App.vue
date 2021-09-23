@@ -5,7 +5,7 @@
 
     <button class="quickTop">
       <img
-        src="@/assets/img/btn_top.png"
+        src="/img/btn_top.png"
         alt="top"
         draggable="false"
       >
