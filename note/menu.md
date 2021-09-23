@@ -1,4 +1,4 @@
-## Menu futuraExtraBlack 181px #951e23 60%
+## MENU futuraExtraBlack 181px #951e23 60%
 - 標題超過兩行
 - 內文超過五行
 - list 圖片記得稱寬度

@@ -1,4 +1,4 @@
-# news futuraExtraBlack 181px #951e23 60%
+# NEWS futuraExtraBlack 181px #951e23 60%
 - 沒有日期的狀態也要撐開日期高度
 - 日期做活字可以塞資料
 - 內容超過四行...
