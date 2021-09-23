@@ -12,7 +12,7 @@ const routes = [
     component: Index
   },
   {
-    path: '/contact',
+    path: '/contact.html',
     name: 'contact',
     component: Contact
   },

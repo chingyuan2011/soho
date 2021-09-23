@@ -4,7 +4,6 @@
 
   .breadcrumbs {
     margin-bottom: 120px;
-    margin-left: 10%;
   }
 
   &__note {
@@ -47,6 +46,8 @@
     letter-spacing: 2px;
 
     &Title {
+      position: relative;
+      z-index: 2;
       display: flex;
       align-items: center;
       width: 250px;
@@ -82,10 +83,6 @@
   }
 
   @include screen(lg) {
-    .breadcrumbs {
-      margin-left: 0;
-    }
-
     &__note {
       max-width: 70%;
       font-size: 20px;
