@@ -1,21 +1,18 @@
 <template>
   <div class="Index">
-    <h2 class="futuraBT">
-      MSOHO
-    </h2>
-    <h2 class="futuraExtraBlack">
-      MSOHO
-    </h2>
-    <h2 class="">
-      MSOHO
-    </h2>
+    <IndexBannerCarousel></IndexBannerCarousel>
+    <div style="height: 100vh;"></div>
   </div>
 </template>
 
 <script>
-
+import IndexBannerCarousel from '@/components/IndexBannerCarousel'
 export default {
+
   name: 'Index',
+  components: {
+    IndexBannerCarousel
+  },
   data () {
     return {
     }

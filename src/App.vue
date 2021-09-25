@@ -39,33 +39,74 @@ export default {
 </script>
 
 <style lang="scss">
-  @use '@/assets/style/main.scss';
+@use '@/assets/style/main.scss';
 
-  body {
-    padding-top: 125px;
-    @include screen(lg) {
-      padding-top: 80px;
-    }
+body {
+  padding-top: 125px;
+  @include screen(lg) {
+    padding-top: 80px;
   }
+}
 
-  .quickTop {
-    position: fixed;
-    right: 60px;
-    bottom: 100px;
-    z-index: 100;
-    padding: 0;
-    background-color: transparent;
-    border: 0;
+#app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.app__view {
+  flex: 1;
+}
+
+.quickTop {
+  position: fixed;
+  right: 60px;
+  bottom: 100px;
+  z-index: 100;
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+}
+
+// slider
+.nk-carousel {
+  position: relative;
+}
+
+.nk-carousel-prev,
+.nk-carousel-next {
+  position: absolute;
+  top: calc(50% - 20px);
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  background-color: #a78a70;
+  box-shadow: 0px 0px 10px color(black);
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: calc(50% - 10px);
+    left: 10px;
+    width: 0;
+    height: 0;
+    border-style: solid;
   }
+}
 
-  #app {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+.nk-carousel-prev {
+  &::before {
+    border-color: transparent #000000 transparent transparent;
+    border-width: 10px 17.3px 10px 0;
   }
+}
 
-  .app__view {
-    flex: 1;
+.nk-carousel-next {
+  right: 0;
+
+  &::before {
+    border-color: transparent transparent transparent #000000;
+    border-width: 10px 0 10px 17.3px;
   }
-
+}
 </style>
