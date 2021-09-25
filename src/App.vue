@@ -52,6 +52,7 @@ export default {
     position: fixed;
     right: 60px;
     bottom: 100px;
+    z-index: 100;
     padding: 0;
     background-color: transparent;
     border: 0;
