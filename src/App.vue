@@ -41,6 +41,13 @@ export default {
 <style lang="scss">
   @use '@/assets/style/main.scss';
 
+  body {
+    padding-top: 125px;
+    @include screen(lg) {
+      padding-top: 80px;
+    }
+  }
+
   .quickTop {
     position: fixed;
     right: 60px;
