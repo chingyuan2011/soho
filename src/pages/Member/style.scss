@@ -1,4 +1,96 @@
 .Member {
+  .breadcrumbs {
+    margin-bottom: 50px;
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__content {
+    padding-top: 25px;
+  }
+
+  &__list {
+    justify-content: center;
+  }
+
+  &__member {
+    margin-right: 25px;
+    margin-left: 25px;
+    padding: 50px 0;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 3px 3px 8px color(gray, 500);
+  }
+
+  &__memberTitle {
+    margin-bottom: 50px;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+  }
+
+  &__memberQRcode {
+    width: 225px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+
+  &__memberText {
+    margin-bottom: 50px;
+    font-size: 27px;
+  }
+
+  &__memberLogo {
+    img {
+      margin: 0 auto;
+    }
+  }
+
+  .footer__deco-brown {
+    margin-top: -100px;
+  }
+
+  @include screen(xl) {
+    &__member {
+      margin-bottom: 50px;
+    }
+  }
+
+  @include screen(lg) {
+    .breadcrumbs {
+      margin-bottom: 20px;
+    }
+
+    &__member {
+      margin-bottom: 25px;
+      padding: 25px 10px;
+    }
+
+    &__memberTitle {
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+
+    &__memberQRcode {
+      width: 200px;
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+
+    &__memberText {
+      margin-bottom: 0px;
+      font-size: 16px;
+    }
+
+    &__memberLogo {
+      img {
+        transform: scale(.7);
+      }
+    }
+  }
 }
 
 // xxl | xl | lg | md | sm
