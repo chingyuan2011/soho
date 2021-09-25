@@ -54,6 +54,57 @@
             肩胛菲力牛排，吃起來嫩口多汁，而牛肉上有刷上一層淡淡的醬，但味道不重
           </div>
         </div>
+      </div><div class="carousel__item">
+        <img
+          class="carousel__itemPic"
+          src="/img/index/index_menu1.png"
+        ><div class="carousel__itemContentWrap">
+          <img
+            class="carousel__itemLine"
+            src="/img/index/index_menuDec.png"
+          >
+          <div class="carousel__itemTitle">
+            松露牛排原塊松露牛排原塊松露牛排原塊松露牛排原塊松露牛排原塊
+          </div>
+          <div class="carousel__itemText">
+            肩胛菲力牛排，吃起來嫩口多汁，而牛肉上有刷上一層淡淡的醬，但味道不重肩胛菲力牛排，吃起來嫩口多汁，而牛肉上有刷上一層淡淡的醬，但味道不重
+          </div>
+        </div>
+      </div>
+      <div class="carousel__item">
+        <img
+          class="carousel__itemPic"
+          src="/img/index/index_menu2.png"
+        >
+        <div class="carousel__itemContentWrap">
+          <img
+            class="carousel__itemLine"
+            src="/img/index/index_menuDec.png"
+          >
+          <div class="carousel__itemTitle">
+            牛排肩胛菲力牛排
+          </div>
+          <div class="carousel__itemText">
+            肩胛菲力牛排，吃起來嫩口多汁，而牛肉上有刷上一層淡淡的醬，但味道不重
+          </div>
+        </div>
+      </div>
+      <div class="carousel__item">
+        <img
+          class="carousel__itemPic"
+          src="/img/index/index_menu3.png"
+        ><div class="carousel__itemContentWrap">
+          <img
+            class="carousel__itemLine"
+            src="/img/index/index_menuDec.png"
+          >
+          <div class="carousel__itemTitle">
+            松露牛排原塊
+          </div>
+          <div class="carousel__itemText">
+            肩胛菲力牛排，吃起來嫩口多汁，而牛肉上有刷上一層淡淡的醬，但味道不重
+          </div>
+        </div>
       </div>
     </div>
     <div class="nk-carousel-prev">
@@ -114,7 +165,7 @@ export default {
     }
 
     .carousel__itemText {
-      font-size: 18px;
+      font-size: 20px;
       opacity: 1;
     }
   }
@@ -147,11 +198,10 @@ export default {
 
   .carousel__itemText {
     width: 80%;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.5;
     opacity: .6;
     transition: all .5s;
-
     @include text-overflow(2);
   }
 
@@ -176,18 +226,32 @@ export default {
   }
   @include screen(md) {
     .carousel__item {
-      width: 80%;
+      width: 100%;
       height: 420px;
       padding: 0 20px;
     }
 
     .carousel__itemPic {
       width: 100%;
+      max-width: 300px;
+    }
+
+    .carousel__itemContentWrap {
+      padding: 0;
     }
 
     .carousel__itemLine {
       width: 120px;
       max-height: inherit;
+    }
+
+    .carousel__itemTitle {
+      opacity: 1;
+    }
+
+    .carousel__itemText {
+      width: 100%;
+      opacity: 1;
     }
 
     .is-selected {
@@ -196,6 +260,15 @@ export default {
       .carousel__itemPic {
         width: 100%;
         max-width: 300px;
+      }
+
+      .carousel__itemTitle {
+        font-size: 22px;
+        opacity: 1;
+      }
+
+      .carousel__itemText {
+        font-size: 18px;
       }
     }
   }
