@@ -2,7 +2,7 @@
   <div id="app">
     <CTHeader></CTHeader>
 
-    <router-view></router-view>
+    <router-view class="app__view"></router-view>
     <CTFooter></CTFooter>
 
     <button class="quickTop">
@@ -56,6 +56,16 @@ export default {
     padding: 0;
     background-color: transparent;
     border: 0;
+  }
+
+  #app {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .app__view {
+    flex: 1;
   }
 
 </style>
