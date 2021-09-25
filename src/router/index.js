@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Index from '@/pages/Index'
 import Contact from '@/pages/Contact'
+import Member from '@/pages/Member'
 
 Vue.use(VueRouter)
 
@@ -10,6 +11,11 @@ const routes = [
     path: '/index.html',
     name: 'index',
     component: Index
+  },
+  {
+    path: '/member.html',
+    name: 'member',
+    component: Member
   },
   {
     path: '/contact.html',
