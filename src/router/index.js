@@ -5,6 +5,7 @@ import Contact from '@/pages/Contact'
 import Member from '@/pages/Member'
 import Error404 from '@/pages/Error404'
 import HeaderFooter from '@/pages/HeaderFooter'
+import NewsList from '@/pages/NewsList'
 
 Vue.use(VueRouter)
 
@@ -23,6 +24,11 @@ const routes = [
     path: '/contact.html',
     name: 'contact',
     component: Contact
+  },
+  {
+    path: '/news/list.html',
+    name: 'newsList',
+    component: NewsList
   },
   {
     path: '/404.html',

@@ -2,6 +2,7 @@
 @forward './animation/v-transition';
 @use './base/font-face';
 @use './base/grid';
+@import './abstract/index';
 
 html,
 body {
@@ -29,6 +30,10 @@ a {
 
 button {
   border: none;
+}
+
+ul {
+  padding: 0;
 }
 
 .futuraBTMedium {
@@ -69,4 +74,27 @@ button {
   background-repeat: repeat-x;
   background-position: left bottom;
   background-size: cover;
+}
+
+.slogan {
+  margin-right: 25px;
+  margin-bottom: 25px;
+  font-size: 60px;
+  color: #962233;
+  text-align: right;
+  letter-spacing: 6px;
+
+  br {
+    display: none;
+  }
+
+  @include screen(lg) {
+    font-size: 28px;
+  }
+
+  @include screen(md) {
+    br {
+      display: inline-block;
+    }
+  }
 }

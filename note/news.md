@@ -42,4 +42,4 @@ futuraBT 20px
 back1 #a78a70
 back2 
 
-## Let’s TASTy, Let’s Enjoy! 61px #962233 futuraExtraBlack
+## Let’s TASTy, Let’s Enjoy! 60px #962233 futuraExtraBlack
