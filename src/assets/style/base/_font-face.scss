@@ -20,6 +20,12 @@
 }
 
 @font-face {
+  font-family: 'futura BT Medium';
+  src: local('Futura Extra Black'),
+    url('/font/FuturaMediumBt.ttf') format('opentype');
+}
+
+@font-face {
   font-family: 'futura BT';
   src: local('Futura Extra Black'),
     url('/font/FuturaBoldFont.ttf') format('opentype');

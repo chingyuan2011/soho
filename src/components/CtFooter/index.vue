@@ -17,7 +17,7 @@
         <div class="CtFooter__content col-7 col-lg-12">
           <ul class="webMap">
             <li><a href="">禮券查詢</a></li>
-            <li><a href="">聯絡我們</a></li>
+            <li><a href="contact.html">聯絡我們</a></li>
             <li><a href="">集團品牌</a></li>
             <li><a href="">人才招募</a></li>
             <li><a href="">隱私權政策</a></li>
