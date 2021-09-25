@@ -1,4 +1,75 @@
 .Error404 {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 180px;
+
+  .container {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+  }
+
+  .footer__deco-brown {
+    width: 100%;
+  }
+
+  &__title,
+  &__note {
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    padding-left: 50px;
+    font-size: 29px;
+    font-weight: 700;
+    color: #142638;
+
+    br {
+      display: none;
+    }
+  }
+
+  &__note {
+    margin-bottom: -180px;
+    padding: 50px;
+    font-size: 40px;
+    color: #951e23;
+    letter-spacing: 1.2px;
+    background-color: #fff;
+    box-shadow: 3px 3px 5px color(gray, 400);
+  }
+  @include screen(xl) {
+    &__title,
+    &__note {
+      width: 90%;
+    }
+  }
+
+  @include screen(lg) {
+    padding-top: 80px;
+
+    &__title,
+    &__note {
+      width: 100%;
+    }
+
+    &__title {
+      padding-left: 30px;
+      font-size: 20px;
+
+      br {
+        display: inline-block;
+      }
+    }
+
+    &__note {
+      padding: 20px 30px;
+      font-size: 28px;
+    }
+  }
 }
 
 // xxl | xl | lg | md | sm
