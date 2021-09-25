@@ -38,12 +38,33 @@ document.addEventListener('DOMContentLoaded', function () {
     noClickEventOnDrag($indexBannerCarousel.children('.nk-carousel-inner'))
   }
 
+  //   var $IndexMenuCarousel = $('.IndexMenuCarousel')
+  var $IndexMenuCarousel = $('.IndexMenuCarousel')
+
+  $('.IndexMenuCarousel > .nk-carousel-inner').each(function () {
+    $(this).flickity({
+      pageDots: $(this).parent().attr('data-dots') === 'true' || false,
+      autoPlay: parseFloat($(this).parent().attr('data-autoplay')) || false,
+      prevNextButtons: false,
+      wrapAround: true,
+      imagesLoaded: true,
+      cellAlign: $(this).parent().attr('data-cell-align') || 'center'
+    })
+    $IndexMenuCarousel.on('click', '.nk-carousel-next', function () {
+      $(this).parent().children('.nk-carousel-inner').flickity('next')
+    })
+    $IndexMenuCarousel.on('click', '.nk-carousel-prev', function () {
+      $(this).parent().children('.nk-carousel-inner').flickity('previous')
+    })
+    noClickEventOnDrag($(this))
+  })
+
   // 以下 carousel 使用 - start
   function updateCustomArrows ($carousel) {
     var data = $carousel.children('.nk-carousel-inner').data('flickity')
     var currIndex = data.selectedIndex
-    var nextIndex = void 0
-    var prevIndex = void 0
+    var nextIndex = 0
+    var prevIndex = 0
 
     // get next and prev cells
     if (currIndex === 0) {

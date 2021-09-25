@@ -1,17 +1,21 @@
 <template>
   <div class="Index">
     <IndexBannerCarousel></IndexBannerCarousel>
+    <IndexMenuCarousel></IndexMenuCarousel>
     <div style="height: 100vh;"></div>
   </div>
 </template>
 
 <script>
 import IndexBannerCarousel from '@/components/IndexBannerCarousel'
+import IndexMenuCarousel from '@/components/IndexMenuCarousel'
+
 export default {
 
   name: 'Index',
   components: {
-    IndexBannerCarousel
+    IndexBannerCarousel,
+    IndexMenuCarousel
   },
   data () {
     return {

@@ -87,7 +87,6 @@ body {
     content: '';
     position: absolute;
     top: calc(50% - 10px);
-    left: 10px;
     width: 0;
     height: 0;
     border-style: solid;
@@ -96,6 +95,7 @@ body {
 
 .nk-carousel-prev {
   &::before {
+    left: 10px;
     border-color: transparent #000000 transparent transparent;
     border-width: 10px 17.3px 10px 0;
   }
@@ -105,8 +105,37 @@ body {
   right: 0;
 
   &::before {
+    right: 10px;
     border-color: transparent transparent transparent #000000;
     border-width: 10px 0 10px 17.3px;
+  }
+}
+@include screen(lg) {
+  .nk-carousel-prev,
+  .nk-carousel-next {
+    top: calc(50% - 15px);
+    width: 30px;
+    height: 30px;
+
+    &::before {
+      top: calc(50% - 10px);
+      width: 0;
+      height: 0;
+    }
+  }
+
+  .nk-carousel-prev {
+    &::before {
+      left: 5px;
+    }
+  }
+
+  .nk-carousel-next {
+    right: 0;
+
+    &::before {
+      right: 5px;
+    }
   }
 }
 </style>
