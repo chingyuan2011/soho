@@ -17,10 +17,8 @@ $containerW: (
 
 @each $key, $value in $containerW {
   @media (max-width: #{map-get($breakpoints, $key)}px) {
-    @for $i from 1 through 12 {
-      .container {
-        max-width: $value;
-      }
+    .container {
+      max-width: $value;
     }
   }
 }
