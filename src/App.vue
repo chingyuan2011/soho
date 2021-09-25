@@ -1,5 +1,7 @@
 <template>
   <div id="app">
+    <CTHeader></CTHeader>
+
     <router-view></router-view>
     <CTFooter></CTFooter>
 
@@ -14,11 +16,13 @@
 </template>
 
 <script>
+import CTHeader from '@/components/CtHeader'
 import CTFooter from '@/components/CtFooter'
 
 export default {
   name: 'App',
   components: {
+    CTHeader,
     CTFooter
   },
   metaInfo () {
