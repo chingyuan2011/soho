@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Index from '@/pages/Index'
 import Contact from '@/pages/Contact'
 import Member from '@/pages/Member'
+import Error404 from '@/pages/Error404'
 
 Vue.use(VueRouter)
 
@@ -23,8 +24,13 @@ const routes = [
     component: Contact
   },
   {
+    path: '/404.html',
+    name: 'error404',
+    component: Error404
+  },
+  {
     path: '*',
-    redirect: { name: 'index' }
+    redirect: { name: 'error404' }
   }
 ]
 
