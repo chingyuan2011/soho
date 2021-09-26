@@ -21,6 +21,24 @@ document.addEventListener('DOMContentLoaded', function () {
   })
 
   // index
+
+  // popup
+  openPopup()
+
+  $('#btn__close').on('click', function () {
+    closePopup()
+  })
+
+  $('#Modal__back').on('click', function () {
+    closePopup()
+  })
+
+  function openPopup () {
+    $('body').addClass('popOpen')
+  }
+  function closePopup () {
+    $('body').removeClass('popOpen')
+  }
   // 跑馬燈
   var $IndexPrompter = $('.IndexPrompter')
   if ($IndexPrompter.length) {

@@ -1,5 +1,20 @@
 <template>
   <div class="Index">
+    <Modal
+      id=""
+      class="Index__popUp"
+    >
+      <img
+        class="modal__popUpLine"
+        src="/img/decoration.png"
+      >
+      <div class="Modal__body">
+        <img
+          class="modal__popUpLine"
+          src="/img/index/popup.jpg"
+        >
+      </div>
+    </Modal>
     <IndexBannerCarousel></IndexBannerCarousel>
     <IndexPrompter></IndexPrompter>
     <IndexNewsCarousel></IndexNewsCarousel>
@@ -8,6 +23,7 @@
 </template>
 
 <script>
+import Modal from '@/components/Modal'
 import IndexBannerCarousel from '@/components/IndexBannerCarousel'
 import IndexPrompter from '@/components/IndexPrompter'
 import IndexNewsCarousel from '@/components/IndexNewsCarousel'
@@ -17,6 +33,7 @@ export default {
 
   name: 'Index',
   components: {
+    Modal,
     IndexBannerCarousel,
     IndexPrompter,
     IndexNewsCarousel,
@@ -30,7 +47,22 @@ export default {
 </script>
 
 <style lang="scss">
-.Index {}
+.Index {
+  .Modal__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    min-width: 360px;
+    max-width: 500px;
+    padding: 20px;
+  }
+
+  .Modal__body {
+    margin-top: 20px;
+  }
+}
 
 // xxl | xl | lg | md | sm
 // @include screen (xl) {}

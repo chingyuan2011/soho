@@ -115,9 +115,7 @@ export default {
 </script>
 
 <style lang="scss">
-.hamOpen {
-  overflow: hidden;
-
+body.hamOpen {
   .CtHeader__ham span {
     &:nth-child(1) {
       transform: rotate(35deg);
