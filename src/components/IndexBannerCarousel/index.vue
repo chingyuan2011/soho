@@ -7,19 +7,19 @@
       <div class="carousel__item">
         <div
           class="carousel__itemImg"
-          style="background-image: url('/img/index/index_b1.jpg');"
+          style="background-image: url('/img/index/banner1.jpg');"
         ></div>
       </div>
       <div class="carousel__item">
         <div
           class="carousel__itemImg"
-          style="background-image: url('/img/index/index_b2.jpg');"
+          style="background-image: url('/img/index/banner2.jpg');"
         ></div>
       </div>
       <div class="carousel__item">
         <div
           class="carousel__itemImg"
-          style="background-image: url('/img/index/index_b3.jpg');"
+          style="background-image: url('/img/index/banner3.jpg');"
         ></div>
       </div>
     </div>

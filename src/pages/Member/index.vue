@@ -57,7 +57,7 @@
               </div>
               <div class="Member__memberQRcode">
                 <img
-                  src="/img/member/lineQRcode.png"
+                  src="/img/member/lineQRcode.jpg"
                   alt="西堤官方LINE"
                   draggable="false"
                 >

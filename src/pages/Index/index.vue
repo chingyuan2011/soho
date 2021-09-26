@@ -3,7 +3,6 @@
     <IndexBannerCarousel></IndexBannerCarousel>
     <IndexPrompter></IndexPrompter>
     <IndexMenuCarousel></IndexMenuCarousel>
-    <div style="height: 100vh;"></div>
   </div>
 </template>
 

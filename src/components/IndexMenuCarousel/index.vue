@@ -6,11 +6,11 @@
       <div class="carousel__item">
         <img
           class="carousel__itemPic"
-          src="/img/index/index_menu1.png"
+          src="/img/index/menu1.png"
         ><div class="carousel__itemContentWrap">
           <img
             class="carousel__itemLine"
-            src="/img/index/index_menuDec.png"
+            src="/img/decoration.png"
           >
           <div class="carousel__itemTitle">
             松露牛排原塊松露牛排原塊松露牛排原塊松露牛排原塊松露牛排原塊
@@ -23,12 +23,12 @@
       <div class="carousel__item">
         <img
           class="carousel__itemPic"
-          src="/img/index/index_menu2.png"
+          src="/img/index/menu2.png"
         >
         <div class="carousel__itemContentWrap">
           <img
             class="carousel__itemLine"
-            src="/img/index/index_menuDec.png"
+            src="/img/decoration.png"
           >
           <div class="carousel__itemTitle">
             牛排肩胛菲力牛排
@@ -41,11 +41,11 @@
       <div class="carousel__item">
         <img
           class="carousel__itemPic"
-          src="/img/index/index_menu3.png"
+          src="/img/index/menu3.png"
         ><div class="carousel__itemContentWrap">
           <img
             class="carousel__itemLine"
-            src="/img/index/index_menuDec.png"
+            src="/img/decoration.png"
           >
           <div class="carousel__itemTitle">
             松露牛排原塊
@@ -57,11 +57,11 @@
       </div><div class="carousel__item">
         <img
           class="carousel__itemPic"
-          src="/img/index/index_menu1.png"
+          src="/img/index/menu1.png"
         ><div class="carousel__itemContentWrap">
           <img
             class="carousel__itemLine"
-            src="/img/index/index_menuDec.png"
+            src="/img/decoration.png"
           >
           <div class="carousel__itemTitle">
             松露牛排原塊松露牛排原塊松露牛排原塊松露牛排原塊松露牛排原塊
@@ -74,12 +74,12 @@
       <div class="carousel__item">
         <img
           class="carousel__itemPic"
-          src="/img/index/index_menu2.png"
+          src="/img/index/menu2.png"
         >
         <div class="carousel__itemContentWrap">
           <img
             class="carousel__itemLine"
-            src="/img/index/index_menuDec.png"
+            src="/img/decoration.png"
           >
           <div class="carousel__itemTitle">
             牛排肩胛菲力牛排
@@ -92,11 +92,11 @@
       <div class="carousel__item">
         <img
           class="carousel__itemPic"
-          src="/img/index/index_menu3.png"
+          src="/img/index/menu3.png"
         ><div class="carousel__itemContentWrap">
           <img
             class="carousel__itemLine"
-            src="/img/index/index_menuDec.png"
+            src="/img/decoration.png"
           >
           <div class="carousel__itemTitle">
             松露牛排原塊
@@ -152,10 +152,11 @@ export default {
     .carousel__itemPic {
       width: 100%;
       max-width: 600px;
+      opacity: 1;
     }
 
     .carousel__itemLine {
-      max-height: 30px;
+      display: block;
       opacity: 1;
     }
 
@@ -173,15 +174,15 @@ export default {
   .carousel__itemPic {
     width: 70%;
     max-width: 500px;
+    opacity: .85;
     transition: all .5s;
   }
 
   .carousel__itemLine {
+    display: none;
     width: 40%;
-    max-height: 0;
     margin-bottom: 15px;
     opacity: 0;
-    transition: opacity .5s;
   }
 
   .carousel__itemTitle {
