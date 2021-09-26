@@ -59,9 +59,15 @@ ul {
     align-items: center;
     margin-left: 10px;
     letter-spacing: 2px;
+    white-space: nowrap;
+
+    &:last-child {
+      @include text-overflow($line: 1);
+    }
   }
 
   &__home {
+    flex-shrink: 0;
     width: 16px;
     height: 16px;
     margin-left: 0;

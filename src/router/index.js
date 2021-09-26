@@ -6,6 +6,7 @@ import Member from '@/pages/Member'
 import Error404 from '@/pages/Error404'
 import HeaderFooter from '@/pages/HeaderFooter'
 import NewsList from '@/pages/NewsList'
+import NewsContent from '@/pages/NewsContent'
 
 Vue.use(VueRouter)
 
@@ -29,6 +30,11 @@ const routes = [
     path: '/news/list.html',
     name: 'newsList',
     component: NewsList
+  },
+  {
+    path: '/news/content.html',
+    name: 'newsContent',
+    component: NewsContent
   },
   {
     path: '/404.html',
