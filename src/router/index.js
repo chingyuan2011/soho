@@ -8,6 +8,7 @@ import HeaderFooter from '@/pages/HeaderFooter'
 import NewsList from '@/pages/NewsList'
 import NewsContent from '@/pages/NewsContent'
 import MenuContent from '@/pages/MenuContent'
+import ShopList from '@/pages/ShopList'
 
 Vue.use(VueRouter)
 
@@ -41,6 +42,11 @@ const routes = [
     path: '/menu/content.html',
     name: 'menuContent',
     component: MenuContent
+  },
+  {
+    path: '/shop/list.html',
+    name: 'shopList',
+    component: ShopList
   },
   {
     path: '/404.html',

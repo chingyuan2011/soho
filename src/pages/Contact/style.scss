@@ -1,29 +1,11 @@
 .Contact {
   &__content {
     position: relative;
-    padding: 20px 0 0 0;
+    padding: 25px 0 0 0;
   }
 
   .breadcrumbs {
     margin-bottom: 120px;
-  }
-
-  &__note {
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-    max-width: 60%;
-    padding: 20px;
-    font-size: 26px;
-    color: #fff;
-    background-color: #a78a70;
-    box-shadow: 3px 3px 5px color(gray, 400);
-
-    >span {
-      @include text-overflow($line: 2);
-    }
   }
 
   &__title {
@@ -85,11 +67,6 @@
   }
 
   @include screen(lg) {
-    &__note {
-      max-width: 70%;
-      font-size: 20px;
-    }
-
     &__title {
       margin-left: 0;
       font-size: 24px;
@@ -118,14 +95,8 @@
   }
 
   @include screen(md) {
-    &__note {
-      position: relative;
-      top: -20px;
-      max-width: 100%;
-    }
-
     .breadcrumbs {
-      margin-bottom: 20px;
+      margin-bottom: 25px;
     }
   }
 }

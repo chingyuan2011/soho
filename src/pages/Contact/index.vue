@@ -5,7 +5,7 @@
     >
     </Banner>
     <div class="Contact__content">
-      <p class="Contact__note">
+      <p class="Contact__note note">
         <span>親愛的顧客您好：防疫期間客服與門店服務時間隨疫情調整，造成不便之處，敬請見諒。謝謝～</span>
       </p>
       <div class="container">
