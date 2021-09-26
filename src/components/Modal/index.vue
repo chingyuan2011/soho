@@ -6,23 +6,18 @@
       id="Modal__back"
       class="Modal__back"
     ></div>
-    <div class="Modal__content">
+    <div class="Modal__contentWrap">
       <button
         id="Modal__close"
         class="Modal__close"
       >
       </button>
-      <!-- <div class="modal-header">
-          <h4
-            id="mySmallModalLabel"
-            class="modal-title nk-title"
-          >
-            Small modal
-          </h4>
-        </div>
-        <div class="modal-body">
-        </div> -->
-      <slot></slot>
+      <div
+        id="Modal__content"
+        class="Modal__content"
+      >
+        <slot></slot>
+      </div>
     </div>
   </div>
 </template>
@@ -59,10 +54,14 @@ body.popOpen {
     background-color: rgba(#000, .4);
   }
 
-  &__content {
+  &__contentWrap {
     position: fixed;
     top: 50%;
     left: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: #152638;
     transform: translateX(-50%) translateY(-50%);
   }

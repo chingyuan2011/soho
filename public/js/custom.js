@@ -20,11 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }, 500)
   })
 
-  // index
-
   // popup
-  openPopup()
-
   $('#Modal__close').on('click', function () {
     closePopup()
   })
@@ -39,6 +35,13 @@ document.addEventListener('DOMContentLoaded', function () {
   function closePopup () {
     $('body').removeClass('popOpen')
   }
+
+  // index
+  // popup - 首頁需要再打開
+  if (window.location.href.indexOf('index') !== -1) {
+    openPopup()
+  }
+
   // 跑馬燈
   var $IndexPrompter = $('#IndexPrompter')
   if ($IndexPrompter.length) {
@@ -189,5 +192,12 @@ document.addEventListener('DOMContentLoaded', function () {
       $(this).parent().children('.nk-carousel-inner').flickity('previous')
     })
     noClickEventOnDrag($(this))
+
+    $MenuContentCarousel.on('click', '.carousel__item', function (dom) {
+      var url = dom.target.src
+      var domString = '<img class="Modal__popPic" src="' + url + '">'
+      $('#Modal__content').html(domString)
+      openPopup()
+    })
   })
 })

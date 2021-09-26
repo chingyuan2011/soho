@@ -1,12 +1,19 @@
 <template>
   <div class="MenuContentCarouselWrap">
+    <Modal
+      id="Modal"
+      class="MenuContentCarousel__popUp"
+    >
+    </Modal>
     <div
       id="MenuContentCarousel"
       class="MenuContentCarousel nk-carousel"
       data-dots="true"
     >
       <div class="nk-carousel-inner">
-        <div class="carousel__item">
+        <div
+          class="carousel__item"
+        >
           <img
             class="carousel__itemPic"
             src="/img/menu/set1/P1.jpg"
@@ -53,9 +60,13 @@
 
 <script>
 import {} from '@vue/composition-api'
+import Modal from '@/components/Modal'
 
 export default {
   name: 'IndexMenuCarousel',
+  components: {
+    Modal
+  },
   setup (props, context) {
   }
 }
@@ -63,12 +74,6 @@ export default {
 
 <style lang="scss">
 .MenuContentCarousel {
-  &Wrap {
-    max-width: 1920px;
-    margin: 0 auto;
-    padding: 0 100px;
-  }
-
   .nk-carousel-inner {
     width: 100%;
     height: 1150px;
@@ -124,12 +129,6 @@ export default {
     }
   }
   @include screen(xl) {
-    outline: 1px solid red;
-
-    &Wrap {
-      padding: 0;
-    }
-
     .nk-carousel-inner {
       height: 650px;
     }
@@ -171,8 +170,6 @@ export default {
     }
   }
   @include screen(md) {
-    outline: 1px solid rgb(35, 156, 51);
-
     .nk-carousel-inner {
       height: 500px;
     }
@@ -181,6 +178,39 @@ export default {
       width: 320px;
       height: 460px;
     }
+  }
+}
+
+.MenuContentCarouselWrap {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 100px;
+
+  .Modal__contentWrap {
+    height: 90%;
+    max-height: 900px;
+  }
+
+  .Modal__content {
+    width: 100%;
+    height: 100%;
+  }
+
+  .Modal__popPic {
+    max-width: initial;
+    height: 100%;
+  }
+
+  .Modal__close {
+    background-color: #fff;
+
+    &::before,
+    &::after {
+      background-color: #142638;
+    }
+  }
+  @include screen(xl) {
+    padding: 0;
   }
 }
 

@@ -48,11 +48,7 @@ export default {
 
 <style lang="scss">
 .Index {
-  .Modal__content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  .Modal__contentWrap {
     width: 50%;
     min-width: 360px;
     max-width: 500px;
