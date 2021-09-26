@@ -19,7 +19,7 @@
           </router-link>
           <router-link
             class="breadcrumbs__link"
-            :to="{name: 'NewsContent'}"
+            :to="{name: 'newsList'}"
           >
             / 新消息
           </router-link>
