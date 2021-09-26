@@ -1,12 +1,12 @@
 .Error404 {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 180px;
 
   .container {
     position: relative;
     z-index: 1;
     width: 100%;
+    padding-top: 100px;
   }
 
   .footer__deco-brown {
@@ -49,7 +49,9 @@
   }
 
   @include screen(lg) {
-    padding-top: 80px;
+    .container {
+      padding-top: 40px;
+    }
 
     &__title,
     &__note {
