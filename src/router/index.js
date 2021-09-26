@@ -4,6 +4,7 @@ import Index from '@/pages/Index'
 import Contact from '@/pages/Contact'
 import Member from '@/pages/Member'
 import Error404 from '@/pages/Error404'
+import HeaderFooter from '@/pages/HeaderFooter'
 
 Vue.use(VueRouter)
 
@@ -27,6 +28,11 @@ const routes = [
     path: '/404.html',
     name: 'error404',
     component: Error404
+  },
+  {
+    path: '/header+footer.html',
+    name: 'HeaderFooter',
+    component: HeaderFooter
   },
   {
     path: '*',
