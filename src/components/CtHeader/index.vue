@@ -248,7 +248,7 @@ export default {
     }
   }
 
-  @include screen(lg) {
+  @include screen(xl) {
     height: 80px;
 
     &__logo {

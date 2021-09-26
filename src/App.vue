@@ -43,7 +43,7 @@ export default {
 
 body {
   padding-top: 125px;
-  @include screen(lg) {
+  @include screen(xl) {
     padding-top: 80px;
   }
 }
