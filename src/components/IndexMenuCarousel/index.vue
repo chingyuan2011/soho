@@ -212,8 +212,26 @@ export default {
       height: 600px;
     }
 
+    .is-selected {
+      .carousel__itemTitle {
+        font-size: 20px;
+      }
+
+      .carousel__itemText {
+        font-size: 16px;
+      }
+    }
+
     .carousel__itemContentWrap {
       max-width: 400px;
+    }
+
+    .carousel__itemTitle {
+      font-size: 18px;
+    }
+
+    .carousel__itemText {
+      font-size: 14px;
     }
   }
   @include screen(xl) {
@@ -233,6 +251,23 @@ export default {
       padding: 0 20px;
     }
 
+    .is-selected {
+      padding: 0;
+
+      .carousel__itemPic {
+        width: 100%;
+        max-width: 300px;
+      }
+
+      .carousel__itemTitle {
+        font-size: 20px;
+      }
+
+      .carousel__itemText {
+        font-size: 16px;
+      }
+    }
+
     .carousel__itemPic {
       width: 100%;
       max-width: 300px;
@@ -248,30 +283,14 @@ export default {
     }
 
     .carousel__itemTitle {
+      font-size: 20px;
       opacity: 1;
     }
 
     .carousel__itemText {
       width: 100%;
+      font-size: 16px;
       opacity: 1;
-    }
-
-    .is-selected {
-      padding: 0;
-
-      .carousel__itemPic {
-        width: 100%;
-        max-width: 300px;
-      }
-
-      .carousel__itemTitle {
-        font-size: 22px;
-        opacity: 1;
-      }
-
-      .carousel__itemText {
-        font-size: 18px;
-      }
     }
   }
 }
