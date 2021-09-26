@@ -2,6 +2,7 @@
   <div class="Index">
     <IndexBannerCarousel></IndexBannerCarousel>
     <IndexPrompter></IndexPrompter>
+    <IndexNewsCarousel></IndexNewsCarousel>
     <IndexMenuCarousel></IndexMenuCarousel>
   </div>
 </template>
@@ -9,6 +10,7 @@
 <script>
 import IndexBannerCarousel from '@/components/IndexBannerCarousel'
 import IndexPrompter from '@/components/IndexPrompter'
+import IndexNewsCarousel from '@/components/IndexNewsCarousel'
 import IndexMenuCarousel from '@/components/IndexMenuCarousel'
 
 export default {
@@ -17,6 +19,7 @@ export default {
   components: {
     IndexBannerCarousel,
     IndexPrompter,
+    IndexNewsCarousel,
     IndexMenuCarousel
   },
   data () {

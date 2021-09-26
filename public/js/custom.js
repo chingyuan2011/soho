@@ -2,7 +2,7 @@
 
 document.addEventListener('DOMContentLoaded', function () {
   // resize
-  $(window).resize(function () {
+  $(window).on('resize', function () {
     $('body').removeClass('hamOpen')
   })
 
@@ -63,9 +63,33 @@ document.addEventListener('DOMContentLoaded', function () {
     noClickEventOnDrag($indexBannerCarousel.children('.nk-carousel-inner'))
   }
 
-  //   var $IndexMenuCarousel = $('.IndexMenuCarousel')
-  var $IndexMenuCarousel = $('.IndexMenuCarousel')
+  var $IndexNewsCarousel = $('.IndexNewsCarousel')
+  if ($IndexNewsCarousel.length) {
+    $IndexNewsCarousel.children('.nk-carousel-inner').each(function () {
+      $(this).flickity({
+        pageDots: $(this).parent().attr('data-dots') === 'true' || false,
+        autoPlay: parseFloat($(this).parent().attr('data-autoplay')) || false,
+        prevNextButtons: false,
+        wrapAround: true,
+        cellAlign: $(this).parent().attr('data-cell-align') || 'center'
+      })
+      if ($(this).parent().attr('data-arrows') === 'true') {
+        addDefaultArrows($(this))
+      }
+      updateCustomArrows($(this).parent())
+    }).on('cellSelect', function () {
+      updateCustomArrows($(this).parent())
+    })
+    $IndexNewsCarousel.on('click', '.nk-carousel-next', function () {
+      $(this).parent().children('.nk-carousel-inner').flickity('next')
+    })
+    $IndexNewsCarousel.on('click', '.nk-carousel-prev', function () {
+      $(this).parent().children('.nk-carousel-inner').flickity('previous')
+    })
+    noClickEventOnDrag($IndexNewsCarousel.children('.nk-carousel-inner'))
+  }
 
+  var $IndexMenuCarousel = $('.IndexMenuCarousel')
   $('.IndexMenuCarousel > .nk-carousel-inner').each(function () {
     $(this).flickity({
       pageDots: $(this).parent().attr('data-dots') === 'true' || false,

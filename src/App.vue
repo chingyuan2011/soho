@@ -122,6 +122,7 @@ body {
     top: calc(50% - 15px);
     width: 30px;
     height: 30px;
+    box-shadow: 0px 0px 5px color(gray, 400);
 
     &::before {
       top: calc(50% - 10px);

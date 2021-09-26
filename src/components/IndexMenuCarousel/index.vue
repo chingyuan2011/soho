@@ -1,6 +1,7 @@
 <template>
   <div
     class="IndexMenuCarousel nk-carousel"
+    data-autoplay="8000"
   >
     <div class="nk-carousel-inner">
       <div class="carousel__item">
