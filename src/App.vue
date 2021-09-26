@@ -4,7 +4,10 @@
     <router-view class="app__view"></router-view>
     <CTFooter></CTFooter>
 
-    <button class="btn__quickTop">
+    <button
+      id="btn__quickTop"
+      class="btn__quickTop"
+    >
       <img
         src="/img/btn_top.png"
         alt="top"
@@ -40,13 +43,10 @@ export default {
 <style lang="scss">
 @use '@/assets/style/main.scss';
 
-body {
-
-}
-
 #app {
   display: flex;
   flex-direction: column;
+  width: 100%;
   height: 100%;
 }
 

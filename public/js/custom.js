@@ -170,4 +170,24 @@ document.addEventListener('DOMContentLoaded', function () {
     })
   }
   // 以下 carousel 使用 - end
+
+  // menu/content
+  var $MenuContentCarousel = $('#MenuContentCarousel')
+  $('.MenuContentCarousel > .nk-carousel-inner').each(function () {
+    $(this).flickity({
+      pageDots: $(this).parent().attr('data-dots') === 'true' || false,
+      autoPlay: parseFloat($(this).parent().attr('data-autoplay')) || false,
+      prevNextButtons: false,
+      wrapAround: true,
+      imagesLoaded: true,
+      cellAlign: $(this).parent().attr('data-cell-align') || 'center'
+    })
+    $MenuContentCarousel.on('click', '.nk-carousel-next', function () {
+      $(this).parent().children('.nk-carousel-inner').flickity('next')
+    })
+    $MenuContentCarousel.on('click', '.nk-carousel-prev', function () {
+      $(this).parent().children('.nk-carousel-inner').flickity('previous')
+    })
+    noClickEventOnDrag($(this))
+  })
 })
