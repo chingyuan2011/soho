@@ -1,4 +1,5 @@
 /* eslint-disable no-undef */
+
 document.addEventListener('DOMContentLoaded', function () {
   // resize
   $(window).resize(function () {
@@ -8,6 +9,16 @@ document.addEventListener('DOMContentLoaded', function () {
   // header
   $('.CtHeader__ham').on('click', function () {
     $('body').toggleClass('hamOpen')
+  })
+
+  // footer
+  // scroll top
+  $(document).on('click', '.btn__quickTop', function (e) {
+    e.preventDefault()
+    // 秒數可計算
+    $([document.documentElement, document.body]).animate({
+      scrollTop: 0
+    }, 500)
   })
 
   // index

@@ -1,65 +1,67 @@
 <template>
   <footer class="CtFooter">
     <div class="container">
-      <div class="row">
-        <div class="CtFooter__logoWrap col-4 col-lg-12">
-          <div class="pic">
+      <div class="CtFooter__logoWrap">
+        <div class="pic">
+          <img
+            src="/img/logo.png"
+            alt="logo"
+            draggable="false"
+          >
+        </div>
+        <div class="note">
+          2021 © 西堤 Designed By 耘想科技網頁設計
+        </div>
+      </div>
+      <div class="CtFooter__content">
+        <ul class="webMap">
+          <li><a href="">禮券查詢</a></li>
+          <li><a href="contact.html">聯絡我們</a></li>
+          <li><a href="">集團品牌</a></li>
+          <li>
+            <a
+              href="https://ehrweb.104.com.tw/job.do?key=03E610518BB8EF8F36E97DCD9D11D6B08CF407DF"
+            >人才招募</a>
+          </li>
+          <li><a href="https://wowfoods.wowprime.com/privacy.php">隱私權政策</a></li>
+        </ul>
+        <div class="time">
+          <div class="title">
+            營業時間：
+          </div>
+          <p>
+            11:30~14:30 (最後點餐時間14:00)<br>
+            17:30~22:00 (最後點餐時間21:00)
+          </p>
+        </div>
+        <div class="links">
+          <a
+            class="linkBtn"
+            href="https://www.facebook.com/tw.TASTy/"
+          >
             <img
-              src="/img/logo.png"
-              alt="logo"
+              src="/img/btn_fb.jpg"
               draggable="false"
             >
-          </div>
-          <div class="note">
-            2021 © 西堤 Designed By 耘想科技網頁設計
-          </div>
-        </div>
-        <div class="CtFooter__content col-7 col-lg-12">
-          <ul class="webMap">
-            <li><a href="">禮券查詢</a></li>
-            <li><a href="contact.html">聯絡我們</a></li>
-            <li><a href="">集團品牌</a></li>
-            <li><a href="">人才招募</a></li>
-            <li><a href="">隱私權政策</a></li>
-          </ul>
-          <div class="time">
-            <div class="title">
-              營業時間：
-            </div>
-            <p>
-              11:30~14:30 (最後點餐時間14:00)<br>
-              17:30~22:00 (最後點餐時間21:00)
-            </p>
-          </div>
-          <div class="links">
-            <a
-              class="linkBtn"
-              href=""
+          </a>
+          <a
+            class="linkBtn"
+            href=""
+          >
+            <img
+              src="/img/btn_line.jpg"
+              draggable="false"
             >
-              <img
-                src="/img/btn_fb.jpg"
-                draggable="false"
-              >
-            </a>
-            <a
-              class="linkBtn"
-              href=""
+          </a>
+          <a
+            class="linkBtn"
+            href=""
+          >
+            <img
+              src="/img/btn_message.jpg"
+              draggable="false"
             >
-              <img
-                src="/img/btn_line.jpg"
-                draggable="false"
-              >
-            </a>
-            <a
-              class="linkBtn"
-              href=""
-            >
-              <img
-                src="/img/btn_message.jpg"
-                draggable="false"
-              >
-            </a>
-          </div>
+          </a>
         </div>
       </div>
     </div>
@@ -81,12 +83,17 @@ export default {
   color: #fff;
   background-color: #142638;
 
-  .row {
+  .container {
+    display: flex;
     align-items: center;
     justify-content: space-between;
   }
 
   &__logoWrap {
+    flex-shrink: 0;
+    width: 460px;
+    margin-right: 20px;
+
     .pic {
       img {
         display: block;
@@ -130,15 +137,30 @@ export default {
       }
     }
   }
+  @include screen(xl) {
+    .container {
+    }
+
+    &__logoWrap {
+      width: 300px;
+    }
+  }
   @include screen(lg) {
     padding: 50px 0;
 
     .container {
+      flex-wrap: wrap;
+      justify-content: center;
       max-width: 600px;
     }
 
     .CtFooter__logoWrap {
       margin-bottom: 20px;
+    }
+
+    .pic {
+      max-width: 100%;
+      margin: 0 auto;
     }
   }
 
@@ -150,6 +172,7 @@ export default {
     }
 
     .CtFooter__logoWrap {
+      margin-right: 0;
       margin-bottom: 20px;
     }
 

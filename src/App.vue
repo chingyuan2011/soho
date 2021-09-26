@@ -1,11 +1,10 @@
 <template>
   <div id="app">
     <CTHeader></CTHeader>
-
     <router-view class="app__view"></router-view>
     <CTFooter></CTFooter>
 
-    <button class="quickTop">
+    <button class="btn__quickTop">
       <img
         src="/img/btn_top.png"
         alt="top"
@@ -42,10 +41,7 @@ export default {
 @use '@/assets/style/main.scss';
 
 body {
-  padding-top: 125px;
-  @include screen(xl) {
-    padding-top: 80px;
-  }
+
 }
 
 #app {
@@ -56,16 +52,26 @@ body {
 
 .app__view {
   flex: 1;
+  padding-top: 125px;
+  @include screen(xl) {
+    padding-top: 80px;
+  }
 }
 
-.quickTop {
+.btn__quickTop {
   position: fixed;
   right: 60px;
-  bottom: 100px;
+  bottom: 40px;
   z-index: 100;
   padding: 0;
   background-color: transparent;
   border: 0;
+
+  @include screen(lg) {
+    right: 30px;
+    bottom: 20px;
+    width: 50px;
+  }
 }
 
 // slider
