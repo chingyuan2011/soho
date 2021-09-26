@@ -22,7 +22,7 @@
         <li>
           <a
             class="CtHeader__menuItem"
-            href="news.html"
+            href="/news/list.html"
           >
             <div class="en">NEWS</div>
             <div class="chi">最新消息</div>

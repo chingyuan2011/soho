@@ -34,6 +34,11 @@ export default {
     color: #fff;
     white-space: nowrap;
   }
+  @include screen (md) {
+    &__text {
+      font-size: 16px;
+    }
+  }
 }
 
 // xxl | xl | lg | md | sm
