@@ -17,6 +17,7 @@ TAKE OUT 外帶字取
 Let’s TASTy, Let’s Enjoy! 
 
 ## 最新消息 slider
+- back #9d2235
 - futuraExtraBlack 120px
 NEWS
 - 43px
