@@ -1,5 +1,8 @@
 <template>
-  <div class="IndexPrompter">
+  <div
+    id="IndexPrompter"
+    class="IndexPrompter"
+  >
     <div
       id="IndexPrompter__text"
       class="IndexPrompter__text"

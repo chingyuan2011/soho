@@ -1,5 +1,6 @@
 <template>
   <div
+    id="IndexNewsCarousel"
     class="IndexMenuCarousel nk-carousel"
     data-autoplay="8000"
   >

@@ -7,12 +7,12 @@ document.addEventListener('DOMContentLoaded', function () {
   })
 
   // header
-  $('.CtHeader__ham').on('click', function () {
+  $('#CtHeader__ham').on('click', function () {
     $('body').toggleClass('hamOpen')
   })
 
   // scroll top
-  $(document).on('click', '.btn__quickTop', function (e) {
+  $(document).on('click', '#btn__quickTop', function (e) {
     e.preventDefault()
     // 秒數可計算
     $([document.documentElement, document.body]).animate({
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // popup
   openPopup()
 
-  $('#btn__close').on('click', function () {
+  $('#Modal__close').on('click', function () {
     closePopup()
   })
 
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
     $('body').removeClass('popOpen')
   }
   // 跑馬燈
-  var $IndexPrompter = $('.IndexPrompter')
+  var $IndexPrompter = $('#IndexPrompter')
   if ($IndexPrompter.length) {
     var textDom = $('#IndexPrompter__text')
     var textPosX = $IndexPrompter.innerWidth()
@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // banner carousel
-  var $indexBannerCarousel = $('.IndexBannerCarousel')
+  var $indexBannerCarousel = $('#IndexBannerCarousel')
   if ($indexBannerCarousel.length) {
     $indexBannerCarousel.children('.nk-carousel-inner').each(function () {
       $(this).flickity({
@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function () {
     noClickEventOnDrag($indexBannerCarousel.children('.nk-carousel-inner'))
   }
 
-  var $IndexNewsCarousel = $('.IndexNewsCarousel')
+  var $IndexNewsCarousel = $('#IndexNewsCarousel')
   if ($IndexNewsCarousel.length) {
     $IndexNewsCarousel.children('.nk-carousel-inner').each(function () {
       $(this).flickity({
@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', function () {
     noClickEventOnDrag($IndexNewsCarousel.children('.nk-carousel-inner'))
   }
 
-  var $IndexMenuCarousel = $('.IndexMenuCarousel')
+  var $IndexMenuCarousel = $('#IndexMenuCarousel')
   $('.IndexMenuCarousel > .nk-carousel-inner').each(function () {
     $(this).flickity({
       pageDots: $(this).parent().attr('data-dots') === 'true' || false,

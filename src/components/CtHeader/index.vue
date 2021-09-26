@@ -11,7 +11,10 @@
           draggable="false"
         >
       </router-link>
-      <button class="CtHeader__ham">
+      <button
+        id="CtHeader__ham"
+        class="CtHeader__ham"
+      >
         <span></span>
         <span></span>
         <span></span>
@@ -141,7 +144,7 @@ body.hamOpen {
   top: 0;
   right: 0;
   left: 0;
-  z-index: 10;
+  z-index: 200;
   height: 125px;
   padding: 10px 0px;
   background-color: #951e23;

@@ -8,8 +8,8 @@
     ></div>
     <div class="Modal__content">
       <button
-        id="btn__close"
-        class="btn__close"
+        id="Modal__close"
+        class="Modal__close"
       >
       </button>
       <!-- <div class="modal-header">
@@ -67,7 +67,7 @@ body.popOpen {
     transform: translateX(-50%) translateY(-50%);
   }
 
-  .btn__close {
+  .Modal__close {
     position: absolute;
     top: -15px;
     right: -15px;
