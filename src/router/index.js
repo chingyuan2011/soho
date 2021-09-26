@@ -9,6 +9,7 @@ import NewsList from '@/pages/NewsList'
 import NewsContent from '@/pages/NewsContent'
 import MenuContent from '@/pages/MenuContent'
 import ShopList from '@/pages/ShopList'
+import ShopContent from '@/pages/ShopContent'
 
 Vue.use(VueRouter)
 
@@ -47,6 +48,11 @@ const routes = [
     path: '/shop/list.html',
     name: 'shopList',
     component: ShopList
+  },
+  {
+    path: '/shop/content.html',
+    name: 'shopContent',
+    component: ShopContent
   },
   {
     path: '/404.html',
