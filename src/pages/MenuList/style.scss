@@ -1,0 +1,134 @@
+.MenuList {
+  &__content {
+    position: relative;
+    padding: 25px 0;
+  }
+
+  .breadcrumbs {
+    margin-bottom: 100px;
+  }
+
+  &__list {
+    margin-bottom: 25px;
+  }
+
+  &__item {
+    position: relative;
+    margin-bottom: 50px;
+  }
+
+  &__itemLink {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+  }
+
+  &__itemPic {
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: 900px;
+    margin-bottom: 25px;
+    text-align: center;
+
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      max-height: 100%;
+      margin: 0 auto;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__itemTitle {
+    @include text-overflow($line: 2);
+    height: 90px;
+    margin-bottom: 25px;
+    font-size: 30px;
+    font-weight: 900;
+    color: #142638;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+
+  &__itemContent {
+    padding: 0 120px;
+    font-size: 18px;
+    color: #962233;
+
+    p {
+      margin-bottom: 20px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__note {
+    padding: 25px 50px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #a78a70;
+  }
+
+  @include screen(xxl) {
+    .breadcrumbs {
+      margin-bottom: 25px;
+    }
+
+    &__item {
+      margin-bottom: 25px;
+    }
+
+    &__itemPic {
+      height: 800px;
+    }
+
+    &__itemTitle {
+      height: 72px;
+      margin-bottom: 10px;
+      font-size: 24px;
+    }
+
+    &__itemContent {
+      padding: 0 25px;
+    }
+
+    &__note {
+      padding: 20px;
+      font-size: 16px;
+    }
+  }
+
+  @include screen(xl) {
+    &__itemPic {
+      height: 700px;
+    }
+  }
+
+  @include screen(lg) {
+    &__itemPic {
+      height: auto;
+
+      img {
+        position: relative;
+        top: initial;
+        left: initial;
+        transform: translate(0, 0);
+      }
+    }
+
+    &__itemTitle {
+      height: auto;
+    }
+  }
+}
+
+// xxl | xl | lg | md | sm
+// @include screen (xl) {}

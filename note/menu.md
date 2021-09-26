@@ -3,7 +3,7 @@
 - 內文超過五行
 - list 圖片記得稱寬度
 ## 1 
-30px #142638
+30px #142638 futuraExtraBlack
 CLASSIC SET MENU
 -經典套餐
 

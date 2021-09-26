@@ -7,6 +7,7 @@ import Error404 from '@/pages/Error404'
 import HeaderFooter from '@/pages/HeaderFooter'
 import NewsList from '@/pages/NewsList'
 import NewsContent from '@/pages/NewsContent'
+import MenuList from '@/pages/MenuList'
 import MenuContent from '@/pages/MenuContent'
 import ShopList from '@/pages/ShopList'
 import ShopContent from '@/pages/ShopContent'
@@ -38,6 +39,11 @@ const routes = [
     path: '/news/content.html',
     name: 'newsContent',
     component: NewsContent
+  },
+  {
+    path: '/menu/list.html',
+    name: 'menuList',
+    component: MenuList
   },
   {
     path: '/menu/content.html',
