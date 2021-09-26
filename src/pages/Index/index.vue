@@ -1,6 +1,7 @@
 <template>
   <div class="Index">
     <IndexBannerCarousel></IndexBannerCarousel>
+    <IndexPrompter></IndexPrompter>
     <IndexMenuCarousel></IndexMenuCarousel>
     <div style="height: 100vh;"></div>
   </div>
@@ -8,6 +9,7 @@
 
 <script>
 import IndexBannerCarousel from '@/components/IndexBannerCarousel'
+import IndexPrompter from '@/components/IndexPrompter'
 import IndexMenuCarousel from '@/components/IndexMenuCarousel'
 
 export default {
@@ -15,6 +17,7 @@ export default {
   name: 'Index',
   components: {
     IndexBannerCarousel,
+    IndexPrompter,
     IndexMenuCarousel
   },
   data () {

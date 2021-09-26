@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', function () {
     $('body').toggleClass('hamOpen')
   })
 
-  // footer
   // scroll top
   $(document).on('click', '.btn__quickTop', function (e) {
     e.preventDefault()
@@ -22,6 +21,21 @@ document.addEventListener('DOMContentLoaded', function () {
   })
 
   // index
+  // 跑馬燈
+  var $IndexPrompter = $('.IndexPrompter')
+  if ($IndexPrompter.length) {
+    var textDom = $('#IndexPrompter__text')
+    var textPosX = $IndexPrompter.innerWidth()
+
+    setInterval(function () {
+      if (textPosX + textDom.innerWidth() < -10) {
+        textPosX = $IndexPrompter.innerWidth()
+      }
+      textPosX -= 1
+      textDom[0].style.left = textPosX + 'px'
+    }, 20)
+  }
+
   // banner carousel
   var $indexBannerCarousel = $('.IndexBannerCarousel')
   if ($indexBannerCarousel.length) {
