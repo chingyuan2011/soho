@@ -76,11 +76,15 @@ ul {
 }
 
 .footer__deco-brown {
-  padding-top: 320px;
+  padding-top: 480px;
   background-image: url('/img/bg_brown.jpg');
   background-repeat: repeat-x;
   background-position: left bottom;
   background-size: cover;
+
+  @include screen(xxl) {
+    padding-top: 256px;
+  }
 }
 
 .slogan {
