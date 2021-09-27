@@ -66,14 +66,14 @@
     }
   }
 
-  @include screen(lg) {
+  @include screen(xxl) {
+    .breadcrumbs {
+      margin-bottom: 100px;
+    }
+
     &__title {
       margin-left: 0;
       font-size: 24px;
-
-      br {
-        display: inline;
-      }
     }
 
     &__box {
@@ -97,6 +97,12 @@
   @include screen(md) {
     .breadcrumbs {
       margin-bottom: 25px;
+    }
+
+    &__title {
+      br {
+        display: inline;
+      }
     }
   }
 }

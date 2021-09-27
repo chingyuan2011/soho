@@ -1,20 +1,25 @@
 .Error404 {
-  display: flex;
-  flex-wrap: wrap;
+  position: relative;
+  padding-bottom: 400px;
 
   .container {
-    position: relative;
     z-index: 1;
     width: 100%;
     padding-top: 100px;
   }
 
   .footer__deco-brown {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
     width: 100%;
   }
 
   &__title,
   &__note {
+    position: relative;
+    z-index: 1;
     width: 70%;
     margin-right: auto;
     margin-left: auto;
@@ -33,7 +38,6 @@
   }
 
   &__note {
-    margin-bottom: -180px;
     padding: 50px;
     font-size: 40px;
     color: #951e23;
@@ -41,6 +45,26 @@
     background-color: #fff;
     box-shadow: 3px 3px 5px color(gray, 400);
   }
+
+  @include screen(xxl) {
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      height: 100%;
+      padding-top: 50px;
+    }
+    padding-bottom: 300px;
+
+    &__title {
+      font-size: 20px;
+    }
+
+    &__note {
+      font-size: 24px;
+    }
+  }
+
   @include screen(xl) {
     &__title,
     &__note {
@@ -60,7 +84,6 @@
 
     &__title {
       padding-left: 30px;
-      font-size: 20px;
 
       br {
         display: inline-block;
@@ -69,7 +92,6 @@
 
     &__note {
       padding: 20px 30px;
-      font-size: 28px;
     }
   }
 }
