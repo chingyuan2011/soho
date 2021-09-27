@@ -1,0 +1,189 @@
+.Event {
+  .Banner {
+    color: #fff;
+    background-color: #a78a70;
+
+    @include screen(lg) {
+      padding-top: 35%;
+    }
+  }
+
+  &__content {
+    padding-top: 25px;
+  }
+
+  .breadcrumbs {
+    margin-bottom: 120px;
+  }
+
+  &__pic {
+    margin-bottom: 75px;
+
+    img {
+      margin: 0 auto;
+    }
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+    color: #142638;
+  }
+
+  &__infoContent {
+    padding: 20px 75px;
+  }
+
+  &__infoContentTitle {
+    margin-bottom: 20px;
+    font-size: 36px;
+    font-weight: 900;
+  }
+
+  &__infoContentP {
+    font-size: 22px;
+    line-height: 1.75;
+  }
+
+  &__infoAnimation {
+    flex-shrink: 0;
+    width: 700px;
+    padding-right: 75px;
+    letter-spacing: 4px;
+  }
+
+  &__infoBlood {
+    height: 500px;
+  }
+
+  &__infoNumber {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+
+    span,
+    div {
+      margin-right: 25px;
+    }
+
+    span {
+      display: flex;
+      align-items: center;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .blood-accumulation {
+    font-size: 60px;
+    color: #962233;
+  }
+
+  &__carouselTitle {
+    margin-bottom: 25px;
+    padding-left: 95px;
+    font-size: 36px;
+    font-weight: 900;
+    letter-spacing: 2px;
+  }
+
+  @include screen(xxl) {
+    .breadcrumbs {
+      margin-bottom: 25px;
+    }
+
+    &__pic {
+      margin-bottom: 25px;
+    }
+
+    &__info {
+      margin-bottom: 50px;
+    }
+
+    &__infoContent {
+      padding: 10px 20px 0 0;
+    }
+
+    &__infoContentTitle {
+      margin-bottom: 10px;
+      font-size: 24px;
+    }
+
+    &__infoBlood {
+      height: 400px;
+    }
+
+    &__infoContentP {
+      font-size: 16px;
+      line-height: 1.75;
+    }
+
+    &__infoAnimation {
+      width: 600px;
+      padding-right: 0;
+      letter-spacing: 4px;
+    }
+
+    &__infoNumber {
+      font-size: 20px;
+
+      span,
+      div {
+        margin-right: 10px;
+      }
+    }
+
+    .blood-accumulation {
+      font-size: 48px;
+    }
+
+    &__carouselTitle {
+      padding-left: 20px;
+      font-size: 24px;
+    }
+  }
+
+  @include screen(lg) {
+    &__info {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    &__infoContent {
+      width: 100%;
+    }
+  }
+
+  @include screen(md) {
+    &__infoAnimation {
+      width: 100%;
+    }
+
+    &__infoNumber {
+      flex-wrap: wrap;
+      font-size: 16px;
+
+      .prefix {
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+      }
+
+      span,
+      div {
+        margin-right: 0px;
+      }
+
+      .blood-accumulation {
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+// xxl | xl | lg | md | sm
+// @include screen (xl) {}

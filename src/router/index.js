@@ -11,6 +11,7 @@ import MenuList from '@/pages/MenuList'
 import MenuContent from '@/pages/MenuContent'
 import ShopList from '@/pages/ShopList'
 import ShopContent from '@/pages/ShopContent'
+import PageEvent from '@/pages/Event'
 
 Vue.use(VueRouter)
 
@@ -64,6 +65,11 @@ const routes = [
     path: '/404.html',
     name: 'error404',
     component: Error404
+  },
+  {
+    path: '/event.html',
+    name: 'event',
+    component: PageEvent
   },
   {
     path: '/header+footer.html',
