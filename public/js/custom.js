@@ -202,4 +202,35 @@ document.addEventListener('DOMContentLoaded', function () {
       openPopup()
     })
   })
+
+  // 數字動態
+  function countUp () {
+    var $this = $(this)
+    var countTo = $this.attr('data-count')
+    if (parseInt($this.text()) > 0) return
+    $({ countNum: $this.text() }).animate({
+      countNum: countTo
+    },
+    {
+      duration: 2000,
+      easing: 'swing',
+      step: function () {
+        $this.text(Math.floor(this.countNum).toLocaleString('en'))
+      },
+      complete: function () {
+        $this.text(this.countNum.toLocaleString('en'))
+      }
+    })
+  }
+
+  function checkPosAndTriggerAnimate () {
+    const pos = this.getBoundingClientRect()
+    if (pos.top < window.innerHeight * 3 / 4) {
+      countUp.bind(this)()
+    }
+  }
+
+  $(window).scroll(function () {
+    checkPosAndTriggerAnimate.bind($('#blood-accumulation')[0])()
+  })
 })

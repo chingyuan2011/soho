@@ -49,7 +49,7 @@
                 class="futuraExtraBlack blood-accumulation"
                 data-count="15000000"
               >
-                15,000,000
+                0
               </div><span class="futuraExtraBlack blood-accumulation">cc</span>
             </div>
           </div>
