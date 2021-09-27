@@ -25,69 +25,69 @@
         <li>
           <a
             class="CtHeader__menuItem"
-            href="/news/list.html"
+            href="./news/list.html"
           >
-            <div class="en">NEWS</div>
-            <div class="chi">最新消息</div>
+            <div class="CtHeader__en">NEWS</div>
+            <div class="CtHeader__chi">最新消息</div>
           </a>
         </li>
         <li>
           <a
             class="CtHeader__menuItem"
-            href="menu.html"
+            href="./menu/list.html"
           >
-            <div class="en">
+            <div class="CtHeader__en">
               MENU
             </div>
-            <div class="chi">
+            <div class="CtHeader__chi">
               菜單介紹
             </div></a>
         </li>
         <li>
           <a
             class="CtHeader__menuItem"
-            href="member.html"
+            href="./member.html"
           >
-            <div class="en">
+            <div class="CtHeader__en">
               MEMBER
             </div>
-            <div class="chi">
+            <div class="CtHeader__chi">
               會員中心
             </div></a>
         </li>
         <li>
           <a
             class="CtHeader__menuItem"
-            href="store.html"
+            href="./shop/list.html"
           >
-            <div class="en">
+            <div class="CtHeader__en">
               STORE
             </div>
-            <div class="chi">
+            <div class="CtHeader__chi">
               分店據點
             </div></a>
         </li>
         <li>
           <a
             class="CtHeader__menuItem"
-            href=""
+            href="./event.html"
           >
-            <div class="en">
+            <div class="CtHeader__en">
               BLOOD DONATION
             </div>
-            <div class="chi">
+            <div class="CtHeader__chi">
               捐血公益
             </div></a>
         </li>
         <li>
           <a
             class="CtHeader__menuItem"
-            href=""
+            href="https://cct.wowprime.com/cct/cctapp/cctwebreservation.do?&prog=cctweb_reservation&brnd_fid=SUEBQ&stor"
           >
-            <div class="en">
+            <div class="CtHeader__en">
               BOOKING
             </div>
-            <div class="chi">
+            <div class="CtHeader__chi">
               線上訂位
             </div></a>
         </li>
@@ -96,10 +96,10 @@
             class="CtHeader__menuItem"
             href=""
           >
-            <div class="en">
+            <div class="CtHeader__en">
               ORDER
             </div>
-            <div class="chi">
+            <div class="CtHeader__chi">
               線上點餐
             </div></a>
         </li>
@@ -119,6 +119,9 @@ export default {
 
 <style lang="scss">
 body.hamOpen {
+  height: 100vh;
+  overflow: hidden;
+
   .CtHeader__ham span {
     &:nth-child(1) {
       transform: rotate(35deg);
@@ -155,11 +158,11 @@ body.hamOpen {
     justify-content: space-between;
   }
 
-  &__logo {
+  .CtHeader__logo {
     width: 250px;
   }
 
-  &__ham {
+  .CtHeader__ham {
     position: relative;
     z-index: 11;
     width: 50px;
@@ -191,7 +194,7 @@ body.hamOpen {
     }
   }
 
-  &__menu {
+  .CtHeader__menu {
     position: fixed;
     top: 0;
     right: 0;
@@ -201,6 +204,7 @@ body.hamOpen {
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow-y: auto;
     pointer-events: none;
     background-color: rgba(#962233, .9);
     transition: transform .3s;
@@ -221,7 +225,7 @@ body.hamOpen {
       .CtHeader__menuItem {
         color: #fff;
 
-        .en {
+        .CtHeader__en {
           font-size: 38px;
           transition: all .2s;
 
@@ -230,18 +234,18 @@ body.hamOpen {
           }
         }
 
-        .chi {
+        .CtHeader__chi {
           font-size: 20px;
           transition: all .2s;
         }
 
         &:hover {
-          .en {
+          .CtHeader__en {
             font-size: 75px;
             color: #152638;
           }
 
-          .chi {
+          .CtHeader__chi {
             font-size: 24px;
           }
         }
@@ -252,11 +256,11 @@ body.hamOpen {
   @include screen(xl) {
     height: 80px;
 
-    &__logo {
+    .CtHeader__logo {
       width: 150px;
     }
 
-    &__ham {
+    .CtHeader__ham {
       width: 30px;
       height: 20px;
 
@@ -283,24 +287,24 @@ body.hamOpen {
       }
     }
 
-    &__menu {
+    .CtHeader__menu {
       ul .CtHeader__menuItem {
         line-height: 1.5;
 
-        .en {
+        .CtHeader__en {
           font-size: 24px;
         }
 
-        .chi {
+        .CtHeader__chi {
           font-size: 16px;
         }
 
         &:hover {
-          .en {
+          .CtHeader__en {
             font-size: 30px;
           }
 
-          .chi {
+          .CtHeader__chi {
             font-size: 20px;
           }
         }

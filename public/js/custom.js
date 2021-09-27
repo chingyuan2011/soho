@@ -1,6 +1,8 @@
 /* eslint-disable no-undef */
 
 document.addEventListener('DOMContentLoaded', function () {
+  new WOW().init()
+
   // resize
   $(window).on('resize', function () {
     $('body').removeClass('hamOpen')

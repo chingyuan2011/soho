@@ -2,19 +2,19 @@
   <footer class="CtFooter">
     <div class="container">
       <div class="CtFooter__logoWrap">
-        <div class="pic">
+        <div class="CtFooter__pic">
           <img
             src="/img/logo.png"
             alt="logo"
             draggable="false"
           >
         </div>
-        <div class="note">
+        <div class="CtFooter__note">
           2021 © 西堤 Designed By 耘想科技網頁設計
         </div>
       </div>
       <div class="CtFooter__content">
-        <ul class="webMap">
+        <ul class="CtFooter__webMap">
           <li><a href="">禮券查詢</a></li>
           <li><a href="contact.html">聯絡我們</a></li>
           <li><a href="">集團品牌</a></li>
@@ -25,8 +25,8 @@
           </li>
           <li><a href="https://wowfoods.wowprime.com/privacy.php">隱私權政策</a></li>
         </ul>
-        <div class="time">
-          <div class="title">
+        <div class="CtFooter__time">
+          <div class="CtFooter__title">
             營業時間：
           </div>
           <p>
@@ -34,9 +34,9 @@
             17:30~22:00 (最後點餐時間21:00)
           </p>
         </div>
-        <div class="links">
+        <div class="CtFooter__links">
           <a
-            class="linkBtn"
+            class="CtFooter__linkBtn"
             href="https://www.facebook.com/tw.TASTy/"
           >
             <img
@@ -45,7 +45,7 @@
             >
           </a>
           <a
-            class="linkBtn"
+            class="CtFooter__linkBtn"
             href=""
           >
             <img
@@ -54,7 +54,7 @@
             >
           </a>
           <a
-            class="linkBtn"
+            class="CtFooter__linkBtn"
             href=""
           >
             <img
@@ -89,19 +89,19 @@ export default {
     justify-content: space-between;
   }
 
-  &__logoWrap {
+  .CtFooter__logoWrap {
     flex-shrink: 0;
     width: 460px;
     margin-right: 20px;
 
-    .pic {
+    .CtFooter__pic {
       img {
         display: block;
         margin: 0 auto;
       }
     }
 
-    .note {
+    .CtFooter__note {
       margin-top: 10px;
       font-size: 12px;
       text-align: center;
@@ -114,7 +114,7 @@ export default {
     flex-wrap: wrap;
     justify-content: space-between;
 
-    .webMap {
+    .CtFooter__webMap {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -122,17 +122,17 @@ export default {
       margin-bottom: 10px;
     }
 
-    .time {
+    .CtFooter__time {
       display: flex;
       margin-right: 20px;
     }
 
-    .links {
+    .CtFooter__links {
       display: flex;
       align-self: center;
       margin-right: 20px;
 
-      .linkBtn {
+      .CtFooter__linkBtn {
         margin: 0 5px;
       }
     }
@@ -141,7 +141,7 @@ export default {
     .container {
     }
 
-    &__logoWrap {
+    .CtFooter__logoWrap {
       width: 300px;
     }
   }
@@ -158,7 +158,7 @@ export default {
       margin-bottom: 20px;
     }
 
-    .pic {
+    .CtFooter__pic {
       max-width: 100%;
       margin: 0 auto;
     }
@@ -176,8 +176,8 @@ export default {
       margin-bottom: 20px;
     }
 
-    &__content {
-      .webMap {
+    .CtFooter__content {
+      .CtFooter__webMap {
         justify-content: flex-start;
 
         li {
@@ -187,12 +187,12 @@ export default {
         }
       }
 
-      .time {
+      .CtFooter__time {
         flex-wrap: wrap;
         margin-right: 0px;
         margin-bottom: 20px;
 
-        .title {
+        .CtFooter__title {
           width: 100%;
         }
 
@@ -201,11 +201,11 @@ export default {
         }
       }
 
-      .links {
+      .CtFooter__links {
         justify-content: center;
         width: 100%;
 
-        .linkBtn {
+        .CtFooter__linkBtn {
           margin: 0 10px;
         }
       }

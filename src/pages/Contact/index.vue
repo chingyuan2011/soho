@@ -30,9 +30,15 @@
           想給我們意見、想與我們合作，<br>請立即聯絡我們
         </div>
         <div class="Contact__boxes row">
-          <div class="Contact__box col-6 col-lg-12">
-            <div class="Contact__boxTitle">
-              一般<br>消費意見
+          <div
+            class="Contact__box col-6 col-lg-12 wow fadeInRight"
+            data-wow-duration="1s"
+          >
+            <div
+              class="Contact__boxTitle"
+            >
+              一般<br>
+              消費意見
             </div>
             <div class="Contact__boxContentWrap">
               <div class="Contact__boxContent">
@@ -47,7 +53,11 @@
               </div>
             </div>
           </div>
-          <div class="Contact__box col-6 col-lg-12">
+          <div
+            class="Contact__box col-6 col-lg-12 wow fadeInRight"
+            data-wow-duration="1s"
+            data-wow-delay=".2s"
+          >
             <div class="Contact__boxTitle">
               行銷
               <br>異業合作
@@ -60,7 +70,11 @@
               </div>
             </div>
           </div>
-          <div class="Contact__box col-6 col-lg-12">
+          <div
+            class="Contact__box col-6 col-lg-12 wow fadeInRight"
+            data-wow-duration="1s"
+            data-wow-delay=".4s"
+          >
             <div class="Contact__boxTitle">
               食材 /
               <br>非食材供應
@@ -73,7 +87,11 @@
               </div>
             </div>
           </div>
-          <div class="Contact__box col-6 col-lg-12">
+          <div
+            class="Contact__box col-6 col-lg-12 wow fadeInRight"
+            data-wow-duration="1s"
+            data-wow-delay=".6s"
+          >
             <div class="Contact__boxTitle">
               同仁意見
             </div>
