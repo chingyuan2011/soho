@@ -202,4 +202,31 @@ document.addEventListener('DOMContentLoaded', function () {
       openPopup()
     })
   })
+
+  // event
+  var $EventCarousel = $('#EventCarousel')
+  $('.EventCarousel > .nk-carousel-inner').each(function () {
+    $(this).flickity({
+      pageDots: $(this).parent().attr('data-dots') === 'true' || false,
+      autoPlay: parseFloat($(this).parent().attr('data-autoplay')) || false,
+      prevNextButtons: false,
+      wrapAround: true,
+      imagesLoaded: true,
+      cellAlign: $(this).parent().attr('data-cell-align') || 'center'
+    })
+    $EventCarousel.on('click', '.nk-carousel-next', function () {
+      $(this).parent().children('.nk-carousel-inner').flickity('next')
+    })
+    $EventCarousel.on('click', '.nk-carousel-prev', function () {
+      $(this).parent().children('.nk-carousel-inner').flickity('previous')
+    })
+    noClickEventOnDrag($(this))
+
+    // $EventCarousel.on('click', '.carousel__item', function (dom) {
+    //   var url = dom.target.src
+    //   var domString = '<img class="Modal__popPic" src="' + url + '">'
+    //   $('#Modal__content').html(domString)
+    //   openPopup()
+    // })
+  })
 })
