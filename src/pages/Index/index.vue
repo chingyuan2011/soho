@@ -1,6 +1,6 @@
 <template>
   <div class="Index">
-    <!-- <Modal
+    <Modal
       id=""
       class="Index__popUp"
     >
@@ -14,7 +14,7 @@
           src="/img/index/popup.jpg"
         >
       </div>
-    </Modal> -->
+    </Modal>
     <IndexBannerCarousel></IndexBannerCarousel>
     <IndexPrompter></IndexPrompter>
     <div class="Index__linksWrap">
@@ -94,7 +94,7 @@
 </template>
 
 <script>
-// import Modal from '@/components/Modal'
+import Modal from '@/components/Modal'
 import IndexBannerCarousel from '@/components/IndexBannerCarousel'
 import IndexPrompter from '@/components/IndexPrompter'
 import IndexNewsCarousel from '@/components/IndexNewsCarousel'
@@ -105,7 +105,7 @@ export default {
 
   name: 'Index',
   components: {
-    // Modal,
+    Modal,
     IndexBannerCarousel,
     IndexPrompter,
     IndexNewsCarousel,
