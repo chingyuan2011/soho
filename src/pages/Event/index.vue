@@ -59,6 +59,7 @@
         <div class="Event__carouselTitle container">
           活動照片紀錄
         </div>
+        <EventCarousel></EventCarousel>
       </div>
     </div>
     <div class="footer__deco-brown">

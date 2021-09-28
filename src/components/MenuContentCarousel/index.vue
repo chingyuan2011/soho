@@ -63,7 +63,7 @@ import {} from '@vue/composition-api'
 import Modal from '@/components/Modal'
 
 export default {
-  name: 'IndexMenuCarousel',
+  name: 'MenuContentCarousel',
   components: {
     Modal
   },
