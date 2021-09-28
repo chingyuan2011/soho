@@ -252,11 +252,11 @@ document.addEventListener('DOMContentLoaded', function () {
     })
     noClickEventOnDrag($(this))
 
-    // $EventCarousel.on('click', '.carousel__item', function (dom) {
-    //   var url = dom.target.src
-    //   var domString = '<img class="Modal__popPic" src="' + url + '">'
-    //   $('#Modal__content').html(domString)
-    //   openPopup()
-    // })
+    $EventCarousel.on('click', '.carousel__item', function (dom) {
+      var url = dom.target.src
+      var domString = '<div><div class="Modal__popTitle"><div>標題一</div><div>標題二</div></div></div><img class="Modal__popPic" src="' + url + '"></img>'
+      $('#Modal__content').html(domString)
+      openPopup()
+    })
   })
 })

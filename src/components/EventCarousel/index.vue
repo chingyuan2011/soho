@@ -1,5 +1,5 @@
 <template>
-  <div class="EventCarousel">
+  <div class="EventCarouselWrap">
     <Modal
       id="Modal"
       class="EventCarousel__popUp"
@@ -27,8 +27,8 @@
         </div>
         <div
           class="carousel__item"
-          data-title="2020"
-          data-title2="挽袖公益 熱血傳愛"
+          data-title="標題一超級多字標題一超級多字標題一超級多字標題一超級多字標題一超級多字標題一超級多字標題一超級多字"
+          data-title2="標題二超級多字標題二超級多字標題二超級多字標題二超級多字標題二超級多字標題二超級多字標題二超級多字"
           data-url="/img/news1.jpg"
         >
           <div class="carousel__itemTitle">
@@ -42,8 +42,8 @@
         </div>
         <div
           class="carousel__item"
-          data-title="2020"
-          data-title2="挽袖公益 熱血傳愛"
+          data-title="標題一超級多字標題一超級多字標題一超級多字標題一超級多字標題一超級多字標題一超級多字標題一超級多字"
+          data-title2="標題二超級多字標題二超級多字標題二超級多字標題二超級多字標題二超級多字標題二超級多字標題二超級多字"
           data-url="/img/blood.jpg"
         >
           <div class="carousel__itemTitle">
@@ -171,6 +171,7 @@ export default {
     font-size: 20px;
     font-weight: bold;
     color: #fff;
+    pointer-events: none;
     background-color: rgba(#951e23, .6);
     opacity: 0;
     transition: all .2s;
@@ -215,24 +216,30 @@ export default {
   }
 }
 
-.MenuContentCarouselWrap {
+.EventCarouselWrap {
   max-width: 1920px;
   margin: 0 auto;
   padding: 0 100px;
 
   .Modal__contentWrap {
-    height: 90%;
-    max-height: 900px;
+    width: 90%;
+    max-width: 600px;
+    background-color: transparent;
   }
 
   .Modal__content {
-    width: 100%;
-    height: 100%;
   }
 
-  .Modal__popPic {
-    max-width: initial;
-    height: 100%;
+  .Modal__popTitle {
+    position: absolute;
+    bottom: calc(100% + 5px);
+    width: 100%;
+    padding-right: 20px;
+    color: #fff;
+
+    > div {
+      @include text-overflow(1);
+    }
   }
 
   .Modal__close {

@@ -33,7 +33,10 @@ export default {
 </script>
 
 <style lang="scss">
+
 body.popOpen {
+  overflow: hidden;
+
   .Modal {
     display: block;
   }
