@@ -25,7 +25,7 @@
         </div>
         <div class="Event__pic">
           <img
-            src="/img/news2.jpg"
+            src="/img/Eventpic.jpg"
             alt=""
           >
         </div>

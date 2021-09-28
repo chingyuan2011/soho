@@ -224,6 +224,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   function checkPosAndTriggerAnimate () {
+    if (!this.getBoundingClientRect) return
     const pos = this.getBoundingClientRect()
     if (pos.top < window.innerHeight * 3 / 4) {
       countUp.bind(this)()
