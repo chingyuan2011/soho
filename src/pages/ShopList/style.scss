@@ -67,6 +67,10 @@
   &__shopName {
     margin-bottom: 20px;
     font-size: 26px;
+
+    a {
+      display: block;
+    }
   }
 
   &__shopPhone {

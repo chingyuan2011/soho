@@ -51,7 +51,9 @@
           <div class="ShopList__shop col-6 col-md-12">
             <div class="ShopList__shopInner">
               <div class="ShopList__shopName">
-                新店民權店
+                <router-link :to="{name: 'shopContent'}">
+                  新店民權店
+                </router-link>
               </div>
               <div class="ShopList__shopPhone futuraBTMedium">
                 <span class="prefix">TEL / </span><a href="tel:+86222181400">02-2218-1400</a>
@@ -80,7 +82,9 @@
           <div class="ShopList__shop col-6 col-md-12">
             <div class="ShopList__shopInner">
               <div class="ShopList__shopName">
-                台中金典綠園道店
+                <router-link :to="{name: 'shopContent'}">
+                  台中金典綠園道店
+                </router-link>
               </div>
               <div class="ShopList__shopPhone futuraBTMedium ">
                 <span class="prefix">TEL / </span><a href="tel:0423102522">04-2310-2522</a>
@@ -109,7 +113,9 @@
           <div class="ShopList__shop col-6 col-md-12">
             <div class="ShopList__shopInner">
               <div class="ShopList__shopName">
-                楠梓後昌新店
+                <router-link :to="{name: 'shopContent'}">
+                  楠梓後昌新店
+                </router-link>
               </div>
               <div class="ShopList__shopPhone futuraBTMedium ">
                 <span class="prefix">TEL / </span><a href="tel:073646210">07-3646210</a>
@@ -136,7 +142,9 @@
           <div class="ShopList__shop col-6 col-md-12">
             <div class="ShopList__shopInner">
               <div class="ShopList__shopName">
-                楠梓後昌新店
+                <router-link :to="{name: 'shopContent'}">
+                  楠梓後昌新店
+                </router-link>
               </div>
               <div class="ShopList__shopPhone futuraBTMedium ">
                 <span class="prefix">TEL / </span><a href="tel:073646210">07-3646210</a>
