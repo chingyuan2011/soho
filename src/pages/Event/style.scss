@@ -54,7 +54,7 @@
   }
 
   &__infoBlood {
-    height: 500px;
+    // height: 500px;
   }
 
   &__infoNumber {
@@ -114,7 +114,7 @@
     }
 
     &__infoBlood {
-      height: 400px;
+      // height: 400px;
     }
 
     &__infoContentP {
@@ -156,6 +156,10 @@
     &__infoContent {
       width: 100%;
     }
+
+    &__infoContentP {
+      margin-bottom: 20px;
+    }
   }
 
   @include screen(md) {
@@ -180,6 +184,23 @@
 
       .blood-accumulation {
         font-size: 30px;
+      }
+    }
+  }
+
+  @media (max-width: 420px) {
+    &__blood {
+      .Blood__flow {
+        bottom: 22%;
+        left: calc(50% + 8px);
+        width: 82%;
+        height: 52%;
+
+        &Inner,
+        &Inner-light {
+          bottom: -20%;
+          background-size: 250% 200px;
+        }
       }
     }
   }

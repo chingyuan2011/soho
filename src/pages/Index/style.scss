@@ -137,6 +137,7 @@
   }
 
   &__adContent {
+    position: relative;
     padding: 3% 75px;
     color: #fff;
   }
@@ -170,7 +171,52 @@
     margin-left: auto;
   }
 
+  &__adBlood {
+    position: absolute;
+    top: -150px;
+    right: 5%;
+    width: 250px;
+
+    .Blood__flow {
+      bottom: 22%;
+      left: calc(50% + 8px);
+      width: 82%;
+      height: 52%;
+
+      &Inner,
+      &Inner-light {
+        bottom: -20%;
+        background-size: 250% 150px;
+      }
+    }
+  }
+
+  @media (max-width: 1700px) {
+    &__adBlood {
+      top: 300px;
+      right: 2%;
+      width: 150px;
+
+      .Blood__flow {
+        bottom: 22%;
+        left: calc(50% + 3px);
+        width: 82%;
+        height: 52%;
+
+        &Inner,
+        &Inner-light {
+          bottom: -20%;
+          background-size: 250% 100px;
+        }
+      }
+    }
+  }
+
   @include screen(xxl) {
+    &__adBlood {
+      top: -10px;
+    }
+
     &__link {
       a {
         padding: 10px;
@@ -231,6 +277,10 @@
   }
 
   @include screen(lg) {
+    &__adBlood {
+      display: none;
+    }
+
     &__delicious {
       padding: 25px;
 

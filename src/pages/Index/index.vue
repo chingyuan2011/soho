@@ -85,6 +85,7 @@
             text="view more"
           >
           </Button>
+          <Blood class="Index__adBlood"></Blood>
         </div>
       </div>
     </div>
@@ -100,6 +101,7 @@ import IndexPrompter from '@/components/IndexPrompter'
 import IndexNewsCarousel from '@/components/IndexNewsCarousel'
 import IndexMenuCarousel from '@/components/IndexMenuCarousel'
 import Button from '@/components/Button'
+import Blood from '@/components/Blood'
 
 export default {
 
@@ -110,7 +112,8 @@ export default {
     IndexPrompter,
     IndexNewsCarousel,
     IndexMenuCarousel,
-    Button
+    Button,
+    Blood
   },
   data () {
     return {

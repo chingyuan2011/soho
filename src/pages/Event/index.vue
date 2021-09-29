@@ -42,7 +42,9 @@
             </p>
           </div>
           <div class="Event__infoAnimation">
-            <div class="Event__infoBlood Blood"></div>
+            <div class="Event__infoBlood Blood">
+              <Blood class="Event__blood"></Blood>
+            </div>
             <div class="Event__infoNumber">
               <span class="prefix">總累積</span><div
                 id="blood-accumulation"
