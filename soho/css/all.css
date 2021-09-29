@@ -481,17 +481,17 @@ textarea {
 @font-face {
   font-family: futura BT Medium;
   src: local("Futura Extra Black"),
-    url(/font/FuturaMediumBt.ttf) format("opentype");
+    url(../font/FuturaMediumBt.ttf) format("opentype");
 }
 @font-face {
   font-family: futura BT;
   src: local("Futura Extra Black"),
-    url(/font/FuturaBoldFont.ttf) format("opentype");
+    url(../font./FuturaBoldFont.ttf) format("opentype");
 }
 @font-face {
   font-family: FuturaExtraBlack;
   src: local("FuturaExtraBlack"),
-    url(/font/FuturaExtraBlack.ttf) format("opentype");
+    url(../font/FuturaExtraBlack.ttf) format("opentype");
 }
 .container {
   max-width: 1500px;
@@ -1164,7 +1164,7 @@ ul {
 }
 .footer__deco-brown {
   padding-top: 480px;
-  background-image: url(/img/bg_brown.jpg);
+  background-image: url(../img/bg_brown.jpg);
   background-repeat: repeat-x;
   background-position: 0 100%;
   background-size: cover;
@@ -1735,7 +1735,7 @@ body.popOpen .Modal {
   left: 0;
   width: 120%;
   height: 100%;
-  background-image: url(/img/bloodFlow.png);
+  background-image: url(../img/bloodFlow.png);
   background-repeat: repeat-x;
   background-position: left 100% bottom 0;
   transform: rotate(-8deg);
@@ -1819,7 +1819,7 @@ body.popOpen .Modal {
   text-align: center;
   letter-spacing: 0.1em;
   background: fixed;
-  background-image: url(/img/bg_pink.jpg);
+  background-image: url(../img/bg_pink.jpg);
   background-repeat: repeat;
   background-size: contain;
 }
@@ -1829,7 +1829,7 @@ body.popOpen .Modal {
 .Index__delicious {
   position: relative;
   padding: 200px 0 100px 0;
-  background-image: url(/img/index/back_menu.jpg);
+  background-image: url(../img/index/back_menu.jpg);
 }
 .Index__delicious .Index__Tableware {
   position: absolute;
