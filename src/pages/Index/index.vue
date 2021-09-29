@@ -5,7 +5,7 @@
       class="Index__popUp"
     >
       <img
-        class="modal__popUpLine"
+        class="Modal__popUpLine"
         src="/img/decoration.png"
       >
       <div class="Modal__body">
@@ -37,19 +37,38 @@
         </div>
         <div class="Index__link Index__link-takeOut futuraExtraBlack">
           <a
-            href="javascript:;"
+            href="https://wowfoods.cc/togo_tasty"
             target="_blank"
           >TAKE OUT<br>外帶自取</a>
         </div>
       </div>
     </div>
-    <div class="Index__tasty futuraExtraBlack">
-      Let’s TASTy,<br> Let’s Enjoy!
+    <div
+      class="Index__tasty futuraExtraBlack"
+    >
+      <div
+        class="wow textBounce"
+        data-wow-duration="1s"
+        data-wow-delay=".2s"
+        data-wow-iteration="2"
+      >
+        Let’s TASTy,<br> Let’s Enjoy!
+      </div>
     </div>
     <IndexNewsCarousel></IndexNewsCarousel>
 
     <div class="Index__delicious">
-      <div class="Index__deliciousTitle">
+      <img
+        class="Index__Tableware wow fadeInLeft"
+        data-wow-duration="1s"
+        data-wow-delay=".2s"
+        src="/img/index/menu_dec.png"
+      >
+      <div
+        class="Index__deliciousTitle wow fadeInUp"
+        data-wow-duration="1s"
+        data-wow-delay=".2s"
+      >
         <span class="Index__deliciousTitle-en futuraExtraBlack">TASTy MEAL</span> <br>美味推薦
       </div>
       <IndexMenuCarousel class="Index__deliciousCarousel"></IndexMenuCarousel>

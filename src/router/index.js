@@ -4,7 +4,8 @@ import Index from '@/pages/Index'
 import Contact from '@/pages/Contact'
 import Member from '@/pages/Member'
 import Error404 from '@/pages/Error404'
-import HeaderFooter from '@/pages/HeaderFooter'
+import Header from '@/pages/Header'
+import Footer from '@/pages/Footer'
 import NewsList from '@/pages/NewsList'
 import NewsContent from '@/pages/NewsContent'
 import MenuList from '@/pages/MenuList'
@@ -72,13 +73,18 @@ const routes = [
     component: PageEvent
   },
   {
-    path: '/header+footer.html',
-    name: 'HeaderFooter',
-    component: HeaderFooter
+    path: '/header.html',
+    name: 'Header',
+    component: Header
+  },
+  {
+    path: '/footer.html',
+    name: 'Footer',
+    component: Footer
   },
   {
     path: '*',
-    redirect: { name: 'error404' }
+    redirect: { name: 'index' }
   }
 ]
 

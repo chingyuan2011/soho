@@ -25,7 +25,10 @@
           </router-link>
         </div>
         <ul class="NewsList__items row">
-          <li class="NewsList__item col-6 col-lg-12">
+          <li
+            class="NewsList__item col-6 col-lg-12 wow fadeInUp"
+            data-wow-duration="1s"
+          >
             <div class="NewsList__itemPic">
               <img
                 src="/img/news1.jpg"
@@ -69,7 +72,10 @@
               ></Button>
             </div>
           </li>
-          <li class="NewsList__item col-6 col-lg-12">
+          <li
+            class="NewsList__item col-6 col-lg-12 wow fadeInUp"
+            data-wow-duration="1s"
+          >
             <div class="NewsList__itemPic">
               <img
                 src="/img/news2.jpg"
@@ -111,7 +117,10 @@
               ></Button>
             </div>
           </li>
-          <li class="NewsList__item col-6 col-lg-12">
+          <li
+            class="NewsList__item col-6 col-lg-12 wow fadeInUp"
+            data-wow-duration="1s"
+          >
             <div class="NewsList__itemPic">
               <img
                 src="/img/news3.jpg"
@@ -147,7 +156,10 @@
               ></Button>
             </div>
           </li>
-          <li class="NewsList__item col-6 col-lg-12">
+          <li
+            class="NewsList__item col-6 col-lg-12 wow fadeInUp"
+            data-wow-duration="1s"
+          >
             <div class="NewsList__itemPic">
               <img
                 src="/img/member_logoApp.jpg"
@@ -192,7 +204,10 @@
         </ul>
       </div>
     </div>
-    <div class="slogan futuraExtraBlack">
+    <div
+      class="slogan futuraExtraBlack wow textBounce"
+      data-wow-duration="1s"
+    >
       Let’s TASTy, <br>Let’s Enjoy!
     </div>
   </div>

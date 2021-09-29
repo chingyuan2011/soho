@@ -23,6 +23,7 @@
           <img
             class="carousel__itemPic"
             src="/img/blood.jpg"
+            draggable="false"
           >
         </div>
         <div
@@ -38,6 +39,7 @@
           <img
             class="carousel__itemPic"
             src="/img/news1.jpg"
+            draggable="false"
           >
         </div>
         <div
@@ -53,6 +55,7 @@
           <img
             class="carousel__itemPic"
             src="/img/blood.jpg"
+            draggable="false"
           >
         </div>
         <div
@@ -68,6 +71,7 @@
           <img
             class="carousel__itemPic"
             src="/img/news2.jpg"
+            draggable="false"
           >
         </div>
         <div
@@ -83,6 +87,7 @@
           <img
             class="carousel__itemPic"
             src="/img/blood.jpg"
+            draggable="false"
           >
         </div>
         <div
@@ -98,6 +103,7 @@
           <img
             class="carousel__itemPic"
             src="/img/news3.jpg"
+            draggable="false"
           >
         </div>
       </div>
@@ -127,7 +133,7 @@ export default {
 .EventCarousel {
   .nk-carousel-inner {
     width: 100%;
-    height: 270px;
+    height: 210px;
   }
 
   .carousel__item {
@@ -136,8 +142,8 @@ export default {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 450px;
-    height: 270px;
+    width: 420px;
+    height: 210px;
     transition: transform .2s;
     transform: scale(1);
 
@@ -152,10 +158,6 @@ export default {
         }
       }
     }
-  }
-
-  .is-selected {
-    z-index: 1;
   }
 
   .carousel__itemTitle {
@@ -185,14 +187,10 @@ export default {
   }
 
   .carousel__itemPic {
-    overflow: hidden;
-
-    img {
-      display: block;
-      width: 100%;
-      height: auto;
-      margin: 0 auto;
-    }
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: auto;
   }
 
   @include screen(md) {
@@ -219,7 +217,6 @@ export default {
 .EventCarouselWrap {
   max-width: 1920px;
   margin: 0 auto;
-  padding: 0 100px;
 
   .Modal__contentWrap {
     width: 90%;

@@ -29,7 +29,7 @@ export default {
   },
   metaInfo () {
     return {
-      title: 'Title...',
+      title: '西提牛排',
       meta: [{
         vmid: 'description',
         name: 'description',
@@ -52,7 +52,7 @@ export default {
 .app__view {
   flex: 1;
   padding-top: 125px;
-  @include screen(xl) {
+  @include screen(xxl) {
     padding-top: 80px;
   }
 }
