@@ -23,61 +23,69 @@
     <nav class="CtHeader__menu">
       <ul class="futuraExtraBlack">
         <li>
-          <a
+          <router-link
             class="CtHeader__menuItem"
-            href="./news/list.html"
+            :to="{name: 'newsList'}"
           >
-            <div class="CtHeader__en">NEWS</div>
-            <div class="CtHeader__chi">最新消息</div>
-          </a>
+            <div class="CtHeader__en">
+              NEWS
+            </div>
+            <div class="CtHeader__chi">
+              最新消息
+            </div>
+          </router-link>
         </li>
         <li>
-          <a
+          <router-link
             class="CtHeader__menuItem"
-            href="./menu/list.html"
+            :to="{name: 'menuList'}"
           >
             <div class="CtHeader__en">
               MENU
             </div>
             <div class="CtHeader__chi">
               菜單介紹
-            </div></a>
+            </div>
+          </router-link>
         </li>
         <li>
-          <a
+          <router-link
             class="CtHeader__menuItem"
-            href="./member.html"
+            :to="{name: 'member'}"
           >
             <div class="CtHeader__en">
               MEMBER
             </div>
             <div class="CtHeader__chi">
               會員中心
-            </div></a>
+            </div>
+          </router-link>
         </li>
         <li>
-          <a
+          <router-link
             class="CtHeader__menuItem"
-            href="./shop/list.html"
+            :to="{name: 'shopList'}"
           >
             <div class="CtHeader__en">
               STORE
             </div>
             <div class="CtHeader__chi">
               分店據點
-            </div></a>
+            </div>
+          </router-link>
         </li>
         <li>
-          <a
+          <router-link
             class="CtHeader__menuItem"
-            href="./event.html"
+            :to="{name: 'event'}"
           >
             <div class="CtHeader__en">
               BLOOD DONATION
             </div>
             <div class="CtHeader__chi">
               捐血公益
-            </div></a>
+            </div>
+          </router-link>
         </li>
         <li>
           <a

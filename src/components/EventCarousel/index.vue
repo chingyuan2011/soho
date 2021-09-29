@@ -217,7 +217,6 @@ export default {
 .EventCarouselWrap {
   max-width: 1920px;
   margin: 0 auto;
-  padding: 0 100px;
 
   .Modal__contentWrap {
     width: 90%;

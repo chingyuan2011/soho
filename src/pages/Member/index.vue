@@ -25,7 +25,11 @@
           </router-link>
         </div>
         <ul class="Member__list row">
-          <li class="Member__member col-5 col-xl-8 col-md-12">
+          <li
+            class="Member__member col-5 col-xl-8 col-md-12 wow fadeInUp"
+            data-wow-duration="1s"
+            data-wow-delay=".2s"
+          >
             <div class="Member__memberContent">
               <div class="Member__memberTitle">
                 立即加入王品瘋美食App
@@ -50,7 +54,11 @@
               </div>
             </div>
           </li>
-          <li class="Member__member col-5 col-xl-8 col-md-12">
+          <li
+            class="Member__member col-5 col-xl-8 col-md-12 wow fadeInUp"
+            data-wow-duration="1s"
+            data-wow-delay=".6s"
+          >
             <div class="Member__memberContent">
               <div class="Member__memberTitle">
                 立即加入西堤官方LINE

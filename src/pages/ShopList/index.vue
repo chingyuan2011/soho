@@ -48,7 +48,10 @@
               高 屏
             </button>
           </div>
-          <div class="ShopList__shop col-6 col-md-12">
+          <div
+            class="ShopList__shop col-6 col-md-12 wow fadeInUp"
+            data-wow-duration="1s"
+          >
             <div class="ShopList__shopInner">
               <div class="ShopList__shopName">
                 <router-link :to="{name: 'shopContent'}">
@@ -79,7 +82,10 @@
               </div>
             </div>
           </div>
-          <div class="ShopList__shop col-6 col-md-12">
+          <div
+            class="ShopList__shop col-6 col-md-12 wow fadeInUp"
+            data-wow-duration="1s"
+          >
             <div class="ShopList__shopInner">
               <div class="ShopList__shopName">
                 <router-link :to="{name: 'shopContent'}">
@@ -110,7 +116,10 @@
               </div>
             </div>
           </div>
-          <div class="ShopList__shop col-6 col-md-12">
+          <div
+            class="ShopList__shop col-6 col-md-12 wow fadeInUp"
+            data-wow-duration="1s"
+          >
             <div class="ShopList__shopInner">
               <div class="ShopList__shopName">
                 <router-link :to="{name: 'shopContent'}">
@@ -139,7 +148,10 @@
               </div>
             </div>
           </div>
-          <div class="ShopList__shop col-6 col-md-12">
+          <div
+            class="ShopList__shop col-6 col-md-12 wow fadeInUp"
+            data-wow-duration="1s"
+          >
             <div class="ShopList__shopInner">
               <div class="ShopList__shopName">
                 <router-link :to="{name: 'shopContent'}">

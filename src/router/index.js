@@ -78,7 +78,7 @@ const routes = [
   },
   {
     path: '*',
-    redirect: { name: 'error404' }
+    redirect: { name: 'index' }
   }
 ]
 

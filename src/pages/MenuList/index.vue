@@ -25,7 +25,10 @@
           </router-link>
         </div>
         <div class="MenuList__list row">
-          <div class="MenuList__item col-6 col-lg-12">
+          <div
+            class="MenuList__item col-6 col-lg-12  wow fadeInRight"
+            data-wow-duration="1s"
+          >
             <router-link
               class="MenuList__itemLink"
               :to="{name: 'menuContent'}"
@@ -45,7 +48,10 @@
               <p>※疫情期間，實際提供餐點依現場為準</p>
             </div>
           </div>
-          <div class="MenuList__item col-6 col-lg-12">
+          <div
+            class="MenuList__item col-6 col-lg-12  wow fadeInRight"
+            data-wow-duration="1s"
+          >
             <router-link
               class="MenuList__itemLink"
               :to="{name: 'menuContent'}"
@@ -63,7 +69,10 @@
               <p>宅享TASTy ! 安心Enjoy !</p>
             </div>
           </div>
-          <div class="MenuList__item col-6 col-lg-12">
+          <div
+            class="MenuList__item col-6 col-lg-12  wow fadeInRight"
+            data-wow-duration="1s"
+          >
             <router-link
               class="MenuList__itemLink"
               :to="{name: 'menuContent'}"
@@ -82,7 +91,10 @@
               <p>※疫情期間，實際提供餐點依現場為準</p>
             </div>
           </div>
-          <div class="MenuList__item col-6 col-lg-12">
+          <div
+            class="MenuList__item col-6 col-lg-12  wow fadeInRight"
+            data-wow-duration="1s"
+          >
             <router-link
               class="MenuList__itemLink"
               :to="{name: 'menuContent'}"
