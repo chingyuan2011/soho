@@ -1,7 +1,7 @@
 .Index {
   .Modal__contentWrap {
     width: 50%;
-    min-width: 360px;
+    min-width: 300px;
     max-width: 500px;
     padding: 20px;
 
@@ -72,14 +72,13 @@
     padding: 200px 0 100px 0;
     background-image: url('/img/index/back_menu.jpg');
 
-    &::after {
-      content: '';
+    .Index__Tableware {
       position: absolute;
       top: -35px;
       left: calc(50% - 960px);
       width: 675px;
       height: 386px;
-      background-image: url('/img/index/menu_dec.png');
+      // background-image: url('/img/index/menu_dec.png');
       background-repeat: no-repeat;
       background-position: center;
       background-size: contain;
@@ -218,7 +217,7 @@
 
   @include screen(xxl) {
     &__adBlood {
-      top: -10px;
+      top: -100px;
     }
 
     &__link {
@@ -235,7 +234,7 @@
     &__delicious {
       padding-top: 50px;
 
-      &::after {
+      .Index__Tableware {
         top: -20px;
         left: calc(50% - 720px);
         width: 472px;
@@ -286,15 +285,17 @@
     }
 
     &__delicious {
-      padding: 25px;
-
-      &::after {
-        display: none;
+      .Index__Tableware {
+        top: -45px;
+        left: calc(50% - 400px);
+        width: 350px;
+        height: 195px;
       }
     }
 
     &__deliciousTitle {
-      width: 100%;
+      min-width: 650px;
+      margin: 0 auto 50px;
       text-align: center;
     }
 
@@ -332,14 +333,17 @@
     overflow: hidden;
 
     &__linksWrap {
-      overflow-x: scroll;
+      // overflow-x: scroll;
     }
 
     &__links {
-      min-width: 480px;
+      flex-wrap: wrap;
+      // min-width: 480px;
     }
 
     &__link {
+      width: 50%;
+
       a {
         font-size: 16px;
       }
@@ -356,6 +360,8 @@
     }
 
     &__deliciousTitle {
+      min-width: 0px;
+
       br {
         display: inline-block;
       }

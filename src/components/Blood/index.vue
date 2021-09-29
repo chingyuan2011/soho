@@ -64,7 +64,12 @@ export default {
   }
 
   @keyframes flow {
-    to {
+    0%,
+    100% {
+      background-position: left 100% bottom 0;
+    }
+
+    99.9% {
       background-position: left 0 bottom 0;
     }
   }

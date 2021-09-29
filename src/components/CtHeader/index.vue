@@ -119,7 +119,6 @@ export default {
 
 <style lang="scss">
 body.hamOpen {
-  height: 100vh;
   overflow: hidden;
 
   .CtHeader__ham span {
@@ -253,7 +252,7 @@ body.hamOpen {
     }
   }
 
-  @include screen(xl) {
+  @include screen(xxl) {
     height: 80px;
 
     .CtHeader__logo {
