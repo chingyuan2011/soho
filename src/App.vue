@@ -29,7 +29,7 @@ export default {
   },
   metaInfo () {
     return {
-      title: 'Title...',
+      title: '西提牛排',
       meta: [{
         vmid: 'description',
         name: 'description',

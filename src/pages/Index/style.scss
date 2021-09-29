@@ -222,7 +222,7 @@
 
     &__link {
       a {
-        padding: 10px;
+        padding: 30px 10px;
         font-size: 20px;
       }
     }
@@ -345,6 +345,7 @@
       width: 50%;
 
       a {
+        padding: 20px 10px;
         font-size: 16px;
       }
     }
@@ -359,7 +360,14 @@
       }
     }
 
+    &__delicious {
+      .Index__Tableware {
+        display: none;
+      }
+    }
+
     &__deliciousTitle {
+      width: 100%;
       min-width: 0px;
 
       br {
