@@ -185,7 +185,8 @@ document.addEventListener('DOMContentLoaded', function () {
       prevNextButtons: false,
       wrapAround: true,
       imagesLoaded: true,
-      cellAlign: $(this).parent().attr('data-cell-align') || 'center'
+      cellAlign: $(this).parent().attr('data-cell-align') || 'center',
+      draggable: false
     })
     $MenuContentCarousel.on('click', '.nk-carousel-next', function () {
       $(this).parent().children('.nk-carousel-inner').flickity('next')
@@ -232,8 +233,11 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   $(window).scroll(function () {
-    checkPosAndTriggerAnimate.bind($('#blood-accumulation')[0])()
+    if (window.location.href.indexOf('event') !== -1) {
+      checkPosAndTriggerAnimate.bind($('#blood-accumulation')[0])()
+    }
   })
+
   // event
   var $EventCarousel = $('#EventCarousel')
   $('.EventCarousel > .nk-carousel-inner').each(function () {
@@ -243,7 +247,8 @@ document.addEventListener('DOMContentLoaded', function () {
       prevNextButtons: false,
       wrapAround: true,
       imagesLoaded: true,
-      cellAlign: $(this).parent().attr('data-cell-align') || 'center'
+      cellAlign: $(this).parent().attr('data-cell-align') || 'center',
+      draggable: false
     })
     $EventCarousel.on('click', '.nk-carousel-next', function () {
       $(this).parent().children('.nk-carousel-inner').flickity('next')

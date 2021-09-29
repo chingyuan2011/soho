@@ -5,7 +5,7 @@
       class="Index__popUp"
     >
       <img
-        class="modal__popUpLine"
+        class="Modal__popUpLine"
         src="/img/decoration.png"
       >
       <div class="Modal__body">
