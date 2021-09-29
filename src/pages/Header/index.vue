@@ -1,12 +1,15 @@
 <template>
-  <div class="HeaderFooter">
-  </div>
+  <CtHeader></CtHeader>
 </template>
 
 <script>
+import CtHeader from '@/components/CtHeader'
 export default {
 
-  name: 'Index',
+  name: 'Header',
+  components: {
+    CtHeader
+  },
   data () {
     return {
     }
@@ -15,7 +18,6 @@ export default {
 </script>
 
 <style lang="scss">
-.Index {}
 
 // xxl | xl | lg | md | sm
 // @include screen (xl) {}

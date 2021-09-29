@@ -76,7 +76,7 @@ export default {
 .MenuContentCarousel {
   .nk-carousel-inner {
     width: 100%;
-    height: 1150px;
+    height: 780px;
   }
 
   .flickity-page-dots {
@@ -101,8 +101,8 @@ export default {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 620px;
-    height: 1100px;
+    width: 410px;
+    height: 720px;
     transition: transform .2s;
     transform: scale(1);
   }
@@ -118,16 +118,11 @@ export default {
 
   .carousel__itemPic {
     width: auto;
-    height: 900px;
+    height: 620px;
     opacity: .85;
     transition: all .5s;
   }
 
-  @include screen(xxl) {
-    .nk-carousel-inner {
-      height: 1150px;
-    }
-  }
   @include screen(xl) {
     .nk-carousel-inner {
       height: 650px;
@@ -158,10 +153,6 @@ export default {
     }
   }
   @include screen(lg) {
-    .nk-carousel-inner {
-      height: 650px;
-    }
-
     .flickity-page-dots {
       .dot {
         width: 10px;
