@@ -97,6 +97,7 @@ export default {
 .Button {
   position: relative;
   padding: 10px 10px;
+  overflow: hidden;
   font-size: 20px;
   font-weight: 700;
   color: #fff;
@@ -113,8 +114,6 @@ export default {
   }
 
   &:hover {
-    margin-top: 0;
-    margin-right: 0;
     box-shadow: -5px 5px 0 #000;
   }
 
