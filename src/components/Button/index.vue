@@ -95,8 +95,7 @@ export default {
 
 <style lang="scss">
 .Button {
-  margin-top: 5px;
-  margin-right: 5px;
+  position: relative;
   padding: 10px 10px;
   font-size: 20px;
   font-weight: 700;
@@ -105,6 +104,7 @@ export default {
   letter-spacing: 1.2px;
   background-color: #a78a70;
   box-shadow: 5px -5px 0 #000;
+  transition: box-shadow .3s;
 
   &__icon {
     display: inline-block;
@@ -112,8 +112,40 @@ export default {
     height: 16px;
   }
 
+  &:hover {
+    margin-top: 0;
+    margin-right: 0;
+    box-shadow: -5px 5px 0 #000;
+  }
+
   @include screen(md) {
     font-size: 16px;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 200%;
+    background: linear-gradient(transparent, rgba($color: #fff, $alpha: .1), transparent );
+    transform: rotate(60deg);
+    animation: shine 3s infinite linear;
+  }
+
+  @keyframes shine {
+    0% {
+      left: -100%;
+    }
+
+    10% {
+      left: 100%;
+    }
+
+    100% {
+      left: 100%;
+    }
   }
 }
 

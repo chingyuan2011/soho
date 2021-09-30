@@ -77,12 +77,17 @@ ul {
 .footer__deco-brown {
   padding-top: 480px;
   background-image: url('/img/bg_brown.jpg');
-  background-repeat: repeat-x;
+  background-repeat: repeat;
+  background-attachment: fixed;
   background-position: left bottom;
-  background-size: cover;
+  background-size: contain;
 
   @include screen(xxl) {
     padding-top: 256px;
+  }
+
+  @include screen(lg) {
+    background-attachment: scroll;
   }
 }
 

@@ -57,9 +57,9 @@
     color: #962233;
     text-align: center;
     letter-spacing: .1em;
-    background: fixed;
     background-image: url('/img/bg_pink.jpg');
     background-repeat: repeat;
+    background-attachment: fixed;
     background-size: contain;
 
     br {
@@ -280,6 +280,10 @@
   }
 
   @include screen(lg) {
+    &__tasty {
+      background-attachment: scroll;
+    }
+
     &__adBlood {
       display: none;
     }

@@ -44,6 +44,11 @@
   &__shopPhone,
   &__shopAdd {
     font-size: 24px;
+    transition: color .3s;
+
+    &:hover {
+      color: #951e23;
+    }
 
     .prefix {
       letter-spacing: 10px;
