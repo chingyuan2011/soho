@@ -265,4 +265,12 @@ document.addEventListener('DOMContentLoaded', function () {
       openPopup()
     })
   })
+
+  // shop page
+  if (window.location.href.indexOf('shop') !== -1) {
+    $('.ShopList__shopsAreaBtn').on('click', function () {
+      $('.ShopList__shopsAreaBtn').removeClass('active')
+      $(this).addClass('active')
+    })
+  }
 })

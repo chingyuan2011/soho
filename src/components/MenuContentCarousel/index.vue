@@ -103,6 +103,7 @@ export default {
     justify-content: center;
     width: 410px;
     height: 720px;
+    cursor: pointer;
     transition: transform .2s;
     transform: scale(1);
   }
@@ -202,6 +203,18 @@ export default {
   }
   @include screen(xl) {
     padding: 0;
+  }
+  @include screen(md) {
+    padding: 0;
+
+    .Modal__contentWrap {
+      height: auto;
+    }
+
+    .Modal__popPic {
+      max-width: 280px;
+      height: auto;
+    }
   }
 }
 

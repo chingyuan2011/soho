@@ -232,7 +232,8 @@ export default {
     bottom: calc(100% + 5px);
     width: 100%;
     padding-right: 20px;
-    color: #fff;
+    font-weight: bold;
+    color: #142638;
 
     > div {
       @include text-overflow(1);

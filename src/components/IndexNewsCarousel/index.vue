@@ -125,7 +125,7 @@ export default {
     position: relative;
     display: flex;
     width: 100%;
-    height: 650px;
+    height: 800px;
     overflow: hidden;
     color: #fff;
   }
