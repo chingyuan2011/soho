@@ -1,5 +1,6 @@
 <template>
   <div class="Event">
+    <div class="fixBg"></div>
     <Banner
       page="blood donation"
     >

@@ -1,5 +1,6 @@
 <template>
   <div class="NewsContent">
+    <div class="fixBg"></div>
     <Banner
       class="pink"
       page="news"
@@ -83,8 +84,8 @@
           ></Button>
         </div>
       </div>
-      <div class="footer__deco-brown">
-      </div>
+    </div>
+    <div class="footer__deco-brown">
     </div>
   </div>
 </template>

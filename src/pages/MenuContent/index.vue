@@ -1,5 +1,6 @@
 <template>
   <div class="MenuContent">
+    <div class="fixBg"></div>
     <Banner
       class="pink"
       page="menu"

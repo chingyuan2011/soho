@@ -1,7 +1,10 @@
 .MenuContent {
   &__content {
+    position: relative;
+    z-index: 1;
     margin-bottom: 50px;
     padding: 25px 0;
+    background-color: #f5f5f5;
   }
 
   .breadcrumbs {

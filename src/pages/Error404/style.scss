@@ -2,8 +2,13 @@
   position: relative;
   padding-bottom: 400px;
 
-  .container {
+  &__content {
+    position: relative;
     z-index: 1;
+    background-color: #fff;
+  }
+
+  .container {
     width: 100%;
     padding-top: 100px;
   }
@@ -19,6 +24,7 @@
   &__title,
   &__note {
     position: relative;
+    top: 100px;
     z-index: 1;
     width: 70%;
     margin-right: auto;
@@ -38,6 +44,8 @@
   }
 
   &__note {
+    position: relative;
+    z-index: 1;
     padding: 50px;
     font-size: 40px;
     color: #951e23;
@@ -56,11 +64,17 @@
     }
     padding-bottom: 300px;
 
+    &__content {
+      padding-bottom: 50px;
+    }
+
     &__title {
+      top: 0px;
       font-size: 20px;
     }
 
     &__note {
+      top: 0px;
       font-size: 24px;
     }
   }

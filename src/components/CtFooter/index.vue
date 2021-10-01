@@ -79,6 +79,8 @@ export default {
 
 <style lang="scss">
 .CtFooter {
+  position: relative;
+  z-index: 1;
   padding: 75px 0;
   color: #fff;
   background-color: #142638;

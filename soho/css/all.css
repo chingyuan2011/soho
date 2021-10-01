@@ -363,6 +363,8 @@ body.hamOpen .CtHeader__menu {
 }
 
 .CtFooter {
+  position: relative;
+  z-index: 1;
   padding: 75px 0;
   color: #fff;
   background-color: #142638;
@@ -1344,20 +1346,30 @@ ul {
   margin-left: 0;
 }
 
-.footer__deco-brown {
-  padding-top: 480px;
+.fixBg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  background-image: url(/img/bg_pink.jpg);
+}
+
+.fixBg.brown {
   background-image: url(/img/bg_brown.jpg);
+}
+
+.footer__deco-brown {
+  position: relative;
+  padding-top: 480px;
   background-repeat: repeat;
-  background-attachment: fixed;
   background-position: 0 100%;
   background-size: contain;
 }@media (max-width: 1400px) {
   .footer__deco-brown {
     padding-top: 256px;
-  }
-}@media (max-width: 960px) {
-  .footer__deco-brown {
-    background-attachment: scroll;
   }
 }
 
@@ -2086,6 +2098,12 @@ body.popOpen .Modal {
   margin-top: 20px;
 }
 
+.Index .prompter,
+.Index__links {
+  position: relative;
+  z-index: 1;
+}
+
 .Index__links {
   display: flex;
 }
@@ -2124,12 +2142,13 @@ body.popOpen .Modal {
 }
 
 .Index__tasty {
+  position: relative;
+  z-index: 1;
   font-size: 92px;
   line-height: 6;
   color: #962233;
   text-align: center;
   letter-spacing: .1em;
-  background-image: url(/img/bg_pink.jpg);
   background-repeat: repeat;
   background-attachment: fixed;
   background-size: contain;
@@ -2191,6 +2210,11 @@ body.popOpen .Modal {
   display: block;
   width: 200px;
   margin: 0 auto;
+}
+
+.Index__ads {
+  position: relative;
+  z-index: 1;
 }
 
 .Index__ad {
@@ -2353,7 +2377,7 @@ body.popOpen .Modal {
 
   .Index__delicious .Index__Tableware {
     top: -45px;
-    left: calc(50% - 480px);
+    left: calc(50% - 400px);
     width: 350px;
     height: 195px;
   }
@@ -2477,8 +2501,14 @@ body.popOpen .Modal {
 }
 
 .Contact__content {
-  position: relative;
   padding: 25px 0 0 0;
+  background-color: #f5f5f5;
+}
+
+.Contact .container,
+.Contact__content {
+  position: relative;
+  z-index: 1;
 }
 
 .Contact .breadcrumbs {
@@ -2579,13 +2609,15 @@ body.popOpen .Modal {
   margin-bottom: 50px;
 }
 
-.Member .container {
+.Member .container,
+.Member__content {
   position: relative;
   z-index: 1;
 }
 
 .Member__content {
   padding-top: 25px;
+  background-color: #f5f5f5;
 }
 
 .Member__list {
@@ -2594,6 +2626,7 @@ body.popOpen .Modal {
 
 .Member__member {
   margin-right: 25px;
+  margin-bottom: -100px;
   margin-left: 25px;
   padding: 50px 0;
   text-align: center;
@@ -2621,10 +2654,6 @@ body.popOpen .Modal {
 
 .Member__memberLogo img {
   margin: 0 auto;
-}
-
-.Member .footer__deco-brown {
-  margin-top: -100px;
 }@media (max-width: 1200px) {
   .Member__member {
     margin-bottom: 50px;
@@ -2665,8 +2694,13 @@ body.popOpen .Modal {
   padding-bottom: 400px;
 }
 
-.Error404 .container {
+.Error404__content {
+  position: relative;
   z-index: 1;
+  background-color: #fff;
+}
+
+.Error404 .container {
   width: 100%;
   padding-top: 100px;
 }
@@ -2682,6 +2716,7 @@ body.popOpen .Modal {
 .Error404__note,
 .Error404__title {
   position: relative;
+  top: 100px;
   z-index: 1;
   width: 70%;
   margin-right: auto;
@@ -2701,6 +2736,8 @@ body.popOpen .Modal {
 }
 
 .Error404__note {
+  position: relative;
+  z-index: 1;
   padding: 50px;
   font-size: 40px;
   color: #951e23;
@@ -2720,11 +2757,17 @@ body.popOpen .Modal {
     padding-top: 50px;
   }
 
+  .Error404__content {
+    padding-bottom: 50px;
+  }
+
   .Error404__title {
+    top: 0;
     font-size: 20px;
   }
 
   .Error404__note {
+    top: 0;
     font-size: 24px;
   }
 }@media (max-width: 1200px) {
@@ -2991,7 +3034,10 @@ body.popOpen .Modal {
 }
 
 .NewsContent__content {
-  padding: 25px 0 0 0;
+  position: relative;
+  z-index: 1;
+  padding: 25px 0 50px 0;
+  background-color: #fff;
 }
 
 .NewsContent .breadcrumbs {
@@ -3071,7 +3117,7 @@ body.popOpen .Modal {
 }
 
 .NewsContent__back {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   text-align: center;
 }
 
@@ -3412,8 +3458,11 @@ body.popOpen .Modal {
 }
 
 .MenuContent__content {
+  position: relative;
+  z-index: 1;
   margin-bottom: 50px;
   padding: 25px 0;
+  background-color: #f5f5f5;
 }
 
 .MenuContent .breadcrumbs {
@@ -3678,7 +3727,9 @@ body.popOpen .Modal {
 }
 
 .ShopContent__content {
+  position: relative;
   padding: 25px 0;
+  background-color: #fff;
 }
 
 .ShopContent .breadcrumbs {
@@ -3974,7 +4025,10 @@ body.popOpen .Modal {
 }
 
 .Event__content {
+  position: relative;
+  z-index: 1;
   padding-top: 25px;
+  background-color: #fff;
 }
 
 .Event .breadcrumbs {

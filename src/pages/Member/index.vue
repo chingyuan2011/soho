@@ -1,5 +1,6 @@
 <template>
   <div class="Member">
+    <div class="fixBg"></div>
     <Banner
       class="pink"
       page="member"
@@ -85,8 +86,8 @@
           </li>
         </ul>
       </div>
-      <div class="footer__deco-brown">
-      </div>
+    </div>
+    <div class="footer__deco-brown">
     </div>
   </div>
 </template>

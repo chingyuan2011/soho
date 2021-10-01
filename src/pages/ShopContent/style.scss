@@ -1,6 +1,8 @@
 .ShopContent {
   &__content {
+    position: relative;
     padding: 25px 0;
+    background-color: #fff;
   }
 
   .breadcrumbs {

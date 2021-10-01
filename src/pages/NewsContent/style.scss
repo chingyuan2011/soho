@@ -2,7 +2,10 @@
   background-color: #fff;
 
   &__content {
-    padding: 25px 0 0 0;
+    position: relative;
+    z-index: 1;
+    padding: 25px 0 50px 0;
+    background-color: #fff;
   }
 
   .breadcrumbs {
@@ -82,7 +85,7 @@
   }
 
   &__back {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     text-align: center;
 
     .Button {

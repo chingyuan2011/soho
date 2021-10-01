@@ -1,5 +1,6 @@
 <template>
   <div class="ShopContent">
+    <div class="fixBg"></div>
     <Banner
       class="pink"
       page="shop"
