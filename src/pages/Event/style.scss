@@ -4,7 +4,11 @@
     background-color: #a78a70;
 
     @include screen(lg) {
-      padding-top: 35%;
+      padding-top: 26%;
+
+      &__title {
+        font-size: 10vw;
+      }
     }
   }
 
@@ -16,11 +20,11 @@
   }
 
   .breadcrumbs {
-    margin-bottom: 120px;
+    margin-bottom: 25px;
   }
 
   &__pic {
-    margin-bottom: 75px;
+    margin-bottom: 30px;
 
     img {
       margin: 0 auto;
@@ -30,7 +34,7 @@
   &__info {
     display: flex;
     align-items: center;
-    margin-bottom: 100px;
+    margin-bottom: 25px;
     color: #142638;
   }
 
@@ -40,35 +44,36 @@
 
   &__infoContentTitle {
     margin-bottom: 20px;
-    font-size: 36px;
+    font-size: 24px;
     font-weight: 900;
   }
 
   &__infoContentP {
-    font-size: 22px;
+    font-size: 16px;
     line-height: 1.75;
   }
 
   &__infoAnimation {
     flex-shrink: 0;
-    width: 700px;
+    width: 600px;
     padding-right: 75px;
     letter-spacing: 4px;
   }
 
   &__infoBlood {
-    // height: 500px;
+    width: 400px;
+    margin: 0 auto;
   }
 
   &__infoNumber {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 24px;
+    font-size: 20px;
 
     span,
     div {
-      margin-right: 25px;
+      margin-right: 15px;
     }
 
     span {
@@ -82,71 +87,27 @@
   }
 
   .blood-accumulation {
-    font-size: 60px;
+    font-size: 48px;
     color: #962233;
   }
 
   &__carouselTitle {
     margin-bottom: 25px;
-    padding-left: 95px;
-    font-size: 36px;
+    padding-left: 75px;
+    font-size: 24px;
     font-weight: 900;
     letter-spacing: 2px;
   }
 
   @include screen(xxl) {
-    .breadcrumbs {
-      margin-bottom: 25px;
-    }
-
-    &__pic {
-      margin-bottom: 25px;
-    }
-
-    &__info {
-      margin-bottom: 50px;
-    }
-
-    &__infoContent {
-      padding: 10px 20px 0 0;
-    }
-
-    &__infoContentTitle {
-      margin-bottom: 10px;
-      font-size: 24px;
+    &__infoContent,
+    &__carouselTitle {
+      padding-left: 25px;
     }
 
     &__infoBlood {
-      // height: 400px;
-    }
-
-    &__infoContentP {
-      font-size: 16px;
-      line-height: 1.75;
-    }
-
-    &__infoAnimation {
-      width: 600px;
-      padding-right: 0;
-      letter-spacing: 4px;
-    }
-
-    &__infoNumber {
-      font-size: 20px;
-
-      span,
-      div {
-        margin-right: 10px;
-      }
-    }
-
-    .blood-accumulation {
-      font-size: 48px;
-    }
-
-    &__carouselTitle {
-      padding-left: 20px;
-      font-size: 24px;
+      width: auto;
+      margin: 0 auto;
     }
   }
 
@@ -158,6 +119,14 @@
 
     &__infoContent {
       width: 100%;
+      padding: 0;
+    }
+
+    &__infoAnimation {
+      flex-shrink: 0;
+      width: 100%;
+      padding-right: 0;
+      letter-spacing: 4px;
     }
 
     &__infoContentP {

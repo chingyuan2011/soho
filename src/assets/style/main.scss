@@ -91,26 +91,17 @@ ul {
 
 .footer__deco-brown {
   position: relative;
-  padding-top: 480px;
-  // background-image: url('/img/bg_brown.jpg');
-  background-repeat: repeat;
-  // background-attachment: fixed;
-  background-position: left bottom;
-  background-size: contain;
+  padding-top: 360px;
 
   @include screen(xxl) {
     padding-top: 256px;
-  }
-
-  @include screen(lg) {
-    // background-attachment: scroll;
   }
 }
 
 .slogan {
   margin-right: 25px;
   margin-bottom: 25px;
-  font-size: 60px;
+  font-size: 54px;
   color: #962233;
   text-align: right;
   letter-spacing: 6px;
@@ -120,7 +111,7 @@ ul {
   }
 
   @include screen(lg) {
-    font-size: 28px;
+    font-size: 40px;
   }
 
   @include screen(md) {
@@ -137,18 +128,14 @@ ul {
   display: flex;
   align-items: center;
   max-width: 60%;
-  padding: 20px;
-  font-size: 26px;
+  padding: 10px 20px;
+  font-size: 20px;
   color: #fff;
   background-color: #a78a70;
   box-shadow: 3px 3px 5px color(gray, 400);
 
   >span {
     @include text-overflow($line: 2);
-  }
-
-  @include screen(xxl) {
-    font-size: 20px;
   }
 
   @include screen(lg) {

@@ -8,7 +8,7 @@
   }
 
   .breadcrumbs {
-    margin-bottom: 120px;
+    margin-bottom: 50px;
   }
 
   &__menu {
@@ -24,12 +24,12 @@
 
   &__menuInfo {
     margin-bottom: 50px;
-    font-size: 24px;
+    font-size: 20px;
     color: #951e22;
   }
 
   .MenuContentCarousel {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
   }
 
   .footer__deco-brown {
@@ -38,7 +38,7 @@
 
   &__Btns {
     position: absolute;
-    top: 100px;
+    top: 50px;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -46,6 +46,7 @@
     .Button {
       width: 200px;
       margin: 0 25px;
+      font-family: 'futura BT', Roboto, Arial, 'Microsoft JhengHei Modify', 'Microsoft JhengHei', PingFangTC, sans-serif;
     }
   }
 

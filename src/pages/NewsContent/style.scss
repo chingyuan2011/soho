@@ -9,7 +9,7 @@
   }
 
   .breadcrumbs {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
   }
 
   &__itemTitle,
@@ -19,7 +19,7 @@
   }
 
   &__item {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     color: #142638;
   }
 
@@ -27,7 +27,7 @@
     position: relative;
     margin-bottom: 20px;
     padding-bottom: 10px;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 900;
 
     &::after {
@@ -64,8 +64,8 @@
   }
 
   &__itemContent {
-    margin-bottom: 50px;
-    font-size: 22px;
+    margin-bottom: 25px;
+    font-size: 20px;
 
     p {
       margin-bottom: 20px;
@@ -85,7 +85,6 @@
   }
 
   &__back {
-    margin-bottom: 50px;
     text-align: center;
 
     .Button {
@@ -104,7 +103,7 @@
 
     &__itemTitle {
       margin-bottom: 10px;
-      font-size: 24px;
+      font-size: 22px;
     }
 
     &__itemDates {
@@ -115,10 +114,6 @@
     &__itemContent {
       margin-bottom: 20px;
       font-size: 16px;
-    }
-
-    &__back {
-      margin-bottom: 50px;
     }
   }
 

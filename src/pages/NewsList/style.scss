@@ -6,7 +6,11 @@
   }
 
   .breadcrumbs {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
+  }
+
+  &__items {
+    margin-bottom: 50px;
   }
 
   &__item:nth-child(odd) {
@@ -22,7 +26,7 @@
   &__item {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     color: #142638;
     letter-spacing: 1.2px;
 
@@ -33,7 +37,7 @@
 
   &__itemPic {
     position: relative;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
     padding-top: 60%;
 
     &:hover {
@@ -60,9 +64,9 @@
 
   &__itemTitleWrap {
     position: relative;
-    height: 98px;
+    height: 90px;
     margin-bottom: 20px;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 900;
 
     &:hover {
@@ -94,7 +98,7 @@
 
   &__itemDates {
     display: flex;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     font-size: 20px;
 
     > * {

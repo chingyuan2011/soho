@@ -5,7 +5,7 @@
   }
 
   .breadcrumbs {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
   }
 
   &__list {
@@ -49,7 +49,7 @@
     @include text-overflow($line: 2);
     height: 90px;
     margin-bottom: 25px;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 900;
     color: #142638;
     text-align: center;
@@ -58,7 +58,7 @@
 
   &__itemContent {
     padding: 0 120px;
-    font-size: 18px;
+    font-size: 16px;
     color: #962233;
 
     p {

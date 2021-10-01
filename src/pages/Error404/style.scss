@@ -10,7 +10,7 @@
 
   .container {
     width: 100%;
-    padding-top: 100px;
+    padding-top: 40px;
   }
 
   .footer__deco-brown {
@@ -34,7 +34,7 @@
   &__title {
     margin-bottom: 10px;
     padding-left: 50px;
-    font-size: 29px;
+    font-size: 20px;
     font-weight: 700;
     color: #142638;
 
@@ -47,7 +47,7 @@
     position: relative;
     z-index: 1;
     padding: 50px;
-    font-size: 40px;
+    font-size: 32px;
     color: #951e23;
     letter-spacing: 1.2px;
     background-color: #fff;
@@ -70,7 +70,6 @@
 
     &__title {
       top: 0px;
-      font-size: 20px;
     }
 
     &__note {

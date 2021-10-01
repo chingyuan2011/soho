@@ -39,7 +39,6 @@ export default {
 .Banner {
   position: relative;
   padding-top: 14%;
-  font-size: 180px;
   line-height: 1;
   color: rgba($color: #fff, $alpha: .3);
   background-position: right bottom;
@@ -53,12 +52,12 @@ export default {
     position: absolute;
     top: 50%;
     left: 35px;
-    font-size: 9vw;
+    font-size: 7vw;
     transform: translateY(-50%);
   }
 
   @include screen(lg) {
-    padding-top: 21%;
+    padding-top: 18%;
 
     &__title {
       left: 20px;

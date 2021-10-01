@@ -33,7 +33,7 @@
       align-items: center;
       justify-content: center;
       height: 100%;
-      padding: 100px 20px;
+      padding: 50px 20px;
       font-size: 20px;
       font-weight: 900;
       color: #fff;
@@ -61,8 +61,8 @@
   &__tasty {
     position: relative;
     z-index: 1;
-    font-size: 92px;
-    line-height: 6;
+    font-size: 90px;
+    line-height: 5;
     color: #962233;
     text-align: center;
     letter-spacing: .1em;
@@ -78,15 +78,15 @@
 
   &__delicious {
     position: relative;
-    padding: 200px 0 100px 0;
+    padding: 120px 0 50px 0;
     background-image: url('/img/index/back_menu.jpg');
 
     .Index__Tableware {
       position: absolute;
       top: -35px;
       left: calc(50% - 960px);
-      width: 675px;
-      height: 386px;
+      width: 600px;
+      // height: 386px;
       // background-image: url('/img/index/menu_dec.png');
       background-repeat: no-repeat;
       background-position: center;
@@ -96,22 +96,22 @@
 
   &__deliciousTitle {
     position: relative;
-    width: 1240px;
+    width: 1200px;
     margin-bottom: 100px;
     margin-left: auto;
     padding-bottom: 10px;
     padding-left: 1%;
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 900;
     color: #962233;
-    letter-spacing: .3em;
+    letter-spacing: .5em;
 
     br {
       display: none;
     }
 
     &-en {
-      font-size: 110px;
+      font-size: 90px;
     }
 
     &::after {
@@ -169,13 +169,13 @@
     }
 
     &-en {
-      font-size: 80px;
+      font-size: 60px;
       line-height: 1;
     }
   }
 
   &__adP {
-    margin-bottom: 75px;
+    margin-bottom: 50px;
     padding: 20px 22% 0 0;
     font-size: 24px;
     letter-spacing: .1em;
@@ -306,7 +306,7 @@
     &__delicious {
       .Index__Tableware {
         top: -45px;
-        left: calc(50% - 400px);
+        left: calc(50% - 520px);
         width: 350px;
         height: 195px;
       }
@@ -316,6 +316,7 @@
       min-width: 650px;
       margin: 0 auto 50px;
       text-align: center;
+      letter-spacing: .3em;
     }
 
     &__ad {
