@@ -236,6 +236,15 @@ document.addEventListener('DOMContentLoaded', function () {
     if (window.location.href.indexOf('event') !== -1) {
       checkPosAndTriggerAnimate.bind($('#blood-accumulation')[0])()
     }
+
+    if ($('.footer__deco-brown')[0]) {
+      var ifFooterDwcoShow = $('.footer__deco-brown')[0].getBoundingClientRect().top <= window.innerHeight
+      if (ifFooterDwcoShow) {
+        $('.fixBg').addClass('brown')
+      } else {
+        $('.fixBg').removeClass('brown')
+      }
+    }
   })
 
   // event

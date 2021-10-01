@@ -24,6 +24,8 @@ export default {
 
 <style lang="scss">
 .IndexPrompter {
+  position: relative;
+  z-index: 1;
   display: flex;
   align-items: center;
   height: 48px;

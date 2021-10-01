@@ -1615,6 +1615,8 @@ body.popOpen .Modal {
   height: 48px;
   overflow: hidden;
   background-color: #951e22;
+  position: relative;
+  z-index: 1;
 }
 
 .IndexPrompter__text {
