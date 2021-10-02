@@ -2,7 +2,7 @@
   <div class="Index">
     <div class="fixBg"></div>
     <Modal
-      id=""
+      id="Index__popUp"
       class="Index__popUp"
     >
       <img

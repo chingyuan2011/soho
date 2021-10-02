@@ -40,12 +40,8 @@
       }
     }
 
-    if (window.location.href.indexOf('index') !== -1) {
-      // popup - 首頁需要再打開
-      openPopup()
-
-      runIndexContent()
-    }
+    // index
+    runIndexContent()
 
     if (window.location.href.indexOf('shop/list') !== -1) {
       runShopListContent()
@@ -113,6 +109,12 @@
   }
 
   function runIndexContent () {
+    // index - popup - 首頁需要再使用
+    var $IndexPopUp = $('#Index__popUp')
+    if ($IndexPopUp.length) {
+      openPopup()
+    }
+
     // 跑馬燈
     var $IndexPrompter = $('#IndexPrompter')
     if ($IndexPrompter.length) {
@@ -181,23 +183,25 @@
     }
 
     var $IndexMenuCarousel = $('#IndexMenuCarousel')
-    $('.IndexMenuCarousel > .nk-carousel-inner').each(function () {
-      $(this).flickity({
-        pageDots: $(this).parent().attr('data-dots') === 'true' || false,
-        autoPlay: parseFloat($(this).parent().attr('data-autoplay')) || false,
-        prevNextButtons: false,
-        wrapAround: true,
-        imagesLoaded: true,
-        cellAlign: $(this).parent().attr('data-cell-align') || 'center'
+    if ($IndexMenuCarousel.length) {
+      $('.IndexMenuCarousel > .nk-carousel-inner').each(function () {
+        $(this).flickity({
+          pageDots: $(this).parent().attr('data-dots') === 'true' || false,
+          autoPlay: parseFloat($(this).parent().attr('data-autoplay')) || false,
+          prevNextButtons: false,
+          wrapAround: true,
+          imagesLoaded: true,
+          cellAlign: $(this).parent().attr('data-cell-align') || 'center'
+        })
+        $IndexMenuCarousel.on('click', '.nk-carousel-next', function () {
+          $(this).parent().children('.nk-carousel-inner').flickity('next')
+        })
+        $IndexMenuCarousel.on('click', '.nk-carousel-prev', function () {
+          $(this).parent().children('.nk-carousel-inner').flickity('previous')
+        })
+        noClickEventOnDrag($(this))
       })
-      $IndexMenuCarousel.on('click', '.nk-carousel-next', function () {
-        $(this).parent().children('.nk-carousel-inner').flickity('next')
-      })
-      $IndexMenuCarousel.on('click', '.nk-carousel-prev', function () {
-        $(this).parent().children('.nk-carousel-inner').flickity('previous')
-      })
-      noClickEventOnDrag($(this))
-    })
+    }
   }
 
   function runShopListContent () {
