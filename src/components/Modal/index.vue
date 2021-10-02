@@ -40,6 +40,11 @@ body.popOpen {
   .Modal {
     display: block;
   }
+
+  .MenuContent__content,
+  .Event__content {
+    z-index: 200;
+  }
 }
 
 .Modal {
@@ -48,8 +53,9 @@ body.popOpen {
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 200;
+  z-index: 400;
   display: none;
+  min-width: 320px;
 
   &__back {
     width: 100%;
@@ -65,7 +71,6 @@ body.popOpen {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #152638;
     transform: translateX(-50%) translateY(-50%);
   }
 
@@ -100,7 +105,4 @@ body.popOpen {
     }
   }
 }
-
-// xxl | xl | lg | md | sm
-// @include screen (xl) {}
 </style>

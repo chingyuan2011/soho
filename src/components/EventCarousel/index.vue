@@ -217,7 +217,6 @@ export default {
 }
 
 .EventCarouselWrap {
-  max-width: 1920px;
   margin: 0 auto;
 
   .Modal__contentWrap {
@@ -235,7 +234,7 @@ export default {
     width: 100%;
     padding-right: 20px;
     font-weight: bold;
-    color: #142638;
+    color: #fff;
 
     > div {
       @include text-overflow(1);

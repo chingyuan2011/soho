@@ -158,6 +158,7 @@ body.hamOpen {
   height: 80px;
   padding: 10px 0px;
   background-color: #951e23;
+  transition: all .2s;
 
   .container {
     display: flex;
@@ -292,6 +293,16 @@ body.hamOpen {
 
     .CtHeader__logo {
       width: 110px;
+    }
+
+    .CtHeader__menu {
+      ul li {
+        margin: 0px 0;
+
+        & ~ li {
+          margin-top: 15px;
+        }
+      }
     }
   }
 }

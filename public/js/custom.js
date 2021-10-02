@@ -63,6 +63,7 @@
   function openPopup () {
     $('body').addClass('popOpen')
   }
+
   function closePopup () {
     $('body').removeClass('popOpen')
   }
