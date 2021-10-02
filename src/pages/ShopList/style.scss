@@ -41,12 +41,11 @@
 
   &__shop {
     margin-bottom: 40px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px 60px;
     color: #142638;
     letter-spacing: 1.2px;
 
-    &:nth-child(odd) {
+    &:nth-child(even) {
       position: relative;
 
       &::after {
@@ -151,6 +150,11 @@
       font-size: 14px;
     }
   }
+  @include screen(xl) {
+    &__shop {
+      padding: 20px;
+    }
+  }
 
   @include screen(md) {
     .breadcrumbs {
@@ -179,7 +183,7 @@
     &__shop {
       margin-bottom: 0px;
 
-      &:nth-child(odd) {
+      &:nth-child(even) {
         &::after {
           display: none;
         }
