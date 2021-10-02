@@ -17,6 +17,12 @@
     margin-bottom: 40px;
   }
 
+  &__shopsContent {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
   &__shopsAreaBtn {
     flex: 1;
     padding: 10px 5px;

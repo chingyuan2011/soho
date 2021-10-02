@@ -4,11 +4,14 @@
 @import './abstract/index';
 @import './animation/custom';
 
-html,
+html {
+}
+
 body {
   display: flex;
   flex-direction: column;
   min-width: 320px;
+  height: 100%;
   overflow: auto;
   font-family: Roboto, Arial, 'Microsoft JhengHei Modify', 'Microsoft JhengHei', PingFangTC, sans-serif;
   font-size: 16px;

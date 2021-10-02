@@ -144,6 +144,7 @@ export default {
     justify-content: center;
     width: 420px;
     height: 210px;
+    cursor: pointer;
     transition: transform .2s;
     transform: scale(1);
 
@@ -166,6 +167,7 @@ export default {
     right: 15px;
     bottom: 15px;
     left: 15px;
+    z-index: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -51,9 +51,9 @@ export default {
 
 .app__view {
   flex: 1;
-  padding-top: 125px;
-  @include screen(xxl) {
-    padding-top: 80px;
+  padding-top: 80px;
+  @include screen(sm) {
+    padding-top: 60px;
   }
 }
 

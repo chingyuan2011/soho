@@ -155,7 +155,7 @@ body.hamOpen {
   right: 0;
   left: 0;
   z-index: 200;
-  height: 125px;
+  height: 80px;
   padding: 10px 0px;
   background-color: #951e23;
 
@@ -163,17 +163,18 @@ body.hamOpen {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 100%;
   }
 
   .CtHeader__logo {
-    width: 250px;
+    width: 150px;
   }
 
   .CtHeader__ham {
     position: relative;
     z-index: 11;
-    width: 50px;
-    height: 30px;
+    width: 30px;
+    height: 20px;
     overflow: hidden;
     background-color: transparent;
     border: 0;
@@ -261,39 +262,6 @@ body.hamOpen {
   }
 
   @include screen(xxl) {
-    height: 80px;
-
-    .CtHeader__logo {
-      width: 150px;
-    }
-
-    .CtHeader__ham {
-      width: 30px;
-      height: 20px;
-
-      span {
-        position: absolute;
-        left: 0;
-        width: 100%;
-        height: 2px;
-        background-color: #fff;
-        transition: transform .5s;
-        transform-origin: 0 50%;
-
-        &:nth-child(1) {
-          top: 0;
-        }
-
-        &:nth-child(2) {
-          top: calc(50% - 1px);
-        }
-
-        &:nth-child(3) {
-          top: calc(100% - 2px);
-        }
-      }
-    }
-
     .CtHeader__menu {
       ul .CtHeader__menuItem {
         line-height: 1.5;
@@ -316,6 +284,14 @@ body.hamOpen {
           }
         }
       }
+    }
+  }
+
+  @include screen(sm) {
+    height: 60px;
+
+    .CtHeader__logo {
+      width: 110px;
     }
   }
 }

@@ -93,7 +93,7 @@ export default {
 
   .CtFooter__logoWrap {
     flex-shrink: 0;
-    width: 460px;
+    width: 300px;
     margin-right: 20px;
 
     .CtFooter__pic {
@@ -114,41 +114,74 @@ export default {
   &__content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    margin-left: 200px;
+    letter-spacing: 2px;
+  }
+
+  .CtFooter__webMap {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 10px;
+
+    li ~ li {
+      margin-left: 80px;
+    }
+
+    a {
+      transition: all .2s;
+    }
+
+    a:hover {
+      font-weight: bold;
+      transform: scale(1.1);
+    }
+  }
+
+  .CtFooter__time {
+    display: flex;
+    margin-right: 160px;
+  }
+
+  .CtFooter__links {
+    display: flex;
+    align-self: center;
+    margin-right: 20px;
+
+    .CtFooter__linkBtn {
+      margin: 0 5px;
+    }
+  }
+  @include screen(xxl) {
+    &__content {
+      margin-left: 100px;
+    }
 
     .CtFooter__webMap {
-      display: flex;
-      flex-wrap: wrap;
       justify-content: space-between;
-      width: 100%;
-      margin-bottom: 10px;
+
+      li ~ li {
+        margin-left: 0px;
+      }
     }
 
     .CtFooter__time {
-      display: flex;
-      margin-right: 20px;
+      margin-right: 0px;
+      margin-bottom: 20px;
     }
 
     .CtFooter__links {
-      display: flex;
-      align-self: center;
-      margin-right: 20px;
+      width: 100%;
+      margin-right: 0px;
 
       .CtFooter__linkBtn {
-        margin: 0 5px;
+        margin: 0 10px 0 0;
       }
     }
   }
-  @include screen(xl) {
-    .container {
-    }
-
-    .CtFooter__logoWrap {
-      width: 300px;
-    }
-  }
   @include screen(lg) {
-    padding: 50px 0;
+    margin-top: 20px;
+    padding: 40px 0;
 
     .container {
       flex-wrap: wrap;
@@ -164,52 +197,52 @@ export default {
       max-width: 100%;
       margin: 0 auto;
     }
+
+    &__content {
+      margin-left: 0px;
+    }
+
+    .CtFooter__links {
+      justify-content: center;
+
+      .CtFooter__linkBtn {
+        margin: 0 10px;
+      }
+    }
   }
 
   @include screen(sm) {
     padding: 30px 0;
 
     .container {
-      max-width: 350px;
+      max-width: 400px;
     }
 
     .CtFooter__logoWrap {
+      width: 280px;
       margin-right: 0;
-      margin-bottom: 20px;
     }
 
-    .CtFooter__content {
-      .CtFooter__webMap {
-        justify-content: flex-start;
+    .CtFooter__webMap {
+      justify-content: flex-start;
 
-        li {
-          width: 33.33%;
-          margin: 5px 0px;
-          text-align: center;
-        }
+      li {
+        width: 33.33%;
+        margin: 5px 0px;
+        text-align: center;
       }
+    }
 
-      .CtFooter__time {
-        flex-wrap: wrap;
-        margin-right: 0px;
-        margin-bottom: 20px;
+    .CtFooter__time {
+      flex-wrap: wrap;
+      margin-right: 0px;
 
-        .CtFooter__title {
-          width: 100%;
-        }
-
-        p {
-          margin-left: 20px;
-        }
-      }
-
-      .CtFooter__links {
-        justify-content: center;
+      .CtFooter__title {
         width: 100%;
+      }
 
-        .CtFooter__linkBtn {
-          margin: 0 10px;
-        }
+      p {
+        margin-left: 20px;
       }
     }
   }

@@ -1,4 +1,5 @@
 @import '../abstract/breakpoints';
+@import '../abstract/_mixins';
 
 $gutter: 20px;
 
@@ -12,7 +13,10 @@ $containerW: (
 .container {
   max-width: 1500px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 40px;
+  @include screen(md) {
+    padding: 0 20px;
+  }
 }
 
 @each $key, $value in $containerW {

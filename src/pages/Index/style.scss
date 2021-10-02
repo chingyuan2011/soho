@@ -28,6 +28,12 @@
   &__link {
     width: 25%;
 
+    &:hover {
+      a {
+        transform: scale(1.1);
+      }
+    }
+
     a {
       display: flex;
       align-items: center;
@@ -39,6 +45,7 @@
       color: #fff;
       text-align: center;
       letter-spacing: 2px;
+      transition: all .2s;
     }
 
     &-menu {
@@ -86,8 +93,6 @@
       top: -35px;
       left: calc(50% - 960px);
       width: 600px;
-      // height: 386px;
-      // background-image: url('/img/index/menu_dec.png');
       background-repeat: no-repeat;
       background-position: center;
       background-size: contain;
@@ -177,7 +182,7 @@
   &__adP {
     margin-bottom: 50px;
     padding: 20px 22% 0 0;
-    font-size: 24px;
+    font-size: 22px;
     letter-spacing: .1em;
   }
 
@@ -210,7 +215,7 @@
 
   @media (max-width: 1700px) {
     &__adBlood {
-      top: 300px;
+      top: -75px;
       right: 2%;
       width: 150px;
 

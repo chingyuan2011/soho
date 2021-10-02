@@ -173,6 +173,7 @@ export default {
   .carousel__itemTitle {
     margin-bottom: 20px;
     font-size: 28px;
+    font-weight: bold;
     @include text-overflow();
   }
 
@@ -180,12 +181,15 @@ export default {
     display: flex;
     margin-bottom: 20px;
     font-size: 18px;
+    font-weight: bold;
     letter-spacing: 2px;
   }
 
   .carousel__itemDText {
     margin-right: 100px;
+    font-weight: normal;
     color: #e0ca93;
+    letter-spacing: 0px;
   }
 
   .carousel__itemTextWrap {
@@ -210,7 +214,7 @@ export default {
     .carousel__itemContent {
       width: 50%;
       min-width: 600px;
-      padding: 40px 40px 40px 80px;
+      padding: 40px 50px 40px 80px;
     }
 
     .IndexNewsCarousel__title {
@@ -254,7 +258,7 @@ export default {
     .carousel__itemContent {
       width: 100%;
       min-width: 100%;
-      padding: 40px;
+      padding: 40px 50px;
       background-color: rgba(#9d2235, .8);
     }
 
