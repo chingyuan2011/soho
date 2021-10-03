@@ -88,7 +88,6 @@ export default {
   .container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
   }
 
   .CtFooter__logoWrap {
@@ -114,6 +113,8 @@ export default {
   &__content {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    width: 700px;
     margin-left: 200px;
     letter-spacing: 2px;
   }
@@ -140,13 +141,11 @@ export default {
 
   .CtFooter__time {
     display: flex;
-    margin-right: 160px;
   }
 
   .CtFooter__links {
     display: flex;
     align-self: center;
-    margin-right: 20px;
 
     .CtFooter__linkBtn {
       margin: 0 5px;
@@ -166,24 +165,19 @@ export default {
     }
 
     .CtFooter__time {
-      margin-right: 0px;
       margin-bottom: 20px;
     }
 
     .CtFooter__links {
-      width: 100%;
-      margin-right: 0px;
-
-      .CtFooter__linkBtn {
-        margin: 0 10px 0 0;
-      }
+      margin-bottom: 20px;
     }
   }
   @include screen(lg) {
     margin-top: 20px;
-    padding: 40px 0;
+    padding: 40px 0 20px;
 
     .container {
+      position: relative;
       flex-wrap: wrap;
       justify-content: center;
       max-width: 600px;
@@ -191,6 +185,14 @@ export default {
 
     .CtFooter__logoWrap {
       margin-bottom: 20px;
+    }
+
+    .CtFooter__note {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      text-align: center;
     }
 
     .CtFooter__pic {
@@ -202,8 +204,20 @@ export default {
       margin-left: 0px;
     }
 
+    .CtFooter__webMap {
+      order: 2;
+    }
+
+    .CtFooter__time {
+      order: 1;
+      margin-bottom: 10px;
+    }
+
     .CtFooter__links {
       justify-content: center;
+      order: 3;
+      width: 100%;
+      padding-bottom: 20px;
 
       .CtFooter__linkBtn {
         margin: 0 10px;
@@ -212,7 +226,7 @@ export default {
   }
 
   @include screen(sm) {
-    padding: 30px 0;
+    padding: 30px 0 20px;
 
     .container {
       max-width: 400px;
@@ -236,13 +250,10 @@ export default {
     .CtFooter__time {
       flex-wrap: wrap;
       margin-right: 0px;
+      margin-left: 20px;
 
       .CtFooter__title {
         width: 100%;
-      }
-
-      p {
-        margin-left: 20px;
       }
     }
   }
