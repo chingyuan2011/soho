@@ -125,12 +125,12 @@ ul {
 }
 
 .note {
-  position: absolute;
-  top: 0;
-  right: 0;
   display: flex;
   align-items: center;
   max-width: 60%;
+  margin-top: -25px;
+  margin-bottom: -25px;
+  margin-left: auto;
   padding: 10px 20px;
   font-size: 20px;
   color: #fff;
@@ -138,7 +138,6 @@ ul {
   box-shadow: 3px 3px 5px color(gray, 400);
 
   >span {
-    @include text-overflow($line: 2);
   }
 
   @include screen(lg) {

@@ -194,7 +194,7 @@
 
   &__adP {
     margin-bottom: 50px;
-    padding: 20px 22% 0 0;
+    padding: 20px 0 0 0;
     font-size: 22px;
     letter-spacing: .1em;
   }
@@ -211,45 +211,21 @@
     top: -150px;
     right: 5%;
     width: 250px;
-
-    .Blood__flow {
-      bottom: 22%;
-      left: calc(50% + 8px);
-      width: 82%;
-      height: 52%;
-
-      &Inner,
-      &Inner-light {
-        bottom: -20%;
-        background-size: 250% 150px;
-      }
-    }
   }
 
   @media (max-width: 1700px) {
     &__adBlood {
       top: -75px;
-      right: 2%;
-      width: 150px;
-
-      .Blood__flow {
-        bottom: 22%;
-        left: calc(50% + 3px);
-        width: 82%;
-        height: 52%;
-
-        &Inner,
-        &Inner-light {
-          bottom: -20%;
-          background-size: 250% 100px;
-        }
-      }
+      right: 20px;
+      width: 180px;
     }
   }
 
   @include screen(xxl) {
     &__adBlood {
       top: -100px;
+      right: 40px;
+      width: 150px;
     }
 
     &__link {

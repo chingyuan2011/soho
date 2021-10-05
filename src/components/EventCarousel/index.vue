@@ -14,7 +14,7 @@
           class="carousel__item"
           data-title="2020"
           data-title2="挽袖公益 熱血傳愛"
-          data-url="/img/blood.jpg"
+          data-url="/img/news4.jpg"
         >
           <div class="carousel__itemTitle">
             <div>2020</div>
@@ -22,7 +22,7 @@
           </div>
           <img
             class="carousel__itemPic"
-            src="/img/blood.jpg"
+            src="/img/news4.jpg"
             draggable="false"
           >
         </div>
@@ -46,7 +46,7 @@
           class="carousel__item"
           data-title="標題一超級多字標題一超級多字標題一超級多字標題一超級多字標題一超級多字標題一超級多字標題一超級多字"
           data-title2="標題二超級多字標題二超級多字標題二超級多字標題二超級多字標題二超級多字標題二超級多字標題二超級多字"
-          data-url="/img/blood.jpg"
+          data-url="/img/news4.jpg"
         >
           <div class="carousel__itemTitle">
             <div>標題一超級多字標題一超級多字標題一超級多字標題一超級多字標題一超級多字標題一超級多字標題一超級多字</div>
@@ -54,7 +54,7 @@
           </div>
           <img
             class="carousel__itemPic"
-            src="/img/blood.jpg"
+            src="/img/news4.jpg"
             draggable="false"
           >
         </div>
@@ -78,7 +78,7 @@
           class="carousel__item"
           data-title="2020"
           data-title2="挽袖公益 熱血傳愛"
-          data-url="/img/blood.jpg"
+          data-url="/img/news4.jpg"
         >
           <div class="carousel__itemTitle">
             <div>2020</div>
@@ -86,7 +86,7 @@
           </div>
           <img
             class="carousel__itemPic"
-            src="/img/blood.jpg"
+            src="/img/news4.jpg"
             draggable="false"
           >
         </div>

@@ -10,7 +10,7 @@
           >
         </div>
         <div class="CtFooter__note">
-          2021 © 西堤 Designed By 耘想科技網頁設計
+          Copyright  2021 © TASTy All rights reserved.
         </div>
       </div>
       <div class="CtFooter__content">

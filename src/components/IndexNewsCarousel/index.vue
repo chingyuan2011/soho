@@ -193,6 +193,7 @@ export default {
   }
 
   .carousel__itemTextWrap {
+    height: 100px;
     margin-bottom: 20px;
     font-size: 22px;
   }

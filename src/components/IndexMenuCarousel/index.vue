@@ -203,6 +203,7 @@ export default {
     width: 80%;
     font-size: 18px;
     line-height: 1.5;
+    text-align: center;
     opacity: .6;
     transition: all .5s;
     @include text-overflow(2);
@@ -232,6 +233,7 @@ export default {
     }
 
     .carousel__itemText {
+      padding: 0 40px;
       font-size: 14px;
     }
   }

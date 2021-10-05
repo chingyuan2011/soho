@@ -101,13 +101,20 @@
   }
 
   @include screen(xxl) {
-    &__infoContent,
+    &__infoContent {
+      padding: 20px;
+    }
+
     &__carouselTitle {
       padding-left: 25px;
     }
 
+    &__infoAnimation {
+      padding-right: 0;
+    }
+
     &__infoBlood {
-      width: auto;
+      width: 200px;
       margin: 0 auto;
     }
   }
@@ -126,7 +133,6 @@
     &__infoAnimation {
       flex-shrink: 0;
       width: 100%;
-      padding-right: 0;
       letter-spacing: 4px;
     }
 
@@ -157,23 +163,6 @@
 
       .blood-accumulation {
         font-size: 30px;
-      }
-    }
-  }
-
-  @media (max-width: 420px) {
-    &__blood {
-      .Blood__flow {
-        bottom: 22%;
-        left: calc(50% + 8px);
-        width: 82%;
-        height: 52%;
-
-        &Inner,
-        &Inner-light {
-          bottom: -20%;
-          background-size: 250% 200px;
-        }
       }
     }
   }

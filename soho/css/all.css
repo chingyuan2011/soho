@@ -1428,24 +1428,17 @@ ul {
 }
 
 .note {
-  position: absolute;
-  top: 0;
-  right: 0;
   display: flex;
   align-items: center;
   max-width: 60%;
+  margin-top: -25px;
+  margin-bottom: -25px;
+  margin-left: auto;
   padding: 10px 20px;
   font-size: 20px;
   color: #fff;
   background-color: #a78a70;
   box-shadow: 3px 3px 5px #a9a9a9;
-}
-
-.note > span {
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
 }@media (max-width: 960px) {
   .note {
     max-width: 70%;
@@ -1567,7 +1560,12 @@ body.popOpen {
 }
 
 body.popOpen .Modal {
-  display: block;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+body.popOpen .Modal__contentWrap {
+  transform: translateX(-50%) translateY(-50%) scale(1);
 }
 
 body.popOpen .Event__content,
@@ -1582,8 +1580,10 @@ body.popOpen .MenuContent__content {
   bottom: 0;
   left: 0;
   z-index: 400;
-  display: none;
   min-width: 320px;
+  pointer-events: none;
+  opacity: 0;
+  transition: all .2s;
 }
 
 .Modal__back {
@@ -1600,7 +1600,8 @@ body.popOpen .MenuContent__content {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  transform: translateX(-50%) translateY(-50%);
+  transition: transform .5s;
+  transform: translateX(-50%) translateY(-50%) scale(.8);
 }
 
 .Modal .Modal__close {
@@ -1812,6 +1813,7 @@ body.popOpen .MenuContent__content {
 }
 
 .IndexNewsCarouselWrap .carousel__itemTextWrap {
+  height: 100px;
   margin-bottom: 20px;
   font-size: 22px;
 }
@@ -1959,27 +1961,26 @@ body.popOpen .MenuContent__content {
 }
 
 .IndexMenuCarousel .carousel__itemTitle {
-  width: 80%;
   margin-bottom: 10px;
-  overflow: hidden;
   font-size: 22px;
   font-weight: 700;
-  line-height: 1.5;
-  text-align: center;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.IndexMenuCarousel .carousel__itemText,
+.IndexMenuCarousel .carousel__itemTitle {
+  width: 80%;
+  overflow: hidden;
+  line-height: 1.5;
+  text-align: center;
   opacity: .6;
   transition: all .5s;
 }
 
 .IndexMenuCarousel .carousel__itemText {
   display: -webkit-box;
-  width: 80%;
-  overflow: hidden;
   font-size: 18px;
-  line-height: 1.5;
-  opacity: .6;
-  transition: all .5s;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
 }@media (max-width: 1400px) {
@@ -2004,6 +2005,7 @@ body.popOpen .MenuContent__content {
   }
 
   .IndexMenuCarousel .carousel__itemText {
+    padding: 0 40px;
     font-size: 14px;
   }
 }@media (max-width: 1200px) {
@@ -2074,10 +2076,10 @@ body.popOpen .MenuContent__content {
 
 .Blood__flow {
   position: absolute;
-  bottom: 120px;
-  left: calc(50% + 10px);
-  width: 330px;
-  height: 300px;
+  bottom: 21%;
+  left: 52%;
+  width: 82.5%;
+  padding-bottom: 75%;
   overflow: hidden;
   border-radius: 50%;
   transform: translate(-50%);
@@ -2085,31 +2087,32 @@ body.popOpen .MenuContent__content {
 
 .Blood__flowInner {
   position: absolute;
-  bottom: -50px;
+  bottom: -2%;
   left: 0;
   width: 120%;
   height: 100%;
   background-image: url(/img/bloodFlow.png);
   background-repeat: repeat-x;
   background-position: left 100% bottom 0;
+  background-size: 250%;
   transform: rotate(-8deg);
   -webkit-animation: flow 10s linear infinite;
   animation: flow 10s linear infinite;
 }
 
 .Blood__flowInner-light {
-  bottom: -62px;
+  bottom: 0;
   background-position: left -100% bottom 0;
   opacity: .6;
   transform: rotate(2deg);
   -webkit-animation-duration: 12s;
   animation-duration: 12s;
-  -webkit-animation-delay: 3s;
-  animation-delay: 3s;
+  -webkit-animation-delay: -1.5s;
+  animation-delay: -1.5s;
 }@-webkit-keyframes flow {
   0%,
   to {
-    background-position: left 100% bottom 0;
+    background-position: left 83.5% bottom 0;
   }
 
   99.9% {
@@ -2118,7 +2121,7 @@ body.popOpen .MenuContent__content {
 }@keyframes flow {
   0%,
   to {
-    background-position: left 100% bottom 0;
+    background-position: left 83.5% bottom 0;
   }
 
   99.9% {
@@ -2317,7 +2320,7 @@ body.popOpen .MenuContent__content {
 
 .Index__adP {
   margin-bottom: 50px;
-  padding: 20px 22% 0 0;
+  padding: 20px 0 0 0;
   font-size: 22px;
   letter-spacing: .1em;
 }
@@ -2334,41 +2337,17 @@ body.popOpen .MenuContent__content {
   top: -150px;
   right: 5%;
   width: 250px;
-}
-
-.Index__adBlood .Blood__flow {
-  bottom: 22%;
-  left: calc(50% + 8px);
-  width: 82%;
-  height: 52%;
-}
-
-.Index__adBlood .Blood__flowInner,
-.Index__adBlood .Blood__flowInner-light {
-  bottom: -20%;
-  background-size: 250% 150px;
 }@media (max-width: 1700px) {
   .Index__adBlood {
     top: -75px;
-    right: 2%;
-    width: 150px;
-  }
-
-  .Index__adBlood .Blood__flow {
-    bottom: 22%;
-    left: calc(50% + 3px);
-    width: 82%;
-    height: 52%;
-  }
-
-  .Index__adBlood .Blood__flowInner,
-  .Index__adBlood .Blood__flowInner-light {
-    bottom: -20%;
-    background-size: 250% 100px;
+    right: 20px;
+    width: 180px;
   }
 }@media (max-width: 1400px) {
   .Index__adBlood {
     top: -100px;
+    right: 40px;
+    width: 150px;
   }
 
   .Index__link a {
@@ -4153,13 +4132,20 @@ body.popOpen .MenuContent__content {
   color: #142638;
   letter-spacing: 2px;
 }@media (max-width: 1400px) {
-  .Event__carouselTitle,
   .Event__infoContent {
+    padding: 20px;
+  }
+
+  .Event__carouselTitle {
     padding-left: 25px;
   }
 
+  .Event__infoAnimation {
+    padding-right: 0;
+  }
+
   .Event__infoBlood {
-    width: auto;
+    width: 200px;
     margin: 0 auto;
   }
 }@media (max-width: 960px) {
@@ -4176,7 +4162,6 @@ body.popOpen .MenuContent__content {
   .Event__infoAnimation {
     flex-shrink: 0;
     width: 100%;
-    padding-right: 0;
     letter-spacing: 4px;
   }
 
@@ -4206,18 +4191,5 @@ body.popOpen .MenuContent__content {
 
   .Event__infoNumber .blood-accumulation {
     font-size: 30px;
-  }
-}@media (max-width: 420px) {
-  .Event__blood .Blood__flow {
-    bottom: 22%;
-    left: calc(50% + 8px);
-    width: 82%;
-    height: 52%;
-  }
-
-  .Event__blood .Blood__flowInner,
-  .Event__blood .Blood__flowInner-light {
-    bottom: -20%;
-    background-size: 250% 200px;
   }
 }

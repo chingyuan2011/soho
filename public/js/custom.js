@@ -112,7 +112,10 @@
     // index - popup - 首頁需要再使用
     var $IndexPopUp = $('#Index__popUp')
     if ($IndexPopUp.length) {
-      openPopup()
+      // 依照需求可調整 modal 跳出時間
+      setTimeout(() => {
+        openPopup()
+      }, 2000)
     }
 
     // 跑馬燈
@@ -307,7 +310,7 @@
         wrapAround: true,
         imagesLoaded: true,
         cellAlign: $(this).parent().attr('data-cell-align') || 'center',
-        draggable: false
+        draggable: true
       })
       $EventCarousel.on('click', '.nk-carousel-next', function () {
         $(this).parent().children('.nk-carousel-inner').flickity('next')

@@ -38,7 +38,12 @@ body.popOpen {
   overflow: hidden;
 
   .Modal {
-    display: block;
+    pointer-events: initial;
+    opacity: 1;
+
+    &__contentWrap {
+      transform: translateX(-50%) translateY(-50%) scale(1);
+    }
   }
 
   .MenuContent__content,
@@ -54,8 +59,10 @@ body.popOpen {
   bottom: 0;
   left: 0;
   z-index: 400;
-  display: none;
   min-width: 320px;
+  pointer-events: none;
+  opacity: 0;
+  transition: all .2s;
 
   &__back {
     width: 100%;
@@ -71,7 +78,8 @@ body.popOpen {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    transform: translateX(-50%) translateY(-50%);
+    transition: transform .5s;
+    transform: translateX(-50%) translateY(-50%) scale(.8);
   }
 
   .Modal__close {

@@ -32,10 +32,10 @@ export default {
 
   &__flow {
     position: absolute;
-    bottom: 120px;
-    left: calc(50% + 10px);
-    width: 330px;
-    height: 300px;
+    bottom: 21%;
+    left: 52%;
+    width: 82.5%;
+    padding-bottom: 75%;
     overflow: hidden;
     border-radius: 50%;
     transform: translate(-50%, 0);
@@ -43,30 +43,31 @@ export default {
 
   &__flowInner {
     position: absolute;
-    bottom: -50px;
+    bottom: -2%;
     left: 0;
     width: 120%;
     height: 100%;
     background-image: url('/img/bloodFlow.png');
     background-repeat: repeat-x;
     background-position: left 100% bottom 0;
+    background-size: 250%;
     transform: rotate(-8deg);
     animation: flow 10s linear infinite;
 
     &-light {
-      bottom: -62px;
+      bottom: 0;
       background-position: left -100% bottom 0;
       opacity: .6;
       transform: rotate(2deg);
       animation-duration: 12s;
-      animation-delay: 3s;
+      animation-delay: -1.5s;
     }
   }
 
   @keyframes flow {
     0%,
     100% {
-      background-position: left 100% bottom 0;
+      background-position: left 83.5% bottom 0;
     }
 
     99.9% {
