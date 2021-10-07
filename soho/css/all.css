@@ -4193,3 +4193,7 @@ body.popOpen .MenuContent__content {
     font-size: 30px;
   }
 }
+
+.typedAni {
+  color: transparent;
+}

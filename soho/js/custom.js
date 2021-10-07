@@ -30,14 +30,26 @@
       }, 500)
     })
 
-    // 如果有棕色背景，增加視差滾動效果
     $(window).scroll(function () {
+      // 如果有棕色背景，增加視差滾動效果
       if ($('.footer__deco-brown')[0]) {
         var ifFooterDwcoShow = $('.footer__deco-brown')[0].getBoundingClientRect().top <= window.innerHeight
         if (ifFooterDwcoShow) {
           $('.fixBg').addClass('brown')
         } else {
           $('.fixBg').removeClass('brown')
+        }
+      }
+
+      // typing 效果
+      if ($('.typedAni')[0]) {
+        var ifTypingShow = $('.typedAni')[0].getBoundingClientRect().top <= window.innerHeight
+        if (ifTypingShow) {
+          $('.typedAni').children('span').each(function (idx, el) {
+            setTimeout(function () {
+              el.style.color = '#962233'
+            }, 100 * idx)
+          })
         }
       }
     })
@@ -116,7 +128,7 @@
     if ($IndexPopUp.length) {
       // 依照需求可調整 modal 跳出時間
       setTimeout(() => {
-        openPopup()
+        // openPopup()
       }, 2000)
     }
 
