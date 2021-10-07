@@ -10,6 +10,15 @@
     <script src="../assets/wow/wow.min.js"></script>
     <script src="../assets/flickity/flickity.pkgd.min.js"></script>
     <link rel="stylesheet" href="../assets/flickity/flickity.min.css" />
+
+    <script src="../assets/photoswipe/photoswipe-ui-default.min.js"></script>
+    <script src="../assets/photoswipe/photoswipe.min.js"></script>
+    <link rel="stylesheet" href="../assets/photoswipe/photoswipe.css" />
+    <link
+      rel="stylesheet"
+      href="../assets/photoswipe/default-skin/default-skin.css"
+    />
+
     <link rel="stylesheet" href="../assets/wow/animate.css" />
     <link href="../css/all.css" rel="stylesheet" />
     <title>西堤牛排</title>
@@ -65,7 +74,9 @@
               >
             </li>
             <li>
-              <a href="https://cct.wowprime.com/cct/cctapp/cctwebreservation.do?&prog=cctweb_reservation&brnd_fid=SUEBQ&stor" class="CtHeader__menuItem"
+              <a
+                href="https://cct.wowprime.com/cct/cctapp/cctwebreservation.do?&prog=cctweb_reservation&brnd_fid=SUEBQ&stor"
+                class="CtHeader__menuItem"
                 ><div class="CtHeader__en">ORDER</div>
                 <div class="CtHeader__chi">線上點餐</div></a
               >
@@ -120,47 +131,71 @@
             </div>
             <div
               id="MenuContentCarousel"
-              data-autoplay="8000"
               data-dots="true"
+              data-autoplay="8000"
               class="MenuContentCarousel nk-carousel"
             >
-              <div class="nk-carousel-inner">
-                <div class="carousel__item">
+              <div class="nk-carousel-inner nk-popup-gallery">
+                <a
+                  class="carousel__item nk-gallery-item"
+                  href="../img/menu/set1/P1.jpg"
+                  data-size="630x900"
+                >
                   <img
                     src="../img/menu/set1/P1.jpg"
                     class="carousel__itemPic"
                   />
-                </div>
-                <div class="carousel__item">
+                </a>
+                <a
+                  class="carousel__item  nk-gallery-item"
+                  href="../img/menu/set1/P2.jpg"
+                  data-size="960x1420"
+                >
                   <img
                     src="../img/menu/set1/P2.jpg"
                     class="carousel__itemPic"
                   />
-                </div>
-                <div class="carousel__item">
+                </a>
+                <a
+                  class="carousel__item  nk-gallery-item"
+                  href="../img/menu/set1/P3.jpg"
+                  data-size="960x1420"
+                >
                   <img
                     src="../img/menu/set1/P3.jpg"
                     class="carousel__itemPic"
                   />
-                </div>
-                <div class="carousel__item">
+                </a>
+                <a
+                  class="carousel__item  nk-gallery-item"
+                  href="../img/menu/set1/P4.jpg"
+                  data-size="960x1420"
+                >
                   <img
-                    src="../img/menu/set1/P1.jpg"
+                    src="../img/menu/set1/P4.jpg"
                     class="carousel__itemPic"
                   />
-                </div>
-                <div class="carousel__item">
+                </a>
+                <a
+                  class="carousel__item  nk-gallery-item"
+                  href="../img/menu/set1/P5.jpg"
+                  data-size="960x1420"
+                >
                   <img
-                    src="../img/menu/set1/P2.jpg"
+                    src="../img/menu/set1/P5.jpg"
                     class="carousel__itemPic"
                   />
-                </div>
-                <div class="carousel__item">
+                </a>
+                <a
+                  class="carousel__item  nk-gallery-item"
+                  href="../img/menu/set1/P6.jpg"
+                  data-size="960x1420"
+                >
                   <img
-                    src="../img/menu/set1/P3.jpg"
+                    src="../img/menu/set1/P6.jpg"
                     class="carousel__itemPic"
                   />
-                </div>
+                </a>
               </div>
               <div class="nk-carousel-prev"></div>
               <div class="nk-carousel-next"></div>
@@ -188,8 +223,7 @@
                 ><img src="../img/icon_download2x.png" alt="菜單下載"
               /></span>
               菜單下載 </a
-            ><a href="../menu/list.html" class="Button futuraBTMedium"
-              >
+            ><a href="../menu/list.html" class="Button futuraBTMedium">
               BACK
             </a>
           </div>
@@ -202,14 +236,18 @@
               <img src="../img/logo.png" alt="logo" draggable="false" />
             </div>
             <div class="CtFooter__note">
-              Copyright  2021 © TASTy All rights reserved.
+              Copyright 2021 © TASTy All rights reserved.
             </div>
           </div>
           <div class="CtFooter__content">
             <ul class="CtFooter__webMap">
-              <li><a href="https://www.tasty.com.tw/coupon.aspx">禮券查詢</a></li>
+              <li>
+                <a href="https://www.tasty.com.tw/coupon.aspx">禮券查詢</a>
+              </li>
               <li><a href="../contact.html">聯絡我們</a></li>
-              <li><a href="https://wowfoods.wowprime.com/branch.php">集團品牌</a></li>
+              <li>
+                <a href="https://wowfoods.wowprime.com/branch.php">集團品牌</a>
+              </li>
               <li>
                 <a
                   href="https://ehrweb.104.com.tw/job.do?key=03E610518BB8EF8F36E97DCD9D11D6B08CF407DF"

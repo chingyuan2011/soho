@@ -31,14 +31,16 @@
     })
 
     // 如果有棕色背景，增加視差滾動效果
-    if ($('.footer__deco-brown')[0]) {
-      var ifFooterDwcoShow = $('.footer__deco-brown')[0].getBoundingClientRect().top <= window.innerHeight
-      if (ifFooterDwcoShow) {
-        $('.fixBg').addClass('brown')
-      } else {
-        $('.fixBg').removeClass('brown')
+    $(window).scroll(function () {
+      if ($('.footer__deco-brown')[0]) {
+        var ifFooterDwcoShow = $('.footer__deco-brown')[0].getBoundingClientRect().top <= window.innerHeight
+        if (ifFooterDwcoShow) {
+          $('.fixBg').addClass('brown')
+        } else {
+          $('.fixBg').removeClass('brown')
+        }
       }
-    }
+    })
 
     // index
     runIndexContent()
@@ -289,57 +291,65 @@
       if (window.location.href.indexOf('event') !== -1) {
         checkPosAndTriggerAnimate.bind($('#blood-accumulation')[0])()
       }
-
-      if ($('.footer__deco-brown')[0]) {
-        var ifFooterDwcoShow = $('.footer__deco-brown')[0].getBoundingClientRect().top <= window.innerHeight
-        if (ifFooterDwcoShow) {
-          $('.fixBg').addClass('brown')
-        } else {
-          $('.fixBg').removeClass('brown')
-        }
-      }
     })
 
     // event
     var $EventCarousel = $('#EventCarousel')
-    $('.EventCarousel > .nk-carousel-inner').each(function () {
+    var isCarouselDrag = false
+    $EventCarousel.children('.nk-carousel-inner').each(function () {
       $(this).flickity({
         pageDots: $(this).parent().attr('data-dots') === 'true' || false,
         autoPlay: parseFloat($(this).parent().attr('data-autoplay')) || false,
         prevNextButtons: false,
         wrapAround: true,
         imagesLoaded: true,
-        cellAlign: $(this).parent().attr('data-cell-align') || 'center',
-        draggable: true
+        cellAlign: $(this).parent().attr('data-cell-align') || 'center'
       })
-      $EventCarousel.on('click', '.nk-carousel-next', function () {
-        $(this).parent().children('.nk-carousel-inner').flickity('next')
-      })
-      $EventCarousel.on('click', '.nk-carousel-prev', function () {
-        $(this).parent().children('.nk-carousel-inner').flickity('previous')
-      })
-      noClickEventOnDrag($(this))
+      updateCustomArrows($(this).parent())
+      if ($(this).parent().attr('data-arrows') === 'true') {
+        addDefaultArrows($(this))
+      }
+    }).on('cellSelect', function () {
+      updateCustomArrows($(this).parent())
+    })
+    $EventCarousel.on('click', '.nk-carousel-next', function () {
+      $(this).parents('#EventCarousel:eq(0)').children('.nk-carousel-inner').flickity('next')
+    })
+    $EventCarousel.on('click', '.nk-carousel-prev', function () {
+      $(this).parents('#EventCarousel:eq(0)').children('.nk-carousel-inner').flickity('previous')
+    })
 
-      $EventCarousel.on('click', '.carousel__item', function (dom) {
-        var url = dom.target.src
-        var domString = '<div><div class="Modal__popTitle"><div>標題一</div><div>標題二</div></div></div><img class="Modal__popPic" src="' + url + '"></img>'
-        $('#Modal__content').html(domString)
-        openPopup()
-      })
+    noClickEventOnDrag($EventCarousel.children('.nk-carousel-inner'))
+    $EventCarousel.children('.nk-carousel-inner').on('dragStart', function () {
+      isCarouselDrag = true
+    })
+    $EventCarousel.children('.nk-carousel-inner').on('dragEnd', function () {
+      setTimeout(() => {
+        isCarouselDrag = false
+      }, 300)
+    })
+    $EventCarousel.on('click', '.carousel__item', function (dom) {
+      if (isCarouselDrag) {
+        return
+      }
+      var url = dom.target.src
+      var domString = '<div><div class="Modal__popTitle"><div>標題一</div><div>標題二</div></div></div><img class="Modal__popPic" src="' + url + '"></img>'
+      $('#Modal__content').html(domString)
+      openPopup()
     })
   }
 
   function runMenuContent () {
     var $MenuContentCarousel = $('#MenuContentCarousel')
     $('.MenuContentCarousel > .nk-carousel-inner').each(function () {
+      // var isCarouselDrag = false
       $(this).flickity({
         pageDots: $(this).parent().attr('data-dots') === 'true' || false,
         autoPlay: parseFloat($(this).parent().attr('data-autoplay')) || false,
         prevNextButtons: false,
         wrapAround: true,
         imagesLoaded: true,
-        cellAlign: $(this).parent().attr('data-cell-align') || 'center',
-        draggable: false
+        cellAlign: $(this).parent().attr('data-cell-align') || 'center'
       })
       $MenuContentCarousel.on('click', '.nk-carousel-next', function () {
         $(this).parent().children('.nk-carousel-inner').flickity('next')
@@ -349,12 +359,280 @@
       })
       noClickEventOnDrag($(this))
 
-      $MenuContentCarousel.on('click', '.carousel__item', function (dom) {
-        var url = dom.target.src
-        var domString = '<img class="Modal__popPic" src="' + url + '">'
-        $('#Modal__content').html(domString)
-        openPopup()
-      })
+      // $MenuContentCarousel.children('.nk-carousel-inner').on('dragStart', function () {
+      //   isCarouselDrag = true
+      // })
+      // $MenuContentCarousel.children('.nk-carousel-inner').on('dragEnd', function () {
+      //   setTimeout(() => {
+      //     isCarouselDrag = false
+      //   }, 300)
+      // })
+      // $MenuContentCarousel.on('click', '.carousel__item', function (dom) {
+      //   if (isCarouselDrag) {
+      //     return
+      //   }
+      //   var url = dom.target.src
+      //   var domString = '<img class="Modal__popPic" src="' + url + '">'
+      //   $('#Modal__content').html(domString)
+      //   openPopup()
+      // })
     })
+
+    _initPluginPhotoswipe()
+  }
+
+  /* PhotoSwipe */
+  function _initPluginPhotoswipe () {
+    var $gallery = $('.nk-popup-gallery')
+    if ($gallery.length !== 1) {
+      return
+    }
+
+    // prepare photoswipe markup
+    var markup = '<div id="gallery" class="pswp" tabindex="-1" role="dialog" aria-hidden="true">\n          <div class="pswp__bg"></div>\n          <div class="pswp__scroll-wrap">\n            <div class="pswp__container">\n              <div class="pswp__item"></div>\n              <div class="pswp__item"></div>\n              <div class="pswp__item"></div>\n            </div>\n            <div class="pswp__ui pswp__ui--hidden">\n              <div class="pswp__top-bar">\n                <div class="pswp__counter"></div>\n                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>\n                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>\n                <div class="pswp__preloader">\n                  <div class="pswp__preloader__icn">\n                    <div class="pswp__preloader__cut">\n                      <div class="pswp__preloader__donut"></div>\n                    </div>\n                  </div>\n                </div>\n              </div>\n              <div class="pswp__loading-indicator"><div class="pswp__loading-indicator__line"></div></div>\n              <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>\n              <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>\n              <div class="pswp__caption">\n                <div class="pswp__caption__center">\n                </div>\n              </div>\n            </div>\n          </div>\n        </div>'
+    $('body').append(markup)
+
+    // init code
+    var parseThumbnailElements = function parseThumbnailElements (el) {
+      var thumbElements = $(el).find('a.nk-gallery-item')
+      var items = []
+      var childElements = void 0
+      var size = void 0
+      var item = void 0
+
+      thumbElements.each(function () {
+        childElements = $(this).find('img')
+        size = (this.getAttribute('data-size') || '1920x1080').split('x')
+
+        // create slide object
+        item = {
+          src: this.getAttribute('href'),
+          w: parseInt(size[0], 10),
+          h: parseInt(size[1], 10),
+          author: this.getAttribute('data-author')
+        }
+
+        // save link to element for getThumbBoundsFn
+        item.el = this
+
+        if (childElements.length > 0) {
+          // thumbnail url
+          item.msrc = childElements[0].getAttribute('src')
+          if (childElements.length > 1) {
+            item.title = $(childElements).filter('.photoswipe-description').html()
+          }
+        }
+
+        var mediumSrc = this.getAttribute('data-med') || item.src
+        if (mediumSrc) {
+          size = (this.getAttribute('data-med-size') || this.getAttribute('data-size') || '1920x1080').split('x')
+          // "medium-sized" image
+          item.m = {
+            src: mediumSrc,
+            w: parseInt(size[0], 10),
+            h: parseInt(size[1], 10)
+          }
+        }
+        // original image
+        item.o = {
+          src: item.src,
+          w: item.w,
+          h: item.h
+        }
+        items.push(item)
+      })
+
+      return items
+    }
+
+    var openPhotoSwipe = function openPhotoSwipe (index, galleryElement, disableAnimation, fromURL) {
+      var pswpElement = $('.pswp')[0]
+      var gallery = void 0
+      var options = void 0
+      var items = void 0
+
+      items = parseThumbnailElements(galleryElement)
+
+      // define options (if needed)
+      options = {
+        captionAndToolbarShowEmptyCaptions: false,
+        mainClass: 'pswp--minimal--dark',
+        barsSize: { top: 0, bottom: 0 },
+        captionEl: true,
+        fullscreenEl: false,
+        shareEl: false,
+        bgOpacity: 0.85,
+        tapToClose: true,
+        tapToToggleControls: false,
+
+        // Function builds caption markup
+        addCaptionHTMLFn: function addCaptionHTMLFn (item, captionEl) {
+          // item      - slide object
+          // captionEl - caption DOM element
+          // isFake    - true when content is added to fake caption container
+          //             (used to get size of next or previous caption)
+
+          if (!item.title && !item.author) {
+            captionEl.children[0].innerHTML = ''
+            return false
+          }
+          var caption = ''
+          if (item.title) {
+            caption += item.title
+          }
+          if (item.author) {
+            if (item.title) {
+              caption += '<br>'
+            }
+            caption += '<small>' + item.author + '</small>'
+          }
+          captionEl.children[0].innerHTML = caption
+          return true
+        },
+
+        galleryUID: galleryElement.getAttribute('data-pswp-uid'),
+        getThumbBoundsFn: function getThumbBoundsFn (idx) {
+          // See Options->getThumbBoundsFn section of docs for more info
+          var thumbnail = items[idx].el.children[0]
+          var pageYScroll = window.pageYOffset || document.documentElement.scrollTop
+          var rect = thumbnail.getBoundingClientRect()
+
+          return { x: rect.left, y: rect.top + pageYScroll, w: rect.width }
+        }
+      }
+
+      if (fromURL) {
+        if (options.galleryPIDs) {
+          // parse real index when custom PIDs are used
+          // http://photoswipe.com/documentation/faq.html#custom-pid-in-url
+          for (var j = 0; j < items.length; j++) {
+            if (items[j].pid === index) {
+              options.index = j
+              break
+            }
+          }
+        } else {
+          options.index = parseInt(index, 10) - 1
+        }
+      } else {
+        options.index = parseInt(index, 10)
+      }
+
+      // exit if index not found
+      if (isNaN(options.index)) {
+        return
+      }
+
+      if (disableAnimation) {
+        options.showAnimationDuration = 0
+      }
+
+      // Pass data to PhotoSwipe and initialize it
+      gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options)
+
+      // see: http://photoswipe.com/documentation/responsive-images.html
+      var realViewportWidth = void 0
+      var useLargeImages = false
+      var firstResize = true
+      var imageSrcWillChange = void 0
+
+      gallery.listen('beforeResize', function () {
+        var dpiRatio = window.devicePixelRatio ? window.devicePixelRatio : 1
+        dpiRatio = Math.min(dpiRatio, 2.5)
+        realViewportWidth = gallery.viewportSize.x * dpiRatio
+
+        if (realViewportWidth >= 1200 || !gallery.likelyTouchDevice && realViewportWidth > 800 || screen.width > 1200) {
+          if (!useLargeImages) {
+            useLargeImages = true
+            imageSrcWillChange = true
+          }
+        } else {
+          if (useLargeImages) {
+            useLargeImages = false
+            imageSrcWillChange = true
+          }
+        }
+
+        if (imageSrcWillChange && !firstResize) {
+          gallery.invalidateCurrItems()
+        }
+
+        if (firstResize) {
+          firstResize = false
+        }
+
+        imageSrcWillChange = false
+      })
+
+      gallery.listen('gettingData', function (idx, item) {
+        if (useLargeImages) {
+          item.src = item.o.src
+          item.w = item.o.w
+          item.h = item.o.h
+        } else {
+          item.src = item.m.src
+          item.w = item.m.w
+          item.h = item.m.h
+        }
+      })
+
+      gallery.init()
+    }
+
+    var photoswipeParseHash = function photoswipeParseHash () {
+      var hash = window.location.hash.substring(1)
+      var params = {}
+
+      if (hash.length < 5) {
+        // pid=1
+        return params
+      }
+
+      var vars = hash.split('&')
+      for (var _i7 = 0; _i7 < vars.length; _i7++) {
+        if (!vars[_i7]) {
+          continue
+        }
+        var pair = vars[_i7].split('=')
+        if (pair.length < 2) {
+          continue
+        }
+        params[pair[0]] = pair[1]
+      }
+
+      if (params.gid) {
+        params.gid = parseInt(params.gid, 10)
+      }
+
+      return params
+    }
+
+    // select all gallery elements
+    var i = 0
+    $gallery.each(function () {
+      var $thisGallery = $(this)
+      $thisGallery.attr('data-pswp-uid', i + 1)
+
+      $thisGallery.on('click', 'a.nk-gallery-item', function (e) {
+        e.preventDefault()
+        var index = 0
+        var clicked = this
+        $thisGallery.find('a.nk-gallery-item').each(function (idx) {
+          if (this === clicked) {
+            index = idx
+            return false
+          }
+          return true
+        })
+        openPhotoSwipe(index, $thisGallery[0])
+      })
+      i++
+    })
+
+    // Parse URL and open gallery if it contains #&pid=3&gid=1
+    var hashData = photoswipeParseHash()
+    if (hashData.pid && hashData.gid) {
+      openPhotoSwipe(hashData.pid, $gallery.get(hashData.gid - 1), true, true)
+    }
   }
 })()
