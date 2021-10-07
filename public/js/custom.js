@@ -31,14 +31,16 @@
     })
 
     // 如果有棕色背景，增加視差滾動效果
-    if ($('.footer__deco-brown')[0]) {
-      var ifFooterDwcoShow = $('.footer__deco-brown')[0].getBoundingClientRect().top <= window.innerHeight
-      if (ifFooterDwcoShow) {
-        $('.fixBg').addClass('brown')
-      } else {
-        $('.fixBg').removeClass('brown')
+    $(window).scroll(function () {
+      if ($('.footer__deco-brown')[0]) {
+        var ifFooterDwcoShow = $('.footer__deco-brown')[0].getBoundingClientRect().top <= window.innerHeight
+        if (ifFooterDwcoShow) {
+          $('.fixBg').addClass('brown')
+        } else {
+          $('.fixBg').removeClass('brown')
+        }
       }
-    }
+    })
 
     // index
     runIndexContent()
@@ -289,57 +291,65 @@
       if (window.location.href.indexOf('event') !== -1) {
         checkPosAndTriggerAnimate.bind($('#blood-accumulation')[0])()
       }
-
-      if ($('.footer__deco-brown')[0]) {
-        var ifFooterDwcoShow = $('.footer__deco-brown')[0].getBoundingClientRect().top <= window.innerHeight
-        if (ifFooterDwcoShow) {
-          $('.fixBg').addClass('brown')
-        } else {
-          $('.fixBg').removeClass('brown')
-        }
-      }
     })
 
     // event
     var $EventCarousel = $('#EventCarousel')
-    $('.EventCarousel > .nk-carousel-inner').each(function () {
+    var isCarouselDrag = false
+    $EventCarousel.children('.nk-carousel-inner').each(function () {
       $(this).flickity({
         pageDots: $(this).parent().attr('data-dots') === 'true' || false,
         autoPlay: parseFloat($(this).parent().attr('data-autoplay')) || false,
         prevNextButtons: false,
         wrapAround: true,
         imagesLoaded: true,
-        cellAlign: $(this).parent().attr('data-cell-align') || 'center',
-        draggable: true
+        cellAlign: $(this).parent().attr('data-cell-align') || 'center'
       })
-      $EventCarousel.on('click', '.nk-carousel-next', function () {
-        $(this).parent().children('.nk-carousel-inner').flickity('next')
-      })
-      $EventCarousel.on('click', '.nk-carousel-prev', function () {
-        $(this).parent().children('.nk-carousel-inner').flickity('previous')
-      })
-      noClickEventOnDrag($(this))
+      updateCustomArrows($(this).parent())
+      if ($(this).parent().attr('data-arrows') === 'true') {
+        addDefaultArrows($(this))
+      }
+    }).on('cellSelect', function () {
+      updateCustomArrows($(this).parent())
+    })
+    $EventCarousel.on('click', '.nk-carousel-next', function () {
+      $(this).parents('#EventCarousel:eq(0)').children('.nk-carousel-inner').flickity('next')
+    })
+    $EventCarousel.on('click', '.nk-carousel-prev', function () {
+      $(this).parents('#EventCarousel:eq(0)').children('.nk-carousel-inner').flickity('previous')
+    })
 
-      $EventCarousel.on('click', '.carousel__item', function (dom) {
-        var url = dom.target.src
-        var domString = '<div><div class="Modal__popTitle"><div>標題一</div><div>標題二</div></div></div><img class="Modal__popPic" src="' + url + '"></img>'
-        $('#Modal__content').html(domString)
-        openPopup()
-      })
+    noClickEventOnDrag($EventCarousel.children('.nk-carousel-inner'))
+    $EventCarousel.children('.nk-carousel-inner').on('dragStart', function () {
+      isCarouselDrag = true
+    })
+    $EventCarousel.children('.nk-carousel-inner').on('dragEnd', function () {
+      setTimeout(() => {
+        isCarouselDrag = false
+      }, 300)
+    })
+    $EventCarousel.on('click', '.carousel__item', function (dom) {
+      if (isCarouselDrag) {
+        return
+      }
+      var url = dom.target.src
+      var domString = '<div><div class="Modal__popTitle"><div>標題一</div><div>標題二</div></div></div><img class="Modal__popPic" src="' + url + '"></img>'
+      $('#Modal__content').html(domString)
+      openPopup()
     })
   }
 
   function runMenuContent () {
     var $MenuContentCarousel = $('#MenuContentCarousel')
     $('.MenuContentCarousel > .nk-carousel-inner').each(function () {
+      var isCarouselDrag = false
       $(this).flickity({
         pageDots: $(this).parent().attr('data-dots') === 'true' || false,
         autoPlay: parseFloat($(this).parent().attr('data-autoplay')) || false,
         prevNextButtons: false,
         wrapAround: true,
         imagesLoaded: true,
-        cellAlign: $(this).parent().attr('data-cell-align') || 'center',
-        draggable: false
+        cellAlign: $(this).parent().attr('data-cell-align') || 'center'
       })
       $MenuContentCarousel.on('click', '.nk-carousel-next', function () {
         $(this).parent().children('.nk-carousel-inner').flickity('next')
@@ -349,7 +359,18 @@
       })
       noClickEventOnDrag($(this))
 
+      $MenuContentCarousel.children('.nk-carousel-inner').on('dragStart', function () {
+        isCarouselDrag = true
+      })
+      $MenuContentCarousel.children('.nk-carousel-inner').on('dragEnd', function () {
+        setTimeout(() => {
+          isCarouselDrag = false
+        }, 300)
+      })
       $MenuContentCarousel.on('click', '.carousel__item', function (dom) {
+        if (isCarouselDrag) {
+          return
+        }
         var url = dom.target.src
         var domString = '<img class="Modal__popPic" src="' + url + '">'
         $('#Modal__content').html(domString)
