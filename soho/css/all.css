@@ -3414,53 +3414,6 @@ body.popOpen .MenuContent__content {
   }
 }
 
-.MenuContentCarouselWrap {
-  max-width: 1920px;
-  margin: 0 auto;
-  padding: 0 100px;
-}
-
-.MenuContentCarouselWrap .Modal__contentWrap {
-  height: 90%;
-  max-height: 900px;
-}
-
-.MenuContentCarouselWrap .Modal__content {
-  width: 100%;
-  height: 100%;
-}
-
-.MenuContentCarouselWrap .Modal__popPic {
-  max-width: none;
-  height: 100%;
-}
-
-.MenuContentCarouselWrap .Modal__close {
-  background-color: #fff;
-}
-
-.MenuContentCarouselWrap .Modal__close::after,
-.MenuContentCarouselWrap .Modal__close::before {
-  background-color: #142638;
-}@media (max-width: 1200px) {
-  .MenuContentCarouselWrap {
-    padding: 0;
-  }
-}@media (max-width: 768px) {
-  .MenuContentCarouselWrap {
-    padding: 0;
-  }
-
-  .MenuContentCarouselWrap .Modal__contentWrap {
-    height: auto;
-  }
-
-  .MenuContentCarouselWrap .Modal__popPic {
-    max-width: 280px;
-    height: auto;
-  }
-}
-
 .MenuContent__content {
   position: relative;
   z-index: 1;
