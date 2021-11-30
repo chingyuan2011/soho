@@ -1,29 +1,29 @@
 /* eslint-disable no-undef */
-(function() {
-  document.addEventListener("DOMContentLoaded", function() {
+(function () {
+  document.addEventListener("DOMContentLoaded", function () {
     new WOW().init();
 
     // resize
-    $(window).on("resize", function() {
+    $(window).on("resize", function () {
       $("body").removeClass("hamOpen");
     });
 
     // header
-    $("#CtHeader__ham").on("click", function() {
+    $("#CtHeader__ham").on("click", function () {
       $("body").toggleClass("hamOpen");
     });
 
     // popup 關閉
-    $("#Modal__close").on("click", function() {
+    $("#Modal__close").on("click", function () {
       closePopup();
     });
 
-    $("#Modal__back").on("click", function() {
+    $("#Modal__back").on("click", function () {
       closePopup();
     });
 
     // scroll top
-    $(document).on("click", "#btn__quickTop", function(e) {
+    $(document).on("click", "#btn__quickTop", function (e) {
       e.preventDefault();
       $([document.documentElement, document.body]).animate(
         {
@@ -33,7 +33,8 @@
       );
     });
 
-    $(window).scroll(function() {
+    var typingTrigger = false;
+    $(window).scroll(function () {
       // 如果有棕色背景，增加視差滾動效果
       if ($(".footer__deco-brown")[0]) {
         var ifFooterDwcoShow =
@@ -50,14 +51,34 @@
       if ($(".typedAni")[0]) {
         var ifTypingShow =
           $(".typedAni")[0].getBoundingClientRect().top <= window.innerHeight;
-        if (ifTypingShow) {
-          $(".typedAni")
-            .children("span")
-            .each(function(idx, el) {
-              setTimeout(function() {
-                el.style.color = "#962233";
-              }, 100 * idx);
-            });
+        if (ifTypingShow && !typingTrigger) {
+          typingTrigger = true;
+          var duration = $(".typedAni")
+            .children("span").length* 100 + 3000
+
+          playAni() 
+          function playAni() {
+            $(".typedAni")
+              .children("span")
+              .each(function (idx, el) {
+                setTimeout(function () {
+                  el.style.color = "#962233";
+                }, 100 * idx);
+              });
+            setTimeout(() => {
+              resetAni()
+            }, duration);
+          }
+          function resetAni() {
+            $(".typedAni")
+              .children("span").each(function (idx, el) {
+                el.style.color = "transparent";
+              })
+
+            setTimeout(() => {
+              playAni()
+            }, 1000);
+          }
         }
       }
     });
@@ -126,12 +147,12 @@
   }
   // carousel 使用 - prevent click event fire when drag carousel
   function noClickEventOnDrag($carousel) {
-    $carousel.on("dragStart", function() {
+    $carousel.on("dragStart", function () {
       $(this)
         .find(".flickity-viewport")
         .addClass("is-dragging");
     });
-    $carousel.on("dragEnd", function() {
+    $carousel.on("dragEnd", function () {
       $(this)
         .find(".flickity-viewport")
         .removeClass("is-dragging");
@@ -144,7 +165,7 @@
     if ($IndexPopUp.length) {
       // 依照需求可調整 modal 跳出時間
       setTimeout(() => {
-        // openPopup()
+        openPopup()
       }, 2000);
     }
 
@@ -154,7 +175,7 @@
       var textDom = $("#IndexPrompter__text");
       var textPosX = $IndexPrompter.innerWidth();
 
-      setInterval(function() {
+      setInterval(function () {
         if (textPosX + textDom.innerWidth() < -10) {
           textPosX = $IndexPrompter.innerWidth();
         }
@@ -167,7 +188,7 @@
     if ($indexBannerCarousel.length) {
       $indexBannerCarousel
         .children(".nk-carousel-inner")
-        .each(function() {
+        .each(function () {
           $(this).flickity({
             pageDots:
               $(this)
@@ -195,16 +216,16 @@
           }
           updateCustomArrows($(this).parent());
         })
-        .on("cellSelect", function() {
+        .on("cellSelect", function () {
           updateCustomArrows($(this).parent());
         });
-      $indexBannerCarousel.on("click", ".nk-carousel-next", function() {
+      $indexBannerCarousel.on("click", ".nk-carousel-next", function () {
         $(this)
           .parent()
           .children(".nk-carousel-inner")
           .flickity("next");
       });
-      $indexBannerCarousel.on("click", ".nk-carousel-prev", function() {
+      $indexBannerCarousel.on("click", ".nk-carousel-prev", function () {
         $(this)
           .parent()
           .children(".nk-carousel-inner")
@@ -217,7 +238,7 @@
     if ($IndexNewsCarousel.length) {
       $IndexNewsCarousel
         .children(".nk-carousel-inner")
-        .each(function() {
+        .each(function () {
           $(this).flickity({
             pageDots:
               $(this)
@@ -245,16 +266,16 @@
           }
           updateCustomArrows($(this).parent());
         })
-        .on("cellSelect", function() {
+        .on("cellSelect", function () {
           updateCustomArrows($(this).parent());
         });
-      $IndexNewsCarousel.on("click", ".nk-carousel-next", function() {
+      $IndexNewsCarousel.on("click", ".nk-carousel-next", function () {
         $(this)
           .parent()
           .children(".nk-carousel-inner")
           .flickity("next");
       });
-      $IndexNewsCarousel.on("click", ".nk-carousel-prev", function() {
+      $IndexNewsCarousel.on("click", ".nk-carousel-prev", function () {
         $(this)
           .parent()
           .children(".nk-carousel-inner")
@@ -265,7 +286,7 @@
 
     var $IndexMenuCarousel = $("#IndexMenuCarousel");
     if ($IndexMenuCarousel.length) {
-      $(".IndexMenuCarousel > .nk-carousel-inner").each(function() {
+      $(".IndexMenuCarousel > .nk-carousel-inner").each(function () {
         $(this).flickity({
           pageDots:
             $(this)
@@ -285,13 +306,13 @@
               .parent()
               .attr("data-cell-align") || "center",
         });
-        $IndexMenuCarousel.on("click", ".nk-carousel-next", function() {
+        $IndexMenuCarousel.on("click", ".nk-carousel-next", function () {
           $(this)
             .parent()
             .children(".nk-carousel-inner")
             .flickity("next");
         });
-        $IndexMenuCarousel.on("click", ".nk-carousel-prev", function() {
+        $IndexMenuCarousel.on("click", ".nk-carousel-prev", function () {
           $(this)
             .parent()
             .children(".nk-carousel-inner")
@@ -303,7 +324,7 @@
   }
 
   function runShopListContent() {
-    $(".ShopList__shopsAreaBtn").on("click", function() {
+    $(".ShopList__shopsAreaBtn").on("click", function () {
       $(".ShopList__shopsAreaBtn").removeClass("active");
       $(this).addClass("active");
 
@@ -364,10 +385,10 @@
         {
           duration: 2000,
           easing: "swing",
-          step: function() {
+          step: function () {
             $this.text(Math.floor(this.countNum).toLocaleString("en"));
           },
-          complete: function() {
+          complete: function () {
             $this.text(this.countNum.toLocaleString("en"));
           },
         }
@@ -382,7 +403,7 @@
       }
     }
 
-    $(window).scroll(function() {
+    $(window).scroll(function () {
       if (window.location.href.indexOf("event") !== -1) {
         checkPosAndTriggerAnimate.bind($("#blood-accumulation")[0])();
       }
@@ -393,7 +414,7 @@
     var isCarouselDrag = false;
     $EventCarousel
       .children(".nk-carousel-inner")
-      .each(function() {
+      .each(function () {
         $(this).flickity({
           pageDots:
             $(this)
@@ -422,16 +443,16 @@
           addDefaultArrows($(this));
         }
       })
-      .on("cellSelect", function() {
+      .on("cellSelect", function () {
         updateCustomArrows($(this).parent());
       });
-    $EventCarousel.on("click", ".nk-carousel-next", function() {
+    $EventCarousel.on("click", ".nk-carousel-next", function () {
       $(this)
         .parents("#EventCarousel:eq(0)")
         .children(".nk-carousel-inner")
         .flickity("next");
     });
-    $EventCarousel.on("click", ".nk-carousel-prev", function() {
+    $EventCarousel.on("click", ".nk-carousel-prev", function () {
       $(this)
         .parents("#EventCarousel:eq(0)")
         .children(".nk-carousel-inner")
@@ -439,19 +460,19 @@
     });
 
     noClickEventOnDrag($EventCarousel.children(".nk-carousel-inner"));
-    $EventCarousel.children(".nk-carousel-inner").on("dragStart", function() {
+    $EventCarousel.children(".nk-carousel-inner").on("dragStart", function () {
       isCarouselDrag = true;
     });
-    $EventCarousel.children(".nk-carousel-inner").on("dragEnd", function() {
+    $EventCarousel.children(".nk-carousel-inner").on("dragEnd", function () {
       setTimeout(() => {
         isCarouselDrag = false;
       }, 300);
     });
-    $EventCarousel.on("click", ".carousel__item", function(dom) {
+    $EventCarousel.on("click", ".carousel__item", function (dom) {
       if (isCarouselDrag) {
         return;
       }
-      var url = dom.target.src;
+      var url = dom.currentTarget.style['background-image'].split('"')[1];
       var domString =
         '<div><div class="Modal__popTitle"><div>標題一</div><div>標題二</div></div></div><img class="Modal__popPic" src="' +
         url +
@@ -464,7 +485,7 @@
   function runMenuContent() {
     var $MenuContentCarousel = $("#MenuContentCarousel");
     var isCarouselDrag = false;
-    $(".MenuContentCarousel > .nk-carousel-inner").each(function() {
+    $(".MenuContentCarousel > .nk-carousel-inner").each(function () {
       $(this).flickity({
         pageDots:
           $(this)
@@ -484,13 +505,13 @@
             .parent()
             .attr("data-cell-align") || "center",
       });
-      $MenuContentCarousel.on("click", ".nk-carousel-next", function() {
+      $MenuContentCarousel.on("click", ".nk-carousel-next", function () {
         $(this)
           .parent()
           .children(".nk-carousel-inner")
           .flickity("next");
       });
-      $MenuContentCarousel.on("click", ".nk-carousel-prev", function() {
+      $MenuContentCarousel.on("click", ".nk-carousel-prev", function () {
         $(this)
           .parent()
           .children(".nk-carousel-inner")
@@ -500,12 +521,12 @@
 
       $MenuContentCarousel
         .children(".nk-carousel-inner")
-        .on("dragStart", function() {
+        .on("dragStart", function () {
           isCarouselDrag = true;
         });
       $MenuContentCarousel
         .children(".nk-carousel-inner")
-        .on("dragEnd", function() {
+        .on("dragEnd", function () {
           setTimeout(() => {
             isCarouselDrag = false;
           }, 300);
@@ -534,7 +555,7 @@
         var size = void 0;
         var item = void 0;
 
-        thumbElements.each(function() {
+        thumbElements.each(function () {
           childElements = $(this).find("img");
           size = (this.getAttribute("data-size") || "1920x1080").split("x");
 
@@ -682,7 +703,7 @@
         var firstResize = true;
         var imageSrcWillChange = void 0;
 
-        gallery.listen("beforeResize", function() {
+        gallery.listen("beforeResize", function () {
           var dpiRatio = window.devicePixelRatio ? window.devicePixelRatio : 1;
           dpiRatio = Math.min(dpiRatio, 2.5);
           realViewportWidth = gallery.viewportSize.x * dpiRatio;
@@ -714,7 +735,7 @@
           imageSrcWillChange = false;
         });
 
-        gallery.listen("gettingData", function(idx, item) {
+        gallery.listen("gettingData", function (idx, item) {
           if (useLargeImages) {
             item.src = item.o.src;
             item.w = item.o.w;
@@ -759,18 +780,18 @@
 
       // select all gallery elements
       var i = 0;
-      $gallery.each(function() {
+      $gallery.each(function () {
         var $thisGallery = $(this);
         $thisGallery.attr("data-pswp-uid", i + 1);
 
-        $thisGallery.on("click", "a.nk-gallery-item", function(e) {
+        $thisGallery.on("click", "a.nk-gallery-item", function (e) {
           e.preventDefault();
           if (isCarouselDrag) {
             return;
           }
           var index = 0;
           var clicked = this;
-          $thisGallery.find("a.nk-gallery-item").each(function(idx) {
+          $thisGallery.find("a.nk-gallery-item").each(function (idx) {
             if (this === clicked) {
               index = idx;
               return false;

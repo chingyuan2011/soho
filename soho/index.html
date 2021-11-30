@@ -1,459 +1,373 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="referrer" content="no-referrer-when-downgrade" />
-    <script src="./assets/jquery/jquery.min.js"></script>
-    <script src="./assets/wow/wow.min.js"></script>
-    <script src="./assets/flickity/flickity.pkgd.min.js"></script>
-    <link rel="stylesheet" href="./assets/flickity/flickity.min.css" />
-    <link rel="stylesheet" href="./assets/wow/animate.css" />
-    <link href="./css/all.css" rel="stylesheet" />
-    <title>西堤牛排</title>
-  </head>
-  <body>
-    <div id="app">
-      <header class="CtHeader">
-        <div class="container">
-          <a
-            href="./index.html"
-            aria-current="page"
-            class="CtHeader__logo router-link-exact-active router-link-active"
-            ><img src="./img/logo.png" alt="logo" draggable="false"/></a
-          ><button id="CtHeader__ham" class="CtHeader__ham">
-            <span></span><span></span><span></span>
-          </button>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="referrer" content="no-referrer-when-downgrade" />
+  <script src="./assets/jquery/jquery.min.js"></script>
+  <script src="./assets/wow/wow.min.js"></script>
+  <script src="./assets/flickity/flickity.pkgd.min.js"></script>
+  <link rel="stylesheet" href="./assets/flickity/flickity.min.css" />
+  <link rel="stylesheet" href="./assets/wow/animate.css" />
+  <link href="./css/all.css" rel="stylesheet" />
+  <title>西堤牛排</title>
+</head>
+
+<body>
+  <div id="app">
+    <header class="CtHeader">
+      <div class="container">
+        <a href="./index.html" aria-current="page"
+          class="CtHeader__logo router-link-exact-active router-link-active"><img src="./img/logo.png" alt="logo"
+            draggable="false" /></a><button id="CtHeader__ham" class="CtHeader__ham">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <nav class="CtHeader__menu">
+        <ul class="futuraExtraBlack">
+          <li>
+            <a href="./news/list.html" class="CtHeader__menuItem">
+              <div class="CtHeader__en">NEWS</div>
+              <div class="CtHeader__chi">最新消息</div>
+            </a>
+          </li>
+          <li>
+            <a href="./menu/list.html" class="CtHeader__menuItem">
+              <div class="CtHeader__en">MENU</div>
+              <div class="CtHeader__chi">菜單介紹</div>
+            </a>
+          </li>
+          <li>
+            <a href="./member.html" class="CtHeader__menuItem">
+              <div class="CtHeader__en">MEMBER</div>
+              <div class="CtHeader__chi">會員中心</div>
+            </a>
+          </li>
+          <li>
+            <a href="./shop/list.html" class="CtHeader__menuItem">
+              <div class="CtHeader__en">SHOP</div>
+              <div class="CtHeader__chi">分店據點</div>
+            </a>
+          </li>
+          <li>
+            <a href="./event.html" class="CtHeader__menuItem">
+              <div class="CtHeader__en">BLOOD DONATION</div>
+              <div class="CtHeader__chi">捐血公益</div>
+            </a>
+          </li>
+          <li>
+            <a href="https://cct.wowprime.com/cct/cctapp/cctwebreservation.do?&amp;prog=cctweb_reservation&amp;brnd_fid=SUEBQ&amp;stor"
+              class="CtHeader__menuItem">
+              <div class="CtHeader__en">BOOKING</div>
+              <div class="CtHeader__chi">線上訂位</div>
+            </a>
+          </li>
+          <li>
+            <a href="https://cct.wowprime.com/cct/cctapp/cctwebreservation.do?&prog=cctweb_reservation&brnd_fid=SUEBQ&stor"
+              class="CtHeader__menuItem">
+              <div class="CtHeader__en">ORDER</div>
+              <div class="CtHeader__chi">線上點餐</div>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="Index app__view">
+      <div class="fixBg"></div>
+      <div class="Modal Index__popUp" id="Index__popUp">
+        <div id="Modal__back" class="Modal__back"></div>
+        <div class="Modal__contentWrap">
+          <button id="Modal__close" class="Modal__close"></button>
+          <div id="Modal__content" class="Modal__content">
+            <img src="./img/decoration.png" class="Modal__popUpLine" />
+            <div class="Modal__body">
+              <img src="./img/index/popup.jpg" class="modal__popUpLine" />
+            </div>
+          </div>
         </div>
-        <nav class="CtHeader__menu">
-          <ul class="futuraExtraBlack">
+      </div>
+      <div id="IndexBannerCarousel" data-autoplay="8000" class="IndexBannerCarousel nk-carousel wow fadeIn">
+        <div class="nk-carousel-inner">
+          <div class="carousel__item">
+            <div class="carousel__itemImg" style='background-image: url("./img/index/banner1.jpg");'></div>
+          </div>
+          <div class="carousel__item">
+            <div class="carousel__itemImg" style='background-image: url("./img/index/banner2.jpg");'></div>
+          </div>
+          <div class="carousel__item">
+            <div class="carousel__itemImg" style='background-image: url("./img/index/banner3.jpg");'></div>
+          </div>
+        </div>
+        <div class="nk-carousel-prev"></div>
+        <div class="nk-carousel-next"></div>
+      </div>
+      <div id="IndexPrompter" class="IndexPrompter prompter">
+        <div id="IndexPrompter__text" class="IndexPrompter__text">
+          宅享TASTy ! 安心Enjoy !
+          即日起至8月31日，西堤推出全新輕套餐，來店自取全單85折哦！
+        </div>
+      </div>
+      <div>
+        <div class="Index__linksWrap wow fadeIn">
+          <div class="Index__links">
+            <div class="Index__link Index__link-menu futuraExtraBlack">
+              <a href="./menu/list.html" class="wow flipInX" data-wow-duration="1s" data-wow-delay=".5s"> MENU<br />嚐美食
+              </a>
+            </div>
+            <div class="Index__link Index__link-shop futuraExtraBlack">
+              <a href="./shop/list.html" class="wow flipInX" data-wow-duration="1s" data-wow-delay=".8s"> SHOPS<br />找門市
+              </a>
+            </div>
+            <div class="Index__link Index__link-reserve futuraExtraBlack">
+              <a href="https://cct.wowprime.com/cct/cctapp/cctwebreservation.do?&amp;prog=cctweb_reservation&amp;brnd_fid=SUEBQ&amp;stor"
+                target="_blank" class="wow flipInX" data-wow-duration="1s" data-wow-delay="1s">RESERVE<br />線上訂位</a>
+            </div>
+            <div class="Index__link Index__link-takeOut futuraExtraBlack">
+              <a href="https://wowfoods.cc/togo_tasty" target="_blank" class="wow flipInX" data-wow-duration="1s"
+                data-wow-delay="1.3s">TAKE OUT<br />外帶自取</a>
+            </div>
+          </div>
+        </div>
+        <div class="Index__tasty futuraExtraBlack">
+          <div class="typedAni">
+            <span>L</span><span>e</span><span>t</span><span>'</span><span>s</span><span>
+            </span><span>T</span><span>A</span><span>S</span><span>T</span><span>y</span><span>,</span><span>
+            </span><br /><span>L</span><span>e</span><span>t</span><span>'</span><span>s</span><span>
+            </span><span>E</span><span>n</span><span>j</span><span>o</span><span>y</span><span>!</span>
+          </div>
+        </div>
+        <div class="IndexNewsCarouselWrap wow fadeIn">
+          <div id="IndexNewsCarousel" data-autoplay="8000" class="IndexNewsCarousel nk-carousel">
+            <div class="nk-carousel-inner">
+              <div class="carousel__item">
+                <div class="carousel__itemContent">
+                  <div class="IndexNewsCarousel__title">
+                    <span class="en futuraExtraBlack">NEWS</span><span class="chi">最新消息</span>
+                  </div>
+                  <a href="news/content.html" class="carousel__itemTitle">西堤牛排官網會員權益公告</a>
+                  <div class="carousel__itemDate">
+                    <div>
+                      <div class="futuraBTMedium carousel__itemDText">
+                        FROM
+                      </div>
+                      <div class="futuraBT">2021/07/11</div>
+                    </div>
+                    <div>
+                      <div class="futuraBTMedium carousel__itemDText">TO</div>
+                      <div class="futuraBT">2021/07/30</div>
+                    </div>
+                  </div>
+                  <div class="carousel__itemTextWrap">
+                    <div class="carousel__itemText">
+                      為提供西堤會員更多權益及服務，2021/08/03(二)起西堤牛排官網會員服務將轉移至「王品瘋美食App
+                    </div>
+                    <a href="news/content.html">(...more)</a>
+                  </div>
+                  <a href="./news/list.html" class="Button carousel__btnAll futuraBT">
+                    VIEW ALL
+                  </a>
+                </div>
+                <div class="carousel__itemPic" style='background-image: url("./img/index/news_pic.jpg");'></div>
+              </div>
+              <div class="carousel__item">
+                <div class="carousel__itemContent">
+                  <div class="IndexNewsCarousel__title">
+                    <span class="en futuraExtraBlack">NEWS</span><span class="chi">最新消息</span>
+                  </div>
+                  <a href="news/content.html"
+                    class="carousel__itemTitle">超級多字超級多字超級多字超級多字超級多字超級多字超級多字超級多字超級多字超級多字超級多字超級多字</a>
+                  <div class="carousel__itemDate">
+                    <div>
+                      <div class="futuraBTMedium carousel__itemDText">
+                        FROM
+                      </div>
+                      <div class="futuraBT">2021/07/11</div>
+                    </div>
+                    <div>
+                      <div class="futuraBTMedium carousel__itemDText">TO</div>
+                      <div class="futuraBT">2021/07/30</div>
+                    </div>
+                  </div>
+                  <div class="carousel__itemTextWrap">
+                    <div class="carousel__itemText">
+                      超級多字超級多字超級多字超級多字超級多字超級多字超級多字超級多字超級多字超級多字超級多字超級多字超級多字超級多字超級多字超級多字超級多字超級多字
+                    </div>
+                    <a href="news/content.html">(...more)</a>
+                  </div>
+                  <a href="./news/list.html" class="Button carousel__btnAll futuraBT">
+                    VIEW ALL
+                  </a>
+                </div>
+                <div class="carousel__itemPic" style='background-image: url("./img/shop_content.jpg");'></div>
+              </div>
+            </div>
+            <div class="nk-carousel-prev"></div>
+            <div class="nk-carousel-next"></div>
+          </div>
+        </div>
+        <div class="Index__delicious">
+          <img data-wow-duration="1s" data-wow-delay=".2s" src="./img/index/menu_dec.png"
+            class="Index__Tableware wow fadeInLeft" />
+          <div data-wow-duration="1s" data-wow-delay=".2s" class="Index__deliciousTitle wow fadeInUp">
+            <span class="Index__deliciousTitle-en futuraExtraBlack">TASTy MEAL</span>
+            <br />美味推薦
+          </div>
+          <div id="IndexMenuCarousel" data-autoplay="8000"
+            class="IndexMenuCarousel nk-carousel Index__deliciousCarousel">
+            <div class="nk-carousel-inner">
+              <div class="carousel__item">
+                <img src="./img/index/menu1.png" class="carousel__itemPic" />
+                <div class="carousel__itemContentWrap">
+                  <img src="./img/decoration.png" class="carousel__itemLine" />
+                  <div class="carousel__itemTitle">
+                    松露牛排原塊松露牛排原塊松露牛排原塊松露牛排原塊松露牛排原塊
+                  </div>
+                  <div class="carousel__itemText">
+                    肩胛菲力牛排，吃起來嫩口多汁，而牛肉上有刷上一層淡淡的醬，但味道不重肩胛菲力牛排，吃起來嫩口多汁，而牛肉上有刷上一層淡淡的醬，但味道不重
+                  </div>
+                </div>
+              </div>
+              <div class="carousel__item">
+                <img src="./img/index/menu2.png" class="carousel__itemPic" />
+                <div class="carousel__itemContentWrap">
+                  <img src="./img/decoration.png" class="carousel__itemLine" />
+                  <div class="carousel__itemTitle">牛排肩胛菲力牛排</div>
+                  <div class="carousel__itemText">
+                    肩胛菲力牛排，吃起來嫩口多汁，而牛肉上有刷上一層淡淡的醬，但味道不重
+                  </div>
+                </div>
+              </div>
+              <div class="carousel__item">
+                <img src="./img/index/menu3.png" class="carousel__itemPic" />
+                <div class="carousel__itemContentWrap">
+                  <img src="./img/decoration.png" class="carousel__itemLine" />
+                  <div class="carousel__itemTitle">松露牛排原塊</div>
+                  <div class="carousel__itemText">
+                    肩胛菲力牛排，吃起來嫩口多汁，而牛肉上有刷上一層淡淡的醬，但味道不重
+                  </div>
+                </div>
+              </div>
+              <div class="carousel__item">
+                <img src="./img/index/menu1.png" class="carousel__itemPic" />
+                <div class="carousel__itemContentWrap">
+                  <img src="./img/decoration.png" class="carousel__itemLine" />
+                  <div class="carousel__itemTitle">
+                    松露牛排原塊松露牛排原塊松露牛排原塊松露牛排原塊松露牛排原塊
+                  </div>
+                  <div class="carousel__itemText">
+                    肩胛菲力牛排，吃起來嫩口多汁，而牛肉上有刷上一層淡淡的醬，但味道不重肩胛菲力牛排，吃起來嫩口多汁，而牛肉上有刷上一層淡淡的醬，但味道不重
+                  </div>
+                </div>
+              </div>
+              <div class="carousel__item">
+                <img src="./img/index/menu2.png" class="carousel__itemPic" />
+                <div class="carousel__itemContentWrap">
+                  <img src="./img/decoration.png" class="carousel__itemLine" />
+                  <div class="carousel__itemTitle">牛排肩胛菲力牛排</div>
+                  <div class="carousel__itemText">
+                    肩胛菲力牛排，吃起來嫩口多汁，而牛肉上有刷上一層淡淡的醬，但味道不重
+                  </div>
+                </div>
+              </div>
+              <div class="carousel__item">
+                <img src="./img/index/menu3.png" class="carousel__itemPic" />
+                <div class="carousel__itemContentWrap">
+                  <img src="./img/decoration.png" class="carousel__itemLine" />
+                  <div class="carousel__itemTitle">松露牛排原塊</div>
+                  <div class="carousel__itemText">
+                    肩胛菲力牛排，吃起來嫩口多汁，而牛肉上有刷上一層淡淡的醬，但味道不重
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="nk-carousel-prev"></div>
+            <div class="nk-carousel-next"></div>
+          </div>
+          <a href="./menu/list.html" class="Button Index__deliciousBtn futuraBT">
+            VIEW MENU
+          </a>
+        </div>
+        <div class="Index__ads wow fadeIn">
+          <div class="Index__ad">
+            <div class="Index__adPic" style='background-image: url("./img/blood.jpg");'></div>
+            <div class="Index__adContent">
+              <div class="Index__adTitle">
+                <span class="Index__adTitle-en futuraExtraBlack">BLOOD</span><span class="Index__adTitle-zh">捐血公益</span>
+              </div>
+              <div class="Index__adTitle">
+                <span class="Index__adTitle-en futuraExtraBlack">DONATION</span>
+              </div>
+              <p class="Index__adP">
+                西堤牛排十餘年來長期響應公益捐血活動發起「熱血解封，挽袖相挺
+                」邀請大家站出來，一起解封口罩下那藏不住的熱血!
+              </p>
+              <a href="./event.html" class="Button Index__adBtn futuraBT">
+                VIEW MORE
+              </a>
+              <div class="Blood Index__adBlood">
+                <img src="./img/bloodBack.png" alt="" draggable="false" />
+                <div class="Blood__flow">
+                  <div class="Blood__flowInner"></div>
+                  <div class="Blood__flowInner Blood__flowInner-light"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__deco-brown"></div>
+    </div>
+    <footer class="CtFooter">
+      <div class="container">
+        <div class="CtFooter__logoWrap">
+          <div class="CtFooter__pic">
+            <img src="./img/logo.png" alt="logo" draggable="false" />
+          </div>
+          <div class="CtFooter__note">
+            Copyright 2021 © TASTy All rights reserved.
+          </div>
+        </div>
+        <div class="CtFooter__content">
+          <ul class="CtFooter__webMap">
             <li>
-              <a href="./news/list.html" class="CtHeader__menuItem"
-                ><div class="CtHeader__en">NEWS</div>
-                <div class="CtHeader__chi">最新消息</div></a
-              >
+              <a href="https://www.tasty.com.tw/coupon.aspx">禮券查詢</a>
+            </li>
+            <li><a href="./contact.html">聯絡我們</a></li>
+            <li>
+              <a href="https://wowfoods.wowprime.com/branch.php">集團品牌</a>
             </li>
             <li>
-              <a href="./menu/list.html" class="CtHeader__menuItem"
-                ><div class="CtHeader__en">MENU</div>
-                <div class="CtHeader__chi">菜單介紹</div></a
-              >
+              <a href="https://ehrweb.104.com.tw/job.do?key=03E610518BB8EF8F36E97DCD9D11D6B08CF407DF">人才招募</a>
             </li>
             <li>
-              <a href="./member.html" class="CtHeader__menuItem"
-                ><div class="CtHeader__en">MEMBER</div>
-                <div class="CtHeader__chi">會員中心</div></a
-              >
-            </li>
-            <li>
-              <a href="./shop/list.html" class="CtHeader__menuItem"
-                ><div class="CtHeader__en">SHOP</div>
-                <div class="CtHeader__chi">分店據點</div></a
-              >
-            </li>
-            <li>
-              <a href="./event.html" class="CtHeader__menuItem"
-                ><div class="CtHeader__en">BLOOD DONATION</div>
-                <div class="CtHeader__chi">捐血公益</div></a
-              >
-            </li>
-            <li>
-              <a
-                href="https://cct.wowprime.com/cct/cctapp/cctwebreservation.do?&amp;prog=cctweb_reservation&amp;brnd_fid=SUEBQ&amp;stor"
-                class="CtHeader__menuItem"
-                ><div class="CtHeader__en">BOOKING</div>
-                <div class="CtHeader__chi">線上訂位</div></a
-              >
-            </li>
-            <li>
-              <a
-                href="https://cct.wowprime.com/cct/cctapp/cctwebreservation.do?&prog=cctweb_reservation&brnd_fid=SUEBQ&stor"
-                class="CtHeader__menuItem"
-                ><div class="CtHeader__en">ORDER</div>
-                <div class="CtHeader__chi">線上點餐</div></a
-              >
+              <a href="https://wowfoods.wowprime.com/privacy.php">隱私權政策</a>
             </li>
           </ul>
-        </nav>
-      </header>
-      <div class="Index app__view">
-        <div class="fixBg"></div>
-        <div class="Modal Index__popUp" id="Index__popUp">
-          <div id="Modal__back" class="Modal__back"></div>
-          <div class="Modal__contentWrap">
-            <button id="Modal__close" class="Modal__close"></button>
-            <div id="Modal__content" class="Modal__content">
-              <img src="./img/decoration.png" class="Modal__popUpLine" />
-              <div class="Modal__body">
-                <img src="./img/index/popup.jpg" class="modal__popUpLine" />
-              </div>
-            </div>
+          <div class="CtFooter__time">
+            <div class="CtFooter__title">營業時間：</div>
+            <p>
+              11:30~14:30 (最後點餐時間14:00)<br />
+              17:30~22:00 (最後點餐時間21:00)
+            </p>
+          </div>
+          <div class="CtFooter__links">
+            <a href="https://www.facebook.com/tw.TASTy/" class="CtFooter__linkBtn"><img src="./img/btn_fb.jpg"
+                draggable="false" /></a><a href="" class="CtFooter__linkBtn"><img src="./img/btn_line.jpg"
+                draggable="false" /></a><a href="" class="CtFooter__linkBtn"><img src="./img/btn_message.jpg"
+                draggable="false" /></a>
           </div>
         </div>
-        <div
-          id="IndexBannerCarousel"
-          data-autoplay="8000"
-          class="IndexBannerCarousel nk-carousel"
-        >
-          <div class="nk-carousel-inner">
-            <div class="carousel__item">
-              <div
-                class="carousel__itemImg"
-                style='background-image: url("./img/index/banner1.jpg");'
-              ></div>
-            </div>
-            <div class="carousel__item">
-              <div
-                class="carousel__itemImg"
-                style='background-image: url("./img/index/banner2.jpg");'
-              ></div>
-            </div>
-            <div class="carousel__item">
-              <div
-                class="carousel__itemImg"
-                style='background-image: url("./img/index/banner3.jpg");'
-              ></div>
-            </div>
-          </div>
-          <div class="nk-carousel-prev"></div>
-          <div class="nk-carousel-next"></div>
-        </div>
-        <div id="IndexPrompter" class="IndexPrompter prompter">
-          <div id="IndexPrompter__text" class="IndexPrompter__text">
-            宅享TASTy ! 安心Enjoy !
-            即日起至8月31日，西堤推出全新輕套餐，來店自取全單85折哦！
-          </div>
-        </div>
-        <div>
-          <div class="Index__linksWrap">
-            <div class="Index__links">
-              <div class="Index__link Index__link-menu futuraExtraBlack">
-                <a href="./menu/list.html" class=""> MENU<br />嚐美食 </a>
-              </div>
-              <div class="Index__link Index__link-shop futuraExtraBlack">
-                <a href="./shop/list.html" class=""> SHOPS<br />找門市 </a>
-              </div>
-              <div class="Index__link Index__link-reserve futuraExtraBlack">
-                <a
-                  href="https://cct.wowprime.com/cct/cctapp/cctwebreservation.do?&amp;prog=cctweb_reservation&amp;brnd_fid=SUEBQ&amp;stor"
-                  target="_blank"
-                  >RESERVE<br />線上訂位</a
-                >
-              </div>
-              <div class="Index__link Index__link-takeOut futuraExtraBlack">
-                <a href="https://wowfoods.cc/togo_tasty" target="_blank"
-                  >TAKE OUT<br />外帶自取</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="Index__tasty futuraExtraBlack">
-            <div class="typedAni">
-              <span>L</span><span>e</span><span>t</span><span>'</span><span>s</span><span> </span><span>T</span
-              ><span>A</span><span>S</span><span>T</span><span>y</span><span>,</span><span> </span><br /><span>L</span><span>e</span><span>t</span><span>'</span><span>s</span><span> </span><span>E</span><span>n</span><span>j</span><span>o</span><span>y</span><span>!</span>
-            </div>
-          </div>
-          <div class="IndexNewsCarouselWrap">
-            <div
-              id="IndexNewsCarousel"
-              data-autoplay="8000"
-              class="IndexNewsCarousel nk-carousel"
-            >
-              <div class="nk-carousel-inner">
-                <div class="carousel__item">
-                  <div class="carousel__itemContent">
-                    <div class="IndexNewsCarousel__title">
-                      <span class="en futuraExtraBlack">NEWS</span
-                      ><span class="chi">最新消息</span>
-                    </div>
-                    <a href="news/content.html" class="carousel__itemTitle"
-                      >西堤牛排官網會員權益公告</a
-                    >
-                    <div class="carousel__itemDate">
-                      <div>
-                        <div class="futuraBTMedium carousel__itemDText">
-                          FROM
-                        </div>
-                        <div class="futuraBT">2021/07/11</div>
-                      </div>
-                      <div>
-                        <div class="futuraBTMedium carousel__itemDText">TO</div>
-                        <div class="futuraBT">2021/07/30</div>
-                      </div>
-                    </div>
-                    <div class="carousel__itemTextWrap">
-                      <div class="carousel__itemText">
-                        為提供西堤會員更多權益及服務，2021/08/03(二)起西堤牛排官網會員服務將轉移至「王品瘋美食App
-                      </div>
-                      <a href="news/content.html">(...more)</a>
-                    </div>
-                    <a
-                      href="./news/list.html"
-                      class="Button carousel__btnAll futuraBT"
-                    >
-                      VIEW ALL
-                    </a>
-                  </div>
-                  <div
-                    class="carousel__itemPic"
-                    style='background-image: url("./img/index/news_pic.jpg");'
-                  ></div>
-                </div>
-                <div class="carousel__item">
-                  <div class="carousel__itemContent">
-                    <div class="IndexNewsCarousel__title">
-                      <span class="en futuraExtraBlack">NEWS</span
-                      ><span class="chi">最新消息</span>
-                    </div>
-                    <a href="news/content.html" class="carousel__itemTitle"
-                      >超級多字超級多字超級多字超級多字超級多字超級多字超級多字超級多字超級多字超級多字超級多字超級多字</a
-                    >
-                    <div class="carousel__itemDate">
-                      <div>
-                        <div class="futuraBTMedium carousel__itemDText">
-                          FROM
-                        </div>
-                        <div class="futuraBT">2021/07/11</div>
-                      </div>
-                      <div>
-                        <div class="futuraBTMedium carousel__itemDText">TO</div>
-                        <div class="futuraBT">2021/07/30</div>
-                      </div>
-                    </div>
-                    <div class="carousel__itemTextWrap">
-                      <div class="carousel__itemText">
-                        超級多字超級多字超級多字超級多字超級多字超級多字超級多字超級多字超級多字超級多字超級多字超級多字超級多字超級多字超級多字超級多字超級多字超級多字
-                      </div>
-                      <a href="news/content.html">(...more)</a>
-                    </div>
-                    <a
-                      href="./news/list.html"
-                      class="Button carousel__btnAll futuraBT"
-                    >
-                      VIEW ALL
-                    </a>
-                  </div>
-                  <div
-                    class="carousel__itemPic"
-                    style='background-image: url("./img/shop_content.jpg");'
-                  ></div>
-                </div>
-              </div>
-              <div class="nk-carousel-prev"></div>
-              <div class="nk-carousel-next"></div>
-            </div>
-          </div>
-          <div class="Index__delicious">
-            <img
-              data-wow-duration="1s"
-              data-wow-delay=".2s"
-              src="./img/index/menu_dec.png"
-              class="Index__Tableware wow fadeInLeft"
-            />
-            <div
-              data-wow-duration="1s"
-              data-wow-delay=".2s"
-              class="Index__deliciousTitle wow fadeInUp"
-            >
-              <span class="Index__deliciousTitle-en futuraExtraBlack"
-                >TASTy MEAL</span
-              >
-              <br />美味推薦
-            </div>
-            <div
-              id="IndexMenuCarousel"
-              data-autoplay="8000"
-              class="IndexMenuCarousel nk-carousel Index__deliciousCarousel"
-            >
-              <div class="nk-carousel-inner">
-                <div class="carousel__item">
-                  <img src="./img/index/menu1.png" class="carousel__itemPic" />
-                  <div class="carousel__itemContentWrap">
-                    <img
-                      src="./img/decoration.png"
-                      class="carousel__itemLine"
-                    />
-                    <div class="carousel__itemTitle">
-                      松露牛排原塊松露牛排原塊松露牛排原塊松露牛排原塊松露牛排原塊
-                    </div>
-                    <div class="carousel__itemText">
-                      肩胛菲力牛排，吃起來嫩口多汁，而牛肉上有刷上一層淡淡的醬，但味道不重肩胛菲力牛排，吃起來嫩口多汁，而牛肉上有刷上一層淡淡的醬，但味道不重
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel__item">
-                  <img src="./img/index/menu2.png" class="carousel__itemPic" />
-                  <div class="carousel__itemContentWrap">
-                    <img
-                      src="./img/decoration.png"
-                      class="carousel__itemLine"
-                    />
-                    <div class="carousel__itemTitle">牛排肩胛菲力牛排</div>
-                    <div class="carousel__itemText">
-                      肩胛菲力牛排，吃起來嫩口多汁，而牛肉上有刷上一層淡淡的醬，但味道不重
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel__item">
-                  <img src="./img/index/menu3.png" class="carousel__itemPic" />
-                  <div class="carousel__itemContentWrap">
-                    <img
-                      src="./img/decoration.png"
-                      class="carousel__itemLine"
-                    />
-                    <div class="carousel__itemTitle">松露牛排原塊</div>
-                    <div class="carousel__itemText">
-                      肩胛菲力牛排，吃起來嫩口多汁，而牛肉上有刷上一層淡淡的醬，但味道不重
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel__item">
-                  <img src="./img/index/menu1.png" class="carousel__itemPic" />
-                  <div class="carousel__itemContentWrap">
-                    <img
-                      src="./img/decoration.png"
-                      class="carousel__itemLine"
-                    />
-                    <div class="carousel__itemTitle">
-                      松露牛排原塊松露牛排原塊松露牛排原塊松露牛排原塊松露牛排原塊
-                    </div>
-                    <div class="carousel__itemText">
-                      肩胛菲力牛排，吃起來嫩口多汁，而牛肉上有刷上一層淡淡的醬，但味道不重肩胛菲力牛排，吃起來嫩口多汁，而牛肉上有刷上一層淡淡的醬，但味道不重
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel__item">
-                  <img src="./img/index/menu2.png" class="carousel__itemPic" />
-                  <div class="carousel__itemContentWrap">
-                    <img
-                      src="./img/decoration.png"
-                      class="carousel__itemLine"
-                    />
-                    <div class="carousel__itemTitle">牛排肩胛菲力牛排</div>
-                    <div class="carousel__itemText">
-                      肩胛菲力牛排，吃起來嫩口多汁，而牛肉上有刷上一層淡淡的醬，但味道不重
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel__item">
-                  <img src="./img/index/menu3.png" class="carousel__itemPic" />
-                  <div class="carousel__itemContentWrap">
-                    <img
-                      src="./img/decoration.png"
-                      class="carousel__itemLine"
-                    />
-                    <div class="carousel__itemTitle">松露牛排原塊</div>
-                    <div class="carousel__itemText">
-                      肩胛菲力牛排，吃起來嫩口多汁，而牛肉上有刷上一層淡淡的醬，但味道不重
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="nk-carousel-prev"></div>
-              <div class="nk-carousel-next"></div>
-            </div>
-            <a
-              href="./menu/list.html"
-              class="Button Index__deliciousBtn futuraBT"
-            >
-              VIEW MENU
-            </a>
-          </div>
-          <div class="Index__ads">
-            <div class="Index__ad">
-              <div
-                class="Index__adPic"
-                style='background-image: url("./img/blood.jpg");'
-              ></div>
-              <div class="Index__adContent">
-                <div class="Index__adTitle">
-                  <span class="Index__adTitle-en futuraExtraBlack">BLOOD</span
-                  ><span class="Index__adTitle-zh">捐血公益</span>
-                </div>
-                <div class="Index__adTitle">
-                  <span class="Index__adTitle-en futuraExtraBlack"
-                    >DONATION</span
-                  >
-                </div>
-                <p class="Index__adP">
-                  西堤牛排十餘年來長期響應公益捐血活動發起「熱血解封，挽袖相挺
-                  」邀請大家站出來，一起解封口罩下那藏不住的熱血!
-                </p>
-                <a href="./event.html" class="Button Index__adBtn futuraBT">
-                  VIEW MORE
-                </a>
-                <div class="Blood Index__adBlood">
-                  <img src="./img/bloodBack.png" alt="" draggable="false" />
-                  <div class="Blood__flow">
-                    <div class="Blood__flowInner"></div>
-                    <div class="Blood__flowInner Blood__flowInner-light"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="footer__deco-brown"></div>
       </div>
-      <footer class="CtFooter">
-        <div class="container">
-          <div class="CtFooter__logoWrap">
-            <div class="CtFooter__pic">
-              <img src="./img/logo.png" alt="logo" draggable="false" />
-            </div>
-            <div class="CtFooter__note">
-              Copyright 2021 © TASTy All rights reserved.
-            </div>
-          </div>
-          <div class="CtFooter__content">
-            <ul class="CtFooter__webMap">
-              <li>
-                <a href="https://www.tasty.com.tw/coupon.aspx">禮券查詢</a>
-              </li>
-              <li><a href="./contact.html">聯絡我們</a></li>
-              <li>
-                <a href="https://wowfoods.wowprime.com/branch.php">集團品牌</a>
-              </li>
-              <li>
-                <a
-                  href="https://ehrweb.104.com.tw/job.do?key=03E610518BB8EF8F36E97DCD9D11D6B08CF407DF"
-                  >人才招募</a
-                >
-              </li>
-              <li>
-                <a href="https://wowfoods.wowprime.com/privacy.php"
-                  >隱私權政策</a
-                >
-              </li>
-            </ul>
-            <div class="CtFooter__time">
-              <div class="CtFooter__title">營業時間：</div>
-              <p>
-                11:30~14:30 (最後點餐時間14:00)<br />
-                17:30~22:00 (最後點餐時間21:00)
-              </p>
-            </div>
-            <div class="CtFooter__links">
-              <a
-                href="https://www.facebook.com/tw.TASTy/"
-                class="CtFooter__linkBtn"
-                ><img src="./img/btn_fb.jpg" draggable="false"/></a
-              ><a href="" class="CtFooter__linkBtn"
-                ><img src="./img/btn_line.jpg" draggable="false"/></a
-              ><a href="" class="CtFooter__linkBtn"
-                ><img src="./img/btn_message.jpg" draggable="false"
-              /></a>
-            </div>
-          </div>
-        </div>
-      </footer>
-      <button id="btn__quickTop" class="btn__quickTop">
-        <img src="./img/btn_top.png" alt="top" draggable="false" />
-      </button>
-    </div>
-    <script src="./js/custom.js"></script>
-  </body>
+    </footer>
+    <button id="btn__quickTop" class="btn__quickTop">
+      <img src="./img/btn_top.png" alt="top" draggable="false" />
+    </button>
+  </div>
+  <script src="./js/custom.js"></script>
+</body>
+
 </html>
