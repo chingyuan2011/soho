@@ -62,7 +62,7 @@
               .children("span")
               .each(function (idx, el) {
                 setTimeout(function () {
-                  el.style.color = "#962233";
+                  el.style.color = "#ba0c2f";
                 }, 100 * idx);
               });
             setTimeout(() => {
@@ -342,12 +342,12 @@
                   ${classify + i}
                 </a>
               </div>
-              <div class="ShopList__shopPhone futuraBTMedium ">
+              <div class="ShopList__shopPhone BasicSans-Regular ">
                 <span class="prefix">TEL / </span
                 ><a href="tel:073646210">07-3646210</a>
               </div>
               <div class="ShopList__shopAdd">
-                <span class="futuraBTMedium prefix">ADD / </span
+                <span class="BasicSans-Regular prefix">ADD / </span
                 ><a
                   target="_blank"
                   href="https://www.google.com.tw/maps?q=%E9%AB%98%E9%9B%84%E5%B8%82%E6%A5%A0%E6%A2%93%E5%8D%80%E5%BE%8C%E6%98%8C%E6%96%B0%E8%B7%AF152%E8%99%9F"

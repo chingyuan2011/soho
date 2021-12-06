@@ -206,7 +206,7 @@ body.hamOpen .CtHeader__menu {
   z-index: 200;
   height: 80px;
   padding: 10px 0;
-  background-color: #951e23;
+  background-color: #ba0c2f;
   transition: all .2s;
 }
 
@@ -599,15 +599,16 @@ textarea {
   font-family: Microsoft JhengHei;
   src: local('Microsoft JhengHei UI'),local('Microsoft JhengHei');
 }@font-face {
-  font-family: futura BT Medium;
-  src: local('Futura Extra Black'),url(/font/FuturaMediumBt.ttf) format('opentype');
+  font-family: BasicSans-Regular;
+  src: local('Futura Extra Black'),url(/font/BasicSans-Regular.otf) format('opentype');
 }@font-face {
-  font-family: futura BT;
-  src: local('Futura Extra Black'),url(/font/FuturaBoldFont.ttf) format('opentype');
+  font-family: BasicSans-SemiBold;
+  src: local('Futura Extra Black'),url(/font/BasicSans-SemiBold.otf) format('opentype');
 }@font-face {
-  font-family: FuturaExtraBlack;
-  src: local('FuturaExtraBlack'),url(/font/FuturaExtraBlack.ttf) format('opentype');
+  font-family: BasicSans-Bold;
+  src: local('BasicSans-Bold'),url(/font/BasicSans-Bold.otf) format('opentype');
 }
+
 
 .container {
   max-width: 1500px;
@@ -1341,16 +1342,16 @@ ul {
   padding: 0;
 }
 
-.futuraBTMedium {
-  font-family: futura BT Medium,Roboto,Arial,Microsoft JhengHei Modify,Microsoft JhengHei,PingFangTC,sans-serif;
+.BasicSans-Regular {
+  font-family: BasicSans-Regular,Roboto,Arial,Microsoft JhengHei Modify,Microsoft JhengHei,PingFangTC,sans-serif;
 }
 
-.futuraBT {
-  font-family: futura BT,Roboto,Arial,Microsoft JhengHei Modify,Microsoft JhengHei,PingFangTC,sans-serif;
+.BasicSans-SemiBold {
+  font-family: BasicSans-SemiBold,Roboto,Arial,Microsoft JhengHei Modify,Microsoft JhengHei,PingFangTC,sans-serif;
 }
 
-.futuraExtraBlack {
-  font-family: futuraExtraBlack,Roboto,Arial,Microsoft JhengHei Modify,Microsoft JhengHei,PingFangTC,sans-serif;
+.BasicSans-Bold {
+  font-family: BasicSans-Bold,Roboto,Arial,Microsoft JhengHei Modify,Microsoft JhengHei,PingFangTC,sans-serif;
 }
 
 .breadcrumbs {
@@ -1655,7 +1656,7 @@ body.popOpen .MenuContent__content {
   align-items: center;
   height: 48px;
   overflow: hidden;
-  background-color: #951e22;
+  background-color: #ba0c2f;
 }
 
 .IndexPrompter__text {
@@ -1680,7 +1681,7 @@ body.popOpen .MenuContent__content {
   text-align: center;
   letter-spacing: 1.2px;
   background-color: #a78a70;
-  box-shadow: 5px -5px 0 #000;
+  box-shadow: 5px -5px 0 #142638;
   transition: box-shadow .3s;
 }
 
@@ -1691,7 +1692,7 @@ body.popOpen .MenuContent__content {
 }
 
 .Button:hover {
-  box-shadow: -5px 5px 0 #000;
+  box-shadow: -5px 5px 0 #142638;
 }@media (max-width: 768px) {
   .Button {
     font-size: 16px;
@@ -1757,7 +1758,7 @@ body.popOpen .MenuContent__content {
   width: 50%;
   padding: 100px 100px;
   padding-left: 100px;
-  background-color: #9d2235;
+  background-color: #ba0c2f;
 }
 
 .IndexNewsCarouselWrap .carousel__itemPic {
@@ -1906,13 +1907,14 @@ body.popOpen .MenuContent__content {
 
 .IndexMenuCarousel .nk-carousel-inner {
   width: 100%;
+  padding-bottom: 40px;
 }
 
 .IndexMenuCarousel .carousel__item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 35%;
+  width: 40%;
   height: 700px;
   color: #142638;
 }
@@ -1922,7 +1924,7 @@ body.popOpen .MenuContent__content {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  max-width: 500px;
+  max-width: 440px;
   padding: 0 20px;
 }
 
@@ -1967,26 +1969,28 @@ body.popOpen .MenuContent__content {
   font-weight: 700;
   text-overflow: ellipsis;
   white-space: nowrap;
+  text-align: center;
 }
 
 .IndexMenuCarousel .carousel__itemText,
 .IndexMenuCarousel .carousel__itemTitle {
-  width: 80%;
+  width: 100%;
   overflow: hidden;
   line-height: 1.5;
-  text-align: center;
   opacity: .6;
   transition: all .5s;
+  text-align: center;
 }
 
 .IndexMenuCarousel .carousel__itemText {
   display: -webkit-box;
   font-size: 18px;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
 }@media (max-width: 1400px) {
   .IndexMenuCarousel .carousel__item {
-    height: 600px;
+    width: 500px;
+    height: 500px;
   }
 
   .IndexMenuCarousel .is-selected .carousel__itemTitle {
@@ -1998,7 +2002,11 @@ body.popOpen .MenuContent__content {
   }
 
   .IndexMenuCarousel .carousel__itemContentWrap {
-    max-width: 400px;
+    max-width: 440px;
+  }
+
+  .IndexMenuCarousel .is-selected .carousel__itemPic {
+    width: 70%;
   }
 
   .IndexMenuCarousel .carousel__itemTitle {
@@ -2006,7 +2014,6 @@ body.popOpen .MenuContent__content {
   }
 
   .IndexMenuCarousel .carousel__itemText {
-    padding: 0 40px;
     font-size: 14px;
   }
 }@media (max-width: 1200px) {
@@ -2056,12 +2063,13 @@ body.popOpen .MenuContent__content {
   }
 
   .IndexMenuCarousel .carousel__itemTitle {
+    padding: 0 20px;
     font-size: 20px;
     opacity: 1;
   }
 
   .IndexMenuCarousel .carousel__itemText {
-    width: 100%;
+    padding: 0 20px;
     font-size: 16px;
     opacity: 1;
   }
@@ -2248,7 +2256,7 @@ body.popOpen .MenuContent__content {
   padding-left: 1%;
   font-size: 28px;
   font-weight: 900;
-  color: #962233;
+  color: #ba0c2f;
   letter-spacing: .5em;
 }
 
@@ -2267,7 +2275,7 @@ body.popOpen .MenuContent__content {
   bottom: 0;
   width: 100%;
   height: 20px;
-  background-color: #962233;
+  background-color: #ba0c2f;
 }
 
 .Index__deliciousBtn {
@@ -2283,7 +2291,7 @@ body.popOpen .MenuContent__content {
 
 .Index__ad {
   display: flex;
-  background-color: #962233;
+  background-color: #ba0c2f;
 }
 
 .Index__adContent,
@@ -2537,7 +2545,7 @@ body.popOpen .MenuContent__content {
 
   .Banner__title {
     left: 20px;
-    font-size: 14vw;
+    font-size: 12vw;
   }
 }
 
@@ -3877,8 +3885,8 @@ body.popOpen .MenuContent__content {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 420px;
-  height: 210px;
+  width: 500px;
+  height: 250px;
   cursor: pointer;
   transition: transform .2s;
   transform: scale(1);
@@ -4005,6 +4013,7 @@ body.popOpen .MenuContent__content {
   position: relative;
   z-index: 1;
   padding-top: 25px;
+  padding-bottom: 50px;
   background-color: #fff;
 }
 
@@ -4061,39 +4070,27 @@ body.popOpen .MenuContent__content {
   font-size: 20px;
 }
 
-.Event__infoNumber div,
-.Event__infoNumber span {
+.Event__infoNumber div{
   margin-right: 15px;
-}
-
-.Event__infoNumber span {
-  display: flex;
-  align-items: center;
-}
-
-.Event__infoNumber span:last-child {
-  margin-right: 0;
 }
 
 .Event .blood-accumulation {
   font-size: 48px;
   color: #962233;
 }
+.Event__infoNumberText {
+  font-size: 30px;
+  text-align: center;
+  color: #962233;
+  font-weight: bold;
+}
 
-.Event__carouselTitle {
-  margin-bottom: 25px;
-  padding-left: 75px;
-  font-size: 24px;
-  font-weight: 900;
-  color: #142638;
-  letter-spacing: 2px;
-}@media (max-width: 1400px) {
+.Event__carousel {
+  padding: 50px 0 150px;
+}
+@media (max-width: 1400px) {
   .Event__infoContent {
     padding: 20px;
-  }
-
-  .Event__carouselTitle {
-    padding-left: 25px;
   }
 
   .Event__infoAnimation {
@@ -4125,6 +4122,9 @@ body.popOpen .MenuContent__content {
     margin-bottom: 20px;
   }
 }@media (max-width: 768px) {
+  .Event__carousel {
+    padding: 50px 0 50px;
+  }
   .Event__infoAnimation {
     width: 100%;
   }
@@ -4134,14 +4134,7 @@ body.popOpen .MenuContent__content {
     font-size: 16px;
   }
 
-  .Event__infoNumber .prefix {
-    justify-content: center;
-    width: 100%;
-    text-align: center;
-  }
-
-  .Event__infoNumber div,
-  .Event__infoNumber span {
+  .Event__infoNumber div {
     margin-right: 0;
   }
 
