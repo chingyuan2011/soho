@@ -351,7 +351,7 @@ body.hamOpen .CtHeader__menu {
   z-index: 1;
   padding: 75px 0;
   color: #fff;
-  background-color: #142638;
+  background-color: #ba0c2f;
 }
 
 .CtFooter .container {
@@ -361,8 +361,8 @@ body.hamOpen .CtHeader__menu {
 
 .CtFooter .CtFooter__logoWrap {
   flex-shrink: 0;
-  width: 300px;
-  margin-right: 20px;
+  margin-right: auto;
+  width: 150px;
 }
 
 .CtFooter .CtFooter__logoWrap .CtFooter__pic img {
@@ -450,6 +450,7 @@ body.hamOpen .CtHeader__menu {
 
   .CtFooter .CtFooter__logoWrap {
     margin-bottom: 20px;
+    margin-right: 0;
   }
 
   .CtFooter .CtFooter__note {
@@ -2536,7 +2537,7 @@ body.popOpen .MenuContent__content {
   position: absolute;
   top: 50%;
   left: 35px;
-  font-size: 7vw;
+  font-size: 5vw;
   transform: translateY(-50%);
 }@media (max-width: 960px) {
   .Banner {
@@ -2545,7 +2546,7 @@ body.popOpen .MenuContent__content {
 
   .Banner__title {
     left: 20px;
-    font-size: 12vw;
+    font-size: 8vw;
   }
 }
 
