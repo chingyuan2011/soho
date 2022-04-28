@@ -1,0 +1,189 @@
+.part__car {
+  position: relative;
+  padding-bottom: 48.6%;
+  background-image: url('~@/assets/img/car_road.jpg');
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: contain;
+  @media (max-width: 768px) {
+    padding-bottom: 132.6%;
+    background-image: url('~@/assets/img/roadM.jpg');
+  }
+}
+
+.car {
+  &__mains {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 86.2%;
+  }
+
+  &__main {
+    display: none;
+
+    &.active {
+      display: block;
+    }
+
+    .car-title {
+      position: absolute;
+      top: 7%;
+      left: 15.8%;
+      width: 67%;
+    }
+
+    .car-text {
+      position: absolute;
+      top: 33%;
+      left: 15.3%;
+      width: 36.9%;
+    }
+
+    .car-pic {
+      position: absolute;
+      top: 23.9%;
+      left: 45.3%;
+      width: 49.9%;
+    }
+
+    .car-more {
+      position: absolute;
+      top: 65.3%;
+      left: 25%;
+      width: 12.7%;
+      transition: transform .5s;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  &__btns {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 13.8%;
+  }
+
+  &__btn {
+    position: absolute;
+    bottom: 62.5%;
+    cursor: pointer;
+
+    .general {
+      transition: opacity .5s;
+    }
+
+    .highlight {
+      position: absolute;
+      top: 0;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: opacity .5s;
+    }
+
+    &.active,
+    &:hover {
+      .general {
+        opacity: 0;
+      }
+
+      .highlight {
+        display: block;
+        opacity: 1;
+      }
+    }
+
+    &-all {
+      left: 15.2%;
+      width: 19%;
+    }
+
+    &-kicks {
+      left: 37%;
+      width: 12.3%;
+    }
+
+    &-tida {
+      left: 52.1%;
+      width: 12.3%;
+    }
+
+    &-xtrail {
+      left: 67.2%;
+      width: 12.3%;
+    }
+  }
+
+  &__coin1 {
+    position: absolute;
+    top: 7.2%;
+    left: -5%;
+    width: 17.2%;
+    animation: ani-coinJump  3.1s 0s infinite linear;
+  }
+  @media (max-width: 768px) {
+    &__main {
+      position: relative;
+      height: 100%;
+
+      .car-m {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        max-width: none;
+      }
+
+      .car-more {
+        top: 83.3%;
+        left: 37%;
+        width: 29.7%;
+      }
+    }
+
+    &__btns {
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 15.6%;
+    }
+
+    &__btn {
+      bottom: 31.5%;
+
+      &-all {
+        left: 2.8%;
+        width: 28.5%;
+      }
+
+      &-kicks {
+        left: 33%;
+        width: 18.3%;
+      }
+
+      &-tida {
+        left: 52.3%;
+        width: 18.3%;
+      }
+
+      &-xtrail {
+        left: 73.2%;
+        width: 18.3%;
+      }
+    }
+
+    &__coin2 {
+      position: absolute;
+      top: 33.2%;
+      left: -10%;
+      width: 16.2%;
+      animation: ani-coinJump  1.9s 0s infinite linear;
+    }
+  }
+}
