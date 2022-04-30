@@ -6,6 +6,26 @@ $(document).ready(function () {
 
   var body = $('html, body')
 
+  var oriScrollTop = 0
+  var scrollListenerTrigger = true
+  window.addEventListener('scroll', function () {
+    if (!scrollListenerTrigger) return
+
+    var newScrollTop = body.scrollTop()
+    if (newScrollTop > 300) {
+      body.addClass('overPT200')
+    } else {
+      body.removeClass('overPT200')
+    }
+
+    if (newScrollTop < oriScrollTop) {
+      body.addClass('scrollBack')
+    } else {
+      body.removeClass('scrollBack')
+    }
+    oriScrollTop = newScrollTop
+  })
+
   window.addEventListener('resize', function () {
     closeMenu()
   })
@@ -15,6 +35,7 @@ $(document).ready(function () {
 
     var overTrigger = true
     if (body.hasClass('mActive')) {
+      scrollListenerTrigger = false
       overTrigger = false
     }
     setBodyOverflow(overTrigger)
@@ -31,10 +52,16 @@ $(document).ready(function () {
   };
 
   $('.header__menu-link').click(function (e) {
-    var deviceOffset = $(window).width() > 768 ? 110 : 100
+    scrollListenerTrigger = false
     var target = $(this).attr('href')
+
+    var deviceOffset = $(window).width() > 768 ? 110 : 100
+
     var targetPos = $(target).offset().top - deviceOffset
-    body.animate({ scrollTop: targetPos }, 1000)
+    body.animate({ scrollTop: targetPos }, 1000, 'linear')
+    setTimeout(function () {
+      scrollListenerTrigger = true
+    }, 500)
     closeMenu()
   })
 

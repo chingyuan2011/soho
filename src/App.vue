@@ -31,13 +31,13 @@ export default {
 <style lang="scss">
   @use '@/assets/style/main.scss';
 
-  #app {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
+  // #app {
+  //   display: flex;
+  //   flex-direction: column;
+  //   min-height: 100vh;
+  // }
 
-  #view {
-    flex: 1;
-  }
+  // #view {
+  //   flex: 1;
+  // }
 </style>

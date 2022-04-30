@@ -1,6 +1,5 @@
 .part__kv {
   position: relative;
-  margin-top: 5%;
   padding-bottom: 61.6%;
   background-image: url('~@/assets/img/kv_bg.jpg');
   background-repeat: no-repeat;
@@ -10,10 +9,10 @@
   img {
     max-width: none;
   }
+
   @media (max-width: 768px) {
-    margin-top: 0;
     padding-bottom: 85%;
-    background-image: none;
+    background-image: url('~@/assets/img/kv_bgM.jpg');
   }
 }
 
@@ -100,13 +99,6 @@
     width: 27.5%;
   }
 
-  &__icon1 {
-    position: absolute;
-    top: 88.6%;
-    left: 4.8%;
-    width: 15.5%;
-  }
-
   &__icon2 {
     position: absolute;
     top: 92%;
@@ -171,12 +163,6 @@
       top: 67.3%;
       left: 64.4%;
       width: 27.5%;
-    }
-
-    &__icon1 {
-      top: 88.4%;
-      left: 4.6%;
-      width: 17.5%;
     }
 
     &__icon2 {

@@ -22,6 +22,13 @@
     width: 100%;
   }
 
+  &__icon1 {
+    position: absolute;
+    top: 82.6%;
+    left: 4.8%;
+    width: 15.5%;
+  }
+
   &__s1 {
     position: absolute;
     top: 21.5%;
@@ -88,6 +95,12 @@
       top: 11.5%;
       bottom: initial;
       left: 0;
+    }
+
+    &__icon1 {
+      top: 45.9%;
+      left: 4.6%;
+      width: 22.5%;
     }
 
     &__coin1 {
