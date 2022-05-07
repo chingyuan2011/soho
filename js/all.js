@@ -5,24 +5,26 @@ $(document).ready(function () {
   new WOW().init()
 
   var body = $('html, body')
-  
+  var scrollBack = 'scrollBack'
+  var overPT300= 'overPT300'
+
   var oriScrollTop = 0
-  var scrollListenerTrigger = true
   window.addEventListener('scroll', function () {
-    if(!scrollListenerTrigger) return
 
     var newScrollTop = body.scrollTop()
-    if (newScrollTop > 300) {
-      body.addClass('overPT200')
+
+    if(newScrollTop > 300) {
+      body.addClass(overPT300)
     } else {
-      body.removeClass('overPT200')
+      body.removeClass(overPT300)
     }
 
     if (newScrollTop < oriScrollTop) {
-      body.addClass('scrollBack')
-    } else {
-      body.removeClass('scrollBack')
+      body.addClass(scrollBack)
+    }else {
+      body.removeClass(scrollBack)
     }
+
     oriScrollTop = newScrollTop
   })
 
@@ -33,11 +35,8 @@ $(document).ready(function () {
   $('#hambtn').click(function () {
     body.toggleClass('mActive')
 
-    var overTrigger = true
-    if (body.hasClass('mActive')) {
-      scrollListenerTrigger = false
-      overTrigger = false
-    }
+    var overTrigger = body.hasClass('mActive') ? false : true
+
     setBodyOverflow(overTrigger)
   })
 
@@ -52,16 +51,19 @@ $(document).ready(function () {
   };
 
   $('.header__menu-link').click(function (e) {
-    scrollListenerTrigger = false
+    e.preventDefault();
     var target = $(this).attr('href')
 
-    var deviceOffset = $(window).width() > 768 ? 110 : 100
+    var isPc = $(window).width() > 768
+    
+    var targetOriPos = $(target).offset().top
 
-    var targetPos = $(target).offset().top - deviceOffset
-    body.animate({ scrollTop: targetPos }, 1000, 'linear')
-    setTimeout(function(){
-      scrollListenerTrigger = true
-    }, 500)
+    var navbarOffset = oriScrollTop < targetOriPos ? 0 : isPc ? 110 : 80
+    var targetPos = targetOriPos - navbarOffset - 20
+    var time = Math.ceil(Math.abs(targetOriPos - oriScrollTop) / 500) * 200
+
+    body.animate({ scrollTop: targetPos }, time, 'linear')
+    
     closeMenu()
   })
 

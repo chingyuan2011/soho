@@ -33,6 +33,7 @@ body {
   @media (max-width: 768px) {
     >div {
       &::after {
+        z-index: 29;
         width: 46px;
       }
     }
