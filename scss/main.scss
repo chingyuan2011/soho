@@ -1,0 +1,66 @@
+@import './base/reset';
+@import './base/font-face';
+@import './HFF';
+
+body {
+  position: relative;
+  min-width: 320px;
+  font-family: Roboto, Arial, 'Microsoft JhengHei Modify', 'Microsoft JhengHei', PingFangTC, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #fff;
+
+  >div {
+    overflow: hidden;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 10;
+      width: 6%;
+      height: 100%;
+      background-image: url('../imgs/right_bg.jpg');
+      background-size: contain;
+    }
+  }
+  @media (max-width: 768px) {
+    >div {
+      &::after {
+        z-index: 29;
+        width: 46px;
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    overflow: scroll;
+
+    >div {
+      &::after {
+        width: 32px;
+      }
+    }
+  }
+}
+
+input,
+label,
+select,
+button {
+  cursor: pointer;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  display: block;
+}
