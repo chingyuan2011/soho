@@ -19,7 +19,7 @@ $(document).ready(function () {
       body.removeClass(overPT300)
     }
 
-    if (newScrollTop < oriScrollTop) {
+    if (newScrollTop < oriScrollTop && newScrollTop !== 0) {
       body.addClass(scrollBack)
     }else {
       body.removeClass(scrollBack)
