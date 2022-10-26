@@ -1,0 +1,13 @@
+.car {
+    position: relative;
+    padding-top: 140px;
+    background: linear-gradient(0deg, rgba(139,137,165,1) 0%, rgba(210,206,225,1) 100%);
+
+    &__note {
+        padding: initial;
+        list-style: disc;
+        color: #fff;
+        line-height: 2;
+        font-weight: 500;
+    }
+}

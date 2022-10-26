@@ -388,6 +388,19 @@ body.scrollBack .header {
   background-color: #fff;
 }
 
+.car {
+  position: relative;
+  padding-top: 140px;
+  background: linear-gradient(0deg, rgb(139, 137, 165) 0%, rgb(210, 206, 225) 100%);
+}
+.car__note {
+  padding: initial;
+  list-style: disc;
+  color: #fff;
+  line-height: 2;
+  font-weight: 500;
+}
+
 body {
   position: relative;
   min-width: 320px;
