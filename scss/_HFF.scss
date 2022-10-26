@@ -1,3 +1,23 @@
+@keyframes show-header {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+body.scrollBack .header {
+  opacity: 1;
+  position: fixed;
+  animation-name: show-header;
+  animation-duration: 300ms;
+  animation-timing-function: ease-out;
+}
 
 .header {
   position: absolute;

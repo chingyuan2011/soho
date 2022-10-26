@@ -19,7 +19,7 @@ $(document).ready(function () {
       body.removeClass(overPT300)
     }
 
-    if (newScrollTop < oriScrollTop) {
+    if (newScrollTop < oriScrollTop && newScrollTop !== 0) {
       body.addClass(scrollBack)
     }else {
       body.removeClass(scrollBack)
@@ -29,7 +29,9 @@ $(document).ready(function () {
   })
 
   window.addEventListener('resize', function () {
-    closeMenu()
+    if(body.classList.contains('mActive')) {
+      closeMenu()
+    }
   })
 
   $('#hambtn').click(function () {
