@@ -29,7 +29,9 @@ $(document).ready(function () {
   })
 
   window.addEventListener('resize', function () {
-    closeMenu()
+    if(body.classList.contains('mActive')) {
+      closeMenu()
+    }
   })
 
   $('#hambtn').click(function () {
