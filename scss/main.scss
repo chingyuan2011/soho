@@ -1,6 +1,7 @@
 @import './base/reset';
 @import './base/font-face';
 @import './HFF';
+@import './section-gift';
 
 body {
   position: relative;
@@ -9,38 +10,39 @@ body {
   font-size: 16px;
   line-height: 1.5;
   background-color: #fff;
+  height: 200vh;
 
   >div {
-    overflow: hidden;
+    // overflow: hidden;
 
-    &::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      right: 0;
-      z-index: 10;
-      width: 6%;
-      height: 100%;
-      background-image: url('../imgs/right_bg.jpg');
-      background-size: contain;
-    }
+    // &::after {
+    //   content: '';
+    //   position: absolute;
+    //   top: 0;
+    //   right: 0;
+    //   z-index: 10;
+    //   width: 6%;
+    //   height: 100%;
+    //   // background-image: url('../imgs/right_bg.jpg');
+    //   background-size: contain;
+    // }
   }
   @media (max-width: 768px) {
     >div {
-      &::after {
-        z-index: 29;
-        width: 46px;
-      }
+      // &::after {
+      //   z-index: 29;
+      //   width: 46px;
+      // }
     }
   }
 
   @media (max-width: 480px) {
-    overflow: scroll;
+    // overflow: scroll;
 
     >div {
-      &::after {
-        width: 32px;
-      }
+      // &::after {
+      //   width: 32px;
+      // }
     }
   }
 }
@@ -63,4 +65,36 @@ img {
 
 a {
   display: block;
+}
+
+#app {
+  max-width: 1920px;
+  overflow: hidden;
+
+  @media (max-width: 768px) {
+    min-width: 360px;
+    overflow: auto;
+  }
+}
+
+.layout {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  opacity: .1;
+}
+
+.container {
+  position: relative;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(.8);
+  }
+
+  to {
+    transform: scale(1);
+  }
 }

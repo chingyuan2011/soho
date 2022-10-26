@@ -1,0 +1,134 @@
+.gift {
+    position: relative;
+    background-image: url('../images/gift_bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+    padding-top: 110px;
+    padding-bottom: 110px;
+
+
+    &__deco {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+
+        .ball {
+            position: absolute;
+            animation-name: pulse;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+            animation-timing-function: linear;
+            animation-duration: 3s;
+
+            
+            &-1 {
+                top: -10%;
+                right: calc(50% + 500px);
+                animation-delay: .5s;
+            }
+
+            &-2 {
+                top: 0;
+                left: calc(50% + 350px);
+                animation-delay: 1s;
+
+
+            }
+
+            &-3 {
+                top: 48%;
+                right: calc(50% + 580px);
+                animation-delay: .2s;
+    
+
+            }
+            &-4 {
+                left: calc(50% + 350px);
+                top: 33%;
+                animation-delay: 1.5s;
+           
+
+            }
+        }
+    }
+
+
+    &__title {
+        img {
+            display: inline-block;
+        }
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    &-sharp-tv {
+        box-shadow: 0 0 100px -20px #fff;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 20px;
+        &__top {
+            width: 100%;
+        }
+
+        &__bottom {
+            display: flex;
+            justify-content: center;
+        }
+
+        &__more {
+            text-align: right;
+            margin-bottom: 50px;
+
+            a {
+                display: inline-block;
+            }
+        }
+    }
+
+    &__subTitle {
+        margin-bottom: 20px;
+    }
+
+    &-bonus {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 80px;
+    }
+    
+    &-note {
+
+      display: flex;
+      justify-content: center;
+        position: relative;
+        
+        &__contact {
+            flex-shrink: 0;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+
+
+    @media (max-width: 1366px) {
+        &-note {
+            flex-wrap: wrap;
+              &__content {
+                margin-bottom: 10px;
+              }
+              &__contact {
+                 position: relative;
+              }
+          }
+    }
+}
+
+.container {
+    max-width: 1520px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
