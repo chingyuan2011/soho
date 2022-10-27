@@ -463,6 +463,13 @@ body.scrollBack .header {
   border-radius: 40px;
   margin-bottom: 10%;
 }
+.car__intro-board {
+  display: none;
+  top: 0;
+}
+.car__intro-board.active {
+  display: block;
+}
 .car__intro-board-content .mb {
   display: none;
 }

@@ -62,7 +62,11 @@
     }
 
     &__intro-board {
-
+        display: none;
+        &.active {
+            display: block;
+        }
+        top: 0;
         &-content {
             .mb {
                 display: none;
