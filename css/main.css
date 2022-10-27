@@ -281,19 +281,13 @@ body.scrollBack .header__menu {
   }
 }
 
-.fake {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
 .kv {
   position: relative;
+  overflow: hidden;
   padding-bottom: 60%;
   background-image: url(../images/kv_bg.jpg);
-  background-size: 1920px;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-position: bottom center;
 }
 .kv__tit {
@@ -458,6 +452,17 @@ body.scrollBack .header__menu {
   padding-top: 110px;
   padding-bottom: 110px;
 }
+@media (max-width: 1024px) {
+  .gift {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+}
+@media (max-width: 1024px) {
+  .gift .container {
+    max-width: 600px;
+  }
+}
 .gift__deco {
   position: absolute;
   width: 100%;
@@ -506,6 +511,11 @@ body.scrollBack .header__menu {
 .gift__title img {
   display: inline-block;
 }
+@media (max-width: 1024px) {
+  .gift__title {
+    margin-bottom: 20px;
+  }
+}
 .gift-sharp-tv {
   box-shadow: 0 0 100px -20px #fff;
   display: flex;
@@ -520,6 +530,11 @@ body.scrollBack .header__menu {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 1024px) {
+  .gift-sharp-tv__bottom {
+    display: block;
+  }
+}
 .gift-sharp-tv__more {
   text-align: right;
   margin-bottom: 50px;
@@ -527,15 +542,36 @@ body.scrollBack .header__menu {
 .gift-sharp-tv__more a {
   display: inline-block;
 }
+@media (max-width: 1024px) {
+  .gift-sharp-tv__more {
+    text-align: center;
+  }
+  .gift-sharp-tv__more a {
+    width: 150px;
+  }
+}
 .gift__subTitle {
   margin-bottom: 20px;
   position: relative;
   z-index: 1;
 }
+@media (max-width: 1024px) {
+  .gift__subTitle {
+    margin: 0 auto 20px;
+    max-width: 600px;
+  }
+}
 .gift-bonus {
   display: flex;
   justify-content: center;
   margin-bottom: 80px;
+}
+@media (max-width: 1024px) {
+  .gift-bonus {
+    display: block;
+    max-width: 300px;
+    margin: 0 auto 40px;
+  }
 }
 .gift-note {
   display: flex;
@@ -553,10 +589,16 @@ body.scrollBack .header__menu {
     flex-wrap: wrap;
   }
   .gift-note__content {
-    margin-bottom: 10px;
+    margin-bottom: 40px;
   }
   .gift-note__contact {
     position: relative;
+  }
+}
+@media (max-width: 1024px) {
+  .gift-note__contact {
+    text-align: center;
+    width: 150px;
   }
 }
 
@@ -888,4 +930,16 @@ a {
 }
 .float-links .float-link:last-child {
   margin-bottom: 0;
+}
+
+h1 span, h2 span, h3 span {
+  display: none;
+}
+
+.button {
+  transition: transform 0.5s;
+  cursor: pointer;
+}
+.button:hover {
+  transform: translateX(-10px);
 }

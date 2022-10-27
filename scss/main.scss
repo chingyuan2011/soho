@@ -93,3 +93,17 @@ a {
     }
   }
 }
+
+h1, h2, h3 {
+  span {
+    display: none;
+  }
+}
+
+.button {
+  transition: transform .5s;
+  cursor: pointer;
+  &:hover {
+    transform: translateX(-10px);
+  }
+}
