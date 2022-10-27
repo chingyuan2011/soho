@@ -1,13 +1,207 @@
 .car {
     position: relative;
-    padding-top: 140px;
+    padding-top: 150px;
     background: linear-gradient(0deg, rgba(139,137,165,1) 0%, rgba(210,206,225,1) 100%);
 
+    &__intro-btns {
+        display: flex;
+        margin-bottom: 50px;
+    }
+
+    &__intro-btn {
+        background-color: #fff;
+        border: none;
+        position: relative;
+        height: 77px;
+        flex: 1;
+        transition:background-color .3s;
+        margin: 0 2px;
+   
+
+        &:first-child {
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            margin-left: 0;
+        }
+
+        &:last-child {
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            margin-right: 0;
+        }
+
+        img {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .active {
+            opacity: 0;
+
+        }
+
+        &.active, &:hover {
+            background-color: #212121;
+            .active {
+                opacity: 1;
+            }
+            .normal {
+                opacity: 0;
+            }
+        }
+    }
+
+    &__intro-boards {
+        position: relative;
+        background-color: #fff;
+        border-radius: 40px;   
+        margin-bottom: 10%;
+    }
+
+    &__intro-board {
+
+        &-content {
+            .mb {
+                display: none;
+            }
+        }
+        &-links {
+            position: absolute;
+            display: flex;
+            margin-bottom: 3%;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            margin-left: 6%;
+
+            a {
+                width: 15%;
+                margin-right: 10px;
+            }
+        }
+    }
     &__note {
-        padding: initial;
+        padding-left: 20px;
         list-style: disc;
         color: #fff;
         line-height: 2;
         font-weight: 500;
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
+    @media (max-width: 1440px) {
+        padding-top: 80px;
+        &__intro-btns {
+            margin-bottom: 40px;
+        }
+
+        &__intro-btn {
+            height: 60px;
+        }
+
+        &__intro-boards {
+          margin-bottom: 5%; 
+        }
+    }
+
+    @media (max-width: 960px) {
+        padding-top: 60px;
+
+        &__intro-btns {
+            // width: 960px;
+            margin-bottom: 0;
+            overflow: auto;
+        }
+
+        .container-btns {
+            padding: 0;
+            // overflow: auto;
+            margin-bottom: 20px;
+            position: relative;
+           &::after {
+            content: '';
+            position: absolute;
+            z-index: 1;
+            pointer-events: none;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+            right: 0;
+            box-shadow: inset -10px 0px 10px #fff;
+           }
+
+           &:hover {
+            &::after {
+                display: none;
+            }
+           }
+        }
+
+        &__intro-btn {
+            height: 55px;
+            width: 137px;
+            flex-shrink: 0;
+            flex-grow: 1;
+            flex-basis: auto;
+            &:first-child {
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+             
+            }
+    
+            &:last-child {
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+         
+            }
+        }
+
+  
+        &__intro-boards {
+            border-radius: 10px;  
+        }
+        &__intro-board {
+            padding: 40px 0 ;
+            &-content {
+                text-align: center;
+                margin-bottom: 60px;
+                .mb {
+                    display: inline-block;
+                }
+
+                .pc {
+                    display: none;
+                }
+            }
+            &-links {
+                position: relative;
+                justify-content: center;
+                margin-left: 0;
+                margin-bottom: 0;
+                a {
+                    width: 40%;
+                    max-width: 239px;
+                    &:first-child {
+                        margin-right: 5x;
+                        margin-left: 30px;
+                        
+                    }
+                    &:last-child {
+                        margin-left: 5px;
+                        
+                    }
+                }
+            }
+
+        
+        }
+
+        &__note {
+            font-size: 14px;
+        }
     }
 }

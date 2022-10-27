@@ -313,6 +313,8 @@ body.scrollBack .header {
 }
 .gift__subTitle {
   margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
 }
 .gift-bonus {
   display: flex;
@@ -410,15 +412,174 @@ body.scrollBack .header {
 
 .car {
   position: relative;
-  padding-top: 140px;
+  padding-top: 150px;
   background: linear-gradient(0deg, rgb(139, 137, 165) 0%, rgb(210, 206, 225) 100%);
 }
+.car__intro-btns {
+  display: flex;
+  margin-bottom: 50px;
+}
+.car__intro-btn {
+  background-color: #fff;
+  border: none;
+  position: relative;
+  height: 77px;
+  flex: 1;
+  transition: background-color 0.3s;
+  margin: 0 2px;
+}
+.car__intro-btn:first-child {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  margin-left: 0;
+}
+.car__intro-btn:last-child {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-right: 0;
+}
+.car__intro-btn img {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.car__intro-btn .active {
+  opacity: 0;
+}
+.car__intro-btn.active, .car__intro-btn:hover {
+  background-color: #212121;
+}
+.car__intro-btn.active .active, .car__intro-btn:hover .active {
+  opacity: 1;
+}
+.car__intro-btn.active .normal, .car__intro-btn:hover .normal {
+  opacity: 0;
+}
+.car__intro-boards {
+  position: relative;
+  background-color: #fff;
+  border-radius: 40px;
+  margin-bottom: 10%;
+}
+.car__intro-board-content .mb {
+  display: none;
+}
+.car__intro-board-links {
+  position: absolute;
+  display: flex;
+  margin-bottom: 3%;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin-left: 6%;
+}
+.car__intro-board-links a {
+  width: 15%;
+  margin-right: 10px;
+}
 .car__note {
-  padding: initial;
+  padding-left: 20px;
   list-style: disc;
   color: #fff;
   line-height: 2;
   font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+@media (max-width: 1440px) {
+  .car {
+    padding-top: 80px;
+  }
+  .car__intro-btns {
+    margin-bottom: 40px;
+  }
+  .car__intro-btn {
+    height: 60px;
+  }
+  .car__intro-boards {
+    margin-bottom: 5%;
+  }
+}
+@media (max-width: 960px) {
+  .car {
+    padding-top: 60px;
+  }
+  .car__intro-btns {
+    margin-bottom: 0;
+    overflow: auto;
+  }
+  .car .container-btns {
+    padding: 0;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  .car .container-btns::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    right: 0;
+    box-shadow: inset -10px 0px 10px #fff;
+  }
+  .car .container-btns:hover::after {
+    display: none;
+  }
+  .car__intro-btn {
+    height: 55px;
+    width: 137px;
+    flex-shrink: 0;
+    flex-grow: 1;
+    flex-basis: auto;
+  }
+  .car__intro-btn:first-child {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .car__intro-btn:last-child {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .car__intro-boards {
+    border-radius: 10px;
+  }
+  .car__intro-board {
+    padding: 40px 0;
+  }
+  .car__intro-board-content {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .car__intro-board-content .mb {
+    display: inline-block;
+  }
+  .car__intro-board-content .pc {
+    display: none;
+  }
+  .car__intro-board-links {
+    position: relative;
+    justify-content: center;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+  .car__intro-board-links a {
+    width: 40%;
+    max-width: 239px;
+  }
+  .car__intro-board-links a:first-child {
+    margin-right: 5x;
+    margin-left: 30px;
+  }
+  .car__intro-board-links a:last-child {
+    margin-left: 5px;
+  }
+  .car__note {
+    font-size: 14px;
+  }
 }
 
 body {
@@ -467,7 +628,7 @@ a {
   top: 0;
   left: 0;
   z-index: 0;
-  opacity: 0.5;
+  opacity: 0.1;
 }
 
 .container {
