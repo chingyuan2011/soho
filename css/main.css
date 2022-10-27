@@ -349,6 +349,12 @@ body.scrollBack .header {
   background-color: #dedaed;
   overflow: hidden;
 }
+@media (max-width: 960px) {
+  .video {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
 .video::after, .video::before {
   content: "";
   position: absolute;
@@ -382,10 +388,24 @@ body.scrollBack .header {
           animation-delay: 3s;
 }
 .video__wrap {
-  min-height: 800px;
   border-radius: 40px;
   width: 100%;
   background-color: #fff;
+  width: 100%;
+  position: relative;
+  padding-top: 53%;
+}
+.video video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .car {
@@ -447,7 +467,7 @@ a {
   top: 0;
   left: 0;
   z-index: 0;
-  opacity: 0.1;
+  opacity: 0.5;
 }
 
 .container {
