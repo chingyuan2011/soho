@@ -43,7 +43,6 @@
         left: calc(50% + 350px);
         animation-delay: 1s;
       }
-
       &-3 {
         top: 48%;
         right: calc(50% + 580px);
@@ -53,6 +52,37 @@
         left: calc(50% + 350px);
         top: 33%;
         animation-delay: 1.5s;
+      }
+
+      @media (max-width: 1024px) {
+        &-1 {
+          top: -12%;
+          right: auto;
+          left: -50%;
+          animation-delay: 0.5s;
+        }
+  
+        &-2 {
+          top: 10%;
+          left:auto;
+          right: -20%;
+          animation-delay: 1s;
+        }
+  
+        &-3 {
+          top: 38%;
+          right: auto;
+          left: -20%;
+          animation-delay: 0.2s;
+        }
+        &-4 {
+          width: 400px;
+          left: auto;
+          right: -20%;
+          top: auto;
+          bottom: -1%;
+          animation-delay: 1.5s;
+        }
       }
     }
   }

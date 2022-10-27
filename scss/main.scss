@@ -87,6 +87,13 @@ a {
   .float-link {
     margin-bottom: 25px;
     box-shadow: 0 0 15px #fff;
+    transform: translateX(10px);
+    transition: transform .3s;
+
+    &:hover {
+    transform: translateX(0px);
+
+    }
 
     &:last-child {
       margin-bottom: 0;

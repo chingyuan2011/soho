@@ -185,6 +185,8 @@ body.scrollBack .header__menu {
 @media (max-width: 1280px) {
   .header__menu {
     height: 45px;
+    margin-right: 0;
+    margin-top: 0;
   }
   .header__menu-link {
     height: 100%;
@@ -504,6 +506,38 @@ body.scrollBack .header__menu {
   -webkit-animation-delay: 1.5s;
           animation-delay: 1.5s;
 }
+@media (max-width: 1024px) {
+  .gift__deco .ball-1 {
+    top: -12%;
+    right: auto;
+    left: -50%;
+    -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
+  }
+  .gift__deco .ball-2 {
+    top: 10%;
+    left: auto;
+    right: -20%;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+  }
+  .gift__deco .ball-3 {
+    top: 38%;
+    right: auto;
+    left: -20%;
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s;
+  }
+  .gift__deco .ball-4 {
+    width: 400px;
+    left: auto;
+    right: -20%;
+    top: auto;
+    bottom: -1%;
+    -webkit-animation-delay: 1.5s;
+            animation-delay: 1.5s;
+  }
+}
 .gift__title {
   text-align: center;
   margin-bottom: 50px;
@@ -743,6 +777,10 @@ body.scrollBack .header__menu {
 .car__intro-board-links a {
   width: 15%;
   margin-right: 10px;
+  transition: transform 0.3s;
+}
+.car__intro-board-links a:hover {
+  transform: translateX(-10px);
 }
 .car__note {
   padding-left: 20px;
@@ -935,6 +973,11 @@ a {
 .float-links .float-link {
   margin-bottom: 25px;
   box-shadow: 0 0 15px #fff;
+  transform: translateX(10px);
+  transition: transform 0.3s;
+}
+.float-links .float-link:hover {
+  transform: translateX(0px);
 }
 .float-links .float-link:last-child {
   margin-bottom: 0;

@@ -17,20 +17,75 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
   <link href="./css/main.css" rel="stylesheet" />
+  <script src="./js/wow.min.js"></script>
+  <script src="./js/jquery.js"></script>
+  <script>
+    $.ajax({
+      type: "OPTIONS",
+      url: "/",
+      error: function (a) {
+        let nowTimeStamp = Date.parse(new Date(a.getResponseHeader("Date")));
+        let endTimeStamp = Date.parse('2022/10/27 15:35')
+
+        if (nowTimeStamp < endTimeStamp) {
+          console.log('bye', endTimeStamp, nowTimeStamp);
+        } else {
+          console.log('done', endTimeStamp, nowTimeStamp);
+        }
+      }
+    });
+
+  </script>
 </head>
 
 <body>
   <div id="app">
     <div id="header" class="header">
-      <a class="logo" href="http://new.nissan.com.tw/Nissan?utm_campaign=202205CCLSP&utm_source=eventsite"
-        target="_blank"><img src="./imgs/logo.png" draggable="false" /></a>
+      <a class="Btn_logo logo" href="http://new.nissan.com.tw/Nissan?utm_campaign=202205CCLSP&utm_source=eventsite"
+        target="_blank">
+        <picture>
+          <source srcset="./images/logoM.png" media="(max-width: 768px)">
+          <img src="./images/logo.png" draggable="false" />
+        </picture>
+      </a>
       <div class="header__ham" id="hambtn">
         <span></span> <span></span> <span></span>
       </div>
       <ul class="header__menu">
-        <li><a class="header__menu-link" href="#feature">超吉好禮</a></li>
+        <li><a class="Btn_gifts header__menu-link" href="#gift"><img src="images/nav_item1.png" alt="購車豪禮"></a></li>
+        <li><a class="Btn_cars header__menu-link" href="#car"><img src="images/nav_item2.png" alt="車型介紹"></a></li>
+        <li><a class="Btn_exchange header__menu-link" target="_blank"
+            href="https://tw.sharp/event/nissan/applyforgift"><img src="images/nav_item3.png" alt="SHARP 豪禮兌換"></a></li>
       </ul>
     </div>
+    <!-- section 1 START -->
+    <section class="kv">
+
+      <img src="./images/kv_ball1.png" alt="" class="kv__ball kv__ball1">
+      <img src="./images/kv_ball2.png" alt="" class="kv__ball kv__ball2">
+      <img src="./images/kv_ball3.png" alt="" class="kv__ball kv__ball3">
+
+      <img src="./images/kv_tv.png" alt="" class="kv__tv wow bounceInRight" data-wow-duration="0.8s" data-wow-delay="0.4s">
+
+      <img src="./images/kv_car1.png" alt=""  data-wow-duration="1s" class="kv__car kv__car1 wow zoomIn" data-wow-delay="1.6s">
+      <img src="./images/kv_car7.png" alt=""  data-wow-duration="1s" class="kv__car kv__car7 wow zoomIn" data-wow-delay="1.6s">
+      <img src="./images/kv_car2.png" alt=""  data-wow-duration="1s" class="kv__car kv__car2 wow zoomIn" data-wow-delay="1.4s">
+      <img src="./images/kv_car6.png" alt=""  data-wow-duration="1s" class="kv__car kv__car6 wow zoomIn" data-wow-delay="1.4s">
+      <img src="./images/kv_car3.png" alt=""  data-wow-duration="1s" class="kv__car kv__car3 wow zoomIn" data-wow-delay="1s">
+      <img src="./images/kv_car5.png" alt=""  data-wow-duration="1s" class="kv__car kv__car5 wow zoomIn" data-wow-delay="1s">
+      <img src="./images/kv_car4.png" alt=""  data-wow-duration="1s" class="kv__car kv__car4 wow zoomIn" data-wow-delay=".8s">
+
+
+
+      <h1 class="kv__tit" >
+        <img class=" wow bounceInLeft" data-wow-duration="0.8s"  src="./images/kv_tit.png" alt="NISSAN 睛彩無限">
+        <span>NISSAN 睛彩無限</span>
+      </h1>
+      <img src="./images/kv_icon.png" alt="" class="kv__icon">
+
+
+    </section>
+    <!-- section 1 END -->
 
     <!-- section 2 START -->
     <section class="gift">
@@ -41,33 +96,70 @@
         <img class="ball ball-4" src="./images/gift_ball4.png" alt="">
       </div>
       <div class="container top">
-        <h2 class="section-title gift__title"><img src="./images/gift_tit.png" alt="本月入主 購車即贈"></h2>
+        <h2 class="section-title gift__title wow flipInX">
+          <picture>
+            <source srcset="./images/gift_titM.png" media="(max-width: 1024px)">
+            <img src="./images/gift_tit.png" alt="本月入主 購車即贈">
+          </picture>
+          <span>本月入主 購車即贈</span>
+        </h2>
         <div class="gift-sharp-tv">
-          <div class="gift-sharp-tv__top gift-sharp-tv__card"><img src="./images/gift_1.jpg" alt="SHARP 60吋液晶顯示器"></div>
+          <div class="gift-sharp-tv__top gift-sharp-tv__card wow fadeIn">
+            <picture>
+              <source srcset="./images/gift_1M.jpg" media="(max-width: 1024px)">
+              <img src="./images/gift_1.jpg" alt="SHARP 60吋液晶顯示器">
+            </picture>
+          </div>
           <div class="gift-sharp-tv__bottom">
-            <div class="gift-sharp-tv__card"><img src="./images/gift_2.jpg" alt="全面屏設計 無邊際沈浸式享受"></div>
-            <div class="gift-sharp-tv__card"><img src="./images/gift_3.jpg" alt="日本面板 品質與畫質唯一保證"></div>
-            <div class="gift-sharp-tv__card"><img src="./images/gift_4.jpg" alt="全新 X4影像處理晶片"></div>
+            
+            <div class="gift-sharp-tv__card  wow fadeIn">
+              <picture>
+                <source srcset="./images/gift_2M.jpg" media="(max-width: 1024px)">
+                <img src="./images/gift_2.jpg" alt="全面屏設計 無邊際沈浸式享受">
+              </picture>
+            </div>
+            <div class="gift-sharp-tv__card  wow fadeIn">
+              <picture>
+                <source srcset="./images/gift_3M.jpg" media="(max-width: 1024px)">
+                <img src="./images/gift_3.jpg" alt="日本面板 品質與畫質唯一保證">
+              </picture>
+            </div>
+            <div class="gift-sharp-tv__card  wow fadeIn">
+              <picture>
+                <source srcset="./images/gift_4M.jpg" media="(max-width: 1024px)">
+              <img src="./images/gift_4.jpg" alt="全新 X4影像處理晶片">
+
+              </picture>
+            </div>
           </div>
         </div>
         <div class="gift-sharp-tv__more">
-          <a href="tv-more" target="_blank">
+          <a class="tv-more button" target="_blank">
             <img src="./images/gift_btn1.png" alt="了解更多">
           </a>
         </div>
       </div>
-      <h3 class="gift__subTitle"><img src="./images/gift_tit2.png" alt="再享好禮超展開"></h3>
+      <h3 class="gift__subTitle  wow flipInX">
+        <picture>
+          <source srcset="./images/gift_tit2M.png" media="(max-width: 1024px)">
+          <img src="./images/gift_tit2.png" alt="再享好禮超展開">
+        </picture>
+        <span>再享好禮超展開</span>
+      </h3>
       <div class="container">
         <ul class="gift-bonus">
-          <li class="gift-bonus__content"><img src="./images/gift_bonus1.png" alt="高額分期零利率"></li>
-          <li class="gift-bonus__content"><img src="./images/gift_bonus2.png" alt="5萬元舊換新優先領"></li>
-          <li class="gift-bonus__content"><img src="./images/gift_bonus3.png" alt="國產車再送 68 延長保固"></li>
+          <li class="gift-bonus__content wow bounceInDown"><img src="./images/gift_bonus1.png" alt="高額分期零利率"></li>
+          <li class="gift-bonus__content wow bounceInDown" data-wow-delay=".2s"><img src="./images/gift_bonus2.png" alt="5萬元舊換新優先領"></li>
+          <li class="gift-bonus__content wow bounceInDown" data-wow-delay=".4s"><img src="./images/gift_bonus3.png" alt="國產車再送 68 延長保固"></li>
         </ul>
         <div class="gift-note">
           <div class="gift-note__content">
-            <img src="./images/gift_note.png" alt="詳情請洽詢 NISSAN 各經銷公司或線上聯繫數位銷售顧問">
+            <picture>
+              <source srcset="./images/gift_noteM.png" media="(max-width: 1024px)">
+              <img src="./images/gift_note.png" alt="詳情請洽詢 NISSAN 各經銷公司或線上聯繫數位銷售顧問">
+            </picture>
           </div>
-          <a href="gift-note__contact" target="_blank">
+          <a class="gift-note__contact button" target="_blank">
             <img src="./images/gift_btn2.png" alt="立即聯繫">
           </a>
         </div>
@@ -267,10 +359,6 @@
     </div>
   </div>
 
-
-
-  <script src="./js/jquery.js"></script>
-  <script src="./js/wow.min.js"></script>
   <script src="./js/all.js"></script>
 </body>
 
