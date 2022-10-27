@@ -68,4 +68,16 @@ $(document).ready(function () {
     
     closeMenu()
   })
+
+
+  $('.car__intro-btn').click(function() {
+    $('.car__intro-btn').removeClass('active')
+    $(this).addClass('active')
+
+    var target = $(this).data('car')
+    var targetBoard = '.car__intro-board' + '[data-car-board="' + target + '"]'
+    
+    $('.car__intro-board').removeClass('active')
+    $(targetBoard).addClass('active')
+  })
 })
