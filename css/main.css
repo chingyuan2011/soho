@@ -463,6 +463,13 @@ body.scrollBack .header {
   border-radius: 40px;
   margin-bottom: 10%;
 }
+.car__intro-board {
+  display: none;
+  top: 0;
+}
+.car__intro-board.active {
+  display: block;
+}
 .car__intro-board-content .mb {
   display: none;
 }
@@ -514,17 +521,18 @@ body.scrollBack .header {
     padding: 0;
     margin-bottom: 20px;
     position: relative;
+    overflow: hidden;
   }
   .car .container-btns::after {
     content: "";
     position: absolute;
     z-index: 1;
     pointer-events: none;
-    top: 0;
+    top: -20px;
     bottom: 0;
     width: 100%;
     right: 0;
-    box-shadow: inset -10px 0px 10px #fff;
+    box-shadow: inset -5px 0px 30px #fff;
   }
   .car .container-btns:hover::after {
     display: none;
