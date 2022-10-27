@@ -87,7 +87,7 @@
                 transition: transform .3s;
 
                 &:hover {
-                    transform: scale(1.05);
+                    transform: translateX(-10px);
                 }
             }
         }
