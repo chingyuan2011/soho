@@ -126,16 +126,17 @@
             // overflow: auto;
             margin-bottom: 20px;
             position: relative;
+            overflow: hidden;
            &::after {
             content: '';
             position: absolute;
             z-index: 1;
             pointer-events: none;
-            top: 0;
+            top: -20px;
             bottom: 0;
             width: 100%;
             right: 0;
-            box-shadow: inset -10px 0px 10px #fff;
+            box-shadow: inset -5px 0px 30px #fff;
            }
 
            &:hover {
