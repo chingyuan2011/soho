@@ -6,18 +6,12 @@ $(document).ready(function () {
 
   var body = $('html, body')
   var scrollBack = 'scrollBack'
-  var overPT300= 'overPT300'
 
   var oriScrollTop = 0
   window.addEventListener('scroll', function () {
 
     var newScrollTop = body.scrollTop()
 
-    if(newScrollTop > 300) {
-      body.addClass(overPT300)
-    } else {
-      body.removeClass(overPT300)
-    }
 
     if (newScrollTop < oriScrollTop && newScrollTop !== 0) {
       body.addClass(scrollBack)

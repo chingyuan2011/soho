@@ -1,12 +1,15 @@
 @import './base/reset';
 @import './base/font-face';
 @import './HFF';
+@import './section-kv';
 @import './section-gift';
 @import './section-video';
 @import './section-car';
 
 body {
   position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
   min-width: 320px;
   font-family: 'Noto Sans TC', Roboto, Arial, 'Microsoft JhengHei Modify', 'Microsoft JhengHei', PingFangTC, sans-serif;
   font-size: 16px;
@@ -88,5 +91,19 @@ a {
     &:last-child {
       margin-bottom: 0;
     }
+  }
+}
+
+h1, h2, h3 {
+  span {
+    display: none;
+  }
+}
+
+.button {
+  transition: transform .5s;
+  cursor: pointer;
+  &:hover {
+    transform: translateX(-10px);
   }
 }
