@@ -5,6 +5,12 @@
     background-color: #dedaed;
     overflow: hidden;
 
+    @media (max-width: 960px) {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+  
+
   &::after, &::before {
     content: '';
     position: absolute;
@@ -36,9 +42,25 @@
   }
 
     &__wrap {
-        min-height: 800px;
         border-radius: 40px;
         width: 100%;
         background-color: #fff;
+        width: 100%;
+        position: relative;
+        padding-top: 53%;
     }
+
+
+    video {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 40px;
+      object-fit: contain;
+    }
+
 }
