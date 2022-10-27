@@ -6,18 +6,12 @@ $(document).ready(function () {
 
   var body = $('html, body')
   var scrollBack = 'scrollBack'
-  var overPT300= 'overPT300'
 
   var oriScrollTop = 0
   window.addEventListener('scroll', function () {
 
     var newScrollTop = body.scrollTop()
 
-    if(newScrollTop > 300) {
-      body.addClass(overPT300)
-    } else {
-      body.removeClass(overPT300)
-    }
 
     if (newScrollTop < oriScrollTop && newScrollTop !== 0) {
       body.addClass(scrollBack)
@@ -29,8 +23,9 @@ $(document).ready(function () {
   })
 
   window.addEventListener('resize', function () {
+    closeMenu()
+
     if(body.classList.contains('mActive')) {
-      closeMenu()
     }
   })
 
@@ -49,7 +44,7 @@ $(document).ready(function () {
 
   function setBodyOverflow (boolean) {
     var overflow = boolean ? 'auto' : 'hidden'
-    body.css('overflow', overflow)
+    $('body').css('overflow', overflow)
   };
 
   $('.header__menu-link').click(function (e) {
