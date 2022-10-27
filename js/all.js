@@ -29,7 +29,7 @@ $(document).ready(function () {
   })
 
   window.addEventListener('resize', function () {
-    if(body.classList.contains('mActive')) {
+    if(body.hasClass('mActive')) {
       closeMenu()
     }
   })
@@ -48,8 +48,11 @@ $(document).ready(function () {
   }
 
   function setBodyOverflow (boolean) {
-    var overflow = boolean ? 'auto' : 'hidden'
-    body.css('overflow', overflow)
+    if(!boolean) {
+      body.css('overflow', 'hidden')
+    } else {
+      body.css('overflow', '')
+    }
   };
 
   $('.header__menu-link').click(function (e) {
