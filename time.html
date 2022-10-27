@@ -19,18 +19,21 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
   <script src="./js/jquery.js"></script>
   <script>
-    // $.ajax({
-    //   type: "OPTIONS",
-    //   url: "/",
-    //   error: function (a) {
-    //     let nowTimeStamp = Date.parse(new Date(a.getResponseHeader("Date")));
-    //     let endTimeStamp = Date.parse('2022/10/27 15:35')
+    $.ajax({
+      type: "OPTIONS",
+      url: "/",
+      error: function (a) {
+        let nowTimeStamp = Date.parse(new Date(a.getResponseHeader("Date")));
+        let endTimeStamp = Date.parse('2022/10/28 07:15')
 
-    //     if (nowTimeStamp < endTimeStamp) {
-    //       location.replace('https://new.nissan.com.tw/nissan')
-    //     }
-    //   }
-    // });
+        if (nowTimeStamp < endTimeStamp) {
+          console.log('bye', endTimeStamp, nowTimeStamp);
+          location.replace('https://new.nissan.com.tw/nissan')
+        } else {
+          console.log('done', endTimeStamp, nowTimeStamp);
+        }
+      }
+    });
   </script>
 
   <!-- ga gtm start -->

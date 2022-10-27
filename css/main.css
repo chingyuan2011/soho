@@ -753,7 +753,7 @@ body.scrollBack .header__menu {
   position: relative;
   background-color: #fff;
   border-radius: 40px;
-  margin-bottom: 10%;
+  margin-bottom: 20px;
 }
 .car__intro-board {
   display: none;
@@ -782,6 +782,16 @@ body.scrollBack .header__menu {
 .car__intro-board-links a:hover {
   transform: translateX(-10px);
 }
+.car__signs {
+  display: flex;
+  margin-bottom: 60px;
+  justify-content: flex-end;
+  height: 40px;
+}
+.car__signs img {
+  margin-left: 20px;
+  height: 100%;
+}
 .car__note {
   padding-left: 20px;
   list-style: disc;
@@ -790,6 +800,12 @@ body.scrollBack .header__menu {
   font-weight: 500;
   font-size: 18px;
   margin-bottom: 40px;
+}
+.car__footer {
+  padding-bottom: 20px;
+}
+.car__footer img {
+  margin: 0 auto;
 }
 @media (max-width: 1440px) {
   .car {
@@ -800,9 +816,6 @@ body.scrollBack .header__menu {
   }
   .car__intro-btn {
     height: 60px;
-  }
-  .car__intro-boards {
-    margin-bottom: 5%;
   }
 }
 @media (max-width: 960px) {
@@ -881,8 +894,14 @@ body.scrollBack .header__menu {
   .car__intro-board-links a:last-child {
     margin-left: 5px;
   }
+  .car__signs {
+    height: 30px;
+  }
   .car__note {
     font-size: 14px;
+  }
+  .car__footer img {
+    width: 150px;
   }
 }
 
@@ -983,7 +1002,9 @@ a {
   margin-bottom: 0;
 }
 
-h1 span, h2 span, h3 span {
+h1 span,
+h2 span,
+h3 span {
   display: none;
 }
 
@@ -993,4 +1014,29 @@ h1 span, h2 span, h3 span {
 }
 .button:hover {
   transform: translateX(-10px);
+}
+
+.padBlock {
+  display: none !important;
+}
+
+.mobileBlock {
+  display: none !important;
+}
+
+@media (max-width: 1024px) {
+  .padBlock {
+    display: block !important;
+  }
+  .padNone {
+    display: none !important;
+  }
+}
+@media (max-width: 768px) {
+  .mobileBlock {
+    display: block !important;
+  }
+  .mobileNone {
+    display: none !important;
+  }
 }

@@ -91,7 +91,7 @@ a {
     transition: transform .3s;
 
     &:hover {
-    transform: translateX(0px);
+      transform: translateX(0px);
 
     }
 
@@ -101,7 +101,9 @@ a {
   }
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   span {
     display: none;
   }
@@ -110,7 +112,35 @@ h1, h2, h3 {
 .button {
   transition: transform .5s;
   cursor: pointer;
+
   &:hover {
     transform: translateX(-10px);
+  }
+}
+
+.padBlock {
+  display: none !important;
+}
+.mobileBlock {
+  display: none !important;
+}
+
+@media (max-width: 1024px) {
+  .padBlock {
+    display: block !important;
+  }
+
+  .padNone {
+    display: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .mobileBlock {
+    display: block !important;
+  }
+
+  .mobileNone {
+    display: none !important;
   }
 }
