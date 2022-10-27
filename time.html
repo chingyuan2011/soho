@@ -31,6 +31,7 @@
           location.replace('https://new.nissan.com.tw/nissan')
         } else {
           console.log('done', endTimeStamp, nowTimeStamp);
+          $('#app').removeClass('timeNone')
         }
       }
     });
@@ -66,7 +67,7 @@
 </head>
 
 <body>
-  <div id="app">
+  <div id="app" class="timeNone">
     <div id="header" class="header">
       <a class="Btn_logo DQ_N_202211_cclsp_sp_logo logo" href="https://new.nissan.com.tw/nissan"
         target="_blank">
