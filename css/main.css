@@ -743,6 +743,10 @@ body.scrollBack .header__menu {
 .car__intro-board-links a {
   width: 15%;
   margin-right: 10px;
+  transition: transform 0.3s;
+}
+.car__intro-board-links a:hover {
+  transform: scale(1.05);
 }
 .car__note {
   padding-left: 20px;
