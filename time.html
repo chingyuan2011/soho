@@ -24,7 +24,7 @@
       url: "/",
       error: function (a) {
         let nowTimeStamp = Date.parse(new Date(a.getResponseHeader("Date")));
-        let endTimeStamp = Date.parse('2022/10/28 07:15')
+        let endTimeStamp = Date.parse('2022/10/28 13:00')
 
         if (nowTimeStamp < endTimeStamp) {
           console.log('bye', endTimeStamp, nowTimeStamp);
@@ -67,7 +67,7 @@
 </head>
 
 <body>
-  <div id="app" class="timeNone">
+  <div id="app">
     <div id="header" class="header">
       <a class="Btn_logo DQ_N_202211_cclsp_sp_logo logo" href="https://new.nissan.com.tw/nissan"
         target="_blank">
@@ -122,7 +122,7 @@
     <!-- section 1 END -->
 
     <!-- section 2 START -->
-    <section class="gift">
+    <section class="gift" id="gift">
       <div class="gift__deco">
         <img class="ball ball-1" src="./images/gift_ball1.png" alt="">
         <img class="ball ball-2" src="./images/gift_ball2.png" alt="">
@@ -197,7 +197,7 @@
     </section> -->
     <!-- section 3 END -->
     <!-- section 4 START -->
-    <div class="car">
+    <div class="car" id="car">
       <div class="DQ_N_202211_cclsp_sp_part_cars car__intro">
         <div class="container container-btns">
           <div class="car__intro-btns">

@@ -50,18 +50,21 @@ $(document).ready(function () {
   };
 
   $('.header__menu-link').click(function (e) {
-    e.preventDefault();
     var target = $(this).attr('href')
 
+    if(target.indexOf('http') !== -1) return
+
+    e.preventDefault();
+
     var isPc = $(window).width() > 768
-    
+
     var targetOriPos = $(target).offset().top
 
-    var navbarOffset = oriScrollTop < targetOriPos ? 0 : isPc ? 110 : 80
-    var targetPos = targetOriPos - navbarOffset - 20
-    var time = Math.ceil(Math.abs(targetOriPos - oriScrollTop) / 500) * 200
+    // var navbarOffset = oriScrollTop < targetOriPos ? 0 : isPc ? 110 : 80
+    var targetPos = targetOriPos
+    var time = Math.ceil(Math.abs(targetOriPos - oriScrollTop) / 500) * 100
 
-    body.animate({ scrollTop: targetPos }, time, 'linear')
+    $('html, body').animate({ scrollTop: targetPos }, time, 'linear')
     
     closeMenu()
   })
