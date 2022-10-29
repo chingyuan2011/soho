@@ -37,29 +37,21 @@ a {
   display: block;
 }
 
+
 #app {
   max-width: 1920px;
   overflow: hidden;
 
-  &.timeNone {
+  &.timeNone{
     display: none;
-
   }
+  
 
   @media (max-width: 768px) {
     min-width: 360px;
     overflow: auto;
   }
 }
-
-.layout {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 0;
-  opacity: .1;
-}
-
 
 
 .container {
@@ -80,30 +72,7 @@ a {
   }
 }
 
-.float-links {
-  position: fixed;
-  right: 0;
-  bottom: 10%;
-  z-index: 29;
-  width: 6%;
-  min-width: 60px;
 
-  .float-link {
-    margin-bottom: 25px;
-    box-shadow: 0 0 15px #fff;
-    transform: translateX(10px);
-    transition: transform .3s;
-
-    &:hover {
-      transform: translateX(0px);
-
-    }
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-}
 
 h1,
 h2,

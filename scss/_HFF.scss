@@ -57,22 +57,24 @@ body.scrollBack .header {
   justify-content: space-between;
   width: 100%;
   max-width: 1920px;
-  padding: 0 20px 16%;
+  padding: 0 20px 0;
 
   &::before {
     position: absolute;
     z-index: -1;
     top: 0;
+    height: 20%;
     left: 0;
     right: 0;
-    background-image: linear-gradient(to bottom, rgba(#fff, .2), rgba(#fff, 0));
+    background-image: linear-gradient(to bottom, rgba(#fff, .4), rgba(#fff, 0));
     height: 100%;
     content: '';
+    pointer-events: none;
     
   }
 
   .logo {
-    margin-top: 6%;
+    margin-top: 5%;
     margin-left: 3.3%;
     width: 10%;
   }
@@ -100,9 +102,9 @@ body.scrollBack .header {
 
   @media (max-width: 1280px) {
     &__menu{
-      height: 45px;
+      height: 35px;
       margin-right: 0;
-      margin-top: 0;
+      margin-top: 1.3%;
       &-link {
         height: 100%;
         margin-left: 0px;
@@ -161,6 +163,7 @@ body.scrollBack .header {
 
     &__menu {
       position: fixed;
+      margin-top: 0;
       top: 70px;
       left: 0;
       right: 0;
@@ -212,6 +215,35 @@ body.scrollBack .header {
       position: fixed;
       top: 0px;
       transition: top .2s;
+    }
+  }
+  .float-links {
+    z-index: 29;
+  }
+}
+
+
+.float-links {
+  position: fixed;
+  right: 0;
+  bottom: 10%;
+  z-index: 40;
+  width: 4.2%;
+  min-width: 60px;
+
+  .float-link {
+    margin-bottom: 25px;
+    box-shadow: 0 0 8px #fff;
+    transform: translateX(10px);
+    transition: transform .3s;
+
+    &:hover {
+      transform: translateX(0px);
+
+    }
+
+    &:last-child {
+      margin-bottom: 0;
     }
   }
 }
