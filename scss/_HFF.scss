@@ -17,12 +17,16 @@ body.scrollBack .header {
   animation-name: show-header;
   animation-duration: 300ms;
   animation-timing-function: ease-out;
+
+  &::before{
+    background-image: linear-gradient(to bottom, rgba(#000, .2), rgba(#000, 0));
+  }
+
+  .wrap1920 {
   padding: 0px 20px;
   height: 110px;
   align-items: center;
 
-  &::before{
-    background-image: linear-gradient(to bottom, rgba(#000, .2), rgba(#000, 0));
   }
 
   .logo{
@@ -37,8 +41,10 @@ body.scrollBack .header {
   }
 
   @media (max-width: 768px) {
-    height: 70px;
-    padding: 10px 20px;
+    .wrap1920 {
+      width: 100%;
+      height: 70px;
+    }
     .logo {
       width: 200px;
     }
@@ -52,12 +58,14 @@ body.scrollBack .header {
   position: absolute;
   top: 0px;
   z-index: 30;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
   width: 100%;
-  max-width: 1920px;
-  padding: 0 20px 0;
+  .wrap1920 {
+    padding: 0 20px 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 1920px;
+  }
 
   &::before {
     position: absolute;
@@ -117,12 +125,14 @@ body.scrollBack .header {
     
   }
   @media (max-width: 768px) {
-    height: 70px;
-    background-color: #fff;
-    align-items: center;
-    padding: 10px 20px 0;
     &::before {
       display: none;
+    }
+    .wrap1920 {
+    padding: 0px 20px 0;
+    align-items: center;
+    height: 70px;
+    background-color: #fff;
     }
 
     .logo {

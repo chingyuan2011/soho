@@ -52,18 +52,14 @@
 <body>
   <div id="app" class="timeNone">
     <script>
-      const endTimeStamp = Date.parse('2022/10/29 13:00')
+      const endTimeStamp = Date.parse('2022/10/31 20:00')
       const nowTimeStamp = Date.parse(new Date())
   
       if (nowTimeStamp < endTimeStamp) {
-        alert(`bye ${endTimeStamp}, ${nowTimeStamp}`);
         location.replace('https://new.nissan.com.tw/nissan')
       } else {
-        console.log('done', endTimeStamp, nowTimeStamp);
         $('#app').removeClass('timeNone')
       }
-  
-      console.log('time:', endTimeStamp, nowTimeStamp);
     </script>
 
     <div id="header" class="header">

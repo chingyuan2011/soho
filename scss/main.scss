@@ -8,7 +8,6 @@
 
 body {
   position: relative;
-  max-width: 1920px;
   margin: 0 auto;
   min-width: 320px;
   font-family: 'Noto Sans TC', Roboto, Arial, 'Microsoft JhengHei Modify', 'Microsoft JhengHei', PingFangTC, sans-serif;
@@ -39,7 +38,7 @@ a {
 
 
 #app {
-  max-width: 1920px;
+  width: 100%;
   overflow: hidden;
 
   &.timeNone{
@@ -116,4 +115,11 @@ h3 {
   .mobileNone {
     display: none !important;
   }
+}
+
+
+.wrap1920 {
+  position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
 }

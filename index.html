@@ -18,21 +18,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
   <script src="./js/jquery.js"></script>
-  <script>
-    // $.ajax({
-    //   type: "OPTIONS",
-    //   url: "/",
-    //   error: function (a) {
-    //     let nowTimeStamp = Date.parse(new Date(a.getResponseHeader("Date")));
-    //     let endTimeStamp = Date.parse('2022/10/27 15:35')
-
-    //     if (nowTimeStamp < endTimeStamp) {
-    //       location.replace('https://new.nissan.com.tw/nissan')
-    //     }
-    //   }
-    // });
-  </script>
-
+  
+  
   <!-- ga gtm start -->
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-62451074-6"></script>
@@ -63,9 +50,21 @@
 </head>
 
 <body>
-  <div id="app">
+  <div id="app" class="timeNone">
+    <script>
+      const endTimeStamp = Date.parse('2022/10/28 20:00')
+      const nowTimeStamp = Date.parse(new Date())
+  
+      if (nowTimeStamp < endTimeStamp) {
+        location.replace('https://new.nissan.com.tw/nissan')
+      } else {
+        $('#app').removeClass('timeNone')
+      }
+    </script>
+
     <div id="header" class="header">
-      <a class="Btn_logo DQ_N_202211_cclsp_sp_logo logo" href="https://new.nissan.com.tw/nissan"
+      <div class="wrap1920">
+        <a class="Btn_logo DQ_N_202211_cclsp_sp_logo logo" href="https://new.nissan.com.tw/nissan"
         target="_blank">
         <img src="./images/logo.png" draggable="false" class="mobileNone" />
         <img src="./images/logoM.png" draggable="false" class="mobileBlock" />
@@ -79,307 +78,319 @@
         <li><a class="Btn_exchange DQ_N_202211_cclsp_sp_exchange header__menu-link" target="_blank"
             href="https://tw.sharp/event/nissan/applyforgift"><img src="images/nav_item3.png" alt="SHARP 豪禮兌換"></a></li>
       </ul>
+      </div>
+  
     </div>
     <!-- section 1 START -->
     <section class="DQ_N_202211_cclsp_sp_part_kv kv">
-      <div class="box"></div>
+      <div class="wrap1920">
+        <img src="./images/kv_ball1.png" alt="" class="kv__ball kv__ball1">
+        <img src="./images/kv_ball2.png" alt="" class="kv__ball kv__ball2">
+        <img src="./images/kv_ball3.png" alt="" class="kv__ball kv__ball3">
+  
+        <img src="./images/kv_tv.png" alt="" class="kv__tv wow bounceInRight" data-wow-duration="0.8s"
+          data-wow-delay="0.4s">
+  
+        <img src="./images/kv_car1.png" alt="" data-wow-duration="1s" class="kv__car kv__car1 wow zoomIn"
+          data-wow-delay="1.6s">
+        <img src="./images/kv_car7.png" alt="" data-wow-duration="1s" class="kv__car kv__car7 wow zoomIn"
+          data-wow-delay="1.6s">
+        <img src="./images/kv_car2.png" alt="" data-wow-duration="1s" class="kv__car kv__car2 wow zoomIn"
+          data-wow-delay="1.4s">
+        <img src="./images/kv_car6.png" alt="" data-wow-duration="1s" class="kv__car kv__car6 wow zoomIn"
+          data-wow-delay="1.4s">
+        <img src="./images/kv_car3.png" alt="" data-wow-duration="1s" class="kv__car kv__car3 wow zoomIn"
+          data-wow-delay="1s">
+        <img src="./images/kv_car5.png" alt="" data-wow-duration="1s" class="kv__car kv__car5 wow zoomIn"
+          data-wow-delay="1s">
+        <img src="./images/kv_car4.png" alt="" data-wow-duration="1s" class="kv__car kv__car4 wow zoomIn"
+          data-wow-delay=".8s">
+  
+  
+  
+        <h1 class="kv__tit">
+          <img class=" wow bounceInLeft" data-wow-duration="0.8s" src="./images/kv_tit.png" alt="NISSAN 睛彩無限">
+          <span>NISSAN 睛彩無限</span>
+        </h1>
+        <img src="./images/kv_icon.png" alt="" class="kv__icon">
+  
+      </div>
 
-      <img src="./images/kv_ball1.png" alt="" class="kv__ball kv__ball1">
-      <img src="./images/kv_ball2.png" alt="" class="kv__ball kv__ball2">
-      <img src="./images/kv_ball3.png" alt="" class="kv__ball kv__ball3">
-
-      <img src="./images/kv_tv.png" alt="" class="kv__tv wow bounceInRight" data-wow-duration="0.8s"
-        data-wow-delay="0.4s">
-
-      <img src="./images/kv_car1.png" alt="" data-wow-duration="1s" class="kv__car kv__car1 wow zoomIn"
-        data-wow-delay="1.6s">
-      <img src="./images/kv_car7.png" alt="" data-wow-duration="1s" class="kv__car kv__car7 wow zoomIn"
-        data-wow-delay="1.6s">
-      <img src="./images/kv_car2.png" alt="" data-wow-duration="1s" class="kv__car kv__car2 wow zoomIn"
-        data-wow-delay="1.4s">
-      <img src="./images/kv_car6.png" alt="" data-wow-duration="1s" class="kv__car kv__car6 wow zoomIn"
-        data-wow-delay="1.4s">
-      <img src="./images/kv_car3.png" alt="" data-wow-duration="1s" class="kv__car kv__car3 wow zoomIn"
-        data-wow-delay="1s">
-      <img src="./images/kv_car5.png" alt="" data-wow-duration="1s" class="kv__car kv__car5 wow zoomIn"
-        data-wow-delay="1s">
-      <img src="./images/kv_car4.png" alt="" data-wow-duration="1s" class="kv__car kv__car4 wow zoomIn"
-        data-wow-delay=".8s">
-
-
-
-      <h1 class="kv__tit">
-        <img class=" wow bounceInLeft" data-wow-duration="0.8s" src="./images/kv_tit.png" alt="NISSAN 睛彩無限">
-        <span>NISSAN 睛彩無限</span>
-      </h1>
-      <img src="./images/kv_icon.png" alt="" class="kv__icon">
-
+   
 
     </section>
     <!-- section 1 END -->
 
     <!-- section 2 START -->
     <section class="gift" id="gift">
-      <div class="gift__deco">
-        <img class="ball ball-1" src="./images/gift_ball1.png" alt="">
-        <img class="ball ball-2" src="./images/gift_ball2.png" alt="">
-        <img class="ball ball-3" src="./images/gift_ball3.png" alt="">
-        <img class="ball ball-4" src="./images/gift_ball4.png" alt="">
-      </div>
-      <div class="DQ_N_202211_cclsp_sp_part_sharp container top">
-        <h2 class="section-title gift__title wow flipInX">
-          <img src="./images/gift_tit.png" alt="本月入主 購車即贈" class="padNone">
-          <img src="./images/gift_titM.png" alt="本月入主 購車即贈" class="padBlock">
-          <span>本月入主 購車即贈</span>
-        </h2>
-        <div class="gift-sharp-tv">
-          <div class="gift-sharp-tv__top gift-sharp-tv__card wow fadeIn">
-              <img src="./images/gift_1.jpg" alt="SHARP 60吋液晶顯示器" class="padNone">
-              <img src="./images/gift_1M.jpg" alt="SHARP 60吋液晶顯示器" class="padBlock">
+      <div class="wrap1920">
+        <div class="gift__deco">
+          <img class="ball ball-1" src="./images/gift_ball1.png" alt="">
+          <img class="ball ball-2" src="./images/gift_ball2.png" alt="">
+          <img class="ball ball-3" src="./images/gift_ball3.png" alt="">
+          <img class="ball ball-4" src="./images/gift_ball4.png" alt="">
+        </div>
+        <div class="DQ_N_202211_cclsp_sp_part_sharp container top">
+          <h2 class="section-title gift__title wow flipInX">
+            <img src="./images/gift_tit.png" alt="本月入主 購車即贈" class="padNone">
+            <img src="./images/gift_titM.png" alt="本月入主 購車即贈" class="padBlock">
+            <span>本月入主 購車即贈</span>
+          </h2>
+          <div class="gift-sharp-tv">
+            <div class="gift-sharp-tv__top gift-sharp-tv__card wow fadeIn">
+                <img src="./images/gift_1.jpg" alt="SHARP 60吋液晶顯示器" class="padNone">
+                <img src="./images/gift_1M.jpg" alt="SHARP 60吋液晶顯示器" class="padBlock">
+            </div>
+            <div class="gift-sharp-tv__bottom">
+  
+              <div class="gift-sharp-tv__card  wow fadeIn">
+                  <img src="./images/gift_2.jpg" alt="全面屏設計 無邊際沈浸式享受" class="padNone">
+                  <img src="./images/gift_2M.jpg" alt="全面屏設計 無邊際沈浸式享受" class="padBlock">
+              </div>
+              <div class="gift-sharp-tv__card  wow fadeIn">
+                <img src="./images/gift_3.jpg" alt="日本面板 品質與畫質唯一保證" class="padNone">
+                <img src="./images/gift_3M.jpg" alt="日本面板 品質與畫質唯一保證" class="padBlock">
+              </div>
+              <div class="gift-sharp-tv__card  wow fadeIn">
+                <img src="./images/gift_4.jpg" alt="全新 X4影像處理晶片" class="padNone">
+                <img src="./images/gift_4M.jpg" alt="全新 X4影像處理晶片" class="padBlock">
+              </div>
+            </div>
           </div>
-          <div class="gift-sharp-tv__bottom">
-
-            <div class="gift-sharp-tv__card  wow fadeIn">
-                <img src="./images/gift_2.jpg" alt="全面屏設計 無邊際沈浸式享受" class="padNone">
-                <img src="./images/gift_2M.jpg" alt="全面屏設計 無邊際沈浸式享受" class="padBlock">
-            </div>
-            <div class="gift-sharp-tv__card  wow fadeIn">
-              <img src="./images/gift_3.jpg" alt="日本面板 品質與畫質唯一保證" class="padNone">
-              <img src="./images/gift_3M.jpg" alt="日本面板 品質與畫質唯一保證" class="padBlock">
-            </div>
-            <div class="gift-sharp-tv__card  wow fadeIn">
-              <img src="./images/gift_4.jpg" alt="全新 X4影像處理晶片" class="padNone">
-              <img src="./images/gift_4M.jpg" alt="全新 X4影像處理晶片" class="padBlock">
-            </div>
+          <div class="gift-sharp-tv__more">
+            <a class="Btn_sharp DQ_N_202211_cclsp_sp_sharp tv-more button" target="_blank" href="https://tw.sharp/products/4t-c60dj1t">
+              <img src="./images/gift_btn1.png" alt="了解更多">
+            </a>
           </div>
         </div>
-        <div class="gift-sharp-tv__more">
-          <a class="Btn_sharp DQ_N_202211_cclsp_sp_sharp tv-more button" target="_blank" href="https://tw.sharp/products/4t-c60dj1t">
-            <img src="./images/gift_btn1.png" alt="了解更多">
-          </a>
-        </div>
-      </div>
-      <h3 class="gift__subTitle  wow flipInX">
-          <img src="./images/gift_tit2.png" alt="再享好禮超展開" class="padNone">
-          <img src="./images/gift_tit2M.png" alt="再享好禮超展開" class="padBlock">
-        <span>再享好禮超展開</span>
-      </h3>
-      <div class="DQ_N_202211_cclsp_sp_part_gifts container">
-        <ul class="gift-bonus">
-          <li class="gift-bonus__content wow bounceInDown"><img src="./images/gift_bonus1.png" alt="高額分期零利率"></li>
-          <li class="gift-bonus__content wow bounceInDown" data-wow-delay=".2s"><img src="./images/gift_bonus2.png"
-              alt="5萬元舊換新優先領"></li>
-          <li class="gift-bonus__content wow bounceInDown" data-wow-delay=".4s"><img src="./images/gift_bonus3.png"
-              alt="國產車再送 68 延長保固"></li>
-        </ul>
-        <div class="gift-note">
-          <div class="gift-note__content">
-              <img src="./images/gift_note.png" alt="詳情請洽詢 NISSAN 各經銷公司或線上聯繫數位銷售顧問" class="padNone">
-              <img src="./images/gift_noteM.png" alt="詳情請洽詢 NISSAN 各經銷公司或線上聯繫數位銷售顧問" class="padBlock">
+        <h3 class="gift__subTitle  wow flipInX">
+            <img src="./images/gift_tit2.png" alt="再享好禮超展開" class="padNone">
+            <img src="./images/gift_tit2M.png" alt="再享好禮超展開" class="padBlock">
+          <span>再享好禮超展開</span>
+        </h3>
+        <div class="DQ_N_202211_cclsp_sp_part_gifts container">
+          <ul class="gift-bonus">
+            <li class="gift-bonus__content wow bounceInDown"><img src="./images/gift_bonus1.png" alt="高額分期零利率"></li>
+            <li class="gift-bonus__content wow bounceInDown" data-wow-delay=".2s"><img src="./images/gift_bonus2.png"
+                alt="5萬元舊換新優先領"></li>
+            <li class="gift-bonus__content wow bounceInDown" data-wow-delay=".4s"><img src="./images/gift_bonus3.png"
+                alt="國產車再送 68 延長保固"></li>
+          </ul>
+          <div class="gift-note">
+            <div class="gift-note__content">
+                <img src="./images/gift_note.png" alt="詳情請洽詢 NISSAN 各經銷公司或線上聯繫數位銷售顧問" class="padNone">
+                <img src="./images/gift_noteM.png" alt="詳情請洽詢 NISSAN 各經銷公司或線上聯繫數位銷售顧問" class="padBlock">
+            </div>
+            <a class="Btn_dealer_cta DQ_N_202211_cclsp_sp_dealer_cta gift-note__contact button" target="_blank" href="https://new.nissan.com.tw/nissan/buy/digital-agents?top=1">
+              <img src="./images/gift_btn2.png" alt="立即聯繫">
+            </a>
           </div>
-          <a class="Btn_dealer_cta DQ_N_202211_cclsp_sp_dealer_cta gift-note__contact button" target="_blank" href="https://new.nissan.com.tw/nissan/buy/digital-agents?top=1">
-            <img src="./images/gift_btn2.png" alt="立即聯繫">
-          </a>
         </div>
       </div>
     </section>
     <!-- section 2 END -->
     <!-- section 3 START -->
-    <!-- <section class="DQ_N_202211_cclsp_sp_part_video video">
+    <section class="DQ_N_202211_cclsp_sp_part_video video">
+      <div class="wrap1920">
       <div class="container">
         <div class="video__wrap">
           <video controls src=""></video>
         </div>
       </div>
-    </section> -->
+    </div>
+    </section>
     <!-- section 3 END -->
     <!-- section 4 START -->
     <div class="car" id="car">
-      <div class="DQ_N_202211_cclsp_sp_part_cars car__intro">
-        <div class="container container-btns">
-          <div class="car__intro-btns">
-            <button class="DQ_N_202211_cclsp_sp_kicks Btn_kicks car__intro-btn car__intro-kicks active" data-car="kicks">
-              <img class="normal" src="./images/car_tag_kicks.png" alt="kicks">
-              <img class="active" src="./images/car_tag_kicks_a.png" alt="kicks">
-            </button>
-            <button class="DQ_N_202211_cclsp_sp_sentra car__intro-btn Btn_sentra car__intro-sentra" data-car="sentra">
-              <img class="normal" src="./images/car_tag_sentra.png" alt="sentra">
-              <img class="active" src="./images/car_tag_sentra_a.png" alt="sentra">
-            </button>
-            <button class="DQ_N_202211_cclsp_sp_xtrail car__intro-btn car__intro-xtrail" data-car="xtrail">
-              <img class="normal" src="./images/car_tag_xtrail.png" alt="xtrail">
-              <img class="active" src="./images/car_tag_xtrail_a.png" alt="xtrail">
-            </button>
-            <button class="DQ_N_202211_cclsp_sp_tiida car__intro-btn car__intro-tida" data-car="tida">
-              <img class="normal" src="./images/car_tag_tida.png" alt="tida">
-              <img class="active" src="./images/car_tag_tida_a.png" alt="tida">
-            </button>
-            <button class="DQ_N_202211_cclsp_sp_altima car__intro-btn car__intro-altima" data-car="altima">
-              <img class="normal" src="./images/car_tag_altima.png" alt="altima">
-              <img class="active" src="./images/car_tag_altima_a.png" alt="altima">
-            </button>
-            <button class="DQ_N_202211_cclsp_sp_juke car__intro-btn car__intro-juke" data-car="juke">
-              <img class="normal" src="./images/car_tag_juke.png" alt="juke">
-              <img class="active" src="./images/car_tag_juke_a.png" alt="juke">
-            </button>
-            <button class="DQ_N_202211_cclsp_sp_leaf car__intro-btn car__intro-leaf" data-car="leaf">
-              <img class="normal" src="./images/car_tag_leaf.png" alt="leaf">
-              <img class="active" src="./images/car_tag_leaf_a.png" alt="leaf">
-            </button>
+      <div class="wrap1920">
+        <div class="DQ_N_202211_cclsp_sp_part_cars car__intro">
+          <div class="container container-btns">
+            <div class="car__intro-btns">
+              <button class="DQ_N_202211_cclsp_sp_kicks Btn_kicks car__intro-btn car__intro-kicks active" data-car="kicks">
+                <img class="normal" src="./images/car_tag_kicks.png" alt="kicks">
+                <img class="active" src="./images/car_tag_kicks_a.png" alt="kicks">
+              </button>
+              <button class="DQ_N_202211_cclsp_sp_sentra car__intro-btn Btn_sentra car__intro-sentra" data-car="sentra">
+                <img class="normal" src="./images/car_tag_sentra.png" alt="sentra">
+                <img class="active" src="./images/car_tag_sentra_a.png" alt="sentra">
+              </button>
+              <button class="DQ_N_202211_cclsp_sp_xtrail car__intro-btn car__intro-xtrail" data-car="xtrail">
+                <img class="normal" src="./images/car_tag_xtrail.png" alt="xtrail">
+                <img class="active" src="./images/car_tag_xtrail_a.png" alt="xtrail">
+              </button>
+              <button class="DQ_N_202211_cclsp_sp_tiida car__intro-btn car__intro-tida" data-car="tida">
+                <img class="normal" src="./images/car_tag_tida.png" alt="tida">
+                <img class="active" src="./images/car_tag_tida_a.png" alt="tida">
+              </button>
+              <button class="DQ_N_202211_cclsp_sp_altima car__intro-btn car__intro-altima" data-car="altima">
+                <img class="normal" src="./images/car_tag_altima.png" alt="altima">
+                <img class="active" src="./images/car_tag_altima_a.png" alt="altima">
+              </button>
+              <button class="DQ_N_202211_cclsp_sp_juke car__intro-btn car__intro-juke" data-car="juke">
+                <img class="normal" src="./images/car_tag_juke.png" alt="juke">
+                <img class="active" src="./images/car_tag_juke_a.png" alt="juke">
+              </button>
+              <button class="DQ_N_202211_cclsp_sp_leaf car__intro-btn car__intro-leaf" data-car="leaf">
+                <img class="normal" src="./images/car_tag_leaf.png" alt="leaf">
+                <img class="active" src="./images/car_tag_leaf_a.png" alt="leaf">
+              </button>
+            </div>
+          </div>
+          <div class="container">
+            <div class="car__intro-boards">
+  
+              <div class="car__intro-board active" data-car-board="kicks">
+                <div class="car__intro-board-content">
+                  <img class="pc" src="./images/car_info_kicks.png" alt="KICKS">
+                  <img class="mb" src="./images/car_info_kicksM.png" alt="KICKS">
+                </div>
+                <div class="car__intro-board-links">
+                  <a class="Btn_kicks_more DQ_N_202211_cclsp_sp_kicks_more" target="_blank" href="https://new.nissan.com.tw/nissan/cars/KICKS">
+                    <img src="./images/car_more.png" alt="了解更多">
+                  </a>
+                  <a class="Btn_kicks_testdrive DQ_N_202211_cclsp_sp_kicks_testdrive" href="https://service.nissan.com.tw/testdrive/?modelId=KICKS" target="_blank">
+                    <img src="./images/car_reserve.png" alt="預約試乘">
+                  </a>
+                </div>
+              </div>
+  
+              <div class="car__intro-board" data-car-board="sentra">
+                <div class="car__intro-board-content">
+                  <img class="pc" src="./images/car_info_sentra.png" alt="sentra">
+                  <img class="mb" src="./images/car_info_sentraM.png" alt="sentra">
+                </div>
+                <div class="car__intro-board-links">
+                  <a class="DQ_N_202211_cclsp_sp_sentra_more Btn_sentra_more" href="https://new.nissan.com.tw/nissan/cars/SENTRA" target="_blank">
+                    <img src="./images/car_more.png" alt="了解更多">
+                  </a>
+                  <a class="DQ_N_202211_cclsp_sp_sentra_testdrive btn_sentra_testdrive" href="https://service.nissan.com.tw/testdrive/?modelId=SENTRA" target="_blank">
+                    <img src="./images/car_reserve.png" alt="預約試乘">
+                  </a>
+                </div>
+              </div>
+  
+              <div class="car__intro-board" data-car-board="xtrail">
+                <div class="car__intro-board-content">
+                  <img class="pc" src="./images/car_info_xtrail.png" alt="xtrail">
+                  <img class="mb" src="./images/car_info_xtrailM.png" alt="xtrail">
+                </div>
+                <div class="car__intro-board-links">
+                  <a class="DQ_N_202211_cclsp_sp_xtrail_more Btn_x-trail_more" href="https://new.nissan.com.tw/nissan/cars/x-trail" target="_blank">
+                    <img src="./images/car_more.png" alt="了解更多">
+                  </a>
+                  <a class="DQ_N_202211_cclsp_sp_xtrail_testdrive btn_x-trail_testdrive" href="https://service.nissan.com.tw/testdrive/?modelId=x-trail" target="_blank">
+                    <img src="./images/car_reserve.png" alt="預約試乘">
+                  </a>
+                </div>
+              </div>
+  
+              <div class="car__intro-board" data-car-board="tida">
+                <div class="car__intro-board-content">
+                  <img class="pc" src="./images/car_info_tida.png" alt="tida">
+                  <img class="mb" src="./images/car_info_tidaM.png" alt="tida">
+                </div>
+                <div class="car__intro-board-links">
+                  <a class="DQ_N_202211_cclsp_sp_tiida_more Btn_tiida_more" href="https://new.nissan.com.tw/nissan/cars/tiida" target="_blank">
+                    <img src="./images/car_more.png" alt="了解更多">
+                  </a>
+                  <a class="DQ_N_202211_cclsp_sp_tiida_testdrive btn_tiida_testdrive" href="https://service.nissan.com.tw/testdrive/?modelId=tiida" target="_blank">
+                    <img src="./images/car_reserve.png" alt="預約試乘">
+                  </a>
+                </div>
+              </div>
+  
+              <div class="car__intro-board" data-car-board="altima">
+                <div class="car__intro-board-content">
+                  <img class="pc" src="./images/car_info_altima.png" alt="altima">
+                  <img class="mb" src="./images/car_info_altimaM.png" alt="altima">
+                </div>
+                <div class="car__intro-board-links">
+                  <a class="DQ_N_202211_cclsp_sp_altima_more Btn_altima_more" href="https://new.nissan.com.tw/nissan/cars/altima" target="_blank">
+                    <img src="./images/car_more.png" alt="了解更多">
+                  </a>
+                  <a class="DQ_N_202211_cclsp_sp_altima_testdrive btn_altima_testdrive" href="https://service.nissan.com.tw/testdrive/?modelId=altima" target="_blank">
+                    <img src="./images/car_reserve.png" alt="預約試乘">
+                  </a>
+                </div>
+              </div>
+  
+              <div class="car__intro-board" data-car-board="juke">
+                <div class="car__intro-board-content">
+                  <img class="pc" src="./images/car_info_juke.png" alt="juke">
+                  <img class="mb" src="./images/car_info_jukeM.png" alt="juke">
+                </div>
+                <div class="car__intro-board-links">
+                  <a class="DQ_N_202211_cclsp_sp_juke_more Btn_juke_more" href="https://new.nissan.com.tw/nissan/cars/juke" target="_blank">
+                    <img src="./images/car_more.png" alt="了解更多">
+                  </a>
+                  <a class="DQ_N_202211_cclsp_sp_juke_testdrive btn_juke_testdrive" href="https://service.nissan.com.tw/testdrive/?modelId=juke" target="_blank">
+                    <img src="./images/car_reserve.png" alt="預約試乘">
+                  </a>
+                </div>
+              </div>
+  
+              <div class="car__intro-board" data-car-board="leaf">
+                <div class="car__intro-board-content">
+                  <img class="pc" src="./images/car_info_leaf.png" alt="leaf">
+                  <img class="mb" src="./images/car_info_leafM.png" alt="leaf">
+                </div>
+                <div class="car__intro-board-links">
+                  <a class="DQ_N_202211_cclsp_sp_leaf_more Btn_leaf_more" href="https://new.nissan.com.tw/nissan/cars/leaf" target="_blank">
+                    <img src="./images/car_more.png" alt="了解更多">
+                  </a>
+                  <a class="DQ_N_202211_cclsp_sp_leaf_testdrive btn_leaf_testdrive" href="https://service.nissan.com.tw/testdrive/?modelId=leaf" target="_blank">
+                    <img src="./images/car_reserve.png" alt="預約試乘">
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+  
         <div class="container">
-          <div class="car__intro-boards">
-
-            <div class="car__intro-board active" data-car-board="kicks">
-              <div class="car__intro-board-content">
-                <img class="pc" src="./images/car_info_kicks.png" alt="KICKS">
-                <img class="mb" src="./images/car_info_kicksM.png" alt="KICKS">
-              </div>
-              <div class="car__intro-board-links">
-                <a class="Btn_kicks_more DQ_N_202211_cclsp_sp_kicks_more" target="_blank" href="https://new.nissan.com.tw/nissan/cars/KICKS">
-                  <img src="./images/car_more.png" alt="了解更多">
-                </a>
-                <a class="Btn_kicks_testdrive DQ_N_202211_cclsp_sp_kicks_testdrive" href="https://service.nissan.com.tw/testdrive/?modelId=KICKS" target="_blank">
-                  <img src="./images/car_reserve.png" alt="預約試乘">
-                </a>
-              </div>
-            </div>
-
-            <div class="car__intro-board" data-car-board="sentra">
-              <div class="car__intro-board-content">
-                <img class="pc" src="./images/car_info_sentra.png" alt="sentra">
-                <img class="mb" src="./images/car_info_sentraM.png" alt="sentra">
-              </div>
-              <div class="car__intro-board-links">
-                <a class="DQ_N_202211_cclsp_sp_sentra_more Btn_sentra_more" href="https://new.nissan.com.tw/nissan/cars/SENTRA" target="_blank">
-                  <img src="./images/car_more.png" alt="了解更多">
-                </a>
-                <a class="DQ_N_202211_cclsp_sp_sentra_testdrive btn_sentra_testdrive" href="https://service.nissan.com.tw/testdrive/?modelId=SENTRA" target="_blank">
-                  <img src="./images/car_reserve.png" alt="預約試乘">
-                </a>
-              </div>
-            </div>
-
-            <div class="car__intro-board" data-car-board="xtrail">
-              <div class="car__intro-board-content">
-                <img class="pc" src="./images/car_info_xtrail.png" alt="xtrail">
-                <img class="mb" src="./images/car_info_xtrailM.png" alt="xtrail">
-              </div>
-              <div class="car__intro-board-links">
-                <a class="DQ_N_202211_cclsp_sp_xtrail_more Btn_x-trail_more" href="https://new.nissan.com.tw/nissan/cars/x-trail" target="_blank">
-                  <img src="./images/car_more.png" alt="了解更多">
-                </a>
-                <a class="DQ_N_202211_cclsp_sp_xtrail_testdrive btn_x-trail_testdrive" href="https://service.nissan.com.tw/testdrive/?modelId=x-trail" target="_blank">
-                  <img src="./images/car_reserve.png" alt="預約試乘">
-                </a>
-              </div>
-            </div>
-
-            <div class="car__intro-board" data-car-board="tida">
-              <div class="car__intro-board-content">
-                <img class="pc" src="./images/car_info_tida.png" alt="tida">
-                <img class="mb" src="./images/car_info_tidaM.png" alt="tida">
-              </div>
-              <div class="car__intro-board-links">
-                <a class="DQ_N_202211_cclsp_sp_tiida_more Btn_tiida_more" href="https://new.nissan.com.tw/nissan/cars/tiida" target="_blank">
-                  <img src="./images/car_more.png" alt="了解更多">
-                </a>
-                <a class="DQ_N_202211_cclsp_sp_tiida_testdrive btn_tiida_testdrive" href="https://service.nissan.com.tw/testdrive/?modelId=tiida" target="_blank">
-                  <img src="./images/car_reserve.png" alt="預約試乘">
-                </a>
-              </div>
-            </div>
-
-            <div class="car__intro-board" data-car-board="altima">
-              <div class="car__intro-board-content">
-                <img class="pc" src="./images/car_info_altima.png" alt="altima">
-                <img class="mb" src="./images/car_info_altimaM.png" alt="altima">
-              </div>
-              <div class="car__intro-board-links">
-                <a class="DQ_N_202211_cclsp_sp_altima_more Btn_altima_more" href="https://new.nissan.com.tw/nissan/cars/altima" target="_blank">
-                  <img src="./images/car_more.png" alt="了解更多">
-                </a>
-                <a class="DQ_N_202211_cclsp_sp_altima_testdrive btn_altima_testdrive" href="https://service.nissan.com.tw/testdrive/?modelId=altima" target="_blank">
-                  <img src="./images/car_reserve.png" alt="預約試乘">
-                </a>
-              </div>
-            </div>
-
-            <div class="car__intro-board" data-car-board="juke">
-              <div class="car__intro-board-content">
-                <img class="pc" src="./images/car_info_juke.png" alt="juke">
-                <img class="mb" src="./images/car_info_jukeM.png" alt="juke">
-              </div>
-              <div class="car__intro-board-links">
-                <a class="DQ_N_202211_cclsp_sp_juke_more Btn_juke_more" href="https://new.nissan.com.tw/nissan/cars/juke" target="_blank">
-                  <img src="./images/car_more.png" alt="了解更多">
-                </a>
-                <a class="DQ_N_202211_cclsp_sp_juke_testdrive btn_juke_testdrive" href="https://service.nissan.com.tw/testdrive/?modelId=juke" target="_blank">
-                  <img src="./images/car_reserve.png" alt="預約試乘">
-                </a>
-              </div>
-            </div>
-
-            <div class="car__intro-board" data-car-board="leaf">
-              <div class="car__intro-board-content">
-                <img class="pc" src="./images/car_info_leaf.png" alt="leaf">
-                <img class="mb" src="./images/car_info_leafM.png" alt="leaf">
-              </div>
-              <div class="car__intro-board-links">
-                <a class="DQ_N_202211_cclsp_sp_leaf_more Btn_leaf_more" href="https://new.nissan.com.tw/nissan/cars/leaf" target="_blank">
-                  <img src="./images/car_more.png" alt="了解更多">
-                </a>
-                <a class="DQ_N_202211_cclsp_sp_leaf_testdrive btn_leaf_testdrive" href="https://service.nissan.com.tw/testdrive/?modelId=leaf" target="_blank">
-                  <img src="./images/car_reserve.png" alt="預約試乘">
-                </a>
-              </div>
-            </div>
+          <div class="car__signs">
+            <img src="./images/car_sign1.png" alt="新安東京海上產險">
+            <img src="./images/car_sign2.png" alt="裕融企業">
           </div>
         </div>
-      </div>
-
-      <div class="container">
-        <div class="car__signs">
-          <img src="./images/car_sign1.png" alt="新安東京海上產險">
-          <img src="./images/car_sign2.png" alt="裕融企業">
+        
+  
+        <div></div>
+        <div class="container">
+          <ul class="DQ_N_202211_cclsp_sp_part_note car__note" >
+            <li>本專案活動期間為自民國(下同)111年11月01日起至民國111年11月30日止。</li>
+            <li>本專案優惠僅限於官網揭示之活動時間內下訂裕隆日產公司(下稱NISSAN)全車系，並完成領牌程序者，方具備本專案活動優惠資格。大宗批(標)售車、政府機關標案、營業用車、租賃車不適用。</li>
+            <li>符合本專案優惠資格者，於交車時可獲得 SHARP 60吋 androidtv 液晶顯示器
+              (型號4T-C60DJ1T)兌換憑證乙張。兌換方式：可前往台灣夏普官網進行兌換贈品配送及基本安裝【限台灣本島之拆箱/定位/底座安裝；非基本安裝(如：壁掛或開鑿式施工等)
+              、外島或徧遠地區或因個人因素造成二次配送，視實際情況額外收費；相關運費、安裝費等收費方式載於台灣夏普官網，依台灣夏普規定進行收費】。請進入台灣夏普官方網站完成登錄，經系統確認後，將顯示驗證成功之視窗及發送E-mail通知，表示已成功兌換SHARP
+              60吋 androidtv 液晶顯示器，台灣夏普將依此資料由客服人員聯繫安排做為配送安裝依據。</li>
+            <li>兌換期限為民國112年2月28日止，配送期間為民國111年11月1日起陸續配送，贈品最晚預計於民國112年3月31日前配送完畢，實際配送時間依台灣夏普配送規定。</li>
+            <li>
+              兌換憑證逾期兌換視為自動放棄；若未蓋NISSAN經銷公司章、影印變造或偽造、塗改者，視為無效憑證；兌換憑證遺失或毀損至無法辨識經銷公司章程度者，視為作廢恕不補發。贈品以實物為準，恕不接受更換或折抵現金或找零，如遇贈品缺貨時，NISSAN將另行更換等值商品，恕無法指定商品。兌換憑證於台灣夏普登錄之資料，台灣夏普將依個人資料保護法予以保護；兌換憑證不得轉售，如因轉售而生之爭議，一概與NISSAN及台灣夏普無涉。本贈品之相關權利及保固維修相關服務請參考台灣夏普官網，贈品若有任何疑問請逕洽台灣夏普客服專線0809-090-510，NISSAN不負任何贈品瑕疵擔保及保固維護責任。
+            </li>
+            <li>
+              「高額分期0利率」係指分期付款專案，需搭配指定分期專案，各期款項依指定貸款企業之規定，頭期款金額成數將視買賣雙方之交易條件及結果而定，NISSAN各經銷公司及指定貸款企業保有審核及最後核准與否之權利。本專案亦有相關授信條件與結清限制，且不得與其他貸款優惠專案併用。分期付款與現金付款之建議售價相同，但實際交易價格由買賣雙方各自依交易條件內容協商議定之。另各車型所搭配之分期零利率購車優惠方案各不相同，現金優惠購車總價與零利率分期購車總價係有價差。詳細交易條件請洽NISSAN各經銷公司，NISSAN及各經銷公司並保留最後核准與否權利。
+            </li>
+            <li>
+              「5萬元舊換新優先領」係指於本專案活動期間下訂新車並完成領牌且符合貨物稅條例換購新車退還減徵新車貨物稅50,000元資格者，補助與否以政府最終審核為準，相關程序及內容詳見NISSAN官網或洽詢NISSAN展示中心。
+            </li>
+            <li>國產車系(限ALL NEW SENTRA、KICKS、X-TRAIL、TIIDA車系始得享有)加贈 68 無限延長保固：
+              <br>
+              (1) 限於活動期間內下訂且完成新車領牌者，公司車(限指定駕駛)、大宗批(標)售、租賃車、營業車、政府機關及台灣本島以外地區不適用。
+              <br>
+              (2)
+              68無限延長保固係指6大系統8年(不限里程)延長保固，延長保固之車主需配合至少每6個月或每1萬公里至NISSAN服務廠實施定期保養，並每年於NISSAN經銷公司投保該保險專案配合之指定保險公司之強制險及1,000元以上任意主險，詳細之權利與義務請洽各經銷公司或參閱NISSAN官網網頁說明為準。
+            </li>
+            <li>各車規之實際規格、配備及車色以實車為準，各配備之作動可能有其條件限制及安全警告，商品規格說明受限於廣告篇幅亦可能未盡完整，消費者於購買前務必洽詢NISSAN展示中心或參閱NISSAN官網相關說明。</li>
+            <li>以上所示金額均為新臺幣。本專案所有活動詳情及條件請洽NISSAN展示中心，NISSAN及各經銷公司擁有修改、變更、終止活動及優惠內容之權利。</li>
+          </ul>
         </div>
+        <div class="car__footer">
+          <img src="./images/footer.png" alt="NISSAN TAIWAN">
+        </div>
+        
       </div>
-      
-
-      <div></div>
-      <div class="container">
-        <ul class="DQ_N_202211_cclsp_sp_part_note car__note" >
-          <li>本專案活動期間為自民國(下同)111年11月01日起至民國111年11月30日止。</li>
-          <li>本專案優惠僅限於官網揭示之活動時間內下訂裕隆日產公司(下稱NISSAN)全車系，並完成領牌程序者，方具備本專案活動優惠資格。大宗批(標)售車、政府機關標案、營業用車、租賃車不適用。</li>
-          <li>符合本專案優惠資格者，於交車時可獲得 SHARP 60吋 androidtv 液晶顯示器
-            (型號4T-C60DJ1T)兌換憑證乙張。兌換方式：可前往台灣夏普官網進行兌換贈品配送及基本安裝【限台灣本島之拆箱/定位/底座安裝；非基本安裝(如：壁掛或開鑿式施工等)
-            、外島或徧遠地區或因個人因素造成二次配送，視實際情況額外收費；相關運費、安裝費等收費方式載於台灣夏普官網，依台灣夏普規定進行收費】。請進入台灣夏普官方網站完成登錄，經系統確認後，將顯示驗證成功之視窗及發送E-mail通知，表示已成功兌換SHARP
-            60吋 androidtv 液晶顯示器，台灣夏普將依此資料由客服人員聯繫安排做為配送安裝依據。</li>
-          <li>兌換期限為民國112年2月28日止，配送期間為民國111年11月1日起陸續配送，贈品最晚預計於民國112年3月31日前配送完畢，實際配送時間依台灣夏普配送規定。</li>
-          <li>
-            兌換憑證逾期兌換視為自動放棄；若未蓋NISSAN經銷公司章、影印變造或偽造、塗改者，視為無效憑證；兌換憑證遺失或毀損至無法辨識經銷公司章程度者，視為作廢恕不補發。贈品以實物為準，恕不接受更換或折抵現金或找零，如遇贈品缺貨時，NISSAN將另行更換等值商品，恕無法指定商品。兌換憑證於台灣夏普登錄之資料，台灣夏普將依個人資料保護法予以保護；兌換憑證不得轉售，如因轉售而生之爭議，一概與NISSAN及台灣夏普無涉。本贈品之相關權利及保固維修相關服務請參考台灣夏普官網，贈品若有任何疑問請逕洽台灣夏普客服專線0809-090-510，NISSAN不負任何贈品瑕疵擔保及保固維護責任。
-          </li>
-          <li>
-            「高額分期0利率」係指分期付款專案，需搭配指定分期專案，各期款項依指定貸款企業之規定，頭期款金額成數將視買賣雙方之交易條件及結果而定，NISSAN各經銷公司及指定貸款企業保有審核及最後核准與否之權利。本專案亦有相關授信條件與結清限制，且不得與其他貸款優惠專案併用。分期付款與現金付款之建議售價相同，但實際交易價格由買賣雙方各自依交易條件內容協商議定之。另各車型所搭配之分期零利率購車優惠方案各不相同，現金優惠購車總價與零利率分期購車總價係有價差。詳細交易條件請洽NISSAN各經銷公司，NISSAN及各經銷公司並保留最後核准與否權利。
-          </li>
-          <li>
-            「5萬元舊換新優先領」係指於本專案活動期間下訂新車並完成領牌且符合貨物稅條例換購新車退還減徵新車貨物稅50,000元資格者，補助與否以政府最終審核為準，相關程序及內容詳見NISSAN官網或洽詢NISSAN展示中心。
-          </li>
-          <li>國產車系(限ALL NEW SENTRA、KICKS、X-TRAIL、TIIDA車系始得享有)加贈 68 無限延長保固：
-            <br>
-            (1) 限於活動期間內下訂且完成新車領牌者，公司車(限指定駕駛)、大宗批(標)售、租賃車、營業車、政府機關及台灣本島以外地區不適用。
-            <br>
-            (2)
-            68無限延長保固係指6大系統8年(不限里程)延長保固，延長保固之車主需配合至少每6個月或每1萬公里至NISSAN服務廠實施定期保養，並每年於NISSAN經銷公司投保該保險專案配合之指定保險公司之強制險及1,000元以上任意主險，詳細之權利與義務請洽各經銷公司或參閱NISSAN官網網頁說明為準。
-          </li>
-          <li>各車規之實際規格、配備及車色以實車為準，各配備之作動可能有其條件限制及安全警告，商品規格說明受限於廣告篇幅亦可能未盡完整，消費者於購買前務必洽詢NISSAN展示中心或參閱NISSAN官網相關說明。</li>
-          <li>以上所示金額均為新臺幣。本專案所有活動詳情及條件請洽NISSAN展示中心，NISSAN及各經銷公司擁有修改、變更、終止活動及優惠內容之權利。</li>
-        </ul>
-      </div>
-      <div class="car__footer">
-        <img src="./images/footer.png" alt="NISSAN TAIWAN">
-      </div>
+   
     </div>
     <!-- section 4 END -->
     <div class="float-links">

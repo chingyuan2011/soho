@@ -1,19 +1,15 @@
-.box {
-  // position: fixed;
-  // width: 1600px;
-  // height: 850px;
-  // background-color: red;
-  // pointer-events: none;
-}
-
 .kv {
   position: relative;
   overflow: hidden;
-  padding-bottom: 53.2%;
   background-image: url(../images/kv_bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom center;
+
+  .wrap1920{
+  padding-bottom: 53.2%;
+
+  }
 
   &__tit {
     position: absolute;
@@ -114,7 +110,10 @@
   }
 
   @media (max-width: 768px) {
-    padding-bottom: 171%;
+
+    .wrap1920 {
+      padding-bottom: 171%;
+    }
 
     &__tit {
       width: 81.8%;
