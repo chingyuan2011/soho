@@ -6,10 +6,17 @@
   background-repeat: no-repeat;
   background-position: bottom center;
 
-  .wrap1920{
-  padding-bottom: 53.2%;
 
+  .wrap1920{
+    height: 1020px;
+    @media (max-width: 1920px) {
+      height: auto;
+      padding-bottom: 53.2%;
+      max-height: 1020px;
+    }
   }
+
+
 
   &__tit {
     position: absolute;

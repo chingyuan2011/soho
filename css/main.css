@@ -323,7 +323,14 @@ body.scrollBack .header__menu {
   background-position: bottom center;
 }
 .kv .wrap1920 {
-  padding-bottom: 53.2%;
+  height: 1020px;
+}
+@media (max-width: 1920px) {
+  .kv .wrap1920 {
+    height: auto;
+    padding-bottom: 53.2%;
+    max-height: 1020px;
+  }
 }
 .kv__tit {
   position: absolute;
