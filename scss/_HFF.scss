@@ -256,4 +256,26 @@ body.scrollBack .header {
       margin-bottom: 0;
     }
   }
+  @media (max-width: 768px) {
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+
+    .float-link {
+      margin-bottom: 0px;
+      box-shadow: 0 0 15px #fff;
+      transform: translateX(0px);
+  
+      &:hover {
+        transform: translateX(0px);
+      }
+      img{
+        margin-bottom: -3px;
+        object-fit: cover;
+      }
+    }
+  }
 }
