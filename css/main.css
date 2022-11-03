@@ -755,11 +755,16 @@ body.scrollBack .header__menu {
   background-color: #fff;
   width: 100%;
   position: relative;
+  overflow: hidden;
 }
 .video video {
   width: 100%;
-  border-radius: 40px;
   display: block;
+}
+@media (max-width: 960px) {
+  .video__wrap {
+    border-radius: 20px;
+  }
 }
 
 .car {
@@ -881,6 +886,7 @@ body.scrollBack .header__menu {
 @media (max-width: 960px) {
   .car {
     padding-top: 60px;
+    padding-bottom: 40px;
   }
   .car__intro-btns {
     margin-bottom: 0;
