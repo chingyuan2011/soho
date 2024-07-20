@@ -38,117 +38,17 @@ ul {
   padding: 0;
 }
 
-.futuraBTMedium {
-  font-family: 'futura BT Medium', Roboto, Arial, 'Microsoft JhengHei Modify', 'Microsoft JhengHei', PingFangTC, sans-serif;
-}
+// .futuraBTMedium {
+//   font-family: 'futura BT Medium', Roboto, Arial, 'Microsoft JhengHei Modify', 'Microsoft JhengHei', PingFangTC, sans-serif;
+// }
 
-.futuraBT {
-  font-family: 'futura BT', Roboto, Arial, 'Microsoft JhengHei Modify', 'Microsoft JhengHei', PingFangTC, sans-serif;
-}
+// .futuraBT {
+//   font-family: 'futura BT', Roboto, Arial, 'Microsoft JhengHei Modify', 'Microsoft JhengHei', PingFangTC, sans-serif;
+// }
 
-.futuraExtraBlack {
-  font-family: 'futuraExtraBlack', Roboto, Arial, 'Microsoft JhengHei Modify', 'Microsoft JhengHei', PingFangTC, sans-serif;
-}
+// .futuraExtraBlack {
+//   font-family: 'futuraExtraBlack', Roboto, Arial, 'Microsoft JhengHei Modify', 'Microsoft JhengHei', PingFangTC, sans-serif;
+// }
 
-.breadcrumbs {
-  display: flex;
-  align-items: center;
-  font-size: 16px;
-  font-weight: 700;
-  color: #951e23;
 
-  &__link {
-    display: block;
-    align-items: center;
-    margin-left: 10px;
-    letter-spacing: 2px;
-    white-space: nowrap;
 
-    &:last-child {
-      @include text-overflow($line: 1);
-    }
-  }
-
-  &__home {
-    flex-shrink: 0;
-    width: 16px;
-    height: 16px;
-    margin-left: 0;
-  }
-}
-
-.fixBg {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 0;
-  width: 100%;
-  background-image: url('/img/bg_pink.jpg');
-
-  &.brown {
-    background-image: url('/img/bg_brown.jpg');
-  }
-}
-
-.footer__deco-brown {
-  position: relative;
-  padding-top: 360px;
-
-  @include screen(xxl) {
-    padding-top: 256px;
-  }
-}
-
-.slogan {
-  margin-right: 25px;
-  margin-bottom: 25px;
-  font-size: 54px;
-  color: #962233;
-  text-align: right;
-  letter-spacing: 6px;
-
-  br {
-    display: none;
-  }
-
-  @include screen(lg) {
-    font-size: 40px;
-  }
-
-  @include screen(md) {
-    br {
-      display: inline-block;
-    }
-  }
-}
-
-.note {
-  display: flex;
-  align-items: center;
-  max-width: 60%;
-  margin-top: -25px;
-  margin-bottom: -25px;
-  margin-left: auto;
-  padding: 10px 20px;
-  font-size: 20px;
-  color: #fff;
-  background-color: #a78a70;
-  box-shadow: 3px 3px 5px color(gray, 400);
-
-  >span {
-  }
-
-  @include screen(lg) {
-    max-width: 70%;
-  }
-
-  @include screen(md) {
-    position: relative;
-    top: -25px;
-    max-width: 100%;
-    padding: 10px 20px;
-    font-size: 16px;
-  }
-}
