@@ -38,6 +38,17 @@ ul {
   padding: 0;
 }
 
+// 疊加的透明圖位置 for 切版方便
+.helper {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  // display: none;
+  width: 100%;
+  opacity: .3;
+}
+
 // .futuraBTMedium {
 //   font-family: 'futura BT Medium', Roboto, Arial, 'Microsoft JhengHei Modify', 'Microsoft JhengHei', PingFangTC, sans-serif;
 // }

@@ -18,7 +18,7 @@ export default {
   },
   metaInfo () {
     return {
-      title: '頁面 TITLE',
+      title: '藻作坊',
       meta: [{
         vmid: 'description',
         name: 'description',
