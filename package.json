@@ -55,6 +55,9 @@
     "root": true,
     "extends": [
       "./config/lint/.eslintrc.js"
+    ],
+    "ignorePatterns":[
+      "public/assets/**"
     ]
   },
   "browserslist": [
@@ -91,7 +94,8 @@
     "ignoreFiles": [
       ".vscode/**",
       "dist/**",
-      "node_modules/**"
+      "node_modules/**",
+      "public/assets/**"
     ]
   },
   "optimization": {
