@@ -2,7 +2,13 @@
 (function () {
   document.addEventListener('DOMContentLoaded', function () {
     new WOW().init()
-
+    $('.kv_content').slick({
+      dots: false,
+      infinite: true,
+      speed: 3000,
+      autoplay: true,
+      arrows: false
+    })
     // resize
     $(window).on('resize', function () {
       $('body').removeClass('hamOpen')
@@ -15,6 +21,5 @@
         scrollTop: 0
       }, 500)
     })
-
   })
 })()

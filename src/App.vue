@@ -45,10 +45,10 @@ export default {
 .app__view {
   flex: 1;
   width: 100%;
-  padding-top: 80px;
-  overflow-x: hidden;
+  // padding-top: 80px;
+
   @include screen(sm) {
-    padding-top: 60px;
+    // padding-top: 60px;
   }
 }
 
