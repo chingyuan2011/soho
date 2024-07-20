@@ -30,6 +30,25 @@
         </div>
       </div>
     </div>
+    <div class="productIntro">
+      <div class="container"></div>
+      <!-- <div class="helper">
+        <img src="/img/layout_index_2.jpg">
+      </div> -->
+    </div>
+    <div class="ad">
+      <div class="container">
+        <div class="ad_img">
+          <img
+            src="/img/index_ad_1.jpg"
+            alt="讓餐桌多一份美好"
+          >
+        </div>
+      </div>
+      <!-- <div class="helper">
+        <img src="/img/layout_index_3.jpg">
+      </div> -->
+    </div>
   </div>
 </template>
 

@@ -22,6 +22,28 @@
       }
     }
   }
+
+  .productIntro {
+    position: relative;
+    // background-image: url('');
+
+    .container {
+      padding-top: 140px;
+      padding-bottom: 70px;
+    }
+  }
+
+  .ad {
+    position: relative;
+    padding: 40px 0 40px 13%;
+    background-image: url('/img/index_ad_bg.jpg');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    @include screen(lg) {
+      padding: 40px 0 40px 0%;
+    }
+  }
 }
 // xxl | xl | lg | md | sm
 // @include screen (xl) {}
