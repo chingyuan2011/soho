@@ -1,14 +1,14 @@
 <template>
-  <CtHeader></CtHeader>
+  <ProjectHeader></ProjectHeader>
 </template>
 
 <script>
-import CtHeader from '@/components/CtHeader'
+import ProjectHeader from '@/components/ProjectHeader'
 export default {
 
   name: 'Header',
   components: {
-    CtHeader
+    ProjectHeader
   },
   data () {
     return {

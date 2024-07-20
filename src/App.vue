@@ -1,22 +1,22 @@
 <template>
   <div id="app">
-    <CTHeader></CTHeader>
+    <ProjectHeader></ProjectHeader>
     <router-view class="app__view"></router-view>
-    <CTFooter></CTFooter>
+    <ProjectFooter></ProjectFooter>
 
 
   </div>
 </template>
 
 <script>
-import CTHeader from '@/components/CtHeader'
-import CTFooter from '@/components/CtFooter'
+import ProjectHeader from '@/components/ProjectHeader'
+import ProjectFooter from '@/components/ProjectFooter'
 
 export default {
   name: 'App',
   components: {
-    CTHeader,
-    CTFooter
+    ProjectHeader,
+    ProjectFooter
   },
   metaInfo () {
     return {

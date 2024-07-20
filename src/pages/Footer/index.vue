@@ -1,15 +1,14 @@
 <template>
-  <div>
-    我是 Footer
-  </div>
+  <ProjectFooter></ProjectFooter>
 </template>
 
 <script>
+import ProjectFooter from '@/components/ProjectFooter'
 
 export default {
   name: 'Footer',
   components: {
-
+    ProjectFooter
   },
   data () {
     return {
