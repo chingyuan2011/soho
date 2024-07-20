@@ -1,3 +1,27 @@
-.Index {}
+.Index {
+  .kv {
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 8%;
+      height: 145px;
+      background-image: url('/img/index_kvIcon.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      transform: translate(-50%, 50%);
+    }
+
+    @include screen(md) {
+      &::after {
+        display: none;
+      }
+    }
+  }
+}
 // xxl | xl | lg | md | sm
 // @include screen (xl) {}
