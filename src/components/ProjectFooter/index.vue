@@ -276,6 +276,9 @@ export default {
   &_note {
     padding: 15px 0;
     border-top: 2px solid #fff;
+    @include screen(md) {
+      font-size: 14px;
+    }
   }
 }
 // xxl | xl | lg | md | sm
