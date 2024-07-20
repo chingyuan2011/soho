@@ -1,6 +1,7 @@
 <template>
   <footer class="ProjectFooter">
     <div class="container">
+      我是 footer
       <div class="ProjectFooter__logoWrap">
         <div class="ProjectFooter__pic">
           <img
@@ -10,11 +11,10 @@
           >
         </div>
         <div class="ProjectFooter__note">
-          Copyright  2021 © TASTy All rights reserved.
+          Copyright  {{ new Date().getFullYear() }} ©  All rights reserved.
         </div>
       </div>
       <div class="ProjectFooter__content">
-        
       </div>
     </div>
   </footer>

@@ -3,8 +3,6 @@
     <ProjectHeader></ProjectHeader>
     <router-view class="app__view"></router-view>
     <ProjectFooter></ProjectFooter>
-
-
   </div>
 </template>
 
@@ -50,6 +48,5 @@ export default {
     padding-top: 60px;
   }
 }
-
 
 </style>

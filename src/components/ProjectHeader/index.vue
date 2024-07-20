@@ -1,9 +1,8 @@
 <template>
   <header class="ProjectHeader">
     <div class="container">
-     
+      我是 header
     </div>
-    
   </header>
 </template>
 <script>
@@ -17,7 +16,6 @@ export default {
 </script>
 
 <style lang="scss">
-
 
 .ProjectHeader {}
 // xxl | xl | lg | md | sm

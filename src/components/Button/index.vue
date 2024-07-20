@@ -58,7 +58,7 @@ export default {
     text: {
       type: String,
       require: true,
-      default: '22'
+      default: 'TEST button'
     },
     config: {
       type: Object,

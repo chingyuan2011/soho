@@ -4,7 +4,6 @@ import Index from '@/pages/Index'
 import Header from '@/pages/Header'
 import Footer from '@/pages/Footer'
 
-
 Vue.use(VueRouter)
 
 const routes = [
