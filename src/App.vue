@@ -3,18 +3,21 @@
     <ProjectHeader></ProjectHeader>
     <router-view class="app__view"></router-view>
     <ProjectFooter></ProjectFooter>
+    <FloatBtn></FloatBtn>
   </div>
 </template>
 
 <script>
 import ProjectHeader from '@/components/ProjectHeader'
 import ProjectFooter from '@/components/ProjectFooter'
+import FloatBtn from './components/FloatBtn/FloatBtn.vue'
 
 export default {
   name: 'App',
   components: {
     ProjectHeader,
-    ProjectFooter
+    ProjectFooter,
+    FloatBtn
   },
   metaInfo () {
     return {
