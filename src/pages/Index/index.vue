@@ -107,6 +107,39 @@
         <img src="/img/layout_index_4.jpg">
       </div> -->
     </div>
+
+    <div class="productRecommend">
+      <div class="container">
+        <div class="productRecommend_item">
+          <div class="productRecommend_item-pic">
+            <img
+              src="/img/temp_product-recommend.png"
+              alt=""
+            >
+          </div>
+          <div class="productRecommend_item-info">
+            <div class="productRecommend_item-infoWrap">
+              <div class="productRecommend_item-infoTitle">
+                焙煎胡麻
+              </div>
+              <div class="productRecommend_item-infoText">
+                焙煎胡麻焙煎胡麻焙煎胡麻焙煎胡麻焙煎胡麻焙煎胡麻焙煎胡麻焙煎胡麻焙煎胡麻
+              </div>
+              <div class="productRecommend_item-infoArrow">
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <a
+            href="javascript:;"
+            target="_blank"
+          ></a>
+        </div>
+      </div>
+      <!-- <div class="helper">
+        <img src="/img/layout_index_6.jpg">
+      </div> -->
+    </div>
   </div>
 </template>
 

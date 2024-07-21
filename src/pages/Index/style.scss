@@ -55,7 +55,7 @@
     padding: 0px 0 240px 0;
     background-image: url('/img/index_feature_bg.jpg');
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom;
     background-size: cover;
 
     @include screen(lg) {
@@ -136,6 +136,100 @@
         &-col-3 {
           gap: 0px;
         }
+      }
+    }
+  }
+
+  .productRecommend {
+    position: relative;
+    background-image: url('/img/index_product3_bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &_item {
+      position: relative;
+      display: flex;
+      width: 72%;
+      margin: 0 auto;
+      transform: translateY(-8%);
+
+      &-pic {
+        flex-shrink: 0;
+      }
+
+      &-info {
+        display: flex;
+        align-items: center;
+        line-height: 1.5;
+        color: #523628;
+        letter-spacing: .15rem;
+
+        &Wrap {
+          padding: 0 15px;
+        }
+
+        &Title {
+          font-size: 36px;
+          font-weight: bold;
+        }
+
+        &Text {
+          margin-bottom: 40px;
+          font-size: 20px;
+        }
+
+        &Arrow {
+
+          @include custom-arrow();
+
+          &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: -10px;
+            z-index: -1;
+            width: 32px;
+            height: 32px;
+            background-color: #000;
+            border-radius: 50%;
+            transform: translate(10%, -20%);
+          }
+        }
+      }
+
+      @include screen(1360) {
+        width: 100%;
+      }
+
+      @include screen(lg) {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 40px 0;
+        transform: translateY(0);
+
+        &-pic {
+          flex-shrink: 1;
+        }
+
+        &-info {
+          &Title {
+            font-size: 28px;
+          }
+
+          &Text {
+            margin-bottom: 20px;
+            font-size: 16px;
+          }
+        }
+      }
+
+      a {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
       }
     }
   }
