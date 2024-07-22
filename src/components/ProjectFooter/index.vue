@@ -5,7 +5,7 @@
         <div class="ProjectFooter_logoWrap">
           <div class="ProjectFooter_pic">
             <img
-              src="/img/footer_logo.png"
+              src="/img/footer/footer_logo.png"
               alt="logo"
               draggable="false"
             >
@@ -131,22 +131,22 @@
               <div
                 class="ProjectFooter_linkList-text"
               >
-                <img src="/img/footer_phone.png">0910-827-867
+                <img src="/img/footer/footer_phone.png">0910-827-867
               </div>
               <div
                 class="ProjectFooter_linkList-text"
               >
-                <img src="/img/footer_time.png">AM 9:00-PM 18:00
+                <img src="/img/footer/footer_time.png">AM 9:00-PM 18:00
               </div>
               <div
                 class="ProjectFooter_linkList-text"
               >
-                <img src="/img/footer_email.png">gzv6726@dr-seaweed.com.tw
+                <img src="/img/footer/footer_email.png">gzv6726@dr-seaweed.com.tw
               </div>
               <div
                 class="ProjectFooter_linkList-text"
               >
-                <img src="/img/footer_position.png">嘉義市東區共和路191巷6號
+                <img src="/img/footer/footer_position.png">嘉義市東區共和路191巷6號
               </div>
             </div>
           </div>
@@ -159,21 +159,21 @@
                 href="javascript:;"
                 target="_blank"
               ><img
-                src="/img/footer_line.png"
+                src="/img/footer/footer_line.png"
                 alt="LINE"
               ></a>
               <a
                 href="javascript:;"
                 target="_blank"
               ><img
-                src="/img/footer_fb.png"
+                src="/img/footer/footer_fb.png"
                 alt="fb"
               ></a>
               <a
                 href="javascript:;"
                 target="_blank"
               ><img
-                src="/img/footer_yt.png"
+                src="/img/footer/footer_yt.png"
                 alt="yt"
               ></a>
             </div>
@@ -188,7 +188,7 @@
     </div>
     <!-- <div class="helper">
       <img
-        src="/img/footer_layout.jpg"
+        src="/img/footer/footer_layout.jpg"
       >
     </div> -->
   </footer>
