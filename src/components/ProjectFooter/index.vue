@@ -13,7 +13,7 @@
         </div>
         <div class="ProjectFooter_linkPart">
           <div class="ProjectFooter_linkCategory">
-            <div class="ProjectFooter_linkTitle">
+            <div class="ProjectFooter_linkTitle notoSerif">
               深入暸解
             </div>
             <div class="ProjectFooter_linkList">
@@ -36,7 +36,7 @@
             </div>
           </div>
           <div class="ProjectFooter_linkCategory">
-            <div class="ProjectFooter_linkTitle">
+            <div class="ProjectFooter_linkTitle notoSerif">
               藻藻帶回家
             </div>
             <div class="ProjectFooter_linkList">
@@ -59,7 +59,7 @@
             </div>
           </div>
           <div class="ProjectFooter_linkCategory">
-            <div class="ProjectFooter_linkTitle">
+            <div class="ProjectFooter_linkTitle notoSerif">
               藻門市吧
             </div>
             <div class="ProjectFooter_linkList">
@@ -78,7 +78,7 @@
             </div>
           </div>
           <div class="ProjectFooter_linkCategory">
-            <div class="ProjectFooter_linkTitle">
+            <div class="ProjectFooter_linkTitle notoSerif">
               會員中心
             </div>
             <div class="ProjectFooter_linkList">
@@ -101,7 +101,7 @@
             </div>
           </div>
           <div class="ProjectFooter_linkCategory">
-            <div class="ProjectFooter_linkTitle">
+            <div class="ProjectFooter_linkTitle notoSerif">
               會員權益
             </div>
             <div class="ProjectFooter_linkList">
@@ -124,7 +124,7 @@
             </div>
           </div>
           <div class="ProjectFooter_linkCategory">
-            <div class="ProjectFooter_linkTitle">
+            <div class="ProjectFooter_linkTitle notoSerif">
               聯絡資訊
             </div>
             <div class="ProjectFooter_linkList">
@@ -151,7 +151,7 @@
             </div>
           </div>
           <div class="ProjectFooter_linkCategory">
-            <div class="ProjectFooter_linkTitle">
+            <div class="ProjectFooter_linkTitle notoSerif">
               關注我們
             </div>
             <div class="ProjectFooter_socialMedia">
