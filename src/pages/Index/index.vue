@@ -148,7 +148,7 @@
                 <div class="productAll_itemTop">
                   <div class="productAll_itemTop-pic">
                     <img
-                      src="/img/temp_product0.png"
+                      src="/img/index/product3_item1.png"
                       alt="黑芝麻醬"
                     >
                   </div>
@@ -177,17 +177,9 @@
                 <a href="javascript:;"></a>
               </div>
               <div class="productAll_itemBtns">
-                <button>
-                  <img
-                    src="/img/cart.png"
-                    alt="加入購物車"
-                  >
+                <button class="productAll_itemBtns-cart">
                 </button>
-                <button>
-                  <img
-                    src="/img/cart.png"
-                    alt="加入購物車"
-                  >
+                <button class="productAll_itemBtns-bag">
                 </button>
               </div>
             </div>
@@ -196,7 +188,7 @@
                 <div class="productAll_itemTop">
                   <div class="productAll_itemTop-pic">
                     <img
-                      src="/img/temp_product0.png"
+                      src="/img/index/product3_itme2.png"
                       alt="黑芝麻醬"
                     >
                   </div>
@@ -225,17 +217,9 @@
                 <a href="javascript:;"></a>
               </div>
               <div class="productAll_itemBtns">
-                <button>
-                  <img
-                    src="/img/cart.png"
-                    alt="加入購物車"
-                  >
+                <button class="productAll_itemBtns-cart">
                 </button>
-                <button>
-                  <img
-                    src="/img/cart.png"
-                    alt="加入購物車"
-                  >
+                <button class="productAll_itemBtns-bag">
                 </button>
               </div>
             </div>
@@ -244,7 +228,7 @@
                 <div class="productAll_itemTop">
                   <div class="productAll_itemTop-pic">
                     <img
-                      src="/img/temp_product0.png"
+                      src="/img/index/product3_item1.png"
                       alt="黑芝麻醬"
                     >
                   </div>
@@ -273,17 +257,9 @@
                 <a href="javascript:;"></a>
               </div>
               <div class="productAll_itemBtns">
-                <button>
-                  <img
-                    src="/img/cart.png"
-                    alt="加入購物車"
-                  >
+                <button class="productAll_itemBtns-cart">
                 </button>
-                <button>
-                  <img
-                    src="/img/cart.png"
-                    alt="加入購物車"
-                  >
+                <button class="productAll_itemBtns-bag">
                 </button>
               </div>
             </div>
@@ -292,7 +268,7 @@
                 <div class="productAll_itemTop">
                   <div class="productAll_itemTop-pic">
                     <img
-                      src="/img/temp_product0.png"
+                      src="/img/index/product3_itme2.png"
                       alt="黑芝麻醬"
                     >
                   </div>
@@ -321,17 +297,9 @@
                 <a href="javascript:;"></a>
               </div>
               <div class="productAll_itemBtns">
-                <button>
-                  <img
-                    src="/img/cart.png"
-                    alt="加入購物車"
-                  >
+                <button class="productAll_itemBtns-cart">
                 </button>
-                <button>
-                  <img
-                    src="/img/cart.png"
-                    alt="加入購物車"
-                  >
+                <button class="productAll_itemBtns-bag">
                 </button>
               </div>
             </div>
@@ -340,7 +308,7 @@
                 <div class="productAll_itemTop">
                   <div class="productAll_itemTop-pic">
                     <img
-                      src="/img/temp_product0.png"
+                      src="/img/index/product3_item1.png"
                       alt="黑芝麻醬"
                     >
                   </div>
@@ -369,17 +337,9 @@
                 <a href="javascript:;"></a>
               </div>
               <div class="productAll_itemBtns">
-                <button>
-                  <img
-                    src="/img/cart.png"
-                    alt="加入購物車"
-                  >
+                <button class="productAll_itemBtns-cart">
                 </button>
-                <button>
-                  <img
-                    src="/img/cart.png"
-                    alt="加入購物車"
-                  >
+                <button class="productAll_itemBtns-bag">
                 </button>
               </div>
             </div>
@@ -388,7 +348,7 @@
                 <div class="productAll_itemTop">
                   <div class="productAll_itemTop-pic">
                     <img
-                      src="/img/temp_product0.png"
+                      src="/img/index/product3_itme2.png"
                       alt="黑芝麻醬"
                     >
                   </div>
@@ -417,17 +377,9 @@
                 <a href="javascript:;"></a>
               </div>
               <div class="productAll_itemBtns">
-                <button>
-                  <img
-                    src="/img/cart.png"
-                    alt="加入購物車"
-                  >
+                <button class="productAll_itemBtns-cart">
                 </button>
-                <button>
-                  <img
-                    src="/img/cart.png"
-                    alt="加入購物車"
-                  >
+                <button class="productAll_itemBtns-bag">
                 </button>
               </div>
             </div>
@@ -436,7 +388,7 @@
                 <div class="productAll_itemTop">
                   <div class="productAll_itemTop-pic">
                     <img
-                      src="/img/temp_product0.png"
+                      src="/img/index/product3_item1.png"
                       alt="黑芝麻醬"
                     >
                   </div>
@@ -465,17 +417,9 @@
                 <a href="javascript:;"></a>
               </div>
               <div class="productAll_itemBtns">
-                <button>
-                  <img
-                    src="/img/cart.png"
-                    alt="加入購物車"
-                  >
+                <button class="productAll_itemBtns-cart">
                 </button>
-                <button>
-                  <img
-                    src="/img/cart.png"
-                    alt="加入購物車"
-                  >
+                <button class="productAll_itemBtns-bag">
                 </button>
               </div>
             </div>
@@ -484,7 +428,7 @@
                 <div class="productAll_itemTop">
                   <div class="productAll_itemTop-pic">
                     <img
-                      src="/img/temp_product0.png"
+                      src="/img/index/product3_itme2.png"
                       alt="黑芝麻醬"
                     >
                   </div>
@@ -513,17 +457,9 @@
                 <a href="javascript:;"></a>
               </div>
               <div class="productAll_itemBtns">
-                <button>
-                  <img
-                    src="/img/cart.png"
-                    alt="加入購物車"
-                  >
+                <button class="productAll_itemBtns-cart">
                 </button>
-                <button>
-                  <img
-                    src="/img/cart.png"
-                    alt="加入購物車"
-                  >
+                <button class="productAll_itemBtns-bag">
                 </button>
               </div>
             </div>
@@ -532,7 +468,7 @@
                 <div class="productAll_itemTop">
                   <div class="productAll_itemTop-pic">
                     <img
-                      src="/img/temp_product0.png"
+                      src="/img/index/product3_item1.png"
                       alt="黑芝麻醬"
                     >
                   </div>
@@ -561,17 +497,9 @@
                 <a href="javascript:;"></a>
               </div>
               <div class="productAll_itemBtns">
-                <button>
-                  <img
-                    src="/img/cart.png"
-                    alt="加入購物車"
-                  >
+                <button class="productAll_itemBtns-cart">
                 </button>
-                <button>
-                  <img
-                    src="/img/cart.png"
-                    alt="加入購物車"
-                  >
+                <button class="productAll_itemBtns-bag">
                 </button>
               </div>
             </div>
@@ -580,7 +508,7 @@
                 <div class="productAll_itemTop">
                   <div class="productAll_itemTop-pic">
                     <img
-                      src="/img/temp_product0.png"
+                      src="/img/index/product3_itme2.png"
                       alt="黑芝麻醬"
                     >
                   </div>
@@ -609,65 +537,9 @@
                 <a href="javascript:;"></a>
               </div>
               <div class="productAll_itemBtns">
-                <button>
-                  <img
-                    src="/img/cart.png"
-                    alt="加入購物車"
-                  >
+                <button class="productAll_itemBtns-cart">
                 </button>
-                <button>
-                  <img
-                    src="/img/cart.png"
-                    alt="加入購物車"
-                  >
-                </button>
-              </div>
-            </div>
-            <div class="productAll_item">
-              <div class="productAll_itemWrap">
-                <div class="productAll_itemTop">
-                  <div class="productAll_itemTop-pic">
-                    <img
-                      src="/img/temp_product0.png"
-                      alt="黑芝麻醬"
-                    >
-                  </div>
-                  <div class="productAll_itemTop-arrow"></div>
-                </div>
-                <div class="productAll_itemBottom">
-                  <div class="productAll_itemBottom-textWrap">
-                    <div class="productAll_itemBottom-textWrapTitle">
-                      黑芝麻醬
-                    </div>
-                    <div class="productAll_itemBottom-textWrapText">
-                      海帶芽為韓國與日本家家戶戶冰箱必備的食材
-                    </div>
-                    <div class="productAll_itemBottom-textWrapPrice">
-                      <p>
-                        原價
-                        <span>$300</span>
-                      </p>
-                      <p>
-                        會員價
-                        <span>$280</span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <a href="javascript:;"></a>
-              </div>
-              <div class="productAll_itemBtns">
-                <button>
-                  <img
-                    src="/img/cart.png"
-                    alt="加入購物車"
-                  >
-                </button>
-                <button>
-                  <img
-                    src="/img/cart.png"
-                    alt="加入購物車"
-                  >
+                <button class="productAll_itemBtns-bag">
                 </button>
               </div>
             </div>
@@ -677,6 +549,12 @@
         <img src="/img/layout_index_6.jpg">
       </div> -->
       </div>
+    </div>
+    <div class="slogan">
+      <img
+        src="/img/index/slogan_title.png"
+        alt="職人精神"
+      >
     </div>
   </div>
 </template>
