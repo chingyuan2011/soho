@@ -9,7 +9,7 @@
       left: 50%;
       width: 8%;
       height: 145px;
-      background-image: url('/img/index_kvIcon.png');
+      background-image: url('/img/index/index_kvIcon.png');
       background-repeat: no-repeat;
       background-position: center;
       background-size: contain;
@@ -36,7 +36,7 @@
   .ad {
     position: relative;
     padding: 40px 0 40px 13%;
-    background-image: url('/img/index_ad_bg.jpg');
+    background-image: url('/img/index/ad_bg.jpg');
     background-repeat: no-repeat;
     background-position: left;
     background-size: cover;
@@ -53,7 +53,7 @@
   .productFeature {
     position: relative;
     padding: 0px 0 240px 0;
-    background-image: url('/img/index_feature_bg.jpg');
+    background-image: url('/img/index/feature_bg.jpg');
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
@@ -72,10 +72,11 @@
       &Item {
         width: 50%;
         font-size: 40px;
+        font-weight: 700;
         line-height: 2.75;
         text-align: center;
         letter-spacing: .2rem;
-        background-image: url('/img/index_feature_iconBg.jpg');
+        background-image: url('/img/index/feature_iconBg.jpg');
         background-repeat: no-repeat;
         background-position: top;
         background-size: cover;
@@ -141,7 +142,7 @@
   }
 
   .productBg {
-    background-image: url('/img/index_product3_bg.jpg');
+    background-image: url('/img/index/product3_bg.jpg');
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;

@@ -6,11 +6,11 @@
           <picture>
             <!-- 手機版主視覺 -->
             <!-- <source
-              srcset="/img/index_feature_3.jpg"
+              srcset="/img/index/feature_3.jpg"
               media="(max-width: 600px)"
             > -->
             <img
-              src="/img/index_kv1.jpg"
+              src="/img/index/kv1.jpg"
               alt="昆布芽"
             >
           </picture>
@@ -19,11 +19,11 @@
           <picture>
             <!-- 手機版主視覺 -->
             <!-- <source
-              srcset="/img/index_feature_3.jpg"
+              srcset="/img/index/feature_3.jpg"
               media="(max-width: 600px)"
             > -->
             <img
-              src="/img/index_kv2.jpg"
+              src="/img/index/kv2.jpg"
               alt="海藻製造所"
             >
           </picture>
@@ -40,7 +40,7 @@
       <div class="container">
         <div class="ad_img">
           <img
-            src="/img/index_ad_1.jpg"
+            src="/img/index/index_ad_1.jpg"
             alt="讓餐桌多一份美好"
           >
         </div>
@@ -59,10 +59,10 @@
     <div class="productFeature">
       <div class="container">
         <div class="productFeature_promote">
-          <div class="productFeature_promoteItem">
+          <div class="productFeature_promoteItem ">
             新註冊現折 100 元
           </div>
-          <div class="productFeature_promoteItem">
+          <div class="productFeature_promoteItem ">
             9/01 - 9/15 全站免運
           </div>
         </div>
@@ -70,19 +70,19 @@
           <div class="productFeature_gallery-col productFeature_gallery-col-3">
             <div class="productFeature_galleryItem">
               <img
-                src="/img/index_feature_1.jpg"
+                src="/img/index/feature_1.jpg"
                 alt="日高極細昆布"
               >
             </div>
             <div class="productFeature_galleryItem">
               <img
-                src="/img/index_feature_2.jpg"
+                src="/img/index/feature_2.jpg"
                 alt="昆布"
               >
             </div>
             <div class="productFeature_galleryItem">
               <img
-                src="/img/index_feature_3.jpg"
+                src="/img/index/feature_3.jpg"
                 alt="海帶芽湯"
               >
             </div>
@@ -90,13 +90,13 @@
           <div class="productFeature_gallery-col productFeature_gallery-col-2">
             <div class="productFeature_galleryItem">
               <img
-                src="/img/index_feature_4.jpg"
+                src="/img/index/feature_4.jpg"
                 alt="職人海帶芽湯"
               >
             </div>
             <div class="productFeature_galleryItem">
               <img
-                src="/img/index_feature_5.jpg"
+                src="/img/index/feature_5.jpg"
                 alt="海帶芽"
               >
             </div>
