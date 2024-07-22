@@ -237,7 +237,8 @@ export default {
 
   &_linkTitle {
     margin-bottom: 15px;
-    font-size: 24px;
+    font-size: 22px;
+    color: #9fa49f;
 
     @include screen(md) {
       font-size: 18px;
