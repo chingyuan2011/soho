@@ -442,6 +442,28 @@
       }
     }
   }
+
+  .slogan {
+    position: relative;
+    padding-top: 50%;
+    background-image: url('/img/index/slogan_bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @include screen(md) {
+      padding-top: 80%;
+    }
+
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 25%;
+      min-width: 320px;
+      transform: translate(-50%, -50%);
+    }
+  }
 }
 // xxl | xl | lg | md | sm
 // @include screen (xl) {}

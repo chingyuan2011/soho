@@ -550,6 +550,12 @@
       </div> -->
       </div>
     </div>
+    <div class="slogan">
+      <img
+        src="/img/index/slogan_title.png"
+        alt="職人精神"
+      >
+    </div>
   </div>
 </template>
 
