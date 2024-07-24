@@ -124,18 +124,53 @@ export default {
   height: 100px;
   background-color: rgba($color: #000000, $alpha: .6);
 
+  &::after,
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 45%;
+    height: 2px;
+    background-color: #fff;
+  }
+
+  &::before {
+    left: 0%;
+  }
+
+  &::after {
+    left: 55%;
+  }
+
   .container {
+    position: relative;
     display: flex;
     height: 100%;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      width: 200%;
+      height: 100%;
+      background: linear-gradient(180deg, rgba(0, 0, 0, .6) 0%, rgba(255, 255, 255, 0) 100%);
+      transform: translateY(100%);
+    }
   }
 
   &_area {
-    flex-basis: 43.75%;
+    z-index: 1;
+    flex-basis: 47.5%;
     height: 100%;
     transform-origin: center;
 
     &-left {
       // margin-right: 15%;
+      .menu {
+        justify-content: space-around;
+      }
     }
 
     &-right {
@@ -145,12 +180,16 @@ export default {
       .menu {
         flex: 1;
         flex-shrink: 0;
+        justify-content: space-around;
+        margin-right: auto;
       }
     }
   }
 
   .logo {
-    flex-basis: 12.5%;
+    z-index: 1;
+    flex-basis: 12%;
+    min-width: 120px;
     padding-top: 20px;
     text-align: center;
 
@@ -176,7 +215,7 @@ export default {
     position: relative;
     flex-shrink: 0;
     height: 100%;
-    margin: 0 5%;
+    margin: 0 20px;
     padding: 35px 0 20px 0;
 
     &::before,
@@ -230,28 +269,9 @@ export default {
     }
   }
 
-  &::after,
-  &::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    width: calc(50% - 100px);
-    height: 2px;
-    background-color: #fff;
-  }
-
-  &::after {
-    left: calc(50% + 100px);
-  }
-
-  &::before {
-    right: calc(50% + 100px);
-  }
-
   .functionBar {
     display: flex;
     align-items: center;
-    max-width: 150px;
     height: 100%;
 
     button {
@@ -275,6 +295,7 @@ export default {
 
     &_search {
       position: relative;
+      flex: 0;
       margin-left: 10px;
       padding-left: 25px;
 
@@ -292,6 +313,7 @@ export default {
       }
 
       input {
+        width: 100px;
         font-weight: 500;
         color: #fff;
         letter-spacing: .1rem;
@@ -306,6 +328,8 @@ export default {
       }
     }
   }
+
+  // TODO: 1360 變手機版
 }
 // xxl | xl | lg | md | sm
 // @include screen (xl) {}
