@@ -30,11 +30,207 @@
         </div>
       </div>
     </div>
-    <div class="productIntro">
-      <div class="container"></div>
-      <!-- <div class="helper">
-        <img src="/img/layout_index_2.jpg">
-      </div> -->
+    <div
+      class="productIntro"
+    >
+      <div class="productIntro_marque">
+        <div class="marque">
+          <div
+            class="marque_wrap"
+          >
+            <span class="content">THE BOON BESTOWED BY THE SEA _
+              <span class="content_highLight">大海賜予的恩惠「 海藻 」</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="productIntro_intro"
+      >
+        <div class="container">
+          <div class="productNav">
+            <a
+              class="productNav_icon productNav_icon--left"
+            >
+            </a>
+            <a
+              class="productNav_icon productNav_icon--right"
+            >
+            </a>
+          </div>
+          <div class="productList">
+            <a
+              href=""
+              class="productItem"
+            >
+              <div class="productItem_desc">
+                <div class="productDesc">
+                  <i class="productDesc_icon"></i>
+                  <div class="productDesc_title">
+                    六色海藻
+                  </div>
+                  <div class="productDesc_desc">
+                    嚴選六種優質海藻,方便簡單的料理方式
+                    來補足現代人忙碌而無法攝取到足夠的
+                  </div>
+                  <div class="productDesc_price">
+                    <div class="price">
+                      售價<span>$330</span>
+                    </div>
+                    <div class="action">
+                      <a
+                        href=""
+                        class="action_icon action_icon-cart"
+                      ></a>
+                      <a
+                        href=""
+                        class="action_icon action_icon-bag"
+                      ></a>
+                    </div>
+                  </div>
+                  <div class="productDesc_deco">
+                    <div></div>
+                  </div>
+                </div>
+              </div>
+              <div class="productItem_thumb">
+                <div class="productThumb">
+                  <img src="/img/index/product1_item1.png">
+                </div>
+              </div>
+            </a>
+            <a
+              href=""
+              class="productItem"
+            >
+              <div class="productItem_desc">
+                <div class="productDesc">
+                  <i class="productDesc_icon"></i>
+                  <div class="productDesc_title">
+                    昆布鹽
+                  </div>
+                  <div class="productDesc_desc">
+                    昆布鹽使用於料理前後皆可使用 例：炒菜、鹽漬、熬湯、沾肉皆可提升食材的
+                  </div>
+                  <div class="productDesc_price">
+                    <div class="price">
+                      售價<span>$330</span>
+                    </div>
+                    <div class="action">
+                      <a
+                        href=""
+                        class="action_icon action_icon-cart"
+                      ></a>
+                      <a
+                        href=""
+                        class="action_icon action_icon-bag"
+                      ></a>
+                    </div>
+                  </div>
+                  <div class="productDesc_deco">
+                    <div></div>
+                  </div>
+                </div>
+              </div>
+              <div class="productItem_thumb">
+                <div class="productThumb">
+                  <img src="/img/index/product1_item2.png">
+                </div>
+              </div>
+            </a>
+            <a
+              href=""
+              class="productItem"
+            >
+              <div class="productItem_desc">
+                <div class="productDesc">
+                  <i class="productDesc_icon"></i>
+                  <div class="productDesc_title">
+                    六色海藻
+                  </div>
+                  <div class="productDesc_desc">
+                    嚴選六種優質海藻,方便簡單的料理方式
+                    來補足現代人忙碌而無法攝取到足夠的
+                  </div>
+                  <div class="productDesc_price">
+                    <div class="price">
+                      售價<span>$330</span>
+                    </div>
+                    <div class="action">
+                      <a
+                        href=""
+                        class="action_icon action_icon-cart"
+                      ></a>
+                      <a
+                        href=""
+                        class="action_icon action_icon-bag"
+                      ></a>
+                    </div>
+                  </div>
+                  <div class="productDesc_deco">
+                    <div></div>
+                  </div>
+                </div>
+              </div>
+              <div class="productItem_thumb">
+                <div class="productThumb">
+                  <img src="/img/index/product1_item1.png">
+                </div>
+              </div>
+            </a>
+            <a
+              href=""
+              class="productItem"
+            >
+              <div class="productItem_desc">
+                <div class="productDesc">
+                  <i class="productDesc_icon"></i>
+                  <div class="productDesc_title">
+                    昆布鹽
+                  </div>
+                  <div class="productDesc_desc">
+                    昆布鹽使用於料理前後皆可使用 例：炒菜、鹽漬、熬湯、沾肉皆可提升食材的
+                  </div>
+                  <div class="productDesc_price">
+                    <div class="price">
+                      售價<span>$330</span>
+                    </div>
+                    <div class="action">
+                      <a
+                        href=""
+                        class="action_icon action_icon-cart"
+                      ></a>
+                      <a
+                        href=""
+                        class="action_icon action_icon-bag"
+                      ></a>
+                    </div>
+                  </div>
+                  <div class="productDesc_deco">
+                    <div></div>
+                  </div>
+                </div>
+              </div>
+              <div class="productItem_thumb">
+                <div class="productThumb">
+                  <img src="/img/index/product1_item2.png">
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="productPager">
+            <a
+              class="productPager_icon active"
+            ></a>
+            <a
+              class="productPager_icon"
+            ></a>
+            <a
+              class="productPager_icon"
+            ></a>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="ad">
       <div class="container">
