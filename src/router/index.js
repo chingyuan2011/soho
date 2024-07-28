@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Index from '@/pages/Index'
 import Header from '@/pages/Header'
 import Footer from '@/pages/Footer'
+import CartProcess1 from '@/pages/CartProcess1'
 
 Vue.use(VueRouter)
 
@@ -21,6 +22,11 @@ const routes = [
     path: '/footer.html',
     name: 'Footer',
     component: Footer
+  },
+  {
+    path: '/cartProcess1.html',
+    name: 'CartProcess1',
+    component: CartProcess1
   },
   {
     path: '*',
