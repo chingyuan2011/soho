@@ -57,7 +57,7 @@ module.exports = {
     // 如有動態param請完整定義在這裡
     // eg. `/user/:id` -> `/user/alex`
       const renderRoutes = [
-        '/header.html', '/footer.html', '/index.html', '/contact.html', '/member.html', '/404.html', '/news/list.html', '/news/content.html', '/shop/list.html', '/shop/content.html', '/menu/list.html', '/menu/content.html', '/event.html'
+        '/header.html', '/footer.html', '/index.html', '/cartProcess1.html'
       ]
 
       const prerender = new PrerenderSPAPlugin({
