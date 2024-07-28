@@ -45,11 +45,11 @@ export default {
     margin-bottom: 0;
     font-weight: 500;
     line-height: 1.2;
-    letter-spacing: .3rem;
+    letter-spacing: .1em;
   }
 
   &_zh {
-    font-size: 36px;
+    font-size: 24px;
 
     span {
       position: relative;
