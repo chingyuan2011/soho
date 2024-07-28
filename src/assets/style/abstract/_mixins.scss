@@ -71,3 +71,34 @@
     transform: skew(45deg);
   }
 }
+
+@mixin custom-select($bg, $border-color, $color, $arrow-color) {
+  .customSelect {
+    position: relative;
+    display: inline-block;
+
+    select {
+      appearance: none;
+      padding: 0px 40px;
+      line-height: 1.5;
+      color: $color;
+      cursor: pointer;
+      background-color: $bg;
+      border: 1px solid $border-color;
+      border-radius: 5px;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 20%;
+      width: 6px;
+      height: 6px;
+      border-right: 2px solid $arrow-color;
+      border-bottom: 2px solid $arrow-color;
+      transform: translateY(-60%) rotate(45deg);
+      transform-origin: center;
+    }
+  }
+}

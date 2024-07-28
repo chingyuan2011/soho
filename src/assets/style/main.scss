@@ -47,6 +47,86 @@ ul {
   padding: 0;
 }
 
+.page_commonTitleArea {
+  margin-bottom: 80px;
+
+  .Title {
+    margin-bottom: 40px;
+  }
+}
+
+.memberCenter_progressBar {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: 0 auto 40px auto;
+
+  &-step {
+    position: relative;
+    width: 32%;
+
+    &-icon {
+      position: relative;
+      width: 25%;
+      margin-bottom: 40px;
+      background-color: #acacac;
+      border-radius: 50%;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 25%;
+      left: 50%;
+      width: 98%;
+      height: 5px;
+      background-color: #acacac;
+      transform: translate(-50%, 100%);
+    }
+
+    p {
+      font-size: 23px;
+      font-weight: 700;
+      color: #acacac;
+      letter-spacing: .2em;
+    }
+
+    &-active {
+      .memberCenter_progressBar-step-icon {
+        background-color: #8ca097;
+      }
+
+      &::before {
+        background-color: #002c18;
+      }
+
+      p {
+        color: #002c18;
+      }
+    }
+  }
+
+  &-step:nth-child(2) {
+    .memberCenter_progressBar-step-icon {
+      margin: 0 auto 40px auto;
+    }
+
+    p {
+      text-align: center;
+    }
+  }
+
+  &-step:nth-child(3) {
+    .memberCenter_progressBar-step-icon {
+      margin: 0 0 40px auto;
+    }
+
+    p {
+      text-align: right;
+    }
+  }
+}
+
 // 疊加的透明圖位置 for 切版方便
 .helper {
   position: absolute;
