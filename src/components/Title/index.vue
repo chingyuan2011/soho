@@ -43,13 +43,14 @@ export default {
   &_en,
   &_zh {
     margin-bottom: 0;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 1.2;
     letter-spacing: .1em;
   }
 
   &_zh {
     font-size: 24px;
+    font-weight: 700;
 
     span {
       position: relative;
@@ -65,6 +66,14 @@ export default {
         transform: translate(-500%, -50%) skew(35deg);
         transform-origin: center;
       }
+    }
+  }
+
+  @include screen(md) {
+    font-size: 30px;
+
+    &_zh {
+      font-size: 18px;
     }
   }
 }
