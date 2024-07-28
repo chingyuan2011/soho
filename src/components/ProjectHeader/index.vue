@@ -151,12 +151,12 @@ export default {
       content: '';
       position: absolute;
       top: 0;
-      left: 0;
+      left: 50%;
       z-index: 0;
       width: 200%;
       height: 100%;
       background: linear-gradient(180deg, rgba(0, 0, 0, .6) 0%, rgba(255, 255, 255, 0) 100%);
-      transform: translateY(100%);
+      transform: translate(-50%, 100%);
     }
   }
 
