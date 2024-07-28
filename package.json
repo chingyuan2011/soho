@@ -57,7 +57,8 @@
       "./config/lint/.eslintrc.js"
     ],
     "ignorePatterns":[
-      "public/assets/**"
+      "public/assets/**",
+      "finalBuild/**"
     ]
   },
   "browserslist": [
@@ -70,7 +71,8 @@
     "!.*",
     "node_modules",
     "template",
-    "vendor"
+    "vendor",
+    "finalBuild/*"
   ],
   "gitHooks": {
     "pre-commit": "lint-staged"
@@ -95,7 +97,8 @@
       ".vscode/**",
       "dist/**",
       "node_modules/**",
-      "public/assets/**"
+      "public/assets/**",
+      "finalBuild/**"
     ]
   },
   "optimization": {
