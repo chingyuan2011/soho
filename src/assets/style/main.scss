@@ -47,11 +47,28 @@ ul {
   padding: 0;
 }
 
+// 依照 navbar 控制 page 內 container 的上下 padding
+.container-page {
+  padding-top: 240px;
+
+  @include screen(1360) {
+    padding-top: 240px;
+  }
+}
+
 .page_commonTitleArea {
   margin-bottom: 80px;
 
   .Title {
     margin-bottom: 40px;
+  }
+
+  @include screen(md) {
+    margin-bottom: 20px;
+
+    .Title {
+      margin-bottom: 20px;
+    }
   }
 }
 
@@ -61,6 +78,11 @@ ul {
   width: 60%;
   margin: 0 auto 40px auto;
 
+  @include screen(1360) {
+    width: 100%;
+    margin: 0 auto 20px auto;
+  }
+
   &-step {
     position: relative;
     width: 32%;
@@ -68,6 +90,7 @@ ul {
     &-icon {
       position: relative;
       width: 25%;
+      max-width: 67px;
       margin-bottom: 40px;
       background-color: #acacac;
       border-radius: 50%;
@@ -78,7 +101,7 @@ ul {
       position: absolute;
       top: 25%;
       left: 50%;
-      width: 98%;
+      width: 96%;
       height: 5px;
       background-color: #acacac;
       transform: translate(-50%, 100%);
@@ -104,6 +127,25 @@ ul {
         color: #002c18;
       }
     }
+
+    @include screen(md) {
+      width: 33%;
+
+      &-icon {
+        margin-bottom: 10px;
+      }
+
+      &::before {
+        top: 20%;
+        width: 95%;
+        height: 2px;
+      }
+
+      p {
+        font-size: 14px;
+        letter-spacing: normal;
+      }
+    }
   }
 
   &-step:nth-child(2) {
@@ -114,6 +156,12 @@ ul {
     p {
       text-align: center;
     }
+
+    @include screen(md) {
+      .memberCenter_progressBar-step-icon {
+        margin: 0 auto 10px auto;
+      }
+    }
   }
 
   &-step:nth-child(3) {
@@ -123,6 +171,12 @@ ul {
 
     p {
       text-align: right;
+    }
+
+    @include screen(md) {
+      .memberCenter_progressBar-step-icon {
+        margin: 0 0 10px auto;
+      }
     }
   }
 }

@@ -1,15 +1,19 @@
 .CartProcess1 {
+  overflow: hidden;
   background-image: url('/img/cartProcess1/bg_contentHeader.png'), url('/img/cartProcess1/bg_content.png');
   background-repeat: no-repeat, no-repeat;
   background-position: center top, center bottom;
   background-size: cover auto, cover auto;
 
   .container {
-    padding-top: 240px;
+    padding-bottom: 200px;
+    @include screen(1360) {
+      padding-bottom: 40px;
+    }
   }
 
   &_btn {
-    padding: 0 40px;
+    width: 16em;
     font-size: 22px;
     font-weight: 700;
     line-height: 2;
@@ -23,6 +27,15 @@
       padding: 0 20px;
       font-size: 14px;
     }
+
+    @include screen(md) {
+      font-size: 20px;
+
+      &-small {
+        padding: 0 20px;
+        font-size: 14px;
+      }
+    }
   }
 
   &_title {
@@ -32,17 +45,43 @@
     font-weight: 700;
     color: #002c18;
     letter-spacing: .2em;
+    @include screen(1360) {
+      padding: 0px;
+    }
+
+    @include screen(md) {
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
   }
 
   &_content {
     display: flex;
     justify-content: space-between;
-    padding: 0 40px 40px 40px;
+    margin-bottom: 40px;
+    padding: 0 40px 120px 40px;
     border-bottom: 1px solid #8ca097;
+    @include screen(1360) {
+      padding: 0 0px 40px 0px;
+    }
+    @include screen(xl) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    @include screen(md) {
+      margin-bottom: 20px;
+      padding: 0 0px 20px 0px;
+    }
   }
 
   &_orderList {
     width: 48%;
+
+    @include screen(xl) {
+      width: 100%;
+      margin-bottom: 40px;
+    }
   }
 
   &_orderItem {
@@ -86,6 +125,36 @@
       }
     }
 
+    @include screen(md) {
+      flex-wrap: wrap;
+
+      &-pic {
+        width: 100%;
+        margin-bottom: 5px;
+      }
+
+      &-info {
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+      }
+
+      &-price {
+        flex-wrap: wrap;
+        width: 100%;
+        margin-bottom: 10px;
+        font-size: 22px;
+
+        div:first-child {
+          margin-right: 0;
+        }
+
+        div {
+          width: 100%;
+        }
+      }
+    }
+
     &-amount {
       @include custom-select(#CCD0CF, transparent, #523628, #523628);
     }
@@ -117,11 +186,16 @@
 
   &_discount {
     width: 48%;
+    padding-bottom: 20px;
     font-size: 20px;
     font-weight: 700;
     color: #002c18;
     letter-spacing: .15em;
     background-color: #fff;
+
+    @include screen(xl) {
+      width: 100%;
+    }
 
     &-title {
       padding: 10px 30px;
@@ -136,6 +210,7 @@
 
     &-item {
       display: flex;
+      align-items: center;
       justify-content: space-between;
       margin-bottom: 20px;
 
@@ -157,6 +232,37 @@
       }
     }
 
+    @include screen(md) {
+      font-size: 16px;
+
+      &-title {
+        padding: 10px;
+      }
+
+      &-list {
+        padding: 10px;
+      }
+
+      &-item {
+        flex-wrap: wrap;
+        margin-bottom: 5px;
+      }
+
+      &-itemTitle {
+        width: 100%;
+        margin-bottom: 5px;
+
+        &-sub {
+          font-size: 12px;
+        }
+      }
+
+      &-itemContent {
+        width: 100%;
+        text-align: right;
+      }
+    }
+
     &-itemContent {
       @include custom-select(transparent, #898989, #898989, #898989);
 
@@ -168,7 +274,7 @@
 
         select {
           height: 28px;
-          padding: 0 120px 0 40px;
+          padding: 0 120px 0 24px;
           line-height: 2;
         }
       }
@@ -192,6 +298,25 @@
         text-align: right;
         letter-spacing: .05em;
       }
+
+      @include screen(md) {
+        .customSelect {
+          width: 100%;
+
+          select {
+            width: 100%;
+            padding: 0 20px 0 20px;
+          }
+        }
+
+        &-input {
+          display: flex;
+
+          input {
+            margin-right: 10px;
+          }
+        }
+      }
     }
 
     &-item-gift {
@@ -200,16 +325,28 @@
       .CartProcess1_discount-itemTitle {
         margin-bottom: 10px;
       }
+
+      @include screen(md) {
+        .CartProcess1_discount-itemTitle {
+          margin-bottom: 5px;
+        }
+      }
     }
 
     &-itemTag {
+      width: 55%;
       margin-left: auto;
-      padding: 0 80px;
       font-size: 16px;
       line-height: 2;
       color: #fff;
-      text-align: right;
+      text-align: center;
       background-color: #db895b;
+
+      @include screen(md) {
+        width: 100%;
+        margin-bottom: 10px;
+        font-size: 14px;
+      }
     }
 
     .CartProcess1_btn-go-product {
@@ -217,6 +354,69 @@
       margin-right: 30px;
       margin-left: auto;
       padding: 0 40px;
+      @include screen(md) {
+        margin-right: auto;
+        padding: 0 20px;
+      }
     }
+  }
+
+  &_charge {
+    display: flex;
+    justify-content: center;
+  }
+
+  &_charge-total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #002c18;
+    letter-spacing: .1em;
+
+    &-data {
+      margin-left: 80px;
+      font-size: 41px;
+      color: #db895b;
+    }
+
+    @include screen(md) {
+      font-size: 20px;
+
+      &-data {
+        margin-left: 5px;
+        font-size: 30px;
+      }
+    }
+  }
+
+  &_charge-bonus {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    font-size: 17px;
+    font-weight: 700;
+    color: #898989;
+    letter-spacing: .1em;
+
+    &-data {
+      margin-left: 30px;
+    }
+
+    @include screen(md) {
+      margin-bottom: 20px;
+      font-size: 14px;
+
+      &-data {
+        margin-left: 5px;
+      }
+    }
+  }
+
+  &_btn-go-checkout {
+    display: block;
   }
 }

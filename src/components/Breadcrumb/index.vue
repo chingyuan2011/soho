@@ -56,6 +56,13 @@ export default {
       margin-right: 5px;
     }
   }
+
+  @include screen(md) {
+    &_item,
+    &_item > a {
+      font-size: 13px;
+    }
+  }
 }
 // xxl | xl | lg | md | sm
 // @include screen (xl) {}

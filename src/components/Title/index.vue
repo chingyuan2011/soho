@@ -68,6 +68,14 @@ export default {
       }
     }
   }
+
+  @include screen(md) {
+    font-size: 30px;
+
+    &_zh {
+      font-size: 18px;
+    }
+  }
 }
 // xxl | xl | lg | md | sm
 // @include screen (xl) {}

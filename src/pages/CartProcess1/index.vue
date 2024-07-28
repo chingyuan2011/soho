@@ -1,6 +1,6 @@
 <template>
   <div class="CartProcess1">
-    <div class="container">
+    <div class="container container-page">
       <div class="page_commonTitleArea">
         <Title
           en="SHOPPING CART"
@@ -42,6 +42,40 @@
       </div>
       <div class="CartProcess1_content">
         <div class="CartProcess1_orderList">
+          <div class="CartProcess1_orderItem">
+            <div class="CartProcess1_orderItem-pic">
+              <img
+                src="/img/cartProcess1/good1.png"
+                alt=""
+              >
+            </div>
+            <div class="CartProcess1_orderItem-info">
+              <div class="CartProcess1_orderItem-price">
+                <div cl>
+                  六色海藻
+                </div><div>
+                  $330
+                </div>
+              </div>
+              <div class="CartProcess1_orderItem-amount">
+                數量：<div class="customSelect">
+                  <select>
+                    <option value="1">
+                      1
+                    </option>
+                    <option value="2">
+                      2
+                    </option>
+                  </select>
+                </div>
+              </div>
+              <div class="CartProcess1_orderItem-count">
+                小計： $660
+              </div>
+            </div>
+            <button class="CartProcess1_orderItem-delete">
+            </button>
+          </div>
           <div class="CartProcess1_orderItem">
             <div class="CartProcess1_orderItem-pic">
               <img
@@ -237,27 +271,29 @@
         </div>
       </div>
       <div class="CartProcess1_charge">
-        <div class="CartProcess1_charge-total">
-          <div class="CartProcess1_charge-total-zh">
-            商品合計
+        <div class="CartProcess1_charge-wrap">
+          <div class="CartProcess1_charge-total">
+            <div class="CartProcess1_charge-total-zh">
+              商品合計
+            </div>
+            <div class="CartProcess1_charge-total-data">
+              $1450
+            </div>
           </div>
-          <div class="CartProcess1_charge-total-data">
-            $1450
+          <div class="CartProcess1_charge-bonus">
+            <div class="CartProcess1_charge-bonus-zh">
+              訂單完成後獲得紅利點數
+            </div>
+            <div class="CartProcess1_charge-bonus-data">
+              + NT$36
+            </div>
           </div>
-        </div>
-        <div class="CartProcess1_charge-bonus">
-          <div class="CartProcess1_charge-bonus-zh">
-            訂單完成後獲得紅利點數
-          </div>
-          <div class="CartProcess1_charge-bonus-data">
-            + NT$36
-          </div>
+          <a
+            class="CartProcess1_goCharge CartProcess1_btn CartProcess1_btn-go-checkout"
+            href="javascript:;"
+          >前往結賬</a>
         </div>
       </div>
-      <a
-        class="CartProcess1_goCharge CartProcess1_btn"
-        href="javascript:;"
-      >前往結賬</a>
     </div>
   </div>
 </template>
