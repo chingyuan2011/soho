@@ -21,5 +21,26 @@
         scrollTop: 0
       }, 500)
     })
+
+    // Page - ProductContent
+    $('.slider_main').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+
+      infinite: false,
+      arrows: false,
+      asNavFor: '.slider_sub'
+      // dots: true,
+    })
+    $('.slider_sub').slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      dots: false,
+      infinite: false,
+      arrows: false,
+      asNavFor: '.slider_main',
+      focusOnSelect: true,
+      centerMode: false
+    })
   })
 })()
