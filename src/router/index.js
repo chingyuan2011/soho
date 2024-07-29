@@ -4,6 +4,7 @@ import Index from '@/pages/Index'
 import Header from '@/pages/Header'
 import Footer from '@/pages/Footer'
 import CartProcess1 from '@/pages/CartProcess1'
+import ProductContent from '@/pages/ProductContent'
 
 Vue.use(VueRouter)
 
@@ -27,6 +28,11 @@ const routes = [
     path: '/cartProcess1.html',
     name: 'CartProcess1',
     component: CartProcess1
+  },
+  {
+    path: '/productContent.html',
+    name: 'ProductContent',
+    component: ProductContent
   },
   {
     path: '*',
