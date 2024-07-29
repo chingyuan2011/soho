@@ -1,6 +1,9 @@
 <template>
   <div class="Index">
-    <div class="kv">
+    <div
+      class="kv wow fadeInDown"
+      data-wow-duration="1.5s"
+    >
       <div class="kv_content">
         <div>
           <picture>
@@ -34,7 +37,11 @@
       class="productIntro"
     >
       <div class="productIntro_marque">
-        <div class="marque">
+        <div
+          class="marque wow fadeInRight"
+          data-wow-duration="1.2s"
+          data-wow-delay=".1s"
+        >
           <div
             class="marque_wrap"
           >
@@ -89,12 +96,16 @@
                     </div>
                   </div>
                   <div class="productDesc_deco">
-                    <div class="deco"></div>
+                    <div class="deco move-x"></div>
                   </div>
                 </div>
               </div>
               <div class="productItem_thumb">
-                <div class="productThumb">
+                <div
+                  class="productThumb wow flipInX"
+                  data-wow-duration="1s"
+                  data-wow-delay=".2s"
+                >
                   <img src="/img/index/product1_item1.png">
                 </div>
               </div>
@@ -128,12 +139,16 @@
                     </div>
                   </div>
                   <div class="productDesc_deco">
-                    <div class="deco"></div>
+                    <div class="deco move-x"></div>
                   </div>
                 </div>
               </div>
               <div class="productItem_thumb">
-                <div class="productThumb">
+                <div
+                  class="productThumb wow flipInX"
+                  data-wow-duration="1s"
+                  data-wow-delay=".2s"
+                >
                   <img src="/img/index/product1_item2.png">
                 </div>
               </div>
@@ -168,12 +183,16 @@
                     </div>
                   </div>
                   <div class="productDesc_deco">
-                    <div class="deco"></div>
+                    <div class="deco move-x"></div>
                   </div>
                 </div>
               </div>
               <div class="productItem_thumb">
-                <div class="productThumb">
+                <div
+                  class="productThumb wow flipInX"
+                  data-wow-duration="1s"
+                  data-wow-delay=".2s"
+                >
                   <img src="/img/index/product1_item1.png">
                 </div>
               </div>
@@ -207,12 +226,18 @@
                     </div>
                   </div>
                   <div class="productDesc_deco">
-                    <div class="deco"></div>
+                    <div
+                      class="deco move-x"
+                    ></div>
                   </div>
                 </div>
               </div>
               <div class="productItem_thumb">
-                <div class="productThumb">
+                <div
+                  class="productThumb wow flipInX"
+                  data-wow-duration="1s"
+                  data-wow-delay=".2s"
+                >
                   <img src="/img/index/product1_item2.png">
                 </div>
               </div>
@@ -234,7 +259,11 @@
     </div>
     <div class="ad">
       <div class="container">
-        <div class="ad_img">
+        <div
+          class="ad_img wow fadeInLeft"
+          data-wow-duration="1.5s"
+          data-wow-delay=".1s"
+        >
           <img
             src="/img/index/index_ad_1.jpg"
             alt="讓餐桌多一份美好"
@@ -258,7 +287,9 @@
           <div class="setList">
             <a
               href=""
-              class="setItem"
+              class="setItem wow fadeInLeft"
+              data-wow-duration="1.2s"
+              data-wow-delay=".1s"
             >
               <div class="setItem_thumb">
                 <div class="setThumb">
@@ -298,14 +329,16 @@
                     </div>
                   </div>
                   <div class="setDesc_deco">
-                    <div class="deco"></div>
+                    <div class="deco move-x"></div>
                   </div>
                 </div>
               </div>
             </a>
             <a
               href=""
-              class="setItem"
+              class="setItem wow fadeInRight"
+              data-wow-duration="1.2s"
+              data-wow-delay=".2s"
             >
               <div class="setItem_thumb">
                 <div class="setThumb">
@@ -343,7 +376,7 @@
                     </div>
                   </div>
                   <div class="setDesc_deco">
-                    <div class="deco"></div>
+                    <div class="deco move-x"></div>
                   </div>
                 </div>
               </div>
@@ -353,7 +386,12 @@
       </div>
       <div class="productGiftPromote">
         <div class="container">
-          <a href="">
+          <a
+            href=""
+            class="wow fadeInUp"
+            data-wow-duration="1.2s"
+            data-wow-delay=".1s"
+          >
             <img
               src="/img/index/product2_item3.png"
             >
@@ -364,28 +402,48 @@
     <div class="productFeature">
       <div class="container">
         <div class="productFeature_promote">
-          <div class="productFeature_promoteItem ">
+          <div
+            class="productFeature_promoteItem wow fadeInDown"
+            data-wow-duration="1.2s"
+            data-wow-delay=".1s"
+          >
             新註冊現折 100 元
           </div>
-          <div class="productFeature_promoteItem ">
+          <div
+            class="productFeature_promoteItem wow fadeInDown"
+            data-wow-duration="1.2s"
+            data-wow-delay=".2s"
+          >
             9/01 - 9/15 全站免運
           </div>
         </div>
         <div class="productFeature_gallery">
           <div class="productFeature_gallery-col productFeature_gallery-col-3">
-            <div class="productFeature_galleryItem">
+            <div
+              class="productFeature_galleryItem wow flipInY"
+              data-wow-duration="1.2s"
+              data-wow-delay=".2s"
+            >
               <img
                 src="/img/index/feature_1.jpg"
                 alt="日高極細昆布"
               >
             </div>
-            <div class="productFeature_galleryItem">
+            <div
+              class="productFeature_galleryItem wow flipInY"
+              data-wow-duration="1.2s"
+              data-wow-delay=".4s"
+            >
               <img
                 src="/img/index/feature_2.jpg"
                 alt="昆布"
               >
             </div>
-            <div class="productFeature_galleryItem">
+            <div
+              class="productFeature_galleryItem wow flipInY"
+              data-wow-duration="1.2s"
+              data-wow-delay=".6s"
+            >
               <img
                 src="/img/index/feature_3.jpg"
                 alt="海帶芽湯"
@@ -393,13 +451,21 @@
             </div>
           </div>
           <div class="productFeature_gallery-col productFeature_gallery-col-2">
-            <div class="productFeature_galleryItem">
+            <div
+              class="productFeature_galleryItem wow flipInY"
+              data-wow-duration="1.2s"
+              data-wow-delay=".4s"
+            >
               <img
                 src="/img/index/feature_4.jpg"
                 alt="職人海帶芽湯"
               >
             </div>
-            <div class="productFeature_galleryItem">
+            <div
+              class="productFeature_galleryItem wow flipInY"
+              data-wow-duration="1.2s"
+              data-wow-delay=".4s"
+            >
               <img
                 src="/img/index/feature_5.jpg"
                 alt="海帶芽"
@@ -415,14 +481,22 @@
     <div class="productBg">
       <div class="productRecommend">
         <div class="container">
-          <div class="productRecommend_item">
-            <div class="productRecommend_item-pic">
+          <div
+            class="productRecommend_item wow zoomIn"
+            data-wow-duration="1.2s"
+            data-wow-delay=".2s"
+          >
+            <div
+              class="productRecommend_item-pic "
+            >
               <img
                 src="/img/temp_product-recommend.png"
                 alt=""
               >
             </div>
-            <div class="productRecommend_item-info">
+            <div
+              class="productRecommend_item-info "
+            >
               <div class="productRecommend_item-infoWrap">
                 <div class="productRecommend_item-infoTitle">
                   焙煎胡麻
@@ -430,7 +504,7 @@
                 <div class="productRecommend_item-infoText">
                   焙煎胡麻焙煎胡麻焙煎胡麻焙煎胡麻焙煎胡麻焙煎胡麻焙煎胡麻焙煎胡麻焙煎胡麻
                 </div>
-                <div class="productRecommend_item-infoArrow">
+                <div class="productRecommend_item-infoArrow move-x">
                   <div></div>
                 </div>
               </div>
@@ -451,7 +525,11 @@
             <div class="productAll_item">
               <div class="productAll_itemWrap">
                 <div class="productAll_itemTop">
-                  <div class="productAll_itemTop-pic">
+                  <div
+                    class="productAll_itemTop-pic wow zoomIn"
+                    data-wow-duration="1.2s"
+                    data-wow-delay=".2s"
+                  >
                     <img
                       src="/img/index/product3_item1.png"
                       alt="黑芝麻醬"
@@ -491,7 +569,11 @@
             <div class="productAll_item">
               <div class="productAll_itemWrap">
                 <div class="productAll_itemTop">
-                  <div class="productAll_itemTop-pic">
+                  <div
+                    class="productAll_itemTop-pic wow zoomIn"
+                    data-wow-duration="1.2s"
+                    data-wow-delay=".2s"
+                  >
                     <img
                       src="/img/index/product3_itme2.png"
                       alt="黑芝麻醬"
@@ -531,7 +613,11 @@
             <div class="productAll_item">
               <div class="productAll_itemWrap">
                 <div class="productAll_itemTop">
-                  <div class="productAll_itemTop-pic">
+                  <div
+                    class="productAll_itemTop-pic wow zoomIn"
+                    data-wow-duration="1.2s"
+                    data-wow-delay=".2s"
+                  >
                     <img
                       src="/img/index/product3_item1.png"
                       alt="黑芝麻醬"
@@ -571,7 +657,11 @@
             <div class="productAll_item">
               <div class="productAll_itemWrap">
                 <div class="productAll_itemTop">
-                  <div class="productAll_itemTop-pic">
+                  <div
+                    class="productAll_itemTop-pic wow zoomIn"
+                    data-wow-duration="1.2s"
+                    data-wow-delay=".2s"
+                  >
                     <img
                       src="/img/index/product3_itme2.png"
                       alt="黑芝麻醬"
@@ -611,7 +701,11 @@
             <div class="productAll_item">
               <div class="productAll_itemWrap">
                 <div class="productAll_itemTop">
-                  <div class="productAll_itemTop-pic">
+                  <div
+                    class="productAll_itemTop-pic wow zoomIn"
+                    data-wow-duration="1.2s"
+                    data-wow-delay=".2s"
+                  >
                     <img
                       src="/img/index/product3_item1.png"
                       alt="黑芝麻醬"
@@ -651,7 +745,11 @@
             <div class="productAll_item">
               <div class="productAll_itemWrap">
                 <div class="productAll_itemTop">
-                  <div class="productAll_itemTop-pic">
+                  <div
+                    class="productAll_itemTop-pic wow zoomIn"
+                    data-wow-duration="1.2s"
+                    data-wow-delay=".2s"
+                  >
                     <img
                       src="/img/index/product3_itme2.png"
                       alt="黑芝麻醬"
@@ -691,7 +789,11 @@
             <div class="productAll_item">
               <div class="productAll_itemWrap">
                 <div class="productAll_itemTop">
-                  <div class="productAll_itemTop-pic">
+                  <div
+                    class="productAll_itemTop-pic wow zoomIn"
+                    data-wow-duration="1.2s"
+                    data-wow-delay=".2s"
+                  >
                     <img
                       src="/img/index/product3_item1.png"
                       alt="黑芝麻醬"
@@ -731,7 +833,11 @@
             <div class="productAll_item">
               <div class="productAll_itemWrap">
                 <div class="productAll_itemTop">
-                  <div class="productAll_itemTop-pic">
+                  <div
+                    class="productAll_itemTop-pic wow zoomIn"
+                    data-wow-duration="1.2s"
+                    data-wow-delay=".2s"
+                  >
                     <img
                       src="/img/index/product3_itme2.png"
                       alt="黑芝麻醬"
@@ -771,7 +877,11 @@
             <div class="productAll_item">
               <div class="productAll_itemWrap">
                 <div class="productAll_itemTop">
-                  <div class="productAll_itemTop-pic">
+                  <div
+                    class="productAll_itemTop-pic wow zoomIn"
+                    data-wow-duration="1.2s"
+                    data-wow-delay=".2s"
+                  >
                     <img
                       src="/img/index/product3_item1.png"
                       alt="黑芝麻醬"
@@ -811,7 +921,11 @@
             <div class="productAll_item">
               <div class="productAll_itemWrap">
                 <div class="productAll_itemTop">
-                  <div class="productAll_itemTop-pic">
+                  <div
+                    class="productAll_itemTop-pic wow zoomIn"
+                    data-wow-duration="1.2s"
+                    data-wow-delay=".2s"
+                  >
                     <img
                       src="/img/index/product3_itme2.png"
                       alt="黑芝麻醬"
@@ -857,6 +971,9 @@
     </div>
     <div class="slogan">
       <img
+
+        class="wow zoomIn"
+        data-wow-duration="1s"
         src="/img/index/slogan_title.png"
         alt="職人精神"
       >

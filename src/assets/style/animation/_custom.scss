@@ -181,3 +181,21 @@
     transform: translate3d(10px, 0, 0);
   }
 }
+
+.move-x {
+  animation: move-x;
+  animation-duration: .8s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes move-x {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(50%);
+  }
+}
