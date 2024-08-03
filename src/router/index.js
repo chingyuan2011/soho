@@ -5,6 +5,7 @@ import Header from '@/pages/Header'
 import Footer from '@/pages/Footer'
 import CartProcess1 from '@/pages/CartProcess1'
 import ProductContent from '@/pages/ProductContent'
+import ProductList from '@/pages/ProductList'
 
 Vue.use(VueRouter)
 
@@ -33,6 +34,11 @@ const routes = [
     path: '/productContent.html',
     name: 'ProductContent',
     component: ProductContent
+  },
+  {
+    path: '/productList.html',
+    name: 'ProductList',
+    component: ProductList
   },
   {
     path: '*',
