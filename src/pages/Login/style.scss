@@ -1,0 +1,14 @@
+.Login {
+  overflow: hidden;
+  background-image: url('/soho/img/login/bg_contentHeader.png'), url('/soho/img/login/login_bgDown.png');
+  background-repeat: no-repeat, no-repeat;
+  background-position: center top, center bottom;
+  background-size: cover auto, cover auto;
+
+  .container {
+    padding-bottom: 200px;
+    @include screen(1360) {
+      padding-bottom: 40px;
+    }
+  }
+}
