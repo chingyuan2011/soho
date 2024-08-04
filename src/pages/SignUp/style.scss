@@ -1,1 +1,45 @@
-.SignUp{}
+.SignUp {
+  overflow: hidden;
+  background-image: url('/soho/img/signup/bg_contentHeader.png'), url('/soho/img/signup/signup_bgDown.png');
+  background-repeat: no-repeat, no-repeat;
+  background-position: center top, center bottom;
+  background-size: cover auto, cover auto;
+
+  .container {
+    padding-bottom: 200px;
+    @include screen(1360) {
+      padding-bottom: 40px;
+    }
+  }
+
+  .LoginSignUp_member-form {
+    label.last {
+      margin-bottom: 120px;
+
+      @include screen(md) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  &_goLogin {
+    font-size: 20pt;
+    font-weight: 700;
+    color: #252525;
+    text-align: center;
+
+    a {
+      margin-left: 10px;
+      color: #002c18;
+    }
+
+    @include screen(md) {
+      font-size: 14px;
+
+      a {
+        margin-left: 5px;
+        color: #002c18;
+      }
+    }
+  }
+}
