@@ -58,7 +58,7 @@
     ],
     "ignorePatterns":[
       "public/assets/**",
-      "finalBuild/**"
+      "soho/**"
     ]
   },
   "browserslist": [
@@ -72,7 +72,7 @@
     "node_modules",
     "template",
     "vendor",
-    "finalBuild/*"
+    "soho/*"
   ],
   "gitHooks": {
     "pre-commit": "lint-staged"
@@ -98,7 +98,7 @@
       "dist/**",
       "node_modules/**",
       "public/assets/**",
-      "finalBuild/**"
+      "soho/**"
     ]
   },
   "optimization": {
