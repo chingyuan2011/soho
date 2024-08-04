@@ -24,7 +24,7 @@ export default {
   setup (props, context) {
     const bgStyle = computed(() => {
       return {
-        backgroundImage: `url('/img/banner_${props.page}.jpg')`
+        backgroundImage: `url('/soho/img/banner_${props.page}.jpg')`
       }
     })
 

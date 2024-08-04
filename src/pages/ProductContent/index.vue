@@ -61,22 +61,22 @@
                 <div class="slider_main">
                   <div>
                     <img
-                      src="/img/productContent/productContent_good1.jpg"
+                      src="/soho/img/productContent/productContent_good1.jpg"
                     >
                   </div>
                   <div>
                     <img
-                      src="/img/productContent/productContent_good1.jpg"
+                      src="/soho/img/productContent/productContent_good1.jpg"
                     >
                   </div>
                   <div>
                     <img
-                      src="/img/productContent/productContent_good1.jpg"
+                      src="/soho/img/productContent/productContent_good1.jpg"
                     >
                   </div>
                   <div>
                     <img
-                      src="/img/productContent/productContent_good1.jpg"
+                      src="/soho/img/productContent/productContent_good1.jpg"
                     >
                   </div>
                 </div>
@@ -84,22 +84,22 @@
                 <div class="slider_sub">
                   <div class="sub">
                     <img
-                      src="/img/productContent/productContent_good1.jpg"
+                      src="/soho/img/productContent/productContent_good1.jpg"
                     >
                   </div>
                   <div class="sub">
                     <img
-                      src="/img/productContent/productContent_good1.jpg"
+                      src="/soho/img/productContent/productContent_good1.jpg"
                     >
                   </div>
                   <div class="sub">
                     <img
-                      src="/img/productContent/productContent_good1.jpg"
+                      src="/soho/img/productContent/productContent_good1.jpg"
                     >
                   </div>
                   <div class="sub">
                     <img
-                      src="/img/productContent/productContent_good1.jpg"
+                      src="/soho/img/productContent/productContent_good1.jpg"
                     >
                   </div>
                 </div>
@@ -175,7 +175,7 @@
       <div class="container">
         <img
           class="image"
-          src="/img/productContent/productContent_main.jpg"
+          src="/soho/img/productContent/productContent_main.jpg"
         >
         <div class="title">
           味精裡面含有人類的第五味覺「鮮味」
@@ -193,7 +193,7 @@
         </div>
         <img
           class="image"
-          src="/img/productContent/productContent_pic.jpg"
+          src="/soho/img/productContent/productContent_pic.jpg"
         >
         <div class="back">
           <a class="btn"> <i class="icon icon_back"></i> 回上一頁 </a>

@@ -12,7 +12,7 @@
         <div class="memberCenter_progressBar-step memberCenter_progressBar-step-active memberCenter_progressBar-step-cartProcess">
           <div class="memberCenter_progressBar-step-icon">
             <img
-              src="/img/icon_process1.png"
+              src="/soho/img/icon_process1.png"
               alt="購物車"
             >
           </div>
@@ -21,7 +21,7 @@
         <div class="memberCenter_progressBar-step memberCenter_progressBar-step-confirmData">
           <div class="memberCenter_progressBar-step-icon">
             <img
-              src="/img/icon_process2.png"
+              src="/soho/img/icon_process2.png"
               alt="商品及資料確認"
             >
           </div>
@@ -30,7 +30,7 @@
         <div class="memberCenter_progressBar-step memberCenter_progressBar-step-completeOrder">
           <div class="memberCenter_progressBar-step-icon">
             <img
-              src="/img/icon_process3.png"
+              src="/soho/img/icon_process3.png"
               alt="訂單完成"
             >
           </div>
@@ -45,7 +45,7 @@
           <div class="CartProcess1_orderItem">
             <div class="CartProcess1_orderItem-pic">
               <img
-                src="/img/cartProcess1/good1.png"
+                src="/soho/img/cartProcess1/good1.png"
                 alt=""
               >
             </div>
@@ -79,7 +79,7 @@
           <div class="CartProcess1_orderItem">
             <div class="CartProcess1_orderItem-pic">
               <img
-                src="/img/cartProcess1/good1.png"
+                src="/soho/img/cartProcess1/good1.png"
                 alt=""
               >
             </div>
@@ -113,7 +113,7 @@
           <div class="CartProcess1_orderItem">
             <div class="CartProcess1_orderItem-pic">
               <img
-                src="/img/cartProcess1/good2.png"
+                src="/soho/img/cartProcess1/good2.png"
                 alt=""
               >
             </div>
@@ -143,7 +143,7 @@
           <div class="CartProcess1_orderItem">
             <div class="CartProcess1_orderItem-pic">
               <img
-                src="/img/cartProcess1/good3.png"
+                src="/soho/img/cartProcess1/good3.png"
                 alt=""
               >
             </div>

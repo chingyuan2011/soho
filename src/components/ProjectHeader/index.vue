@@ -47,7 +47,7 @@
       </div>
       <div class="logo">
         <img
-          src="/img/navbar/logo.png"
+          src="/soho/img/navbar/logo.png"
           alt="藻作坊"
         >
       </div>
@@ -98,7 +98,7 @@
     </div>
     <!-- <div class="helper">
       <img
-        src="/img/navbar/layout_1.jpg"
+        src="/soho/img/navbar/layout_1.jpg"
       >
     </div> -->
   </header>
@@ -232,7 +232,7 @@ export default {
       left: -5px;
       width: 45px;
       padding-top: 34px;
-      background-image: url('/img/navbar/navbar-active.png');
+      background-image: url('/soho/img/navbar/navbar-active.png');
       background-repeat: no-repeat;
       background-position: center;
       background-size: contain;
@@ -286,11 +286,11 @@ export default {
     }
 
     #functionBar_member {
-      background-image: url('/img/navbar/navbar_member.png');
+      background-image: url('/soho/img/navbar/navbar_member.png');
     }
 
     #functionBar_cart {
-      background-image: url('/img/navbar/navbar_cart.png');
+      background-image: url('/soho/img/navbar/navbar_cart.png');
     }
 
     &_search {
@@ -306,7 +306,7 @@ export default {
         left: 0;
         width: 20px;
         height: 20px;
-        background-image: url('/img/navbar/navbar_search.png');
+        background-image: url('/soho/img/navbar/navbar_search.png');
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;

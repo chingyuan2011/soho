@@ -1,6 +1,6 @@
 .ProductList {
   overflow: hidden;
-  background-image: url('/img/productList/bg_contentHeader.png'), url('/img/cartProcess1/bg_content.png');
+  background-image: url('/soho/img/productList/bg_contentHeader.png'), url('/soho/img/cartProcess1/bg_content.png');
   background-repeat: no-repeat, no-repeat;
   background-position: center top, center bottom;
   background-size: cover auto, cover auto;
@@ -25,7 +25,7 @@
   }
 
   &_content-menu {
-    width: 22%;
+    width: 25%;
     min-width: 300px;
     margin-right: 3%;
     padding: 8% 20px;
@@ -40,7 +40,7 @@
 
     &Title {
       margin-bottom: 40px;
-      font-size: 28px;
+      font-size: 28pt;
 
       @include screen(xl) {
         margin-bottom: 10px;
@@ -50,7 +50,7 @@
 
     &Item {
       margin-bottom: 20px;
-      font-size: 22px;
+      font-size: 22pt;
       cursor: pointer;
 
       @include screen(xl) {
@@ -79,7 +79,7 @@
         .ProductList_content-menuItemSub {
           display: none;
           padding: 20px;
-          font-size: 20px;
+          font-size: 20pt;
           line-height: 2;
           color: rgba($color: #657e70, $alpha: .4);
 
@@ -192,7 +192,7 @@
         align-items: center;
         justify-content: center;
         padding: 2px 20px;
-        font-size: 12px;
+        font-size: 12pt;
         color: #a7afaa;
         border: 1px solid #a7afaa;
         border-radius: 4px;
@@ -209,7 +209,7 @@
       input {
         margin-left: 5px;
         padding: 0;
-        font-size: 18px;
+        font-size: 18pt;
         font-weight: 700;
         color: #002c18;
         background-color: transparent;
@@ -225,13 +225,13 @@
       }
 
       input {
-        width: 50px;
+        width: 60px;
       }
 
       button {
         height: 100%;
         padding: 2px 20px;
-        font-size: 14px;
+        font-size: 14pt;
         font-weight: 700;
         line-height: 2;
         background-color: #9caca3;
@@ -356,7 +356,7 @@
     .productName {
       position: relative;
       padding-top: 40px;
-      font-size: 21px;
+      font-size: 21pt;
       font-weight: 700;
       color: #523628;
       text-align: center;
@@ -369,7 +369,7 @@
         left: 50%;
         width: 24px;
         height: 30px;
-        background-image: url('/img/productList/productList_itemIcon.png');
+        background-image: url('/soho/img/productList/productList_itemIcon.png');
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
@@ -389,7 +389,7 @@
     .productIntro {
       position: relative;
       margin-bottom: 20px;
-      font-size: 12px;
+      font-size: 12pt;
       color: #523628;
       letter-spacing: .1em;
 
@@ -421,7 +421,7 @@
       }
 
       .productName::before {
-        background-image: url('/img/productList/productList_itemIcon-h.png');
+        background-image: url('/soho/img/productList/productList_itemIcon-h.png');
       }
 
       .deco {
@@ -439,7 +439,7 @@
           z-index: 1;
           flex: 1;
           min-width: 96px;
-          font-size: 14px;
+          font-size: 14pt;
           font-weight: 700;
           line-height: 1.8;
           color: #002c18;
@@ -471,7 +471,7 @@
     }
 
     &-pages {
-      font-size: 22px;
+      font-size: 22pt;
 
       >button {
         width: 40px;

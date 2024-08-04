@@ -9,11 +9,11 @@
           <picture>
             <!-- 手機版主視覺 -->
             <!-- <source
-              srcset="/img/index/feature_3.jpg"
+              srcset="/soho/img/index/feature_3.jpg"
               media="(max-width: 600px)"
             > -->
             <img
-              src="/img/index/kv1.jpg"
+              src="/soho/img/index/kv1.jpg"
               alt="昆布芽"
             >
           </picture>
@@ -22,11 +22,11 @@
           <picture>
             <!-- 手機版主視覺 -->
             <!-- <source
-              srcset="/img/index/feature_3.jpg"
+              srcset="/soho/img/index/feature_3.jpg"
               media="(max-width: 600px)"
             > -->
             <img
-              src="/img/index/kv2.jpg"
+              src="/soho/img/index/kv2.jpg"
               alt="海藻製造所"
             >
           </picture>
@@ -106,7 +106,7 @@
                   data-wow-duration="1s"
                   data-wow-delay=".2s"
                 >
-                  <img src="/img/index/product1_item1.png">
+                  <img src="/soho/img/index/product1_item1.png">
                 </div>
               </div>
             </a>
@@ -149,7 +149,7 @@
                   data-wow-duration="1s"
                   data-wow-delay=".2s"
                 >
-                  <img src="/img/index/product1_item2.png">
+                  <img src="/soho/img/index/product1_item2.png">
                 </div>
               </div>
             </a>
@@ -193,7 +193,7 @@
                   data-wow-duration="1s"
                   data-wow-delay=".2s"
                 >
-                  <img src="/img/index/product1_item1.png">
+                  <img src="/soho/img/index/product1_item1.png">
                 </div>
               </div>
             </a>
@@ -238,7 +238,7 @@
                   data-wow-duration="1s"
                   data-wow-delay=".2s"
                 >
-                  <img src="/img/index/product1_item2.png">
+                  <img src="/soho/img/index/product1_item2.png">
                 </div>
               </div>
             </a>
@@ -265,13 +265,13 @@
           data-wow-delay=".1s"
         >
           <img
-            src="/img/index/index_ad_1.jpg"
+            src="/soho/img/index/index_ad_1.jpg"
             alt="讓餐桌多一份美好"
           >
         </div>
       </div>
       <!-- <div class="helper">
-        <img src="/img/layout_index_3.jpg">
+        <img src="/soho/img/layout_index_3.jpg">
       </div> -->
     </div>
     <div class="productGift">
@@ -279,7 +279,7 @@
         class="productGiftTitle"
       >
         <div class="container">
-          <img src="/img/index/product2_title.png">
+          <img src="/soho/img/index/product2_title.png">
         </div>
       </div>
       <div class="productGiftSet">
@@ -294,7 +294,7 @@
               <div class="setItem_thumb">
                 <div class="setThumb">
                   <img
-                    src="/img/index/product2_item1.png"
+                    src="/soho/img/index/product2_item1.png"
                   >
                   <div class="setThumb_action">
                     <div class="action">
@@ -343,7 +343,7 @@
               <div class="setItem_thumb">
                 <div class="setThumb">
                   <img
-                    src="/img/index/product2_item2.png"
+                    src="/soho/img/index/product2_item2.png"
                   >
                   <div class="setThumb_action">
                     <div class="action">
@@ -393,7 +393,7 @@
             data-wow-delay=".1s"
           >
             <img
-              src="/img/index/product2_item3.png"
+              src="/soho/img/index/product2_item3.png"
             >
           </a>
         </div>
@@ -425,7 +425,7 @@
               data-wow-delay=".2s"
             >
               <img
-                src="/img/index/feature_1.jpg"
+                src="/soho/img/index/feature_1.jpg"
                 alt="日高極細昆布"
               >
             </div>
@@ -435,7 +435,7 @@
               data-wow-delay=".4s"
             >
               <img
-                src="/img/index/feature_2.jpg"
+                src="/soho/img/index/feature_2.jpg"
                 alt="昆布"
               >
             </div>
@@ -445,7 +445,7 @@
               data-wow-delay=".6s"
             >
               <img
-                src="/img/index/feature_3.jpg"
+                src="/soho/img/index/feature_3.jpg"
                 alt="海帶芽湯"
               >
             </div>
@@ -457,7 +457,7 @@
               data-wow-delay=".4s"
             >
               <img
-                src="/img/index/feature_4.jpg"
+                src="/soho/img/index/feature_4.jpg"
                 alt="職人海帶芽湯"
               >
             </div>
@@ -467,7 +467,7 @@
               data-wow-delay=".4s"
             >
               <img
-                src="/img/index/feature_5.jpg"
+                src="/soho/img/index/feature_5.jpg"
                 alt="海帶芽"
               >
             </div>
@@ -475,7 +475,7 @@
         </div>
       </div>
       <!-- <div class="helper">
-        <img src="/img/layout_index_4.jpg">
+        <img src="/soho/img/layout_index_4.jpg">
       </div> -->
     </div>
     <div class="productBg">
@@ -490,7 +490,7 @@
               class="productRecommend_item-pic "
             >
               <img
-                src="/img/temp_product-recommend.png"
+                src="/soho/img/temp_product-recommend.png"
                 alt=""
               >
             </div>
@@ -516,7 +516,7 @@
           </div>
         </div>
         <!-- <div class="helper">
-        <img src="/img/layout_index_6.jpg">
+        <img src="/soho/img/layout_index_6.jpg">
       </div> -->
       </div>
       <div class="productAll">
@@ -531,7 +531,7 @@
                     data-wow-delay=".2s"
                   >
                     <img
-                      src="/img/index/product3_item1.png"
+                      src="/soho/img/index/product3_item1.png"
                       alt="黑芝麻醬"
                     >
                   </div>
@@ -575,7 +575,7 @@
                     data-wow-delay=".2s"
                   >
                     <img
-                      src="/img/index/product3_itme2.png"
+                      src="/soho/img/index/product3_itme2.png"
                       alt="黑芝麻醬"
                     >
                   </div>
@@ -619,7 +619,7 @@
                     data-wow-delay=".2s"
                   >
                     <img
-                      src="/img/index/product3_item1.png"
+                      src="/soho/img/index/product3_item1.png"
                       alt="黑芝麻醬"
                     >
                   </div>
@@ -663,7 +663,7 @@
                     data-wow-delay=".2s"
                   >
                     <img
-                      src="/img/index/product3_itme2.png"
+                      src="/soho/img/index/product3_itme2.png"
                       alt="黑芝麻醬"
                     >
                   </div>
@@ -707,7 +707,7 @@
                     data-wow-delay=".2s"
                   >
                     <img
-                      src="/img/index/product3_item1.png"
+                      src="/soho/img/index/product3_item1.png"
                       alt="黑芝麻醬"
                     >
                   </div>
@@ -751,7 +751,7 @@
                     data-wow-delay=".2s"
                   >
                     <img
-                      src="/img/index/product3_itme2.png"
+                      src="/soho/img/index/product3_itme2.png"
                       alt="黑芝麻醬"
                     >
                   </div>
@@ -795,7 +795,7 @@
                     data-wow-delay=".2s"
                   >
                     <img
-                      src="/img/index/product3_item1.png"
+                      src="/soho/img/index/product3_item1.png"
                       alt="黑芝麻醬"
                     >
                   </div>
@@ -839,7 +839,7 @@
                     data-wow-delay=".2s"
                   >
                     <img
-                      src="/img/index/product3_itme2.png"
+                      src="/soho/img/index/product3_itme2.png"
                       alt="黑芝麻醬"
                     >
                   </div>
@@ -883,7 +883,7 @@
                     data-wow-delay=".2s"
                   >
                     <img
-                      src="/img/index/product3_item1.png"
+                      src="/soho/img/index/product3_item1.png"
                       alt="黑芝麻醬"
                     >
                   </div>
@@ -927,7 +927,7 @@
                     data-wow-delay=".2s"
                   >
                     <img
-                      src="/img/index/product3_itme2.png"
+                      src="/soho/img/index/product3_itme2.png"
                       alt="黑芝麻醬"
                     >
                   </div>
@@ -965,7 +965,7 @@
           </div>
         </div>
         <!-- <div class="helper">
-        <img src="/img/layout_index_6.jpg">
+        <img src="/soho/img/layout_index_6.jpg">
       </div> -->
       </div>
     </div>
@@ -974,7 +974,7 @@
 
         class="wow zoomIn"
         data-wow-duration="1s"
-        src="/img/index/slogan_title.png"
+        src="/soho/img/index/slogan_title.png"
         alt="職人精神"
       >
     </div>

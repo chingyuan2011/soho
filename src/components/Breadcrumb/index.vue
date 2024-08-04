@@ -3,7 +3,7 @@
     <div class="breadcrumb_wrap">
       <div class="breadcrumb_item">
         <a href="/index.html">
-          <img src="/img/icon_home.png">HOME</a> {{ linkData.length > 0 && '/' }}
+          <img src="/soho/img/icon_home.png">HOME</a> {{ linkData.length > 0 && '/' }}
       </div>
       <div
         v-for="item,index in linkData"

@@ -5,7 +5,7 @@
       target="_blank"
     >
       <img
-        src="/img/floatBtn_chat.png"
+        src="/soho/img/floatBtn_chat.png"
         alt="chat"
       >
     </a>
@@ -14,13 +14,13 @@
       target="_blank"
     >
       <img
-        src="/img/floatBtn_cart.png"
+        src="/soho/img/floatBtn_cart.png"
         alt="cart"
       >
     </a>
     <button id="btn__quickTop">
       <img
-        src="/img/floatBtn_up.png"
+        src="/soho/img/floatBtn_up.png"
         alt="up"
       >
     </button>

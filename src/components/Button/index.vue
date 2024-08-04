@@ -10,7 +10,7 @@
       class="Button__icon"
     >
       <img
-        :src="`/img/icon_${icon}.png`"
+        :src="`/soho/img/icon_${icon}.png`"
         :alt="text"
       >
     </span>
@@ -26,7 +26,7 @@
       class="Button__icon"
     >
       <img
-        :src="`/img/icon_${icon}.png`"
+        :src="`/soho/img/icon_${icon}.png`"
         :alt="text"
       >
     </span>
@@ -41,7 +41,7 @@
       class="Button__icon"
     >
       <img
-        :src="`/img/icon_${icon}.png`"
+        :src="`/soho/img/icon_${icon}.png`"
         :alt="text"
       >
     </span>

@@ -20,7 +20,7 @@
             </div>
             <div class="ProductList_content-menuItem ProductList_content-menuItem-toggle active">
               <div class="ProductList_content-menuItemTitle">
-                <span>【 9 / 01 - 9 / 14 】中秋禮盒 - 送你送健康</span>
+                <span>【 9/01-9/14 】中秋禮盒 - 送你送健康</span>
               </div>
               <div class="ProductList_content-menuItemSub">
                 <div class="ProductList_content-menuItemSubItem active">
@@ -62,7 +62,7 @@
         <div class="ProductList_content-product">
           <div class="ProductList_content-product-ad">
             <img
-              src="/img/productList/productList_ad.jpg"
+              src="/soho/img/productList/productList_ad.jpg"
               alt="海帶芽湯"
             >
           </div>
@@ -120,12 +120,12 @@
               <div class="ProductList_content-product-item">
                 <div class="productPic">
                   <img
-                    src="/img/productList/productList_item1.png"
+                    src="/soho/img/productList/productList_item1.png"
                     alt=""
                   >
                   <img
                     class="hover"
-                    src="/img/productList/productList_item1-hover.png"
+                    src="/soho/img/productList/productList_item1-hover.png"
                     alt=""
                   >
                 </div>
@@ -146,12 +146,12 @@
               <div class="ProductList_content-product-item">
                 <div class="productPic">
                   <img
-                    src="/img/productList/productList_item2.png"
+                    src="/soho/img/productList/productList_item2.png"
                     alt=""
                   >
                   <img
                     class="hover"
-                    src="/img/productList/productList_item1-hover.png"
+                    src="/soho/img/productList/productList_item1-hover.png"
                     alt=""
                   >
                 </div>
@@ -172,12 +172,12 @@
               <div class="ProductList_content-product-item">
                 <div class="productPic">
                   <img
-                    src="/img/productList/productList_item3.png"
+                    src="/soho/img/productList/productList_item3.png"
                     alt=""
                   >
                   <img
                     class="hover"
-                    src="/img/productList/productList_item1-hover.png"
+                    src="/soho/img/productList/productList_item1-hover.png"
                     alt=""
                   >
                 </div>
@@ -198,12 +198,12 @@
               <div class="ProductList_content-product-item">
                 <div class="productPic">
                   <img
-                    src="/img/productList/productList_item4.png"
+                    src="/soho/img/productList/productList_item4.png"
                     alt=""
                   >
                   <img
                     class="hover"
-                    src="/img/productList/productList_item1-hover.png"
+                    src="/soho/img/productList/productList_item1-hover.png"
                     alt=""
                   >
                 </div>
@@ -224,12 +224,12 @@
               <div class="ProductList_content-product-item">
                 <div class="productPic">
                   <img
-                    src="/img/productList/productList_item5.png"
+                    src="/soho/img/productList/productList_item5.png"
                     alt=""
                   >
                   <img
                     class="hover"
-                    src="/img/productList/productList_item1-hover.png"
+                    src="/soho/img/productList/productList_item1-hover.png"
                     alt=""
                   >
                 </div>
@@ -250,12 +250,12 @@
               <div class="ProductList_content-product-item">
                 <div class="productPic">
                   <img
-                    src="/img/productList/productList_item6.png"
+                    src="/soho/img/productList/productList_item6.png"
                     alt=""
                   >
                   <img
                     class="hover"
-                    src="/img/productList/productList_item1-hover.png"
+                    src="/soho/img/productList/productList_item1-hover.png"
                     alt=""
                   >
                 </div>
@@ -276,12 +276,12 @@
               <div class="ProductList_content-product-item">
                 <div class="productPic">
                   <img
-                    src="/img/productList/productList_item7.png"
+                    src="/soho/img/productList/productList_item7.png"
                     alt=""
                   >
                   <img
                     class="hover"
-                    src="/img/productList/productList_item1-hover.png"
+                    src="/soho/img/productList/productList_item1-hover.png"
                     alt=""
                   >
                 </div>
@@ -302,12 +302,12 @@
               <div class="ProductList_content-product-item">
                 <div class="productPic">
                   <img
-                    src="/img/productList/productList_item8.png"
+                    src="/soho/img/productList/productList_item8.png"
                     alt=""
                   >
                   <img
                     class="hover"
-                    src="/img/productList/productList_item1-hover.png"
+                    src="/soho/img/productList/productList_item1-hover.png"
                     alt=""
                   >
                 </div>
@@ -328,12 +328,12 @@
               <div class="ProductList_content-product-item">
                 <div class="productPic">
                   <img
-                    src="/img/productList/productList_item9.png"
+                    src="/soho/img/productList/productList_item9.png"
                     alt=""
                   >
                   <img
                     class="hover"
-                    src="/img/productList/productList_item1-hover.png"
+                    src="/soho/img/productList/productList_item1-hover.png"
                     alt=""
                   >
                 </div>
@@ -370,7 +370,7 @@
     </div>
     <div class="helper">
       <!-- <img
-        src="/img/productList/layout_productList1.jpg"
+        src="/soho/img/productList/layout_productList1.jpg"
         alt=""
       > -->
     </div>
