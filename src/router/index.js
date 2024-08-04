@@ -6,6 +6,8 @@ import Footer from '@/pages/Footer'
 import CartProcess1 from '@/pages/CartProcess1'
 import ProductContent from '@/pages/ProductContent'
 import ProductList from '@/pages/ProductList'
+import Login from '@/pages/Login'
+import SignUp from '@/pages/SignUp'
 
 Vue.use(VueRouter)
 
@@ -39,6 +41,16 @@ const routes = [
     path: '/productList.html',
     name: 'ProductList',
     component: ProductList
+  },
+  {
+    path: '/login.html',
+    name: 'Login',
+    component: Login
+  },
+  {
+    path: '/signup.html',
+    name: 'signup',
+    component: SignUp
   },
   {
     path: '*',
