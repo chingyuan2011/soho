@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+    <script src="/soho/assets/jquery/jquery.min.js"></script>
+    <script src="/soho/assets/wow/wow.min.js"></script>
+    <script src="/soho/assets/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="/soho/assets/wow/animate.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/soho/assets/slick/slick.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&amp;family=Noto+Serif+TC:wght@200..900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link href="/soho/css/app.42e1c8da.css" rel="preload" as="style" />
+    <link
+      href="/soho/css/chunk-vendors.354276a6.css"
+      rel="preload"
+      as="style"
+    />
+    <link href="/soho/js/app.7654aa21.js" rel="preload" as="script" />
+    <link href="/soho/js/chunk-vendors.281a1787.js" rel="preload" as="script" />
+    <link href="/soho/css/chunk-vendors.354276a6.css" rel="stylesheet" />
+    <link href="/soho/css/app.42e1c8da.css" rel="stylesheet" />
+    <title>藻作坊</title>
+    <meta
+      data-vue-meta="1"
+      data-vmid="description"
+      name="description"
+      content="Description..."
+    />
+  </head>
+  <body>
+    <noscript
+      ><strong
+        >抱歉，您的瀏覽器不支援 Javascript，因此無法使用服務。</strong
+      ></noscript
+    >
+    <div id="app">
+      <header class="ProjectHeader">
+        <div class="container ProjectHeader-pc">
+          <div class="ProjectHeader_area ProjectHeader_area-left">
+            <div class="menu">
+              <div class="menu_item">
+                <a href="/soho/" class="router-link-active"
+                  ><div class="menu_itemText-zh">關於我們</div>
+                  <div class="menu_itemText-en">ABOUT</div></a
+                >
+              </div>
+              <div class="menu_item">
+                <a href="/soho/" class="router-link-active"
+                  ><div class="menu_itemText-zh">檢驗認證</div>
+                  <div class="menu_itemText-en">DETECTION</div></a
+                >
+              </div>
+              <div class="menu_item">
+                <a href="/soho/" class="router-link-active"
+                  ><div class="menu_itemText-zh">產品資訊</div>
+                  <div class="menu_itemText-en">PRODUCTS</div></a
+                >
+              </div>
+              <div class="menu_item">
+                <a href="/soho/" class="router-link-active"
+                  ><div class="menu_itemText-zh">最新消息</div>
+                  <div class="menu_itemText-en">NEWS</div></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="logo">
+            <img src="/soho/img/navbar/logo.png" alt="藻作坊" />
+          </div>
+          <div class="ProjectHeader_area ProjectHeader_area-right">
+            <div class="menu">
+              <div class="menu_item">
+                <a href="/soho/" class="router-link-active"
+                  ><div class="menu_itemText-zh">海藻學堂</div>
+                  <div class="menu_itemText-en">SEAWEED</div></a
+                >
+              </div>
+              <div class="menu_item">
+                <a href="/soho/" class="router-link-active"
+                  ><div class="menu_itemText-zh">門市據點</div>
+                  <div class="menu_itemText-en">STORE</div></a
+                >
+              </div>
+              <div class="menu_item">
+                <a href="/soho/" class="router-link-active"
+                  ><div class="menu_itemText-zh">聯絡我們</div>
+                  <div class="menu_itemText-en">CONTACT</div></a
+                >
+              </div>
+            </div>
+            <div class="functionBar">
+              <button id="functionBar_member"></button
+              ><button id="functionBar_cart"></button>
+              <div class="functionBar_search">
+                <input type="text" placeholder="SEARCH..." />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container ProjectHeader-mobile">
+          <div class="logo">
+            <img src="/soho/img/navbar/logo.png" alt="藻作坊" />
+          </div>
+          <div class="right">
+            <div class="functionBar">
+              <button id="functionBar_cart"></button>
+            </div>
+            <button class="hamburger">
+              <span></span><span></span><span></span><span></span>
+            </button>
+          </div>
+        </div>
+      </header>
+      <div class="ProductList app__view">
+        <div class="container container-page">
+          <div class="page_commonTitleArea">
+            <div class="Title">
+              <div class="Title_wrap">
+                <div class="Title_en">PRODUCTS</div>
+                <div class="Title_zh"><span>產品資訊</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="ProductList_content">
+            <div class="ProductList_content-menu">
+              <div class="ProductList_content-menuTitle">產品資訊</div>
+              <div class="ProductList_content-menuItemList">
+                <div class="ProductList_content-menuItem active">
+                  <div class="ProductList_content-menuItemTitle">查看全部</div>
+                </div>
+                <div
+                  class="ProductList_content-menuItem ProductList_content-menuItem-toggle active"
+                >
+                  <div class="ProductList_content-menuItemTitle">
+                    <span>【 9/01-9/14 】中秋禮盒 - 送你送健康</span>
+                  </div>
+                  <div class="ProductList_content-menuItemSub">
+                    <div class="ProductList_content-menuItemSubItem active">
+                      海藻
+                    </div>
+                    <div class="ProductList_content-menuItemSubItem">醬料</div>
+                    <div class="ProductList_content-menuItemSubItem">高湯</div>
+                    <div class="ProductList_content-menuItemSubItem">
+                      組合搭配
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="ProductList_content-menuItem ProductList_content-menuItem-toggle"
+                >
+                  <div class="ProductList_content-menuItemTitle">
+                    <span>新品上市</span>
+                  </div>
+                  <div class="ProductList_content-menuItemSub">
+                    <div class="ProductList_content-menuItemSubItem">
+                      新品一
+                    </div>
+                  </div>
+                </div>
+                <div class="ProductList_content-menuItem">
+                  <div class="ProductList_content-menuItemTitle">
+                    <span>暢銷熱賣</span>
+                  </div>
+                </div>
+                <div class="ProductList_content-menuItem">
+                  <div class="ProductList_content-menuItemTitle">
+                    <span>囤貨必備</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ProductList_content-product">
+              <div class="ProductList_content-product-ad">
+                <img
+                  src="/soho/img/productList/productList_ad.jpg"
+                  alt="海帶芽湯"
+                />
+              </div>
+              <div class="ProductList_content-product-wrap">
+                <div class="ProductList_content-product-filters active">
+                  <div>
+                    <div class="ProductList_content-product-filter select">
+                      <select>
+                        <option value="" selected="selected">預設</option>
+                        <option value="1">價格低至高</option>
+                        <option value="2">價格高至低</option>
+                      </select>
+                    </div>
+                    <div
+                      class="ProductList_content-product-filter price-filter active"
+                    >
+                      <button>金額範圍</button>
+                    </div>
+                    <div class="ProductList_content-product-filter select">
+                      <select>
+                        <option value="" selected="selected">商品評分</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div
+                    class="ProductList_content-product-filter-advanced price"
+                  >
+                    <label class="inputWrap"
+                      ><span>最低價格</span><span class="symbol">$</span
+                      ><input inputmode="numeric" value="0" /></label
+                    ><span> - </span
+                    ><label class="inputWrap"
+                      ><span>最高價格</span><span class="symbol">$</span
+                      ><input inputmode="numeric" value="2000" /></label
+                    ><button>搜尋</button>
+                  </div>
+                </div>
+                <div class="ProductList_content-product-list">
+                  <div class="ProductList_content-product-item">
+                    <div class="productPic">
+                      <img
+                        src="/soho/img/productList/productList_item1.png"
+                        alt=""
+                      /><img
+                        src="/soho/img/productList/productList_item1-hover.png"
+                        alt=""
+                        class="hover"
+                      />
+                    </div>
+                    <div class="productInfo">
+                      <div class="productName">六色海藻</div>
+                      <div class="productIntro">
+                        <p>
+                          嚴選六種優質海藻,方便簡單的料理方式來補足現代人忙碌而無法攝取到足夠的現代人忙碌而無
+                        </p>
+                      </div>
+                      <div class="deco"></div>
+                      <div class="productControl">
+                        <button>直接購買</button><button>加入購物車</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ProductList_content-product-item">
+                    <div class="productPic">
+                      <img
+                        src="/soho/img/productList/productList_item2.png"
+                        alt=""
+                      /><img
+                        src="/soho/img/productList/productList_item1-hover.png"
+                        alt=""
+                        class="hover"
+                      />
+                    </div>
+                    <div class="productInfo">
+                      <div class="productName">昆布鹽</div>
+                      <div class="productIntro">
+                        <p>
+                          昆布鹽使用於料理前後皆可使用
+                          例：炒菜、鹽漬、熬湯、沾肉皆可提升食材的
+                        </p>
+                      </div>
+                      <div class="deco"></div>
+                      <div class="productControl">
+                        <button>直接購買</button><button>加入購物車</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ProductList_content-product-item">
+                    <div class="productPic">
+                      <img
+                        src="/soho/img/productList/productList_item3.png"
+                        alt=""
+                      /><img
+                        src="/soho/img/productList/productList_item1-hover.png"
+                        alt=""
+                        class="hover"
+                      />
+                    </div>
+                    <div class="productInfo">
+                      <div class="productName">六色海藻</div>
+                      <div class="productIntro">
+                        <p>
+                          嚴選六種優質海藻,方便簡單的料理方式來補足現代人忙碌而無法攝取到足夠的現代人忙碌而無
+                        </p>
+                      </div>
+                      <div class="deco"></div>
+                      <div class="productControl">
+                        <button>直接購買</button><button>加入購物車</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ProductList_content-product-item">
+                    <div class="productPic">
+                      <img
+                        src="/soho/img/productList/productList_item4.png"
+                        alt=""
+                      /><img
+                        src="/soho/img/productList/productList_item1-hover.png"
+                        alt=""
+                        class="hover"
+                      />
+                    </div>
+                    <div class="productInfo">
+                      <div class="productName">昆布鹽</div>
+                      <div class="productIntro">
+                        <p>
+                          昆布鹽使用於料理前後皆可使用
+                          例：炒菜、鹽漬、熬湯、沾肉皆可提升食材的
+                        </p>
+                      </div>
+                      <div class="deco"></div>
+                      <div class="productControl">
+                        <a href="https://yahoo.com">直接購買</a
+                        ><button>加入購物車</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ProductList_content-product-item">
+                    <div class="productPic">
+                      <img
+                        src="/soho/img/productList/productList_item5.png"
+                        alt=""
+                      /><img
+                        src="/soho/img/productList/productList_item1-hover.png"
+                        alt=""
+                        class="hover"
+                      />
+                    </div>
+                    <div class="productInfo">
+                      <div class="productName">海苔醬</div>
+                      <div class="productIntro">
+                        <p>
+                          昆布鹽使用於料理前後皆可使用
+                          例：炒菜、鹽漬、熬湯、沾肉皆可提升食材的
+                        </p>
+                      </div>
+                      <div class="deco"></div>
+                      <div class="productControl">
+                        <a href="https://yahoo.com">直接購買</a
+                        ><button>加入購物車</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ProductList_content-product-item">
+                    <div class="productPic">
+                      <img
+                        src="/soho/img/productList/productList_item6.png"
+                        alt=""
+                      /><img
+                        src="/soho/img/productList/productList_item1-hover.png"
+                        alt=""
+                        class="hover"
+                      />
+                    </div>
+                    <div class="productInfo">
+                      <div class="productName">海苔醬</div>
+                      <div class="productIntro">
+                        <p>
+                          昆布鹽使用於料理前後皆可使用
+                          例：炒菜、鹽漬、熬湯、沾肉皆可提升食材的
+                        </p>
+                      </div>
+                      <div class="deco"></div>
+                      <div class="productControl">
+                        <a href="https://yahoo.com">直接購買</a
+                        ><button>加入購物車</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ProductList_content-product-item">
+                    <div class="productPic">
+                      <img
+                        src="/soho/img/productList/productList_item7.png"
+                        alt=""
+                      /><img
+                        src="/soho/img/productList/productList_item1-hover.png"
+                        alt=""
+                        class="hover"
+                      />
+                    </div>
+                    <div class="productInfo">
+                      <div class="productName">黑芝麻醬</div>
+                      <div class="productIntro">
+                        <p>
+                          昆布鹽使用於料理前後皆可使用
+                          例：炒菜、鹽漬、熬湯、沾肉皆可提升食材的
+                        </p>
+                      </div>
+                      <div class="deco"></div>
+                      <div class="productControl">
+                        <a href="https://yahoo.com">直接購買</a
+                        ><button>加入購物車</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ProductList_content-product-item">
+                    <div class="productPic">
+                      <img
+                        src="/soho/img/productList/productList_item8.png"
+                        alt=""
+                      /><img
+                        src="/soho/img/productList/productList_item1-hover.png"
+                        alt=""
+                        class="hover"
+                      />
+                    </div>
+                    <div class="productInfo">
+                      <div class="productName">黑芝麻醬</div>
+                      <div class="productIntro">
+                        <p>
+                          昆布鹽使用於料理前後皆可使用
+                          例：炒菜、鹽漬、熬湯、沾肉皆可提升食材的
+                        </p>
+                      </div>
+                      <div class="deco"></div>
+                      <div class="productControl">
+                        <a href="https://yahoo.com">直接購買</a
+                        ><button>加入購物車</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ProductList_content-product-item">
+                    <div class="productPic">
+                      <img
+                        src="/soho/img/productList/productList_item9.png"
+                        alt=""
+                      /><img
+                        src="/soho/img/productList/productList_item1-hover.png"
+                        alt=""
+                        class="hover"
+                      />
+                    </div>
+                    <div class="productInfo">
+                      <div class="productName">黑芝麻醬</div>
+                      <div class="productIntro">
+                        <p>
+                          昆布鹽使用於料理前後皆可使用
+                          例：炒菜、鹽漬、熬湯、沾肉皆可提升食材的
+                        </p>
+                      </div>
+                      <div class="deco"></div>
+                      <div class="productControl">
+                        <a href="https://yahoo.com">直接購買</a
+                        ><button>加入購物車</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ProductList_content-product-pageControl">
+                  <button>PREVIOUS</button>
+                  <div class="ProductList_content-product-pageControl-pages">
+                    <button class="active">1</button><button>2</button>
+                  </div>
+                  <button>NEXT</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="helper"></div>
+      </div>
+      <footer class="ProjectFooter">
+        <div class="container">
+          <div class="ProjectFooter_content">
+            <div class="ProjectFooter_logoWrap">
+              <div class="ProjectFooter_pic">
+                <img
+                  src="/soho/img/footer/footer_logo.png"
+                  alt="logo"
+                  draggable="false"
+                />
+              </div>
+            </div>
+            <div class="ProjectFooter_linkPart">
+              <div class="ProjectFooter_linkCategory">
+                <div class="ProjectFooter_linkTitle notoSerif">深入暸解</div>
+                <div class="ProjectFooter_linkList">
+                  <a href="javascript:;" target="_blank">關於我們</a
+                  ><a href="javascript:;" target="_blank">永續發展</a
+                  ><a href="javascript:;" target="_blank">最新消息</a
+                  ><a href="javascript:;" target="_blank">海藻學堂</a>
+                </div>
+              </div>
+              <div class="ProjectFooter_linkCategory">
+                <div class="ProjectFooter_linkTitle notoSerif">藻藻帶回家</div>
+                <div class="ProjectFooter_linkList">
+                  <a href="javascript:;" target="_blank">檢驗認證</a
+                  ><a href="javascript:;" target="_blank">產品總覽</a
+                  ><a href="javascript:;" target="_blank">分類一</a
+                  ><a href="javascript:;" target="_blank">分類二</a>
+                </div>
+              </div>
+              <div class="ProjectFooter_linkCategory">
+                <div class="ProjectFooter_linkTitle notoSerif">藻門市吧</div>
+                <div class="ProjectFooter_linkList">
+                  <a href="javascript:;" target="_blank">彩虹門市</a
+                  ><a href="javascript:;" target="_blank">檜意門市</a
+                  ><a href="javascript:;" target="_blank">聯絡我們</a>
+                </div>
+              </div>
+              <div class="ProjectFooter_linkCategory">
+                <div class="ProjectFooter_linkTitle notoSerif">會員中心</div>
+                <div class="ProjectFooter_linkList">
+                  <a href="javascript:;" target="_blank">會員登入</a
+                  ><a href="javascript:;" target="_blank">歷史訂單</a
+                  ><a href="javascript:;" target="_blank">優惠折扣</a
+                  ><a href="javascript:;" target="_blank">紅利點數</a>
+                </div>
+              </div>
+              <div class="ProjectFooter_linkCategory">
+                <div class="ProjectFooter_linkTitle notoSerif">會員權益</div>
+                <div class="ProjectFooter_linkList">
+                  <a href="javascript:;" target="_blank">購物須知</a
+                  ><a href="javascript:;" target="_blank">退換貨說明</a
+                  ><a href="javascript:;" target="_blank">隱私權政策</a
+                  ><a href="javascript:;" target="_blank">會員註冊條款</a>
+                </div>
+              </div>
+              <div class="ProjectFooter_linkCategory">
+                <div class="ProjectFooter_linkTitle notoSerif">聯絡資訊</div>
+                <div class="ProjectFooter_linkList">
+                  <div class="ProjectFooter_linkList-text">
+                    <img src="/soho/img/footer/footer_phone.png" />0910-827-867
+                  </div>
+                  <div class="ProjectFooter_linkList-text">
+                    <img src="/soho/img/footer/footer_time.png" />AM 9:00-PM
+                    18:00
+                  </div>
+                  <div class="ProjectFooter_linkList-text">
+                    <img
+                      src="/soho/img/footer/footer_email.png"
+                    />gzv6726@dr-seaweed.com.tw
+                  </div>
+                  <div class="ProjectFooter_linkList-text">
+                    <img
+                      src="/soho/img/footer/footer_position.png"
+                    />嘉義市東區共和路191巷6號
+                  </div>
+                </div>
+              </div>
+              <div class="ProjectFooter_linkCategory">
+                <div class="ProjectFooter_linkTitle notoSerif">關注我們</div>
+                <div class="ProjectFooter_socialMedia">
+                  <a href="javascript:;" target="_blank"
+                    ><img
+                      src="/soho/img/footer/footer_line.png"
+                      alt="LINE" /></a
+                  ><a href="javascript:;" target="_blank"
+                    ><img src="/soho/img/footer/footer_fb.png" alt="fb" /></a
+                  ><a href="javascript:;" target="_blank"
+                    ><img src="/soho/img/footer/footer_yt.png" alt="yt"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ProjectFooter_note">
+          <div class="container">
+            2024 © 藻作坊 Designed By 禾藝叁陸巷有限公司
+          </div>
+        </div>
+      </footer>
+      <div class="FloatBtn">
+        <a href="javascript:;" target="_blank"
+          ><img src="/soho/img/floatBtn_chat.png" alt="chat" /></a
+        ><a href="javascript:;" target="_blank"
+          ><img src="/soho/img/floatBtn_cart.png" alt="cart" /></a
+        ><button id="btn__quickTop">
+          <img src="/soho/img/floatBtn_up.png" alt="up" />
+        </button>
+      </div>
+    </div>
+    <script src="/soho/js/custom.js"></script>
+    <script src="/soho/js/chunk-vendors.281a1787.js"></script>
+    <script src="/soho/js/app.7654aa21.js"></script>
+  </body>
+</html>
