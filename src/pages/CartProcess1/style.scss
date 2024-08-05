@@ -280,7 +280,11 @@
       }
 
       &-input {
+        display: flex;
+        margin-bottom: 5px;
+
         input {
+          flex: 1;
           height: 28px;
           font-size: 12px;
           font-weight: 400;
@@ -289,7 +293,10 @@
           border: 1px solid #898989;
           border-radius: 5px;
         }
-        margin-bottom: 5px;
+
+        button {
+          width: auto;
+        }
       }
 
       &-text {
