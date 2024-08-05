@@ -1,36 +1,30 @@
 <template>
   <div class="Index">
     <div
-      class="kv wow fadeInDown"
+      class="kv"
       data-wow-duration="1.5s"
     >
       <div class="kv_content">
-        <div>
-          <picture>
-            <!-- 手機版主視覺 -->
-            <!-- <source
-              srcset="/soho/img/index/feature_3.jpg"
-              media="(max-width: 600px)"
-            > -->
-            <img
-              src="/soho/img/index/kv1.jpg"
-              alt="昆布芽"
-            >
-          </picture>
-        </div>
-        <div>
-          <picture>
-            <!-- 手機版主視覺 -->
-            <!-- <source
-              srcset="/soho/img/index/feature_3.jpg"
-              media="(max-width: 600px)"
-            > -->
-            <img
-              src="/soho/img/index/kv2.jpg"
-              alt="海藻製造所"
-            >
-          </picture>
-        </div>
+        <picture>
+          <source
+            srcset="/soho/img/index/kv1-mobile.jpg"
+            media="(max-width: 600px)"
+          >
+          <img
+            src="/soho/img/index/kv1.jpg"
+            alt="昆布芽"
+          >
+        </picture>
+        <picture>
+          <source
+            srcset="/soho/img/index/kv2-mobile.jpg"
+            media="(max-width: 600px)"
+          >
+          <img
+            src="/soho/img/index/kv2.jpg"
+            alt="海藻製造所"
+          >
+        </picture>
       </div>
     </div>
     <div
@@ -55,220 +49,625 @@
         class="productIntro_intro"
       >
         <div class="container">
-          <div class="productNav">
-            <a
-              class="productNav_icon productNav_icon--left"
-            >
-            </a>
-            <a
-              class="productNav_icon productNav_icon--right"
-            >
-            </a>
-          </div>
           <div class="productList">
-            <a
-              href=""
-              class="productItem"
-            >
-              <div class="productItem_desc">
-                <div class="productDesc">
-                  <i class="productDesc_icon"></i>
-                  <div class="productDesc_title">
-                    六色海藻
-                  </div>
-                  <div class="productDesc_desc">
-                    嚴選六種優質海藻,方便簡單的料理方式
-                    來補足現代人忙碌而無法攝取到足夠的
-                  </div>
-                  <div class="productDesc_price">
-                    <div class="price">
-                      售價<span>$330</span>
+            <div class="productList_container">
+              <div
+                class="productItem"
+              >
+                <div class="productItem_desc">
+                  <div class="productDesc">
+                    <i class="productDesc_icon"></i>
+                    <div class="productDesc_title">
+                      六色海藻
                     </div>
-                    <div class="action">
-                      <a
-                        href=""
-                        class="action_icon action_icon-cart"
-                      ></a>
-                      <a
-                        href=""
-                        class="action_icon action_icon-bag"
-                      ></a>
+                    <div class="productDesc_desc">
+                      嚴選六種優質海藻,方便簡單的料理方式
+                      來補足現代人忙碌而無法攝取到足夠的
+                    </div>
+                    <div class="productDesc_price">
+                      <div class="price">
+                        售價<span>$330</span>
+                      </div>
+                      <div class="action">
+                        <a
+                          href=""
+                          class="action_icon action_icon-cart"
+                        ></a>
+                        <a
+                          href=""
+                          class="action_icon action_icon-bag"
+                        ></a>
+                      </div>
+                    </div>
+                    <div class="productDesc_deco">
+                      <div class="deco move-x"></div>
                     </div>
                   </div>
-                  <div class="productDesc_deco">
-                    <div class="deco move-x"></div>
+                </div>
+                <div class="productItem_thumb">
+                  <div
+                    class="productThumb wow flipInX"
+                    data-wow-duration="1s"
+                    data-wow-delay=".2s"
+                  >
+                    <img src="/soho/img/index/product1_item1.png">
                   </div>
                 </div>
               </div>
-              <div class="productItem_thumb">
-                <div
-                  class="productThumb wow flipInX"
-                  data-wow-duration="1s"
-                  data-wow-delay=".2s"
-                >
-                  <img src="/soho/img/index/product1_item1.png">
-                </div>
-              </div>
-            </a>
-            <a
-              href=""
-              class="productItem"
-            >
-              <div class="productItem_desc">
-                <div class="productDesc">
-                  <i class="productDesc_icon"></i>
-                  <div class="productDesc_title">
-                    昆布鹽
-                  </div>
-                  <div class="productDesc_desc">
-                    昆布鹽使用於料理前後皆可使用 例：炒菜、鹽漬、熬湯、沾肉皆可提升食材的
-                  </div>
-                  <div class="productDesc_price">
-                    <div class="price">
-                      售價<span>$330</span>
+              <div
+                class="productItem"
+              >
+                <div class="productItem_desc">
+                  <div class="productDesc">
+                    <i class="productDesc_icon"></i>
+                    <div class="productDesc_title">
+                      昆布鹽
                     </div>
-                    <div class="action">
-                      <a
-                        href=""
-                        class="action_icon action_icon-cart"
-                      ></a>
-                      <a
-                        href=""
-                        class="action_icon action_icon-bag"
-                      ></a>
+                    <div class="productDesc_desc">
+                      昆布鹽使用於料理前後皆可使用 例：炒菜、鹽漬、熬湯、沾肉皆可提升食材的
+                    </div>
+                    <div class="productDesc_price">
+                      <div class="price">
+                        售價<span>$330</span>
+                      </div>
+                      <div class="action">
+                        <a
+                          href=""
+                          class="action_icon action_icon-cart"
+                        ></a>
+                        <a
+                          href=""
+                          class="action_icon action_icon-bag"
+                        ></a>
+                      </div>
+                    </div>
+                    <div class="productDesc_deco">
+                      <div class="deco move-x"></div>
                     </div>
                   </div>
-                  <div class="productDesc_deco">
-                    <div class="deco move-x"></div>
+                </div>
+                <div class="productItem_thumb">
+                  <div
+                    class="productThumb wow flipInX"
+                    data-wow-duration="1s"
+                    data-wow-delay=".2s"
+                  >
+                    <img src="/soho/img/index/product1_item2.png">
                   </div>
                 </div>
               </div>
-              <div class="productItem_thumb">
-                <div
-                  class="productThumb wow flipInX"
-                  data-wow-duration="1s"
-                  data-wow-delay=".2s"
-                >
-                  <img src="/soho/img/index/product1_item2.png">
-                </div>
-              </div>
-            </a>
-            <a
-              href=""
-              class="productItem"
-            >
-              <div class="productItem_desc">
-                <div class="productDesc">
-                  <i class="productDesc_icon"></i>
-                  <div class="productDesc_title">
-                    六色海藻
-                  </div>
-                  <div class="productDesc_desc">
-                    嚴選六種優質海藻,方便簡單的料理方式
-                    來補足現代人忙碌而無法攝取到足夠的
-                  </div>
-                  <div class="productDesc_price">
-                    <div class="price">
-                      售價<span>$330</span>
+              <div
+                class="productItem"
+              >
+                <div class="productItem_desc">
+                  <div class="productDesc">
+                    <i class="productDesc_icon"></i>
+                    <div class="productDesc_title">
+                      六色海藻
                     </div>
-                    <div class="action">
-                      <a
-                        href=""
-                        class="action_icon action_icon-cart"
-                      ></a>
-                      <a
-                        href=""
-                        class="action_icon action_icon-bag"
-                      ></a>
+                    <div class="productDesc_desc">
+                      嚴選六種優質海藻,方便簡單的料理方式
+                      來補足現代人忙碌而無法攝取到足夠的
                     </div>
-                  </div>
-                  <div class="productDesc_deco">
-                    <div class="deco move-x"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="productItem_thumb">
-                <div
-                  class="productThumb wow flipInX"
-                  data-wow-duration="1s"
-                  data-wow-delay=".2s"
-                >
-                  <img src="/soho/img/index/product1_item1.png">
-                </div>
-              </div>
-            </a>
-            <a
-              href=""
-              class="productItem"
-            >
-              <div class="productItem_desc">
-                <div class="productDesc">
-                  <i class="productDesc_icon"></i>
-                  <div class="productDesc_title">
-                    昆布鹽
-                  </div>
-                  <div class="productDesc_desc">
-                    昆布鹽使用於料理前後皆可使用 例：炒菜、鹽漬、熬湯、沾肉皆可提升食材的
-                  </div>
-                  <div class="productDesc_price">
-                    <div class="price">
-                      售價<span>$330</span>
+                    <div class="productDesc_price">
+                      <div class="price">
+                        售價<span>$330</span>
+                      </div>
+                      <div class="action">
+                        <a
+                          href=""
+                          class="action_icon action_icon-cart"
+                        ></a>
+                        <a
+                          href=""
+                          class="action_icon action_icon-bag"
+                        ></a>
+                      </div>
                     </div>
-                    <div class="action">
-                      <a
-                        href=""
-                        class="action_icon action_icon-cart"
-                      ></a>
-                      <a
-                        href=""
-                        class="action_icon action_icon-bag"
-                      ></a>
+                    <div class="productDesc_deco">
+                      <div class="deco move-x"></div>
                     </div>
                   </div>
-                  <div class="productDesc_deco">
-                    <div
-                      class="deco move-x"
-                    ></div>
+                </div>
+                <div class="productItem_thumb">
+                  <div
+                    class="productThumb wow flipInX"
+                    data-wow-duration="1s"
+                    data-wow-delay=".2s"
+                  >
+                    <img src="/soho/img/index/product1_item1.png">
                   </div>
                 </div>
               </div>
-              <div class="productItem_thumb">
-                <div
-                  class="productThumb wow flipInX"
-                  data-wow-duration="1s"
-                  data-wow-delay=".2s"
-                >
-                  <img src="/soho/img/index/product1_item2.png">
+              <div
+                class="productItem"
+              >
+                <div class="productItem_desc">
+                  <div class="productDesc">
+                    <i class="productDesc_icon"></i>
+                    <div class="productDesc_title">
+                      昆布鹽
+                    </div>
+                    <div class="productDesc_desc">
+                      昆布鹽使用於料理前後皆可使用 例：炒菜、鹽漬、熬湯、沾肉皆可提升食材的
+                    </div>
+                    <div class="productDesc_price">
+                      <div class="price">
+                        售價<span>$330</span>
+                      </div>
+                      <div class="action">
+                        <a
+                          href=""
+                          class="action_icon action_icon-cart"
+                        ></a>
+                        <a
+                          href=""
+                          class="action_icon action_icon-bag"
+                        ></a>
+                      </div>
+                    </div>
+                    <div class="productDesc_deco">
+                      <div
+                        class="deco move-x"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="productItem_thumb">
+                  <div
+                    class="productThumb wow flipInX"
+                    data-wow-duration="1s"
+                    data-wow-delay=".2s"
+                  >
+                    <img src="/soho/img/index/product1_item2.png">
+                  </div>
                 </div>
               </div>
-            </a>
-          </div>
-          <div class="productPager">
-            <a
-              class="productPager_icon active"
-            ></a>
-            <a
-              class="productPager_icon"
-            ></a>
-            <a
-              class="productPager_icon"
-            ></a>
+            </div>
+            <div class="productList_container">
+              <div
+                class="productItem"
+              >
+                <div class="productItem_desc">
+                  <div class="productDesc">
+                    <i class="productDesc_icon"></i>
+                    <div class="productDesc_title">
+                      六色海藻2
+                    </div>
+                    <div class="productDesc_desc">
+                      嚴選六種優質海藻,方便簡單的料理方式
+                      來補足現代人忙碌而無法攝取到足夠的
+                    </div>
+                    <div class="productDesc_price">
+                      <div class="price">
+                        售價<span>$330</span>
+                      </div>
+                      <div class="action">
+                        <a
+                          href=""
+                          class="action_icon action_icon-cart"
+                        ></a>
+                        <a
+                          href=""
+                          class="action_icon action_icon-bag"
+                        ></a>
+                      </div>
+                    </div>
+                    <div class="productDesc_deco">
+                      <div class="deco move-x"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="productItem_thumb">
+                  <div
+                    class="productThumb wow flipInX"
+                    data-wow-duration="1s"
+                    data-wow-delay=".2s"
+                  >
+                    <img src="/soho/img/index/product1_item1.png">
+                  </div>
+                </div>
+              </div>
+              <div
+                class="productItem"
+              >
+                <div class="productItem_desc">
+                  <div class="productDesc">
+                    <i class="productDesc_icon"></i>
+                    <div class="productDesc_title">
+                      昆布鹽
+                    </div>
+                    <div class="productDesc_desc">
+                      昆布鹽使用於料理前後皆可使用 例：炒菜、鹽漬、熬湯、沾肉皆可提升食材的
+                    </div>
+                    <div class="productDesc_price">
+                      <div class="price">
+                        售價<span>$330</span>
+                      </div>
+                      <div class="action">
+                        <a
+                          href=""
+                          class="action_icon action_icon-cart"
+                        ></a>
+                        <a
+                          href=""
+                          class="action_icon action_icon-bag"
+                        ></a>
+                      </div>
+                    </div>
+                    <div class="productDesc_deco">
+                      <div class="deco move-x"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="productItem_thumb">
+                  <div
+                    class="productThumb wow flipInX"
+                    data-wow-duration="1s"
+                    data-wow-delay=".2s"
+                  >
+                    <img src="/soho/img/index/product1_item2.png">
+                  </div>
+                </div>
+              </div>
+              <div
+                class="productItem"
+              >
+                <div class="productItem_desc">
+                  <div class="productDesc">
+                    <i class="productDesc_icon"></i>
+                    <div class="productDesc_title">
+                      六色海藻
+                    </div>
+                    <div class="productDesc_desc">
+                      嚴選六種優質海藻,方便簡單的料理方式
+                      來補足現代人忙碌而無法攝取到足夠的
+                    </div>
+                    <div class="productDesc_price">
+                      <div class="price">
+                        售價<span>$330</span>
+                      </div>
+                      <div class="action">
+                        <a
+                          href=""
+                          class="action_icon action_icon-cart"
+                        ></a>
+                        <a
+                          href=""
+                          class="action_icon action_icon-bag"
+                        ></a>
+                      </div>
+                    </div>
+                    <div class="productDesc_deco">
+                      <div class="deco move-x"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="productItem_thumb">
+                  <div
+                    class="productThumb wow flipInX"
+                    data-wow-duration="1s"
+                    data-wow-delay=".2s"
+                  >
+                    <img src="/soho/img/index/product1_item1.png">
+                  </div>
+                </div>
+              </div>
+              <div
+                class="productItem"
+              >
+                <div class="productItem_desc">
+                  <div class="productDesc">
+                    <i class="productDesc_icon"></i>
+                    <div class="productDesc_title">
+                      昆布鹽
+                    </div>
+                    <div class="productDesc_desc">
+                      昆布鹽使用於料理前後皆可使用 例：炒菜、鹽漬、熬湯、沾肉皆可提升食材的
+                    </div>
+                    <div class="productDesc_price">
+                      <div class="price">
+                        售價<span>$330</span>
+                      </div>
+                      <div class="action">
+                        <a
+                          href=""
+                          class="action_icon action_icon-cart"
+                        ></a>
+                        <a
+                          href=""
+                          class="action_icon action_icon-bag"
+                        ></a>
+                      </div>
+                    </div>
+                    <div class="productDesc_deco">
+                      <div
+                        class="deco move-x"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="productItem_thumb">
+                  <div
+                    class="productThumb wow flipInX"
+                    data-wow-duration="1s"
+                    data-wow-delay=".2s"
+                  >
+                    <img src="/soho/img/index/product1_item2.png">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="productList_container">
+              <div
+                class="productItem"
+              >
+                <div class="productItem_desc">
+                  <div class="productDesc">
+                    <i class="productDesc_icon"></i>
+                    <div class="productDesc_title">
+                      六色海藻3
+                    </div>
+                    <div class="productDesc_desc">
+                      嚴選六種優質海藻,方便簡單的料理方式
+                      來補足現代人忙碌而無法攝取到足夠的
+                    </div>
+                    <div class="productDesc_price">
+                      <div class="price">
+                        售價<span>$330</span>
+                      </div>
+                      <div class="action">
+                        <a
+                          href=""
+                          class="action_icon action_icon-cart"
+                        ></a>
+                        <a
+                          href=""
+                          class="action_icon action_icon-bag"
+                        ></a>
+                      </div>
+                    </div>
+                    <div class="productDesc_deco">
+                      <div class="deco move-x"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="productItem_thumb">
+                  <div
+                    class="productThumb wow flipInX"
+                    data-wow-duration="1s"
+                    data-wow-delay=".2s"
+                  >
+                    <img src="/soho/img/index/product1_item1.png">
+                  </div>
+                </div>
+              </div>
+              <div
+                class="productItem"
+              >
+                <div class="productItem_desc">
+                  <div class="productDesc">
+                    <i class="productDesc_icon"></i>
+                    <div class="productDesc_title">
+                      昆布鹽
+                    </div>
+                    <div class="productDesc_desc">
+                      昆布鹽使用於料理前後皆可使用 例：炒菜、鹽漬、熬湯、沾肉皆可提升食材的
+                    </div>
+                    <div class="productDesc_price">
+                      <div class="price">
+                        售價<span>$330</span>
+                      </div>
+                      <div class="action">
+                        <a
+                          href=""
+                          class="action_icon action_icon-cart"
+                        ></a>
+                        <a
+                          href=""
+                          class="action_icon action_icon-bag"
+                        ></a>
+                      </div>
+                    </div>
+                    <div class="productDesc_deco">
+                      <div class="deco move-x"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="productItem_thumb">
+                  <div
+                    class="productThumb wow flipInX"
+                    data-wow-duration="1s"
+                    data-wow-delay=".2s"
+                  >
+                    <img src="/soho/img/index/product1_item2.png">
+                  </div>
+                </div>
+              </div>
+              <div
+                class="productItem"
+              >
+                <div class="productItem_desc">
+                  <div class="productDesc">
+                    <i class="productDesc_icon"></i>
+                    <div class="productDesc_title">
+                      六色海藻
+                    </div>
+                    <div class="productDesc_desc">
+                      嚴選六種優質海藻,方便簡單的料理方式
+                      來補足現代人忙碌而無法攝取到足夠的
+                    </div>
+                    <div class="productDesc_price">
+                      <div class="price">
+                        售價<span>$330</span>
+                      </div>
+                      <div class="action">
+                        <a
+                          href=""
+                          class="action_icon action_icon-cart"
+                        ></a>
+                        <a
+                          href=""
+                          class="action_icon action_icon-bag"
+                        ></a>
+                      </div>
+                    </div>
+                    <div class="productDesc_deco">
+                      <div class="deco move-x"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="productItem_thumb">
+                  <div
+                    class="productThumb wow flipInX"
+                    data-wow-duration="1s"
+                    data-wow-delay=".2s"
+                  >
+                    <img src="/soho/img/index/product1_item1.png">
+                  </div>
+                </div>
+              </div>
+              <div
+                class="productItem"
+              >
+                <div class="productItem_desc">
+                  <div class="productDesc">
+                    <i class="productDesc_icon"></i>
+                    <div class="productDesc_title">
+                      昆布鹽
+                    </div>
+                    <div class="productDesc_desc">
+                      昆布鹽使用於料理前後皆可使用 例：炒菜、鹽漬、熬湯、沾肉皆可提升食材的
+                    </div>
+                    <div class="productDesc_price">
+                      <div class="price">
+                        售價<span>$330</span>
+                      </div>
+                      <div class="action">
+                        <a
+                          href=""
+                          class="action_icon action_icon-cart"
+                        ></a>
+                        <a
+                          href=""
+                          class="action_icon action_icon-bag"
+                        ></a>
+                      </div>
+                    </div>
+                    <div class="productDesc_deco">
+                      <div
+                        class="deco move-x"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="productItem_thumb">
+                  <div
+                    class="productThumb wow flipInX"
+                    data-wow-duration="1s"
+                    data-wow-delay=".2s"
+                  >
+                    <img src="/soho/img/index/product1_item2.png">
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
     <div class="ad">
       <div class="container">
-        <div
-          class="ad_img wow fadeInLeft"
+        <a
+          href=""
+          class="ad_img wow fadeIn"
           data-wow-duration="1.5s"
           data-wow-delay=".1s"
         >
           <img
-            src="/soho/img/index/index_ad_1.jpg"
-            alt="讓餐桌多一份美好"
+            src="/soho/img/index/ad_item1.jpg"
           >
-        </div>
+        </a>
+        <a
+          href=""
+          class="ad_img wow fadeIn"
+          data-wow-duration="1.5s"
+          data-wow-delay=".1s"
+        >
+          <img
+            src="/soho/img/index/ad_item2.jpg"
+          >
+        </a>
+        <a
+          href=""
+          class="ad_img wow fadeIn"
+          data-wow-duration="1.5s"
+          data-wow-delay=".1s"
+        >
+          <img
+            src="/soho/img/index/ad_item3.jpg"
+          >
+        </a>
+        <a
+          href=""
+          class="ad_img wow fadeIn"
+          data-wow-duration="1.5s"
+          data-wow-delay=".1s"
+        >
+          <img
+            src="/soho/img/index/ad_item4.jpg"
+          >
+        </a>
+        <a
+          href=""
+          class="ad_img wow fadeIn"
+          data-wow-duration="1.5s"
+          data-wow-delay=".1s"
+        >
+          <img
+            src="/soho/img/index/ad_item5.jpg"
+          >
+        </a>
+        <a
+          href=""
+          class="ad_img wow fadeIn"
+          data-wow-duration="1.5s"
+          data-wow-delay=".1s"
+        >
+          <img
+            src="/soho/img/index/ad_item6.jpg"
+          >
+        </a>
+        <a
+          href=""
+          class="ad_img wow fadeIn"
+          data-wow-duration="1.5s"
+          data-wow-delay=".1s"
+        >
+          <img
+            src="/soho/img/index/ad_item7.jpg"
+          >
+        </a>
+        <a
+          href=""
+          class="ad_img wow fadeIn"
+          data-wow-duration="1.5s"
+          data-wow-delay=".1s"
+        >
+          <img
+            src="/soho/img/index/ad_item8.jpg"
+          >
+        </a>
+        <a
+          href=""
+          class="ad_img wow fadeIn"
+          data-wow-duration="1.5s"
+          data-wow-delay=".1s"
+        >
+          <img
+            src="/soho/img/index/ad_item9.jpg"
+          >
+        </a>
       </div>
       <!-- <div class="helper">
         <img src="/soho/img/layout_index_3.jpg">
@@ -490,7 +889,7 @@
               class="productRecommend_item-pic "
             >
               <img
-                src="/soho/img/temp_product-recommend.png"
+                src="/soho/img/index/product3_main.png"
                 alt=""
               >
             </div>
@@ -964,15 +1363,14 @@
             </div>
           </div>
         </div>
-        <!-- <div class="helper">
-        <img src="/soho/img/layout_index_6.jpg">
-      </div> -->
       </div>
     </div>
     <div class="slogan">
+      <div class="slogan_decoration">
+        <img src="/soho/img/index/product3_decoration.png">
+      </div>
       <img
-
-        class="wow zoomIn"
+        class="slogan_amin wow zoomIn"
         data-wow-duration="1s"
         src="/soho/img/index/slogan_title.png"
         alt="職人精神"

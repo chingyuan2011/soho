@@ -39,11 +39,9 @@ export default {
 
 .FloatBtn {
   position: fixed;
-  // 設計稿
-  //   right: 7%;
-  //   bottom: 10%;
   right: 20px;
   bottom: 40px;
+  z-index: 10;
   max-width: 115px;
 
   a,

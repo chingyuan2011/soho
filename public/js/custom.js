@@ -2,13 +2,17 @@
 (function () {
   document.addEventListener('DOMContentLoaded', function () {
     new WOW().init()
-    $('.kv_content').slick({
-      dots: false,
-      infinite: true,
-      speed: 3000,
-      autoplay: true,
-      arrows: false
-    })
+
+    // 判斷頁面
+    const currentMap = window.location.pathname
+    const pageHandlerMap = {
+      index: indexHandler,
+      productContent: productContentHandler
+    }
+    const pageRegex = /\/(\w+)\.html/
+    const pageName = currentMap.match(pageRegex)[1]
+    pageHandlerMap[pageName] && pageHandlerMap[pageName]()
+
     // resize
     $(window).on('resize', function () {
       $('body').removeClass('hamOpen')
@@ -44,3 +48,23 @@
     })
   })
 })()
+
+const indexHandler = () => {
+  $('.kv_content').slick({
+    dots: true,
+    infinite: true,
+    speed: 3000,
+    autoplay: true,
+    arrows: false
+  })
+
+  $('.productList').slick({
+    dots: true,
+    infinite: true,
+    speed: 3000,
+    // autoplay: true,
+    arrows: true
+  })
+}
+
+const productContentHandler = () => {}

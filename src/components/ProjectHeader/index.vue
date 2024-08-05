@@ -1,9 +1,9 @@
 <template>
   <header class="ProjectHeader">
-    <div class="container">
+    <div class="container ProjectHeader-pc">
       <div class="ProjectHeader_area ProjectHeader_area-left">
         <div class="menu">
-          <div class="menu_item  menu_item-active">
+          <div class="menu_item">
             <router-link :to="{name: 'Index'}">
               <div class="menu_itemText-zh">
                 關於我們
@@ -101,6 +101,30 @@
         src="/soho/img/navbar/layout_1.jpg"
       >
     </div> -->
+
+    <div class="container ProjectHeader-mobile">
+      <div class="logo">
+        <img
+          src="/soho/img/navbar/logo.png"
+          alt="藻作坊"
+        >
+      </div>
+      <div class="right">
+        <div
+          class="functionBar"
+        >
+          <button
+            id="functionBar_cart"
+          ></button>
+        </div>
+        <button class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
   </header>
 </template>
 <script>
@@ -158,6 +182,10 @@ export default {
       background: linear-gradient(180deg, rgba(0, 0, 0, .6) 0%, rgba(255, 255, 255, 0) 100%);
       transform: translate(-50%, 100%);
     }
+  }
+
+  .ProjectHeader-mobile {
+    display: none;
   }
 
   &_area {
@@ -329,7 +357,61 @@ export default {
     }
   }
 
-  // TODO: 1360 變手機版
+  @media screen and (max-width: 1360px) {
+    height: 80px;
+
+    .ProjectHeader-pc {
+      display: none;
+    }
+
+    .ProjectHeader-mobile {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .logo {
+        flex-basis: auto;
+        width: 50px;
+        min-width: auto;
+        padding-top: 0;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .right {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+
+        .hamburger {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          width: 30px;
+          height: 25px;
+          padding: 0;
+
+          span {
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: #fff;
+          }
+
+          span:nth-child(even) {
+            width: 80%;
+          }
+        }
+      }
+    }
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
 }
 // xxl | xl | lg | md | sm
 // @include screen (xl) {}
