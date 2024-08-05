@@ -4,6 +4,7 @@ import Index from '@/pages/Index'
 import Header from '@/pages/Header'
 import Footer from '@/pages/Footer'
 import CartProcess1 from '@/pages/CartProcess1'
+import CartProcess2 from '@/pages/CartProcess2'
 import ProductContent from '@/pages/ProductContent'
 import ProductList from '@/pages/ProductList'
 import Login from '@/pages/Login'
@@ -51,6 +52,11 @@ const routes = [
     path: '/signup.html',
     name: 'signup',
     component: SignUp
+  },
+  {
+    path: '/cartProcess2.html',
+    name: 'CartProcess2',
+    component: CartProcess2
   },
   {
     path: '*',
