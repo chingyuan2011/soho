@@ -369,16 +369,13 @@
       </div>
     </div>
     <div class="helper">
-      <!-- <img
-        src="/soho/img/productList/layout_productList1.jpg"
-        alt=""
-      > -->
     </div>
   </div>
 </template>
 
 <script>
 import Title from '@/components/Title'
+
 export default {
   name: 'ProductList',
   components: {

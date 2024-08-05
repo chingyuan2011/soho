@@ -196,7 +196,7 @@
           src="/soho/img/productContent/productContent_pic.jpg"
         >
         <div class="back">
-          <a class="btn"> <i class="icon icon_back"></i> 回上一頁 </a>
+          <a class="btn">回上一頁 </a>
         </div>
       </div>
     </div>

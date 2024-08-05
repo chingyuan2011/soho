@@ -144,7 +144,6 @@ export default {
   right: 0;
   left: 0;
   z-index: 1000;
-  // position: relative;
   height: 100px;
   background-color: rgba($color: #000000, $alpha: .6);
 
@@ -359,6 +358,7 @@ export default {
 
   @media screen and (max-width: 1360px) {
     height: 80px;
+    background-color: transparent;
 
     .ProjectHeader-pc {
       display: none;
@@ -381,6 +381,8 @@ export default {
       }
 
       .right {
+        position: relative;
+        z-index: 1;
         display: flex;
         gap: 10px;
         align-items: center;
@@ -404,6 +406,12 @@ export default {
             width: 80%;
           }
         }
+      }
+
+      &::after {
+        height: 130%;
+        background: linear-gradient(180deg, rgba(0, 0, 0, .8) 0%, rgba(255, 255, 255, 0) 100%);
+        transform: translate(-50%, 0);
       }
     }
 
