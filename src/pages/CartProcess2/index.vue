@@ -18,7 +18,7 @@
           </div>
           <p>購物車</p>
         </div>
-        <div class="memberCenter_progressBar-step memberCenter_progressBar-step-confirmData">
+        <div class="memberCenter_progressBar-step memberCenter_progressBar-step-active  memberCenter_progressBar-step-confirmData">
           <div class="memberCenter_progressBar-step-icon">
             <img
               src="/soho/img/icon_process2.png"
@@ -37,261 +37,183 @@
           <p>訂單完成</p>
         </div>
       </div>
-      <div class="CartProcess2_title">
-        詳細訂單資料 /
-      </div>
-      <div class="CartProcess2_content">
-        <div class="CartProcess2_orderList">
-          <div class="CartProcess2_orderItem">
-            <div class="CartProcess2_orderItem-pic">
-              <img
-                src="/soho/img/cartProcess2/good1.png"
-                alt=""
-              >
-            </div>
-            <div class="CartProcess2_orderItem-info">
-              <div class="CartProcess2_orderItem-price">
-                <div cl>
-                  六色海藻
-                </div><div>
-                  $330
-                </div>
-              </div>
-              <div class="CartProcess2_orderItem-amount">
-                數量：<div class="customSelect">
-                  <select>
-                    <option value="1">
-                      1
-                    </option>
-                    <option value="2">
-                      2
-                    </option>
-                  </select>
-                </div>
-              </div>
-              <div class="CartProcess2_orderItem-count">
-                小計： $660
-              </div>
-            </div>
-            <button class="CartProcess2_orderItem-delete">
-            </button>
+      <div class="CartProcess2_total">
+        <div class="CartProcess2_total-charge">
+          <div class="CartProcess2_charge-total-zh">
+            商品合計
           </div>
-          <div class="CartProcess2_orderItem">
-            <div class="CartProcess2_orderItem-pic">
-              <img
-                src="/soho/img/cartProcess2/good1.png"
-                alt=""
-              >
-            </div>
-            <div class="CartProcess2_orderItem-info">
-              <div class="CartProcess2_orderItem-price">
-                <div cl>
-                  六色海藻
-                </div><div>
-                  $330
-                </div>
-              </div>
-              <div class="CartProcess2_orderItem-amount">
-                數量：<div class="customSelect">
-                  <select>
-                    <option value="1">
-                      1
-                    </option>
-                    <option value="2">
-                      2
-                    </option>
-                  </select>
-                </div>
-              </div>
-              <div class="CartProcess2_orderItem-count">
-                小計： $660
-              </div>
-            </div>
-            <button class="CartProcess2_orderItem-delete">
-            </button>
-          </div>
-          <div class="CartProcess2_orderItem">
-            <div class="CartProcess2_orderItem-pic">
-              <img
-                src="/soho/img/cartProcess2/good2.png"
-                alt=""
-              >
-            </div>
-            <div class="CartProcess2_orderItem-info">
-              <div class="CartProcess2_orderItem-price">
-                <div>六色海藻</div><div>$330</div>
-              </div>
-              <div class="CartProcess2_orderItem-amount">
-                數量：<div class="customSelect">
-                  <select>
-                    <option value="1">
-                      1
-                    </option>
-                    <option value="2">
-                      2
-                    </option>
-                  </select>
-                </div>
-              </div>
-              <div class="CartProcess2_orderItem-count">
-                小計： $660
-              </div>
-            </div>
-            <button class="CartProcess2_orderItem-delete">
-            </button>
-          </div>
-          <div class="CartProcess2_orderItem">
-            <div class="CartProcess2_orderItem-pic">
-              <img
-                src="/soho/img/cartProcess2/good3.png"
-                alt=""
-              >
-            </div>
-            <div class="CartProcess2_orderItem-info">
-              <div class="CartProcess2_orderItem-price">
-                <div>六色海藻</div><div>$330</div>
-              </div>
-              <div class="CartProcess2_orderItem-amount">
-                數量：<div class="customSelect">
-                  <select>
-                    <option value="1">
-                      1
-                    </option>
-                    <option value="2">
-                      2
-                    </option>
-                  </select>
-                </div>
-              </div>
-              <div class="CartProcess2_orderItem-count">
-                小計： $660
-              </div>
-            </div>
-            <button class="CartProcess2_orderItem-delete">
-            </button>
+          <div class="CartProcess2_charge-total-data">
+            $1450
           </div>
         </div>
-        <div class="CartProcess2_discount">
-          <div class="CartProcess2_discount-used">
-            <div class="CartProcess2_discount-title">
-              已享用優惠
-            </div>
-            <div class="CartProcess2_discount-list">
-              <div class="CartProcess2_discount-item">
-                <div class="CartProcess2_discount-itemTitle">
-                  首次購物折 50
-                </div>
-                <div class="CartProcess2_discount-itemContent">
-                  -NT$50
-                </div>
-              </div>
-              <div class="CartProcess2_discount-item">
-                <div class="CartProcess2_discount-itemTitle">
-                  國內滿千免運
-                </div>
-                <div class="CartProcess2_discount-itemContent">
-                  國內滿千免運
-                </div>
-              </div>
-              <div class="CartProcess2_discount-item">
-                <div class="CartProcess2_discount-itemTitle">
-                  全館3件以上9.5折
-                </div>
-                <div class="CartProcess2_discount-itemContent">
-                  -NT$75
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="CartProcess2_discount-unUsed">
-            <div class="CartProcess2_discount-title">
-              尚有更多輕踩優惠等著你！目前未享用：
-            </div>
-            <div class="CartProcess2_discount-list">
-              <div class="CartProcess2_discount-item">
-                <div class="CartProcess2_discount-itemTitle CartProcess2_discount-itemTitle-unused">
-                  <div>折價券</div>
-                  <div class="CartProcess2_discount-itemTitle-sub">
-                    不可與首次購物同時使用
-                  </div>
-                </div>
-                <div class="CartProcess2_discount-itemContent">
-                  <div class="customSelect">
-                    <select
-                      class="CartProcess2_discount-select"
-                      disabled
-                    >
-                      <option
-                        value=""
-                        disabled
-                        selected
-                      >
-                        可使用折價券選擇
-                      </option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div class="CartProcess2_discount-item">
-                <div class="CartProcess2_discount-itemTitle CartProcess2_discount-itemTitle-unused CartProcess2_discount-itemTitle-unused">
-                  <div>紅利點數回饋</div>
-                  <div class="CartProcess2_discount-itemTitle-sub">
-                    不可與首次購物同時使用
-                  </div>
-                </div>
-                <div class="CartProcess2_discount-itemContent">
-                  <div class="CartProcess2_discount-itemContent-input">
-                    <input
-                      type="text"
-                      placeholder="請輸入想兌換紅利點數"
-                    > <button class="CartProcess2_btn CartProcess2_btn-small">
-                      套用
-                    </button>
-                  </div>
-                  <div class="CartProcess2_discount-itemContent-text">
-                    紅利點數餘額 NT$100
-                  </div>
-                </div>
-              </div>
-              <div class="CartProcess2_discount-item CartProcess2_discount-item-gift">
-                <div class="CartProcess2_discount-itemTitle">
-                  <div>
-                    【官網獨家｜滿額贈】<br>藻作坊限量帆布提袋（數量有限，送完為止）
-                  </div>
-                </div>
-                <div class="CartProcess2_discount-itemTag">
-                  再買 NT$320 即享有贈品
-                </div>
-              </div>
-            </div>
-          </div>
-          <button class="CartProcess2_btn CartProcess2_btn-small CartProcess2_btn-go-product">
-            繼續購物
-          </button>
+        <div class="CartProcess2_total-cart">
+          <span>購物車 共<span class="num">3</span>件</span>
+          <button id="CartProcess2_toggle-cart"></button>
         </div>
       </div>
-      <div class="CartProcess2_charge">
-        <div class="CartProcess2_charge-wrap">
-          <div class="CartProcess2_charge-total">
-            <div class="CartProcess2_charge-total-zh">
-              商品合計
+      <div class="CartProcess2_cart">
+        <div class="CartProcess2_cart-row CartProcess2_cart-header">
+          <div class="CartProcess2_cart-cell">
+            商品資料
+          </div>
+          <div class="CartProcess2_cart-cell"></div>
+          <div class="CartProcess2_cart-cell">
+            優惠
+          </div>
+          <div class="CartProcess2_cart-cell">
+            單件價格
+          </div>
+          <div class="CartProcess2_cart-cell">
+            數量
+          </div>
+          <div class="CartProcess2_cart-cell">
+            小計
+          </div>
+        </div>
+        <div class="CartProcess2_cart-body">
+          <div class="CartProcess2_cart-row">
+            <div class="CartProcess2_cart-cell">
+              <div class="product-pic">
+                <img
+                  src="/soho/img/cartProcess1/good2.png"
+                  alt=""
+                >
+              </div>
             </div>
-            <div class="CartProcess2_charge-total-data">
-              $1450
+            <div class="CartProcess2_cart-cell">
+              <div class="product_name">
+                昆布鹽
+              </div>
+              <div class="product_content">
+                嚴選六種優質海藻,方便簡單的料理方式來補足現代人忙碌而無法攝取到足夠的
+              </div>
+            </div>
+            <div class="CartProcess2_cart-cell">
+              <div class="product_discount">
+              </div>
+            </div>
+            <div class="CartProcess2_cart-cell">
+              <div class="product_price">
+                $230
+              </div>
+            </div>
+            <div class="CartProcess2_cart-cell">
+              <div class="product_amount">
+                1
+              </div>
+            </div>
+            <div class="CartProcess2_cart-cell">
+              <div class="product_total-price">
+                $230
+              </div>
             </div>
           </div>
-          <div class="CartProcess2_charge-bonus">
-            <div class="CartProcess2_charge-bonus-zh">
-              訂單完成後獲得紅利點數
+          <div class="CartProcess2_cart-row">
+            <div class="CartProcess2_cart-cell">
+              <div class="product-pic">
+                <img
+                  src="/soho/img/cartProcess1/good1.png"
+                  alt=""
+                >
+              </div>
             </div>
-            <div class="CartProcess2_charge-bonus-data">
-              + NT$36
+            <div class="CartProcess2_cart-cell">
+              <div class="product_name">
+                六色海藻
+              </div>
+              <div class="product_content">
+                嚴選六種優質海藻,方便簡單的料理方式來補足現代人忙碌而無法攝取到足夠的
+              </div>
+            </div>
+            <div class="CartProcess2_cart-cell">
+              <div class="product_discount">
+                全館3件以上9.5折
+              </div>
+            </div>
+            <div class="CartProcess2_cart-cell">
+              <div class="product_price">
+                $330
+              </div>
+            </div>
+            <div class="CartProcess2_cart-cell">
+              <div class="product_amount">
+                2
+              </div>
+            </div>
+            <div class="CartProcess2_cart-cell">
+              <div class="product_total-price">
+                $660
+              </div>
             </div>
           </div>
-          <a
-            class="CartProcess2_goCharge CartProcess2_btn CartProcess2_btn-go-checkout"
-            href="javascript:;"
-          >前往結賬</a>
+          <div class="CartProcess2_cart-row">
+            <div class="CartProcess2_cart-cell">
+              <div class="product-pic">
+                <img
+                  src="/soho/img/cartProcess1/good3.png"
+                  alt=""
+                >
+              </div>
+            </div>
+            <div class="CartProcess2_cart-cell">
+              <div class="product_name">
+                六色海藻組合
+              </div>
+              <div class="product_content">
+                嚴選六種優質海藻,方便簡單的料理方式來補足現代人忙碌而無法攝取到足夠的
+              </div>
+            </div>
+            <div class="CartProcess2_cart-cell">
+              <div class="product_discount">
+              </div>
+            </div>
+            <div class="CartProcess2_cart-cell">
+              <div class="product_price">
+                $890
+              </div>
+            </div>
+            <div class="CartProcess2_cart-cell">
+              <div class="product_amount">
+                1
+              </div>
+            </div>
+            <div class="CartProcess2_cart-cell">
+              <div class="product_total-price">
+                $890
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      .<div class="CartProcess2_discount-used">
+        <div class="CartProcess2_discount-title">
+          已享用優惠
+        </div>
+        <div class="CartProcess2_discount-list">
+          <div class="CartProcess2_discount-item">
+            <div class="CartProcess2_discount-itemTitle">
+              首次購物折 50
+            </div>
+            <div class="CartProcess2_discount-itemContent">
+              -NT$50
+            </div>
+          </div>
+          <div class="CartProcess2_discount-item">
+            <div class="CartProcess2_discount-itemTitle">
+              國內滿千免運
+            </div>
+            <div class="CartProcess2_discount-itemContent">
+              國內滿千免運
+            </div>
+          </div>
+          <div class="CartProcess2_discount-item">
+            <div class="CartProcess2_discount-itemTitle">
+              全館3件以上9.5折
+            </div>
+            <div class="CartProcess2_discount-itemContent">
+              -NT$75
+            </div>
+          </div>
         </div>
       </div>
     </div>
