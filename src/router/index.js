@@ -9,6 +9,7 @@ import ProductContent from '@/pages/ProductContent'
 import ProductList from '@/pages/ProductList'
 import Login from '@/pages/Login'
 import SignUp from '@/pages/SignUp'
+import RegistTerm from '@/pages/RegistTerm'
 
 Vue.use(VueRouter)
 
@@ -57,6 +58,11 @@ const routes = [
     path: '/cartProcess2.html',
     name: 'CartProcess2',
     component: CartProcess2
+  },
+  {
+    path: '/registTerm.html',
+    name: 'RegistTerm',
+    component: RegistTerm
   },
   {
     path: '*',
