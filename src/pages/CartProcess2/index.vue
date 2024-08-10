@@ -350,9 +350,9 @@
             <div class="CartProcess2_title">
               付款方式 /
             </div>
-            <button class="CartProcess2_client-paymentOption active">
+            <button class="CartProcess2_client-paymentOption CartProcess2_client-payment-creditCard  active">
               信用卡
-            </button><button class="CartProcess2_client-paymentOption">
+            </button><button class="CartProcess2_client-paymentOption CartProcess2_client-payment-ATM">
               ATM匯款
             </button>
           </div>
