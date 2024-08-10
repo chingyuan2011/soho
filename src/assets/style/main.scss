@@ -421,10 +421,6 @@ ul {
         }
       }
 
-      &:hover input ~ .checkmark {
-        background-color: #002c18;
-      }
-
       input:checked ~ .checkmark {
         background-color: #002c18;
       }
