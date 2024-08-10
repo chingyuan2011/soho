@@ -1,0 +1,158 @@
+.Coupon {
+  overflow: hidden;
+  background-image: url('/soho/img/signup/bg_contentHeader.png'), url('/soho/img/signup/signup_bgDown.png');
+  background-repeat: no-repeat, no-repeat;
+  background-position: center top, center bottom;
+  background-size: cover auto, cover auto;
+
+  .container {
+    padding-top: 50px;
+    padding-bottom: 200px;
+    @include screen(1360) {
+      padding-bottom: 40px;
+    }
+  }
+
+  &__wrap {
+    width: 70%;
+    margin: 0 auto;
+
+    @include screen(lg) {
+      width: 100%;
+    }
+  }
+
+  &__title {
+    padding: 0 10px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #002c18;
+  }
+
+  &__tabs {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 20px;
+    padding: 0 10px;
+
+    button {
+      padding: 0 20px;
+      font-size: 15px;
+      font-weight: 700;
+      color: #666;
+
+      &.active {
+        color: #fff;
+        background-color: #d3865a;
+        border-radius: 30px;
+      }
+    }
+  }
+
+  &__search {
+    padding: 40px 10px 0;
+
+    &Input {
+      padding: 5px 20px;
+      border: 1px solid #002c18;
+      border-radius: 8px;
+    }
+
+    &Btn {
+      margin-left: 10px;
+      padding: 5px 25px;
+      font-size: 15px;
+      font-weight: 700;
+      color: #002c18;
+      background-color: #9caca3;
+      border-radius: 8px;
+    }
+  }
+
+  &__couponList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding-top: 20px;
+
+    @include screen(1200) {
+      grid-template-columns: repeat(1, 1fr);
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    @include screen(sm) {
+      max-width: 360px;
+    }
+  }
+
+  &__coupon {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 30px 30px 50px;
+    color: #ffffff;
+    background-image: url('/soho/img/coupon/coupon_itemBg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    @include screen(sm) {
+      padding: 28px 15px 25px;
+    }
+  }
+
+  &__price {
+    display: flex;
+    grid-column: span 1;
+    align-items: center;
+    justify-content: center;
+    font-size: 42px;
+
+    @include screen(sm) {
+      font-size: 25px;
+    }
+
+    span {
+      align-self: flex-end;
+      margin-bottom: 10px;
+      font-size: 20px;
+
+      @include screen(sm) {
+        font-size: 16px;
+      }
+    }
+  }
+
+  &__info {
+    grid-column: span 2;
+    margin-left: 15px;
+
+    &Title {
+      font-size: 18px;
+      font-weight: 700;
+
+      @include screen(sm) {
+        font-size: 16px;
+      }
+    }
+
+    &DateTitle {
+      margin-top: 10px;
+      font-size: 12px;
+      font-weight: 700;
+
+      @include screen(sm) {
+        margin-top: 0px;
+      }
+    }
+
+    &Date {
+      font-size: 16px;
+
+      @include screen(sm) {
+        font-size: 12px;
+      }
+    }
+  }
+}

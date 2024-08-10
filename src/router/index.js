@@ -10,6 +10,7 @@ import ProductList from '@/pages/ProductList'
 import Login from '@/pages/Login'
 import SignUp from '@/pages/SignUp'
 import RegistTerm from '@/pages/RegistTerm'
+import Coupon from '@/pages/Coupon'
 
 Vue.use(VueRouter)
 
@@ -63,6 +64,11 @@ const routes = [
     path: '/registTerm.html',
     name: 'RegistTerm',
     component: RegistTerm
+  },
+  {
+    path: '/coupon.html',
+    name: 'Coupon',
+    component: Coupon
   },
   {
     path: '*',
