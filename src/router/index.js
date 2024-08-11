@@ -13,6 +13,7 @@ import RegistTerm from '@/pages/RegistTerm'
 import Coupon from '@/pages/Coupon'
 import Collect from '@/pages/Collect'
 import Bonus from '@/pages/Bonus'
+import Member from '@/pages/Member'
 
 Vue.use(VueRouter)
 
@@ -81,6 +82,11 @@ const routes = [
     path: '/bonus.html',
     name: 'Bonus',
     component: Bonus
+  },
+  {
+    path: '/member.html',
+    name: 'Member',
+    component: Member
   },
   {
     path: '*',

@@ -67,7 +67,8 @@ module.exports = {
         '/login.html',
         '/cartProcess2.html',
         '/collect.html',
-        '/bonus.html'
+        '/bonus.html',
+        '/member.html'
       ]
 
       const prerender = new PrerenderSPAPlugin({
