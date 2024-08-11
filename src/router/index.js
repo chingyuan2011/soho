@@ -12,6 +12,7 @@ import SignUp from '@/pages/SignUp'
 import RegistTerm from '@/pages/RegistTerm'
 import Coupon from '@/pages/Coupon'
 import Collect from '@/pages/Collect'
+import Bonus from '@/pages/Bonus'
 
 Vue.use(VueRouter)
 
@@ -75,6 +76,11 @@ const routes = [
     path: '/collect.html',
     name: 'Collect',
     component: Collect
+  },
+  {
+    path: '/bonus.html',
+    name: 'Bonus',
+    component: Bonus
   },
   {
     path: '*',
