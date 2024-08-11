@@ -7,7 +7,8 @@
     const currentMap = window.location.pathname
     const pageHandlerMap = {
       index: indexHandler,
-      productContent: productContentHandler
+      productContent: productContentHandler,
+      cartProcess2: cartProcess2Handler
     }
     const pageRegex = /\/(\w+)\.html/
     const pageName = currentMap.match(pageRegex)[1]
@@ -68,3 +69,17 @@ const indexHandler = () => {
 }
 
 const productContentHandler = () => {}
+
+const cartProcess2Handler = () => {
+  $('.CartProcess2_client-paymentOption').on('click', function (e) {
+    e.preventDefault()
+    $('.CartProcess2_client-paymentOption').removeClass('active')
+    $(this).addClass('active')
+
+    if ($(this).hasClass('CartProcess2_client-payment-creditCard')) {
+      $('.CartProcess2_client-creditCard').addClass('active')
+    } else {
+      $('.CartProcess2_client-creditCard').removeClass('active')
+    }
+  })
+}
