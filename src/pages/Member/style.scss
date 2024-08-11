@@ -2,7 +2,7 @@
   overflow: hidden;
   color: #002c18;
   background-color: #fff;
-  background-image: url('/soho/img/member/bg_contentHeader.png'), url('/soho/img/member/bg_content.png');
+  background-image: url('/soho/img/member/bg_contentHeader.png'), url('/soho/img/member/bg_down.png');
   background-repeat: no-repeat, no-repeat;
   background-position: center top, center bottom;
   background-size: cover auto, cover auto;
@@ -11,6 +11,64 @@
     padding-bottom: 200px;
     @include screen(1360) {
       padding-bottom: 40px;
+    }
+  }
+
+  &__wrap {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 60px;
+
+    @include screen(xl) {
+      width: 100%;
+      padding-top: 40px;
+    }
+  }
+
+  &_avatar {
+    display: flex;
+    align-items: center;
+    width: 445px;
+    margin: 0 auto 40px auto;
+    padding: 10px 20px;
+    font-size: 24pt;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: .1em;
+
+    &-pic {
+      position: relative;
+      margin-right: 20px;
+
+      button {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+      }
+    }
+    background-image: url('/soho/img/member/member_peopleBg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+
+    &-type {
+      font-size: 18pt;
+      font-weight: 500;
+      color: #a4c2b4;
+    }
+
+    @include screen(lg) {
+      margin: 0 auto 20px auto;
+      font-size: 24px;
+
+      &-type {
+        font-size: 18px;
+      }
+    }
+
+    @include screen(sm) {
+      width: 100%;
     }
   }
 
@@ -28,7 +86,7 @@
   }
 }
 
-.Member_client,
+.Member_info,
 .Member_footer {
   button {
     display: flex;
@@ -53,21 +111,21 @@
   }
 }
 
-.Member_client {
+.Member_info {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 40px;
+  margin-bottom: 80px;
 
-  &-delivery,
-  &-payment {
+  &-data,
+  &-password {
     width: 48%;
   }
 
   @include screen(lg) {
     flex-wrap: wrap;
 
-    &-delivery,
-    &-payment {
+    &-data,
+    &-password {
       width: 100%;
       margin-bottom: 5px;
     }
@@ -75,81 +133,6 @@
 
   @include screen(md) {
     margin-bottom: 20px;
-  }
-
-  .checkbox_wrap {
-    position: relative;
-    display: flex;
-    align-items: center;
-    padding-left: 35px;
-    color: #5a5a5a;
-    letter-spacing: .1em;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-
-    >input {
-      position: absolute;
-      width: 0;
-      height: 0;
-      cursor: pointer;
-      opacity: 0;
-    }
-
-    .checkmark {
-      position: absolute;
-      top: 2px;
-      left: 0;
-      width: 25px;
-      height: 25px;
-      background-color: transparent;
-      border: 1px solid #5a5a5a;
-      border-radius: 8px;
-
-      &::after {
-        content: '';
-        position: absolute;
-        top: 5px;
-        left: 9px;
-        display: none;
-        width: 5px;
-        height: 10px;
-        border: solid white;
-        border-width: 0 3px 3px 0;
-        -webkit-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-        transform: rotate(45deg);
-      }
-    }
-
-    @include screen(md) {
-      padding-left: 25px;
-      font-size: 16px;
-
-      .checkmark {
-        width: 16px;
-        height: 16px;
-        border-radius: 4px;
-
-        &::after {
-          top: 2px;
-          left: 4px;
-          width: 5px;
-          height: 10px;
-          border-width: 0 2px 2px 0;
-        }
-      }
-    }
-
-    input:checked ~ .checkmark {
-      background-color: #002c18;
-    }
-
-    input:checked ~ .checkmark::after {
-      display: block;
-    }
   }
 
   .radio_wrap {
@@ -206,10 +189,11 @@
 
     &-radio {
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-start;
 
       label {
-        width: 49%;
+        width: 120px;
+        margin-right: 20px;
       }
     }
 
@@ -236,13 +220,15 @@
   }
 
   input[type='text'],
+  input[type='date'],
+  input[type='password'],
   textarea {
     width: 100%;
     padding: 10px 20px;
-    color: #b7b7b7;
+    color: #000;
     letter-spacing: .1em;
-    background-color: #f6f6f6;
-    border: none;
+    background-color: transparent;
+    border: 1px solid #b7b7b7;
     border-radius: 10px;
 
     &::placeholder {
@@ -254,75 +240,56 @@
     min-height: 180px;
   }
 
-  &-paymentOptions {
-    margin-bottom: 40px;
-  }
-
-  &-paymentOption {
-    width: 100%;
+  .address-select-wrap {
+    display: flex;
     margin-bottom: 20px;
-    color: rgba($color: #010101, $alpha: .55);
 
-    &.active {
-      color: #232323;
-    }
-  }
+    @include custom-select(transparent, #b7b7b7, #000, #b7b7b7);
 
-  &-creditCard {
-    display: none;
-    margin-bottom: 40px;
-
-    &.active {
+    .customSelect {
       display: block;
-    }
-  }
+      width: 33.333%;
+      margin-right: 20px;
+      text-align: left;
 
-  &-agreement {
-    padding: 40px 0;
-    border-top: 1px solid #002c18;
-    border-bottom: 1px solid #002c18;
-
-    label {
-      margin-bottom: 0;
-    }
-
-    a {
-      color: #9caca3;
-    }
-
-    .Member_client-form-item {
-      margin-bottom: 0;
-
-      > span {
-        display: block;
-        margin-left: 38px;
-        font-size: 12pt;
+      select {
+        width: 100%;
+        height: 100%;
+        padding: 0 20px;
+        border-radius: 10px;
       }
     }
+
+    input {
+      width: 33.333%;
+    }
+  }
+}
+
+.Member_line {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 40px;
+  background-color: rgba($color: #b7b7b7, $alpha: .3);
+  border-radius: 10px;
+
+  button {
+    flex-shrink: 0;
+    color: #fff;
+    background-color: #002d18;
   }
 
-  @include screen(md) {
-    &-paymentOptions {
-      margin-bottom: 30px;
-    }
+  @include screen(xl) {
+    flex-wrap: wrap;
+    padding: 20px;
 
-    &-paymentOption {
-      margin-bottom: 10px;
-    }
-
-    &-creditCard {
+    &-pic {
       margin-bottom: 20px;
     }
 
-    &-agreement {
-      padding: 20px 0;
-
-      .Member_client-form-item {
-        > span {
-          margin-left: 24px;
-          font-size: 12px;
-        }
-      }
+    button {
+      width: 100%;
     }
   }
 }
@@ -330,56 +297,20 @@
 .Member_footer {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-
-  a,
-  button {
-    font-size: 22pt;
-    font-weight: 700;
-    letter-spacing: .1em;
-  }
+  justify-content: center;
 
   button {
     min-width: 10em;
+    font-size: 22pt;
+    font-weight: 700;
     text-align: center;
-  }
-
-  a {
-    display: flex;
-    align-items: center;
-
-    .deco {
-      position: relative;
-      width: 40px;
-      height: 12px;
-      margin-right: 10px;
-
-      &::after {
-        content: '';
-        display: block;
-        width: 100%;
-        height: 100%;
-        border-bottom: 1px solid #002c18;
-        border-left: 2px solid #002c18;
-        transform: skew(-45deg);
-      }
-    }
   }
 
   @include screen(md) {
     button {
-      min-width: 8em;
+      width: 100%;
       font-size: 18px;
       text-align: center;
-    }
-
-    a {
-      font-size: 16px;
-
-      .deco {
-        margin-right: -5px;
-        transform: scale(.5);
-      }
     }
   }
 }
