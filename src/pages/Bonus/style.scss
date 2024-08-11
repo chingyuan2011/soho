@@ -24,15 +24,35 @@
   }
 
   &__title {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     padding: 0 10px;
     font-size: 30px;
     font-weight: 700;
     color: #002c18;
 
     @include screen(xl) {
-      margin-bottom: 20px;
       font-size: 24px;
+    }
+  }
+
+  &_total {
+    margin-bottom: 20px;
+    font-size: 18pt;
+    font-weight: 700;
+    text-align: right;
+    letter-spacing: .1em;
+
+    span {
+      font-size: 28pt;
+      color: #d3865a;
+    }
+
+    @include screen(lg) {
+      font-size: 18px;
+
+      span {
+        font-size: 24px;
+      }
     }
   }
 
@@ -74,103 +94,28 @@
     color: #002c18;
     letter-spacing: .08em;
 
-    .Bonus_cart-row {
+    .Bonus_table-row {
       background-color: #fff;
       border-bottom: 1px solid #002c18;
 
       &:nth-child(odd) {
         background-color: #f6f6f6;
       }
-
-      &:last-child {
-        border-bottom: none;
-      }
     }
 
-    .product_pic {
-      text-align: center;
-    }
-
-    .product_name {
-      width: 100%;
-      font-size: 22pt;
-      font-weight: 700;
-      text-align: center;
-      @include screen(xl) {
-        font-size: 22px;
-      }
-    }
-
-    .product_amount {
-      width: 100%;
+    .text {
       font-size: 20pt;
-      font-weight: 700;
-      @include custom-select(#cbd3ce, transparent, #002c18, #002c18);
+      font-weight: 500;
+      text-align: center;
+      letter-spacing: .1em;
+
       @include screen(xl) {
         font-size: 20px;
       }
-    }
 
-    .product_price {
-      font-size: 20pt;
-      font-weight: 700;
-
-      @include screen(xl) {
-        font-size: 22px;
-      }
-    }
-
-    .product_status {
-      width: 100%;
-
-      button {
-        display: block;
-        width: 100%;
-        margin-bottom: 20px;
-        padding: 10px;
-        font-size: 16pt;
-        font-weight: 700;
-        color: #fff;
-        text-align: center;
-        background-color: #012d19;
-        border-radius: 10px;
-
-        &.secondary {
-          color: #002c18;
-          background-color: #9caca3;
-        }
-
-        @include screen(xl) {
-          margin-bottom: 10px;
-          padding: 5px 10px;
-          font-size: 16px;
-        }
-      }
-    }
-
-    .product_delete {
-      button {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        z-index: 1;
-        width: 20px;
-        height: 20px;
-        background-image: url('/soho/img/icon_delete.png');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
-      }
-
-      &::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        border: 65px solid transparent;
-        border-color: transparent  transparent  transparent #bcc6c1;
-        transform: translate(50%, -50%) rotate(-45deg);
-        transform-origin: center;
+      @include screen(lg) {
+        font-size: 16px;
+        text-align: right;
       }
     }
   }
@@ -186,65 +131,89 @@
     &::before {
       position: absolute;
       top: 50%;
-      left: 20px;
+      left: 10px;
       font-size: .8em;
       font-weight: 500;
       transform: translateY(-50%);
     }
 
     &:nth-child(1) {
-      width: 20%;
+      width: 18%;
     }
 
     &:nth-child(2) {
+      width: 20%;
+    }
+
+    &:nth-child(3) {
       flex: 1;
       width: 25%;
     }
 
-    &:nth-child(3) {
-      width: 15%;
-    }
-
     &:nth-child(4) {
-      width: 15%;
+      width: 12%;
     }
 
     &:nth-child(5) {
-      width: 18%;
+      width: 12%;
     }
 
     &:nth-child(6) {
-      width: 8%;
+      width: 18%;
     }
 
     @include screen (lg) {
-      padding: 5px 20px;
+      align-items: flex-end;
+      min-height: 40px;
+      padding: 5px 10px;
+      padding-left: 120px;
 
       &:nth-child(1) {
         width: 100%;
+
+        &::before {
+          content: '日期';
+        }
       }
 
       &:nth-child(2) {
         width: 100%;
-        text-align: center;
+
+        &::before {
+          content: '訂單編號';
+        }
       }
 
       &:nth-child(3) {
         width: 100%;
+
+        &::before {
+          content: '獲得 / 使用紀錄';
+        }
       }
 
       &:nth-child(4) {
         width: 100%;
+
+        &::before {
+          content: '轉入點數';
+        }
       }
 
       &:nth-child(5) {
         width: 100%;
+
+        &::before {
+          content: '使用點數';
+        }
       }
 
-      &.product_delete {
-        position: absolute;
-        top: 0;
-        right: 0;
+      &:nth-child(6) {
+        width: 100%;
+
+        &::before {
+          content: '    到期日';
+        }
       }
     }
   }
@@ -253,7 +222,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 978px;
     font-weight: 700;
     @include screen(xl) {
       margin: 0  auto;
