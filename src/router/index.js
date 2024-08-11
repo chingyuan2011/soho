@@ -39,9 +39,9 @@ const routes = [
     component: CartProcess1
   },
   {
-    path: '/productContent.html',
-    name: 'ProductContent',
-    component: ProductContent
+    path: '/cartProcess2.html',
+    name: 'CartProcess2',
+    component: CartProcess2
   },
   {
     path: '/productList.html',
@@ -49,9 +49,9 @@ const routes = [
     component: ProductList
   },
   {
-    path: '/login.html',
-    name: 'Login',
-    component: Login
+    path: '/productContent.html',
+    name: 'ProductContent',
+    component: ProductContent
   },
   {
     path: '/signup.html',
@@ -59,14 +59,24 @@ const routes = [
     component: SignUp
   },
   {
-    path: '/cartProcess2.html',
-    name: 'CartProcess2',
-    component: CartProcess2
+    path: '/login.html',
+    name: 'Login',
+    component: Login
+  },
+  {
+    path: '/member.html',
+    name: 'Member',
+    component: Member
   },
   {
     path: '/registTerm.html',
     name: 'RegistTerm',
     component: RegistTerm
+  },
+  {
+    path: '/bonus.html',
+    name: 'Bonus',
+    component: Bonus
   },
   {
     path: '/coupon.html',
@@ -77,16 +87,6 @@ const routes = [
     path: '/collect.html',
     name: 'Collect',
     component: Collect
-  },
-  {
-    path: '/bonus.html',
-    name: 'Bonus',
-    component: Bonus
-  },
-  {
-    path: '/member.html',
-    name: 'Member',
-    component: Member
   },
   {
     path: '*',
