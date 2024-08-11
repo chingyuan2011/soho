@@ -1,0 +1,31 @@
+.Collect {
+  overflow: hidden;
+  background-image: url('/soho/img/colloect/bg_contentHeader.png'), url('/soho/img/colloect/bg_down.png');
+  background-repeat: no-repeat, no-repeat;
+  background-position: center top, center bottom;
+  background-size: cover auto, cover auto;
+
+  .container {
+    padding-top: 50px;
+    padding-bottom: 200px;
+    @include screen(1360) {
+      padding-bottom: 40px;
+    }
+  }
+
+  &__wrap {
+    width: 70%;
+    margin: 0 auto;
+
+    @include screen(lg) {
+      width: 100%;
+    }
+  }
+
+  &__title {
+    padding: 0 10px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #002c18;
+  }
+}
