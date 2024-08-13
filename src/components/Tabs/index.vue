@@ -44,7 +44,6 @@ export default {
   name: 'ProjectFooter',
   setup (props, context) {
     const isActive = (path) => {
-      console.log(window.location.pathname)
       return window.location.pathname === path
     }
 

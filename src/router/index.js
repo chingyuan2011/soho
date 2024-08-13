@@ -14,6 +14,7 @@ import Coupon from '@/pages/Coupon'
 import Collect from '@/pages/Collect'
 import Bonus from '@/pages/Bonus'
 import Member from '@/pages/Member'
+import ReturnsAndRefunds from '@/pages/ReturnsAndRefunds'
 
 Vue.use(VueRouter)
 
@@ -87,6 +88,11 @@ const routes = [
     path: '/collect.html',
     name: 'Collect',
     component: Collect
+  },
+  {
+    path: '/returnsAndRefunds.html',
+    name: 'ReturnsAndRefunds',
+    component: ReturnsAndRefunds
   },
   {
     path: '*',
