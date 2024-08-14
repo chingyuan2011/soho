@@ -9,8 +9,8 @@
           會員中心
         </router-link>
         <router-link
-          :to="{ name: 'OrderList' }"
-          :class="{active: isActive('/orderList.html')}"
+          :to="{ name: 'OrderStatus' }"
+          :class="{active: isActive('/orderStatus.html')}"
         >
           訂單查詢
         </router-link>
@@ -44,7 +44,8 @@ export default {
   name: 'ProjectFooter',
   setup (props, context) {
     const isActive = (path) => {
-      return window.location.pathname === path
+      const pathname = window.location.pathname
+      return pathname.indexOf(path) !== -1
     }
 
     return {
@@ -61,29 +62,39 @@ export default {
   border-width: 1px 0;
 
   &__container {
-    width: 57%;
     margin: 0 auto;
-    padding: 0 30px;
-
-    @include screen(lg) {
-      width: 100%;
-    }
+    padding: 0 20px;
   }
 
   &__content {
     display: flex;
-    justify-content: space-between;
+    gap: 6%;
+    justify-content: center;
+
+    @include screen(768) {
+      flex-direction: column;
+      gap: 10px;
+      padding: 10px;
+      font-size: 18px;
+    }
 
     a {
       position: relative;
       padding: 20px 0;
-      font-size: 16px;
+      font-size: 20px;
       color: #333;
       text-decoration: none;
+
+      @include screen(1600) {
+        font-size: 18px;
+      }
+      @include screen(768) {
+        padding: 0;
+      }
     }
 
-    .router-link-active {
-      font-size: 700;
+    .active {
+      font-weight: 700;
       color: #002c18;
 
       &::after {
@@ -99,6 +110,4 @@ export default {
     }
   }
 }
-// xxl | xl | lg | md | sm
-// @include screen (xl) {}
 </style>

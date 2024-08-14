@@ -1,7 +1,7 @@
 .PageTemplate {
   position: relative;
   overflow: hidden;
-  font-size: 16pt;
+  font-size: 20px;
   line-height: 1.6;
   color: #052d18;
   background-color: #ffffff;
@@ -10,7 +10,7 @@
   background-position: center top, center bottom;
   background-size: cover auto, cover auto;
   @include screen(1360) {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   // 背景圖暫時用
@@ -36,7 +36,7 @@
 
   &_pageTitle {
     margin-bottom: 10px;
-    font-size: 30pt;
+    font-size: 40px;
     @include screen(1360) {
       font-size: 30px;
     }

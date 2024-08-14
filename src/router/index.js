@@ -16,6 +16,7 @@ import Bonus from '@/pages/Bonus'
 import Member from '@/pages/Member'
 import ReturnsAndRefunds from '@/pages/ReturnsAndRefunds'
 import PaymentInstructions from '@/pages/PaymentInstructions'
+import OrderStatus from '@/pages/OrderStatus'
 
 Vue.use(VueRouter)
 
@@ -99,6 +100,11 @@ const routes = [
     path: '/paymentInstructions.html',
     name: 'PaymentInstructions',
     component: PaymentInstructions
+  },
+  {
+    path: '/orderStatus.html',
+    name: 'OrderStatus',
+    component: OrderStatus
   },
   {
     path: '*',
