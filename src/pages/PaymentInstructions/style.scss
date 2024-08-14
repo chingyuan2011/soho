@@ -1,11 +1,11 @@
-.ReturnsAndRefunds {
+.PaymentInstructions {
   position: relative;
   overflow: hidden;
-  font-size: 16pt;
+  font-size: 20px;
   line-height: 1.6;
   color: #052d18;
   background-color: #ffffff;
-  background-image: url('/soho/img/returnsAndRefunds/bg_contentHeader.png'), url('/soho/img/returnsAndRefunds/login_bgDown.png');
+  background-image: url('/soho/img/paymentInstructions/bg_contentHeader.png'), url('/soho/img/paymentInstructions/login_bgDown.png');
   background-repeat: no-repeat, no-repeat;
   background-position: center top, center bottom;
   background-size: cover auto, cover auto;
@@ -24,7 +24,7 @@
 
   &_pageTitle {
     margin-bottom: 10px;
-    font-size: 30pt;
+    font-size: 40px;
     @include screen(1360) {
       font-size: 30px;
     }
@@ -39,7 +39,7 @@
 
   &_subTitle {
     margin-bottom: 20px;
-    font-size: 24pt;
+    font-size: 32px;
     font-weight: bold;
     border-bottom: 1px solid #052d18;
     @include screen(1360) {
@@ -51,18 +51,6 @@
     margin-top: 40px;
     @include screen(1360) {
       margin-top: 20px;
-    }
-  }
-
-  &_text {
-    ul {
-      padding-left: 25px;
-      line-height: 1.8;
-      list-style-type: square;
-    }
-
-    &-highlight {
-      color: #b27c4e;
     }
   }
 }

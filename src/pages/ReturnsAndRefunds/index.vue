@@ -14,9 +14,9 @@
         退換貨說明 /
       </h2>
       <div class="ReturnsAndRefunds_block">
-        <div class="ReturnsAndRefunds_subTitle">
+        <h3 class="ReturnsAndRefunds_subTitle">
           商品鑑賞期
-        </div>
+        </h3>
         <p class="ReturnsAndRefunds_text">
           除易於腐敗、保存期限較短（退貨／取消時即將逾期）類之食品、客製化商品、當期之報紙、期刊或雜誌、經拆封之影音商品或電腦軟體、遊戲點數卡、其他點數卡、已拆封之個人衛生用品等按「通訊交易解除權合理例外情事適用準則」不適用 7天鑑賞期之商品外，從商品抵達您手上開始即擁有７天商品鑑賞期 （７天含假日）。
         </p>
@@ -25,9 +25,9 @@
         </p>
       </div>
       <div class="ReturnsAndRefunds_block">
-        <div class="ReturnsAndRefunds_subTitle">
+        <h3 class="ReturnsAndRefunds_subTitle">
           退貨須知
-        </div>
+        </h3>
         <p class="ReturnsAndRefunds_text">
           退貨商品須為未經使用，且無非人為瑕疵所造成的污損、故障，消保法保障 7 天鑑賞期僅供您猶豫並確認商品是否符合您的需求，並非商品的試用期；如本商店有提示您者，請保留完整的原始包裝（含外包裝紙盒），否則恕不接受退貨。
         </p>
@@ -46,17 +46,17 @@
         </p>
       </div>
       <div class="ReturnsAndRefunds_block">
-        <div class="ReturnsAndRefunds_subTitle">
+        <h3 class="ReturnsAndRefunds_subTitle">
           退貨流程
-        </div>
+        </h3>
         <p class="ReturnsAndRefunds_text">
           聯絡客服人員 → 確認可退貨 → 準備完整商品及發票 → 提供收件時間及聯絡資訊、地址 → 將由商店委託之物流進行回收。
         </p>
       </div>
       <div class="ReturnsAndRefunds_block">
-        <div class="ReturnsAndRefunds_subTitle">
+        <h3 class="ReturnsAndRefunds_subTitle">
           退款說明
-        </div>
+        </h3>
         <p class="ReturnsAndRefunds_text">
           <ul>
             <li>信用卡付款者：確認退貨成功後，會直接把款項刷退至原付款的信用卡帳號中。</li>
