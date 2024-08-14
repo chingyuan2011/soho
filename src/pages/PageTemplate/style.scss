@@ -1,0 +1,44 @@
+.PageTemplate {
+  position: relative;
+  overflow: hidden;
+  font-size: 16pt;
+  line-height: 1.6;
+  color: #052d18;
+  background-color: #ffffff;
+  background-image: url('/soho/img/returnsAndRefunds/bg_contentHeader.png'), url('/soho/img/returnsAndRefunds/login_bgDown.png');
+  background-repeat: no-repeat, no-repeat;
+  background-position: center top, center bottom;
+  background-size: cover auto, cover auto;
+  @include screen(1360) {
+    font-size: 18px;
+  }
+
+  // 背景圖暫時用
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    background-image: url('/soho/img/returnsAndRefunds/layout_returnsAndRefunds.jpg');
+  }
+
+  .container {
+    max-width: 1480px;
+    padding: 70px 40px 200px;
+    padding-bottom: 200px;
+    @include screen(1360) {
+      padding: 20px 20px 40px;
+    }
+  }
+
+  &_pageTitle {
+    margin-bottom: 10px;
+    font-size: 30pt;
+    @include screen(1360) {
+      font-size: 30px;
+    }
+  }
+}
