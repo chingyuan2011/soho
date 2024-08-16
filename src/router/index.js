@@ -17,6 +17,7 @@ import Member from '@/pages/Member'
 import ReturnsAndRefunds from '@/pages/ReturnsAndRefunds'
 import PaymentInstructions from '@/pages/PaymentInstructions'
 import OrderStatus from '@/pages/OrderStatus'
+import Store from '@/pages/Store'
 
 Vue.use(VueRouter)
 
@@ -105,6 +106,11 @@ const routes = [
     path: '/orderStatus.html',
     name: 'OrderStatus',
     component: OrderStatus
+  },
+  {
+    path: '/store.html',
+    name: 'Store',
+    component: Store
   },
   {
     path: '*',
