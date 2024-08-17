@@ -2,6 +2,7 @@
 (function () {
   document.addEventListener('DOMContentLoaded', function () {
     new WOW().init()
+    navbarHandler()
 
     // 判斷頁面
     const currentMap = window.location.pathname
@@ -49,6 +50,12 @@
     })
   })
 })()
+
+const navbarHandler = () => {
+  $('#functionBar_memberBtn').click(() => {
+    $('#functionBar_member').toggleClass('active')
+  })
+}
 
 const indexHandler = () => {
   $('.kv_content').slick({

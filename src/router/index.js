@@ -88,7 +88,7 @@ const routes = [
     component: Coupon
   },
   {
-    path: '/collect.html',
+    path: '/trackingList.html',
     name: 'Collect',
     component: Collect
   },
