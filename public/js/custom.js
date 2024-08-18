@@ -15,11 +15,6 @@
     const pageName = currentMap.match(pageRegex)[1]
     pageHandlerMap[pageName] && pageHandlerMap[pageName]()
 
-    // resize
-    $(window).on('resize', function () {
-      $('body').removeClass('hamOpen')
-    })
-
     // scroll top
     $(document).on('click', '#btn__quickTop', function (e) {
       e.preventDefault()
@@ -52,8 +47,44 @@
 })()
 
 const navbarHandler = () => {
-  $('#functionBar_memberBtn').click(() => {
+  // resize
+  const reset = () => {
+    $('body').css('overflow', 'auto')
+    $('.ProjectHeader').removeClass('mb-active')
+    $('#menu_itemProducts').removeClass('active')
+    $('#functionBar_member').removeClass('active')
+  }
+  $(window).on('resize', function () {
+    reset()
+  })
+
+  $('#hamburger').on('click', function () {
+    $('body').css('overflow', 'hidden')
+    $('.ProjectHeader').addClass('mb-active')
+  })
+
+  $('#navbar_closeBtn').on('click', function () {
+    reset()
+  })
+
+  $('#menu_itemProducts').on('click', function () {
+    $('#menu_itemProducts').toggleClass('active')
+
+    const ww = $(document).width()
+    if (ww <= 1360) {
+      $('body').css('overflow', 'hidden')
+      $('.ProjectHeader').addClass('mb-active')
+    }
+  })
+
+  $('#navbar_memberBtn').on('click', function () {
     $('#functionBar_member').toggleClass('active')
+
+    const ww = $(document).width()
+    if (ww <= 1360) {
+      $('body').css('overflow', 'hidden')
+      $('.ProjectHeader').addClass('mb-active')
+    }
   })
 }
 
