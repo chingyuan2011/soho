@@ -18,20 +18,16 @@
             </div>
             <div class="ProjectFooter_linkList">
               <a
-                href="javascript:;"
-                target="_blank"
+                href="/soho/about.html"
               >關於我們</a>
               <a
-                href="javascript:;"
-                target="_blank"
+                href="/soho/certification.html"
               >永續發展</a>
               <a
-                href="javascript:;"
-                target="_blank"
+                href="/soho/news.html"
               >最新消息</a>
               <a
-                href="javascript:;"
-                target="_blank"
+                href="/soho/seaweedList.html"
               >海藻學堂</a>
             </div>
           </div>
@@ -41,20 +37,16 @@
             </div>
             <div class="ProjectFooter_linkList">
               <a
-                href="javascript:;"
-                target="_blank"
+                href="/soho/certification.html"
               >檢驗認證</a>
               <a
-                href="javascript:;"
-                target="_blank"
+                href="/soho/productList.html"
               >產品總覽</a>
               <a
-                href="javascript:;"
-                target="_blank"
+                href="/soho/index.html"
               >分類一</a>
               <a
-                href="javascript:;"
-                target="_blank"
+                href="/soho/index.html"
               >分類二</a>
             </div>
           </div>
@@ -64,16 +56,13 @@
             </div>
             <div class="ProjectFooter_linkList">
               <a
-                href="javascript:;"
-                target="_blank"
+                href="/soho/storeContent.html"
               >彩虹門市</a>
               <a
-                href="javascript:;"
-                target="_blank"
+                href="/soho/storeContent.html"
               >檜意門市</a>
               <a
-                href="javascript:;"
-                target="_blank"
+                href="/soho/contact.html"
               >聯絡我們</a>
             </div>
           </div>
@@ -83,20 +72,16 @@
             </div>
             <div class="ProjectFooter_linkList">
               <a
-                href="javascript:;"
-                target="_blank"
+                href="/soho/login.html"
               >會員登入</a>
               <a
-                href="javascript:;"
-                target="_blank"
+                href="/soho/orderStatus.html"
               >歷史訂單</a>
               <a
-                href="javascript:;"
-                target="_blank"
+                href="/soho/coupon.html"
               >優惠折扣</a>
               <a
-                href="javascript:;"
-                target="_blank"
+                href="/soho/bonus.html"
               >紅利點數</a>
             </div>
           </div>
@@ -106,20 +91,16 @@
             </div>
             <div class="ProjectFooter_linkList">
               <a
-                href="javascript:;"
-                target="_blank"
+                href="/soho/paymentInstructions.html"
               >購物須知</a>
               <a
-                href="javascript:;"
-                target="_blank"
+                href="/soho/returnsAndRefunds.html"
               >退換貨說明</a>
               <a
-                href="javascript:;"
-                target="_blank"
+                href="/soho/index.html"
               >隱私權政策</a>
               <a
-                href="javascript:;"
-                target="_blank"
+                href="/soho/registTerm.html"
               >會員註冊條款</a>
             </div>
           </div>
@@ -156,22 +137,19 @@
             </div>
             <div class="ProjectFooter_socialMedia">
               <a
-                href="javascript:;"
-                target="_blank"
+                href="/soho/index.html"
               ><img
                 src="/soho/img/footer/footer_line.png"
                 alt="LINE"
               ></a>
               <a
-                href="javascript:;"
-                target="_blank"
+                href="/soho/index.html"
               ><img
                 src="/soho/img/footer/footer_fb.png"
                 alt="fb"
               ></a>
               <a
-                href="javascript:;"
-                target="_blank"
+                href="/soho/index.html"
               ><img
                 src="/soho/img/footer/footer_yt.png"
                 alt="yt"
