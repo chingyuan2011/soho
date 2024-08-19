@@ -72,7 +72,8 @@ module.exports = {
         '/coupon.html',
         '/collect.html',
         '/orderStatus.html',
-        '/store.html'
+        '/store.html',
+        '/storeContent.html'
       ]
 
       const prerender = new PrerenderSPAPlugin({
