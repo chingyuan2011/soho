@@ -203,18 +203,7 @@
             </div>
           </div>
         </div>
-        <div class="Bonus_pageControl">
-          <button>PREVIOUS</button>
-          <div class="Bonus_pageControl-pages">
-            <button class="active">
-              1
-            </button>
-            <button class="">
-              2
-            </button>
-          </div>
-          <button>NEXT</button>
-        </div>
+        <PageControl></PageControl>
       </div>
     </div>
   </div>
@@ -224,12 +213,15 @@
 import Title from '@/components/Title'
 import Breadcrumb from '@/components/Breadcrumb'
 import Tabs from '@/components/Tabs'
+import PageControl from '@/components/PageControl'
+
 export default {
   name: 'Bonus',
   components: {
     Title,
     Breadcrumb,
-    Tabs
+    Tabs,
+    PageControl
   },
   data () {
     return {

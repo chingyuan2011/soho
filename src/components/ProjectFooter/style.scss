@@ -1,0 +1,88 @@
+.ProjectFooter {
+  position: relative;
+  min-height: 626px;
+  padding-top: 100px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #002d18;
+  @include screen(xl) {
+    padding-top: 60px;
+  }
+
+  .container {
+    max-width: 1600px;
+  }
+
+  &_content {
+    // padding: 0 25px;
+    padding-bottom: 120px;
+    @include screen(xl) {
+      padding-bottom: 60px;
+    }
+  }
+
+  &_logoWrap {
+    margin-bottom: 40px;
+  }
+
+  &_linkPart {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &_linkCategory {
+    flex-shrink: 0;
+    margin-right: 58px;
+    margin-bottom: 20px;
+    @include screen(md) {
+      margin-right: 38px;
+    }
+  }
+
+  &_linkTitle {
+    margin-bottom: 15px;
+    font-size: 22px;
+    color: #9fa49f;
+
+    @include screen(md) {
+      font-size: 18px;
+    }
+  }
+
+  &_linkList {
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: .2rem;
+    @include screen(md) {
+      font-size: 14px;
+    }
+
+    a {
+      display: flex;
+    }
+
+    &-text {
+      display: flex;
+      align-items: center;
+      letter-spacing: .1rem;
+
+      img {
+        margin-right: 5px;
+      }
+    }
+  }
+
+  &_socialMedia {
+    a {
+      margin-right: 10px;
+    }
+  }
+
+  &_note {
+    padding: 15px 0;
+    border-top: 2px solid #fff;
+    @include screen(md) {
+      font-size: 14px;
+    }
+  }
+}

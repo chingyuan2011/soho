@@ -352,18 +352,7 @@
                 </div>
               </div>
             </div>
-            <div class="ProductList_content-product-pageControl">
-              <button>PREVIOUS</button>
-              <div class="ProductList_content-product-pageControl-pages">
-                <button class="active">
-                  1
-                </button>
-                <button class="">
-                  2
-                </button>
-              </div>
-              <button>NEXT</button>
-            </div>
+            <PageControl></PageControl>
           </div>
         </div>
       </div>
@@ -375,11 +364,13 @@
 
 <script>
 import Title from '@/components/Title'
+import PageControl from '@/components/PageControl'
 
 export default {
   name: 'ProductList',
   components: {
-    Title
+    Title,
+    PageControl
   },
   data () {
     return {

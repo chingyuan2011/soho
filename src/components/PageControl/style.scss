@@ -1,0 +1,50 @@
+.PageControl {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  font-weight: 700;
+
+  @include screen(xl) {
+    margin: 0  auto;
+  }
+
+  @include screen(md) {
+    justify-content: center;
+  }
+
+  &-pages {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 20pt;
+
+    >button {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+
+      &.active,
+      &:hover {
+        background-color: #a9b7b7;
+      }
+    }
+
+    @include screen(xl) {
+      font-size: 16px;
+
+      >button {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+
+  >button {
+    padding: 5px 20px;
+    font-size: 14px;
+    border: 1px solid #002c18;
+    border-radius: 5px;
+  }
+}

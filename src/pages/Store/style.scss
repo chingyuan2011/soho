@@ -18,9 +18,12 @@
     padding: 50px 40px 200px;
     padding-bottom: 200px;
     @include screen(1360) {
-      margin-top: -50px;
       padding: 20px 20px 40px;
     }
+  }
+
+  &_blocks {
+    margin-bottom: 0px;
   }
 
   &_block {
@@ -149,6 +152,17 @@
       border-right: 2px solid #c49178;
       border-bottom: 2px solid #c49178;
       transform: skewX(40deg);
+    }
+  }
+
+  &_PageControl {
+    max-width: 1100px;
+    @include screen(1366) {
+      margin-bottom: 100px;
+    }
+    @include screen(1024) {
+      max-width: 600px;
+      margin-bottom: 50px;
     }
   }
 }
