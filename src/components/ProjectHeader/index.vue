@@ -163,7 +163,7 @@
           </div>
           <div class="menu_item">
             <div class="menu_itemContent">
-              <a href="/soho/storeList.html">
+              <a href="/soho/store.html">
                 <div class="menu_itemText-zh">
                   門市據點
                 </div>
