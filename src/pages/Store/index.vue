@@ -125,7 +125,7 @@ import Breadcrumb from '@/components/Breadcrumb'
 import PageControl from '@/components/PageControl'
 
 export default {
-  name: 'Bonus',
+  name: 'Store',
   components: {
     Title,
     Breadcrumb,

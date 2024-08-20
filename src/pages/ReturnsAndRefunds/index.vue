@@ -72,7 +72,7 @@
 import Title from '@/components/Title'
 import Breadcrumb from '@/components/Breadcrumb'
 export default {
-  name: 'Bonus',
+  name: 'ReturnsAndRefunds',
   components: {
     Title,
     Breadcrumb

@@ -19,6 +19,7 @@ import PaymentInstructions from '@/pages/PaymentInstructions'
 import OrderStatus from '@/pages/OrderStatus'
 import Store from '@/pages/Store'
 import StoreContent from '@/pages/StoreContent'
+import About from '@/pages/About'
 
 Vue.use(VueRouter)
 
@@ -117,6 +118,11 @@ const routes = [
     path: '/storeContent.html',
     name: 'StoreContent',
     component: StoreContent
+  },
+  {
+    path: '/about.html',
+    name: 'About',
+    component: About
   },
   {
     path: '*',
