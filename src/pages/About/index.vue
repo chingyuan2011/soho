@@ -11,7 +11,7 @@
     </div>
     <div class="About_info">
       <div class="container">
-        <div class="About_infoText">
+        <div class="About_infoText wow fadeInUp">
           <div class="title">
             <h1>
               藻作坊
@@ -27,13 +27,16 @@
             藻作坊是一家致力於研發海藻商品的企業,海藻對於人體的益處都能在報章雜誌或醫學期刊上找到,但在台灣食用海藻的文化不普及,因消費者不了解如何料理與市面上不常見海藻類的產品而導致對許多家庭主婦與消費者而言是較為陌生的食材。
           </p>
         </div>
-        <div class="About_infoImg">
+        <div
+          class="About_infoImg wow fadeInUp"
+          data-wow-delay=".5s"
+        >
           <img src="/soho/img/about/about_pic1.png">
         </div>
       </div>
     </div>
     <div class="About_mission">
-      <div class="container">
+      <div class="container wow fadeInUp">
         <h2>來自大海的恩賜_</h2>
         <p>
           我們希望將大海賜予的恩惠「 海藻 」能讓更多的家庭認識且食用，將產品的料理方式<br>
@@ -43,20 +46,24 @@
       </div>
     </div>
     <div class="About_image">
-      <div>
+      <div class="wow fadeInLeft">
         <img src="/soho/img/about/about_pic2.png">
       </div>
-      <div>
+      <div class="wow fadeInRight">
         <img src="/soho/img/about/about_pic3.png">
       </div>
     </div>
     <div class="About_slogan">
-      <div>
+      <div
+        class="wow fadeIn"
+        data-wow-delay=".5s"
+        data-wow-duration="1s"
+      >
         <img src="/soho/img/about/about_slogan.png">
       </div>
     </div>
     <div class="About_registerGift">
-      <div class="container">
+      <div class="container wow fadeInLeft">
         <h2>註冊禮</h2>
         <div class="note">
           首次註冊領
@@ -88,7 +95,7 @@
       </div>
     </div>
     <div class="About_good">
-      <div class="About_goodItem">
+      <div class="About_goodItem wow fadeIn">
         <div>
           <img src="/soho/img/about/about_good1.png">
         </div>
@@ -106,7 +113,10 @@
           </div>
         </div>
       </div>
-      <div class="About_goodItem">
+      <div
+        class="About_goodItem wow fadeIn"
+        data-wow-delay=".5s"
+      >
         <div>
           <img src="/soho/img/about/about_good2.png">
         </div>

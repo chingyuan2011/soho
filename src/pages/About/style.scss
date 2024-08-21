@@ -2,7 +2,7 @@
   position: relative;
   padding-bottom: 200px;
   overflow: hidden;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.6;
   color: #052d18;
   background-color: #ffffff;
@@ -41,7 +41,7 @@
       width: 44%;
       padding-top: 70px;
       padding-right: 80px;
-      font-size: 24px;
+      font-size: 20px;
 
       .title {
         display: flex;
@@ -53,7 +53,7 @@
 
       h1 {
         font-size: 55px;
-        font-weight: normal;
+        font-weight: 700;
       }
 
       .establish {
@@ -72,7 +72,6 @@
 
       @include screen(1366) {
         padding: 20px;
-        font-size: 18px;
 
         .title {
           flex-direction: column;
@@ -86,11 +85,11 @@
         .establish {
           margin-left: 0;
           padding-top: 0;
-          font-size: 24px;
+          font-size: 22px;
         }
 
         .note {
-          font-size: 24px;
+          font-size: 22px;
         }
       }
       @include screen(960) {
@@ -149,11 +148,8 @@
     }
 
     p {
-      font-size: 32px;
+      font-size: 20px;
       color: #523628;
-      @include screen(1366) {
-        font-size: 18px;
-      }
     }
   }
 
@@ -180,8 +176,6 @@
     background-image: url('/soho/img/about/about_banner.png');
     background-position: center;
     background-size: cover;
-    @include screen(1366) {
-    }
 
     .container {
       display: flex;
@@ -215,15 +209,15 @@
       display: flex;
       gap: 20px;
       align-items: center;
-      font-size: 55px;
+      font-size: 30px;
       font-weight: 700;
 
       .highlight {
-        font-size: 100px;
+        font-size: 60px;
       }
 
       .small {
-        font-size: 36px;
+        font-size: 30px;
       }
     }
 
@@ -234,7 +228,7 @@
       justify-content: center;
       margin-top: 30px;
       padding: 0 90px;
-      font-size: 30px;
+      font-size: 24px;
       font-weight: 700;
       background-color: #d3875a;
       border-radius: 15px;
@@ -245,25 +239,25 @@
       }
 
       .highlight {
-        font-size: 50px;
+        font-size: 40px;
       }
 
       .arrow {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
         background-color: #ffffff;
         border-radius: 50%;
 
         >span {
           display: block;
-          width: 12px;
-          height: 12px;
+          width: 8px;
+          height: 8px;
           margin-left: -5px;
-          border-top: 3px solid #052d18;
-          border-right: 3px solid #052d18;
+          border-top: 2px solid #052d18;
+          border-right: 2px solid #052d18;
           transform: rotate(45deg);
         }
       }
@@ -285,14 +279,14 @@
       .note {
         flex-wrap: wrap;
         gap: 10px;
-        font-size: 24px;
+        font-size: 22px;
 
         .highlight {
-          font-size: 40px;
+          font-size: 36px;
         }
 
         .small {
-          font-size: 24px;
+          font-size: 22px;
         }
       }
 
@@ -315,9 +309,8 @@
   }
 
   &_lineGift {
-    margin-bottom: -10px;
     padding-top: 0px;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
     color: #fff4e5;
     background-color: #9caca3;
@@ -325,28 +318,15 @@
     .container {
       display: flex;
       flex-wrap: wrap;
-      gap: 50px;
+      gap: 30px;
       align-items: center;
       justify-content: center;
       padding: 10px 0;
-      @include screen(1366) {
-        gap: 20px;
-        padding: 10px 20px;
-      }
-      @include screen(960) {
-        gap: 10px;
-        padding: 20px;
-        line-height: 1.6em;
-      }
     }
 
     h2 {
-      font-size: 75px;
+      font-size: 65px;
       color: #ffffff;
-      @include screen(960) {
-        width: 100%;
-        text-align: center;
-      }
     }
 
     .highlight {
@@ -356,6 +336,11 @@
     @include screen(1366) {
       font-size: 24px;
 
+      .container {
+        gap: 20px;
+        padding: 10px 20px;
+      }
+
       h2 {
         font-size: 40px;
       }
@@ -364,11 +349,30 @@
         font-size: 24px;
       }
     }
+
+    @include screen(960) {
+      h2 {
+        width: 100%;
+        font-size: 28px;
+        text-align: center;
+      }
+
+      .container {
+        gap: 5px;
+        padding: 20px;
+        font-size: 20px;
+        line-height: 1.6em;
+      }
+
+      .highlight {
+        font-size: 40px;
+      }
+    }
   }
 
   &_good {
     display: flex;
-    font-size: 30px;
+    font-size: 24px;
     color: #523628;
 
     &Item {
@@ -377,11 +381,11 @@
     }
 
     .note {
-      padding: 50px 20px 50px 150px;
+      padding: 50px 20px 50px 100px;
     }
 
     .title {
-      font-size: 45px;
+      font-size: 30px;
       font-weight: 700;
       color: #052d18;
     }
@@ -398,8 +402,42 @@
 
     .benefit {
       margin-left: 50px;
-      font-size: 45px;
+      font-size: 36px;
       font-weight: 700;
+    }
+
+    @include screen(1366) {
+      flex-wrap: wrap;
+
+      .note {
+        padding: 40px;
+      }
+
+      .benefit {
+        margin-left: 20px;
+        font-size: 24px;
+      }
+    }
+
+    @include screen(960) {
+      font-size: 18px;
+
+      .note {
+        padding: 20px;
+      }
+
+      .title {
+        font-size: 24px;
+      }
+
+      .benefit {
+        margin-left: 0px;
+      }
+    }
+    @include screen(480) {
+      &Item {
+        width: 100%;
+      }
     }
   }
 
@@ -426,6 +464,7 @@
 
     .arrow {
       position: relative;
+      left: 0;
       display: block;
       width: 60px;
       height: 15px;
@@ -433,6 +472,22 @@
       border-bottom: 2px solid #d3875a;
       transition: left .3s;
       transform: skew(40deg);
+    }
+
+    @include screen(1366) {
+      a {
+        font-size: 22px;
+      }
+    }
+
+    @include screen(960) {
+      flex-direction: column;
+      gap: 20px;
+
+      a {
+        width: 100%;
+        padding: 10px 20px;
+      }
     }
   }
 }
