@@ -28,7 +28,7 @@
           </p>
         </div>
         <div
-          class="About_infoImg wow fadeInUp"
+          class="About_infoImg wow fadeIn"
           data-wow-delay=".5s"
         >
           <img src="/soho/img/about/about_pic1.png">
