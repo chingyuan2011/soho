@@ -51,7 +51,7 @@
             </div>
             <div class="CartProcess1_orderItem-info">
               <div class="CartProcess1_orderItem-price">
-                <div cl>
+                <div>
                   六色海藻
                 </div><div>
                   $330
@@ -85,7 +85,7 @@
             </div>
             <div class="CartProcess1_orderItem-info">
               <div class="CartProcess1_orderItem-price">
-                <div cl>
+                <div>
                   六色海藻
                 </div><div>
                   $330
