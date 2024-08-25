@@ -1,11 +1,13 @@
 .ProductList {
   overflow: hidden;
+  font-size: 16px;
   background-image: url('/soho/img/productList/bg_contentHeader.png'), url('/soho/img/cartProcess1/bg_content.png');
   background-repeat: no-repeat, no-repeat;
   background-position: center top, center bottom;
   background-size: cover auto, cover auto;
 
   .container {
+    max-width: 1300px;
     padding-bottom: 200px;
     @include screen(1360) {
       padding-bottom: 40px;
@@ -28,7 +30,7 @@
     width: 25%;
     min-width: 300px;
     margin-right: 3%;
-    padding: 8% 20px;
+    padding-right: 10px;
     font-weight: 700;
     letter-spacing: .1em;
 
@@ -39,18 +41,17 @@
     }
 
     &Title {
-      margin-bottom: 40px;
-      font-size: 22pt;
+      margin-bottom: 30px;
+      font-size: 24px;
 
       @include screen(xl) {
-        margin-bottom: 10px;
-        font-size: 18px;
+        font-size: 20px;
       }
     }
 
     &Item {
       margin-bottom: 20px;
-      font-size: 18pt;
+      font-size: 20px;
       cursor: pointer;
 
       @include screen(xl) {
@@ -78,8 +79,8 @@
 
         .ProductList_content-menuItemSub {
           display: none;
-          padding: 20px;
-          font-size: 16pt;
+          padding: 10px 20px;
+          font-size: 18px;
           line-height: 2;
           color: rgba($color: #657e70, $alpha: .4);
 
@@ -121,7 +122,11 @@
     flex: 1;
 
     &-ad {
-      max-width: 978px;
+      img {
+        width: 100%;
+        height: auto;
+      }
+      // max-width: 978px;
       margin-bottom: 20px;
 
       @include screen(xl) {
@@ -136,7 +141,7 @@
       > div:first-child {
         display: flex;
         justify-content: flex-end;
-        max-width: 978px;
+        // max-width: 978px;
       }
 
       @include screen(md) {
@@ -150,14 +155,10 @@
 
     &-filter-advanced {
       position: absolute;
-      right: -20px;
+      right: 0px;
       bottom: 0;
       display: none;
       align-items: center;
-
-      @include screen(xl) {
-        right: 0px;
-      }
 
       @include screen(md) {
         position: relative;
@@ -209,7 +210,7 @@
       input {
         margin-left: 5px;
         padding: 0;
-        font-size: 18pt;
+        font-size: 18px;
         font-weight: 700;
         color: #002c18;
         background-color: transparent;
@@ -231,7 +232,6 @@
       button {
         height: 100%;
         padding: 2px 20px;
-        font-size: 14pt;
         font-weight: 700;
         line-height: 2;
         background-color: #9caca3;
@@ -305,7 +305,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 978px;
+    // max-width: 978px;
     margin-bottom: 80px;
 
     @include screen(xl) {
@@ -358,7 +358,7 @@
     .productName {
       position: relative;
       padding-top: 40px;
-      font-size: 21pt;
+      font-size: 20px;
       font-weight: 700;
       color: #523628;
       text-align: center;
@@ -380,7 +380,7 @@
 
       @include screen(md) {
         padding-top: 30px;
-        font-size: 18px;
+        // font-size: 18px;
 
         &::before {
           width: 20px;
@@ -391,7 +391,7 @@
     .productIntro {
       position: relative;
       margin-bottom: 20px;
-      font-size: 12pt;
+      font-size: 18px;
       color: #523628;
       letter-spacing: .1em;
 
@@ -441,7 +441,6 @@
           z-index: 1;
           flex: 1;
           min-width: 96px;
-          font-size: 14pt;
           font-weight: 700;
           line-height: 1.8;
           color: #002c18;
@@ -462,7 +461,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 978px;
+    // max-width: 978px;
     font-weight: 700;
     @include screen(xl) {
       margin: 0  auto;

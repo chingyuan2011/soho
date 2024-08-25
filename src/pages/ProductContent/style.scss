@@ -1,11 +1,14 @@
 .ProductContent {
+  .container {
+    max-width: 1300px;
+  }
 
   @mixin price-styles {
     display: flex;
     flex-shrink: 0;
     gap: 5px;
     align-items: center;
-    font-size: 14pt;
+    font-size: 18px;
     font-weight: 700;
     letter-spacing: .1rem;
 
