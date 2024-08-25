@@ -48,7 +48,7 @@
   }
 
   &_text ~ &_text {
-    margin-top: 40px;
+    margin-top: 20px;
     @include screen(1360) {
       margin-top: 20px;
     }

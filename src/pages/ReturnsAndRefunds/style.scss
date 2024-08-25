@@ -1,7 +1,7 @@
 .ReturnsAndRefunds {
   position: relative;
   overflow: hidden;
-  font-size: 16pt;
+  font-size: 18px;
   line-height: 1.6;
   color: #052d18;
   background-color: #ffffff;
@@ -9,9 +9,6 @@
   background-repeat: no-repeat, no-repeat;
   background-position: center top, center bottom;
   background-size: cover auto, cover auto;
-  @include screen(1360) {
-    font-size: 18px;
-  }
 
   .container {
     max-width: 1480px;
@@ -24,9 +21,9 @@
 
   &_pageTitle {
     margin-bottom: 10px;
-    font-size: 30pt;
+    font-size: 30px;
     @include screen(1360) {
-      font-size: 30px;
+      font-size: 24px;
     }
   }
 
@@ -39,16 +36,16 @@
 
   &_subTitle {
     margin-bottom: 20px;
-    font-size: 24pt;
+    font-size: 24px;
     font-weight: bold;
     border-bottom: 1px solid #052d18;
     @include screen(1360) {
-      font-size: 24px;
+      font-size: 20px;
     }
   }
 
   &_text ~ &_text {
-    margin-top: 40px;
+    margin-top: 20px;
     @include screen(1360) {
       margin-top: 20px;
     }
