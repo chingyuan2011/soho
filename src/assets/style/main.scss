@@ -82,8 +82,9 @@ ul {
   width: 60%;
   margin: 0 auto 40px auto;
 
-  @include screen(1360) {
+  @include screen(1200) {
     width: 100%;
+    max-width: 800px;
     margin: 0 auto 20px auto;
   }
 
@@ -95,7 +96,7 @@ ul {
       position: relative;
       width: 25%;
       max-width: 67px;
-      margin-bottom: 40px;
+      margin-bottom: 20px;
       background-color: #acacac;
       border-radius: 50%;
     }
@@ -112,7 +113,7 @@ ul {
     }
 
     p {
-      font-size: 23px;
+      font-size: 20px;
       font-weight: 700;
       color: #acacac;
       letter-spacing: .2em;
@@ -154,7 +155,7 @@ ul {
 
   &-step:nth-child(2) {
     .memberCenter_progressBar-step-icon {
-      margin: 0 auto 40px auto;
+      margin: 0 auto 20px auto;
     }
 
     p {
@@ -170,7 +171,7 @@ ul {
 
   &-step:nth-child(3) {
     .memberCenter_progressBar-step-icon {
-      margin: 0 0 40px auto;
+      margin: 0 0 20px auto;
     }
 
     p {
