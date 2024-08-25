@@ -873,9 +873,6 @@
           </div>
         </div>
       </div>
-      <!-- <div class="helper">
-        <img src="/soho/img/layout_index_4.jpg">
-      </div> -->
     </div>
     <div class="productBg">
       <div class="productRecommend">

@@ -2,6 +2,7 @@
   <div id="app">
     <ProjectHeader></ProjectHeader>
     <router-view class="app__view"></router-view>
+    <MobileToolBar></MobileToolBar>
     <ProjectFooter></ProjectFooter>
     <FloatBtn></FloatBtn>
   </div>
@@ -10,6 +11,7 @@
 <script>
 import ProjectHeader from '@/components/ProjectHeader'
 import ProjectFooter from '@/components/ProjectFooter'
+import MobileToolBar from '@/components/MobileToolBar'
 import FloatBtn from './components/FloatBtn/FloatBtn.vue'
 
 export default {
@@ -17,6 +19,7 @@ export default {
   components: {
     ProjectHeader,
     ProjectFooter,
+    MobileToolBar,
     FloatBtn
   },
   metaInfo () {
@@ -45,11 +48,6 @@ export default {
 .app__view {
   flex: 1;
   width: 100%;
-  // padding-top: 80px;
-
-  @include screen(sm) {
-    // padding-top: 60px;
-  }
 }
 
 </style>
