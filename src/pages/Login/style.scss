@@ -6,9 +6,7 @@
   background-size: cover auto, cover auto;
 
   .container {
-    padding-bottom: 200px;
-    @include screen(1360) {
-      padding-bottom: 40px;
-    }
+    max-width: 1200px;
+    padding-bottom: 150px;
   }
 }

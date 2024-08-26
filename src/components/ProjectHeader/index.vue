@@ -141,12 +141,15 @@
           </div>
         </div>
       </div>
-      <div class="logo">
+      <a
+        class="logo"
+        href="/soho/index.html"
+      >
         <img
           src="/soho/img/navbar/logo.png"
           alt="藻作坊"
         >
-      </div>
+      </a>
       <div class="ProjectHeader_area ProjectHeader_area-right">
         <div class="menu">
           <div class="menu_item">

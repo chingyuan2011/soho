@@ -6,9 +6,10 @@
   left: 0;
   z-index: 20;
   display: none;
+  height: 70px;
   color: #ffffff;
   background-color: #052d18;
-  @include screen(1360) {
+  @include screen(1280) {
     display: block;
   }
 
@@ -27,11 +28,11 @@
     gap: 5px;
     align-items: center;
     padding: 10px 0;
-    font-size: 14px;
+    font-size: 12px;
 
     >img {
       display: block;
-      width: 50px;
+      width: 35px;
     }
   }
 }

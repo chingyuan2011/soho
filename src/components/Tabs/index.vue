@@ -81,9 +81,8 @@ export default {
     a {
       position: relative;
       padding: 20px 0;
-      font-size: 20px;
+      font-size: 18px;
       color: #333;
-      text-decoration: none;
 
       @include screen(1600) {
         font-size: 18px;

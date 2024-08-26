@@ -7,26 +7,18 @@
   background-size: cover auto, cover auto;
 
   .container {
+    max-width: 1300px;
     padding-top: 50px;
     padding-bottom: 200px;
     @include screen(1360) {
-      padding-bottom: 40px;
-    }
-  }
-
-  &__wrap {
-    width: 90%;
-    margin: 0 auto;
-
-    @include screen(xl) {
-      width: 100%;
+      padding-bottom: 150px;
     }
   }
 
   &__title {
     margin-bottom: 20px;
     padding: 0 10px;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 700;
     color: #002c18;
 
@@ -37,22 +29,14 @@
 
   &_total {
     margin-bottom: 20px;
-    font-size: 18pt;
+    font-size: 18px;
     font-weight: 700;
     text-align: right;
     letter-spacing: .1em;
 
     span {
-      font-size: 28pt;
+      font-size: 28px;
       color: #d3865a;
-    }
-
-    @include screen(lg) {
-      font-size: 18px;
-
-      span {
-        font-size: 24px;
-      }
     }
   }
 
@@ -65,7 +49,7 @@
   }
 
   &_table-header {
-    font-size: 16pt;
+    font-size: 18px;
     font-weight: 700;
     line-height: 2;
     color: #002c18;
@@ -76,7 +60,7 @@
       font-size: 16px;
     }
 
-    @include screen(lg) {
+    @include screen(960) {
       display: none !important;
     }
   }
@@ -104,18 +88,14 @@
     }
 
     .text {
-      font-size: 20pt;
+      font-size: 16px;
       font-weight: 500;
       text-align: center;
       letter-spacing: .1em;
 
-      @include screen(xl) {
-        font-size: 20px;
-      }
-
-      @include screen(lg) {
-        font-size: 16px;
-        text-align: right;
+      @include screen(960) {
+        padding: 0 10px;
+        text-align: left;
       }
     }
   }
@@ -129,12 +109,11 @@
     padding: 20px 10px;
 
     &::before {
-      position: absolute;
-      top: 50%;
-      left: 10px;
-      font-size: .8em;
+      flex-shrink: 0;
+      width: 150px;
+      padding-left: 10px;
+      font-size: 16px;
       font-weight: 500;
-      transform: translateY(-50%);
     }
 
     &:nth-child(1) {
@@ -162,11 +141,16 @@
       width: 18%;
     }
 
-    @include screen (lg) {
-      align-items: flex-end;
+    @include screen (960) {
+      flex-direction: row;
+      justify-content: flex-start;
       min-height: 40px;
       padding: 5px 10px;
-      padding-left: 120px;
+      padding-left: 0px;
+
+      &::before {
+        display: block;
+      }
 
       &:nth-child(1) {
         width: 100%;
@@ -214,57 +198,6 @@
         &::before {
           content: '    到期日';
         }
-      }
-    }
-  }
-
-  &_pageControl {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-weight: 700;
-    @include screen(xl) {
-      margin: 0  auto;
-    }
-
-    @include screen(md) {
-      justify-content: center;
-    }
-
-    &-pages {
-      display: flex;
-      gap: 10px;
-      font-size: 20pt;
-
-      >button {
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-
-        &.active,
-        &:hover {
-          background-color: #a9b7b7;
-        }
-      }
-
-      @include screen(md) {
-        font-size: 16px;
-
-        >button {
-          width: 30px;
-          height: 30px;
-        }
-      }
-    }
-
-    >button {
-      padding: 5px 20px;
-      font-size: 14px;
-      border: 1px solid #002c18;
-      border-radius: 5px;
-
-      @include screen(md) {
-        display: none;
       }
     }
   }

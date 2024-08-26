@@ -35,7 +35,7 @@
             <label for="">
               <div class="name"><span>電子信箱</span></div>
               <input
-                id=""
+                id="email"
                 placeholder="請輸入電子信箱"
                 type="text"
                 name=""

@@ -8,14 +8,14 @@
   background-size: cover auto, cover auto;
 
   .container {
+    max-width: 1300px;
     padding-bottom: 200px;
     @include screen(1360) {
-      padding-bottom: 40px;
+      padding-bottom: 150px;
     }
   }
 
   &__wrap {
-    width: 90%;
     margin: 0 auto;
     padding-top: 60px;
 
@@ -31,10 +31,15 @@
     width: 445px;
     margin: 0 auto 40px auto;
     padding: 10px 20px;
-    font-size: 24pt;
+    font-size: 24px;
     font-weight: 700;
     color: #fff;
     letter-spacing: .1em;
+    background-image: url('/soho/img/member/member_peopleBg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
 
     &-pic {
       position: relative;
@@ -46,35 +51,21 @@
         bottom: 0;
       }
     }
-    background-image: url('/soho/img/member/member_peopleBg.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    border-radius: 10px;
 
     &-type {
-      font-size: 18pt;
+      font-size: 18px;
       font-weight: 500;
       color: #a4c2b4;
     }
 
-    @include screen(lg) {
-      margin: 0 auto 20px auto;
-      font-size: 24px;
-
-      &-type {
-        font-size: 18px;
-      }
-    }
-
-    @include screen(sm) {
+    @include screen(960) {
       width: 100%;
     }
   }
 
   &_title {
     margin-bottom: 20px;
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 700;
     color: #002c18;
     letter-spacing: .2em;
@@ -91,8 +82,8 @@
   button {
     display: flex;
     justify-content: center;
-    padding: 10px 20px;
-    font-size: 24px;
+    padding: 5px 20px;
+    font-size: 20px;
     font-weight: 700;
     text-align: center;
     letter-spacing: .1em;
@@ -175,7 +166,7 @@
 
   &-form-item {
     margin-bottom: 20px;
-    font-size: 16pt;
+    font-size: 16px;
     letter-spacing: .1em;
 
     &.required {
@@ -301,16 +292,13 @@
 
   button {
     min-width: 10em;
-    font-size: 22pt;
-    font-weight: 700;
-    text-align: center;
+    font-size: 22px;
   }
 
-  @include screen(md) {
+  @include screen(960) {
     button {
       width: 100%;
       font-size: 18px;
-      text-align: center;
     }
   }
 }

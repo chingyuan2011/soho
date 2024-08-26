@@ -46,7 +46,7 @@
             <label for="">
               <div class="name">密碼</div>
               <input
-                id=""
+                id="password"
                 type="password"
                 name=""
               >
@@ -54,7 +54,7 @@
             <label for="">
               <div class="name">重新輸入密碼</div>
               <input
-                id=""
+                id="reWritePassword"
                 type="password"
                 name=""
               >
@@ -65,7 +65,7 @@
             >
               <div class="name"><span>使用者名稱</span></div>
               <input
-                id=""
+                id="username"
                 placeholder="請輸入使用者名稱，字數限10字內"
                 type="text"
                 name=""

@@ -40,7 +40,7 @@ export default {
 .FloatBtn {
   position: fixed;
   right: 20px;
-  bottom: 40px;
+  bottom: 80px;
   z-index: 10;
   max-width: 115px;
 
@@ -53,8 +53,7 @@ export default {
   }
 
   @include screen(lg) {
-    right: 20px;
-    bottom: 40px;
+    right: 10px;
     max-width: 80px;
 
     a {
