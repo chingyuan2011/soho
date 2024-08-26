@@ -206,6 +206,13 @@ module.exports = __webpack_require__("56d7");
 
 /***/ }),
 
+/***/ "1853":
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
 /***/ "195a":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -256,10 +263,14 @@ module.exports = __webpack_require__("56d7");
 
 /***/ }),
 
-/***/ "4528":
-/***/ (function(module, exports, __webpack_require__) {
+/***/ "4495":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-// extracted by mini-css-extract-plugin
+"use strict";
+/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_9_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_9_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_9_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_9_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_1_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_id_13e3405c_prod_lang_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("4c92");
+/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_9_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_9_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_9_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_9_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_1_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_id_13e3405c_prod_lang_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_mini_css_extract_plugin_dist_loader_js_ref_9_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_9_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_9_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_9_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_1_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_id_13e3405c_prod_lang_scss__WEBPACK_IMPORTED_MODULE_0__);
+/* unused harmony reexport * */
+
 
 /***/ }),
 
@@ -293,6 +304,13 @@ module.exports = __webpack_require__("56d7");
 /* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_9_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_9_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_9_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_9_oneOf_1_3_style_scss_vue_type_style_index_0_prod_lang_scss_external__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_mini_css_extract_plugin_dist_loader_js_ref_9_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_9_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_9_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_9_oneOf_1_3_style_scss_vue_type_style_index_0_prod_lang_scss_external__WEBPACK_IMPORTED_MODULE_0__);
 /* unused harmony reexport * */
 
+
+/***/ }),
+
+/***/ "4c92":
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
 
 /***/ }),
 
@@ -352,14 +370,17 @@ var staticRenderFns = []
 
 // CONCATENATED MODULE: ./src/App.vue?vue&type=template&id=bfde3c08
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"724ef57f-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/ProjectHeader/index.vue?vue&type=template&id=bcd83b08
-var ProjectHeadervue_type_template_id_bcd83b08_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)}
-var ProjectHeadervue_type_template_id_bcd83b08_staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('header',{staticClass:"ProjectHeader"},[_c('div',{staticClass:"container ProjectHeader-pc"},[_c('div',{staticClass:"ProjectHeader_area ProjectHeader_area-left"},[_c('div',{staticClass:"menu"},[_c('div',{staticClass:"menu_item"},[_c('div',{staticClass:"menu_itemContent"},[_c('a',{attrs:{"href":"/soho/about.html"}},[_c('div',{staticClass:"menu_itemText-zh"},[_vm._v(" 關於我們 ")]),_c('div',{staticClass:"menu_itemText-en"},[_vm._v(" ABOUT ")])])])]),_c('div',{staticClass:"menu_item"},[_c('div',{staticClass:"menu_itemContent"},[_c('a',{attrs:{"href":"/soho/detection.html"}},[_c('div',{staticClass:"menu_itemText-zh"},[_vm._v(" 檢驗認證 ")]),_c('div',{staticClass:"menu_itemText-en"},[_vm._v(" DETECTION ")])])])]),_c('div',{staticClass:"menu_item menu_itemProducts",attrs:{"id":"menu_itemProducts"}},[_c('div',{staticClass:"menu_itemContent"},[_c('div',[_c('div',{staticClass:"menu_itemText-zh"},[_vm._v(" 產品資訊 ")]),_c('div',{staticClass:"menu_itemText-en"},[_vm._v(" PRODUCTS ")])])]),_c('div',{staticClass:"navbar_submenu navbar_submenuProduct",attrs:{"id":"menu_itemProductsSubMenu"}},[_c('div',{staticClass:"container"},[_c('div',{staticClass:"navbar_submenuProductHotType"},[_c('a',{staticClass:"navbar_submenu-highlight"},[_vm._v(" 【9/01-9/14】中秋禮盒 - "),_c('br'),_vm._v("送你送健康 ")]),_c('a',{staticClass:"navbar_submenuItem",attrs:{"href":"/soho/productList.html"}},[_vm._v(" 新品上市 ")]),_c('a',{staticClass:"navbar_submenuItem",attrs:{"href":"/soho/productList.html"}},[_vm._v(" 暢銷熱賣 ")]),_c('a',{staticClass:"navbar_submenuItem",attrs:{"href":"/soho/productList.html"}},[_vm._v(" 囤貨必備 ")]),_c('a',{staticClass:"navbar_submenuItemButton",attrs:{"href":"/soho/productList.html"}},[_vm._v("SHOP ALL PRODUCTS")]),_c('a',{staticClass:"navbar_submenuItemButton navbar_submenuItemButton-benefit",attrs:{"href":"/soho/productList.html"}},[_vm._v("點我領取最新優惠 "),_c('span')])]),_c('div',{staticClass:"navbar_submenuProductType"},[_c('a',{staticClass:"navbar_submenuItem",attrs:{"href":""}},[_vm._v("海藻")]),_c('a',{staticClass:"navbar_submenuItem",attrs:{"href":""}},[_vm._v("醬料")]),_c('a',{staticClass:"navbar_submenuItem",attrs:{"href":""}},[_vm._v("高湯")]),_c('a',{staticClass:"navbar_submenuItem",attrs:{"href":""}},[_vm._v("組合搭配")])]),_c('div',{staticClass:"navbar_submenuProductAd"},[_c('div',{staticClass:"navbar_submenuProductAdBlock"},[_c('img',{attrs:{"src":"/soho/img/navbar/navbar_item1.jpg"}}),_c('div',[_c('p',{staticClass:"navbar_submenuProductAdBlockTitle"},[_vm._v(" 匠心工藝 最初風味 ")]),_c('p',[_vm._v("精選100% 新鮮芝麻，經多道研磨，形成質地細緻綿密，口感滑順的純黑芝麻醬。")]),_c('a',{staticClass:"navbar_submenuProductAdBlockLink",attrs:{"href":"/soho/productContent.html"}},[_vm._v("立即前往")])])]),_c('div',{staticClass:"navbar_submenuProductAdBlock"},[_c('img',{attrs:{"src":"/soho/img/navbar/navbar_item2.jpg"}}),_c('div',[_c('p',{staticClass:"navbar_submenuProductAdBlockTitle"},[_vm._v(" 匠心工藝 最初風味 ")]),_c('p',[_vm._v("精選100% 新鮮芝麻，經多道研磨，形成質地細緻綿密，口感滑順的純黑芝麻醬。")]),_c('a',{staticClass:"navbar_submenuProductAdBlockLink",attrs:{"href":"/soho/productContent.html"}},[_vm._v("立即前往")])])])])])])]),_c('div',{staticClass:"menu_item"},[_c('div',{staticClass:"menu_itemContent"},[_c('a',{attrs:{"href":"/soho/news.html"}},[_c('div',{staticClass:"menu_itemText-zh"},[_vm._v(" 最新消息 ")]),_c('div',{staticClass:"menu_itemText-en"},[_vm._v(" NEWS ")])])])])])]),_c('div',{staticClass:"logo"},[_c('img',{attrs:{"src":"/soho/img/navbar/logo.png","alt":"藻作坊"}})]),_c('div',{staticClass:"ProjectHeader_area ProjectHeader_area-right"},[_c('div',{staticClass:"menu"},[_c('div',{staticClass:"menu_item"},[_c('div',{staticClass:"menu_itemContent"},[_c('a',{attrs:{"href":"/soho/seaweedList.html"}},[_c('div',{staticClass:"menu_itemText-zh"},[_vm._v(" 海藻學堂 ")]),_c('div',{staticClass:"menu_itemText-en"},[_vm._v(" SEAWEED ")])])])]),_c('div',{staticClass:"menu_item"},[_c('div',{staticClass:"menu_itemContent"},[_c('a',{attrs:{"href":"/soho/store.html"}},[_c('div',{staticClass:"menu_itemText-zh"},[_vm._v(" 門市據點 ")]),_c('div',{staticClass:"menu_itemText-en"},[_vm._v(" STORE ")])])])]),_c('div',{staticClass:"menu_item"},[_c('div',{staticClass:"menu_itemContent"},[_c('a',{attrs:{"href":"/soho/contact.html"}},[_c('div',{staticClass:"menu_itemText-zh"},[_vm._v(" 聯絡我們 ")]),_c('div',{staticClass:"menu_itemText-en"},[_vm._v(" CONTACT ")])])])])]),_c('div',{staticClass:"functionBar"},[_c('div',{staticClass:"functionBar_member",attrs:{"id":"functionBar_member"}},[_c('button',{staticClass:"navbar_btn functionBar_memberBtn",attrs:{"id":"navbar_memberBtn"}}),_c('div',{staticClass:"navbar_toolMember",attrs:{"id":"navbar_toolMember"}},[_c('div',{staticClass:"navbar_toolMemberMain"},[_c('a',{attrs:{"href":"/soho/orderStatus.html"}},[_c('img',{attrs:{"src":"/soho/img/navbar/navbar_memberItem1.png"}}),_c('span',[_vm._v("訂單查詢")])]),_c('a',{attrs:{"href":"/soho/cartProcess1.html"}},[_c('img',{attrs:{"src":"/soho/img/navbar/navbar_memberItem2.png"}}),_c('span',[_vm._v("我的購物車")])]),_c('a',{attrs:{"href":"/soho/member.html"}},[_c('img',{attrs:{"src":"/soho/img/navbar/navbar_memberItem3.png"}}),_c('span',[_vm._v("會員中心")])]),_c('a',{attrs:{"href":"/soho/member.html"}},[_c('img',{attrs:{"src":"/soho/img/navbar/navbar_memberItem4.png"}}),_c('span',[_vm._v("客服中心")])])]),_c('ul',{staticClass:"navbar_toolMemberSub"},[_c('li',[_c('a',{attrs:{"href":"/soho/collect.html"}},[_c('span',[_vm._v("我的收藏")])])]),_c('li',[_c('a',{attrs:{"href":"/soho/coupon.html"}},[_c('span',[_vm._v("我的折價券")])])]),_c('li',[_c('a',{attrs:{"href":"/soho/bonus.html"}},[_c('span',[_vm._v("我的紅利點數")])])]),_c('li',[_c('a',{attrs:{"href":"/soho/paymentInstructions.html"}},[_c('span',[_vm._v("付款說明")])])]),_c('li',[_c('a',{attrs:{"href":"/soho/returnsAndRefunds.html"}},[_c('span',[_vm._v("退換貨說明")])])])]),_c('div',{staticClass:"navbar_toolMemberStatus"},[_c('a',{attrs:{"href":"/soho"}},[_vm._v("登出")])])])]),_c('div',[_c('a',{staticClass:"navbar_btn functionBar_cartBtn",attrs:{"href":"/soho/cartProcess1.html"}})]),_c('div',[_c('div',{staticClass:"functionBar_search"},[_c('input',{attrs:{"type":"text","placeholder":"SEARCH..."}})])])])]),_c('button',{staticClass:"closeBtn",attrs:{"id":"navbar_closeBtn"}})]),_c('div',{staticClass:"container ProjectHeader-mobile"},[_c('div',{staticClass:"logo"},[_c('img',{attrs:{"src":"/soho/img/navbar/logo.png","alt":"藻作坊"}})]),_c('div',{staticClass:"right"},[_c('div',{staticClass:"functionBar"},[_c('a',{staticClass:"navbar_btn functionBar_cartBtn",attrs:{"href":"/soho/cartProcess1.html"}})]),_c('button',{staticClass:"hamburger",attrs:{"id":"hamburger"}},[_c('span'),_c('span'),_c('span'),_c('span')])])])])}]
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"724ef57f-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/ProjectHeader/index.vue?vue&type=template&id=c35152f0
+var ProjectHeadervue_type_template_id_c35152f0_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)}
+var ProjectHeadervue_type_template_id_c35152f0_staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('header',{staticClass:"ProjectHeader"},[_c('div',{staticClass:"container ProjectHeader-pc"},[_c('div',{staticClass:"ProjectHeader_area ProjectHeader_area-left"},[_c('div',{staticClass:"menu"},[_c('div',{staticClass:"menu_item"},[_c('div',{staticClass:"menu_itemContent"},[_c('a',{attrs:{"href":"/soho/about.html"}},[_c('div',{staticClass:"menu_itemText-zh"},[_vm._v(" 關於我們 ")]),_c('div',{staticClass:"menu_itemText-en"},[_vm._v(" ABOUT ")])])])]),_c('div',{staticClass:"menu_item"},[_c('div',{staticClass:"menu_itemContent"},[_c('a',{attrs:{"href":"/soho/detection.html"}},[_c('div',{staticClass:"menu_itemText-zh"},[_vm._v(" 檢驗認證 ")]),_c('div',{staticClass:"menu_itemText-en"},[_vm._v(" DETECTION ")])])])]),_c('div',{staticClass:"menu_item menu_itemProducts",attrs:{"id":"menu_itemProducts"}},[_c('div',{staticClass:"menu_itemContent"},[_c('div',[_c('div',{staticClass:"menu_itemText-zh"},[_vm._v(" 產品資訊 ")]),_c('div',{staticClass:"menu_itemText-en"},[_vm._v(" PRODUCTS ")])])]),_c('div',{staticClass:"navbar_submenu navbar_submenuProduct",attrs:{"id":"menu_itemProductsSubMenu"}},[_c('div',{staticClass:"container"},[_c('div',{staticClass:"navbar_submenuProductHotType"},[_c('a',{staticClass:"navbar_submenu-highlight"},[_vm._v(" 【9/01-9/14】中秋禮盒 - "),_c('br'),_vm._v("送你送健康 ")]),_c('a',{staticClass:"navbar_submenuItem",attrs:{"href":"/soho/productList.html"}},[_vm._v(" 新品上市 ")]),_c('a',{staticClass:"navbar_submenuItem",attrs:{"href":"/soho/productList.html"}},[_vm._v(" 暢銷熱賣 ")]),_c('a',{staticClass:"navbar_submenuItem",attrs:{"href":"/soho/productList.html"}},[_vm._v(" 囤貨必備 ")]),_c('a',{staticClass:"navbar_submenuItemButton",attrs:{"href":"/soho/productList.html"}},[_vm._v("SHOP ALL PRODUCTS")]),_c('a',{staticClass:"navbar_submenuItemButton navbar_submenuItemButton-benefit",attrs:{"href":"/soho/productList.html"}},[_vm._v("點我領取最新優惠 "),_c('span')])]),_c('div',{staticClass:"navbar_submenuProductType"},[_c('a',{staticClass:"navbar_submenuItem",attrs:{"href":""}},[_vm._v("海藻")]),_c('a',{staticClass:"navbar_submenuItem",attrs:{"href":""}},[_vm._v("醬料")]),_c('a',{staticClass:"navbar_submenuItem",attrs:{"href":""}},[_vm._v("高湯")]),_c('a',{staticClass:"navbar_submenuItem",attrs:{"href":""}},[_vm._v("組合搭配")])]),_c('div',{staticClass:"navbar_submenuProductAd"},[_c('div',{staticClass:"navbar_submenuProductAdBlock"},[_c('img',{attrs:{"src":"/soho/img/navbar/navbar_item1.jpg"}}),_c('div',[_c('p',{staticClass:"navbar_submenuProductAdBlockTitle"},[_vm._v(" 匠心工藝 最初風味 ")]),_c('p',[_vm._v("精選100% 新鮮芝麻，經多道研磨，形成質地細緻綿密，口感滑順的純黑芝麻醬。")]),_c('a',{staticClass:"navbar_submenuProductAdBlockLink",attrs:{"href":"/soho/productContent.html"}},[_vm._v("立即前往")])])]),_c('div',{staticClass:"navbar_submenuProductAdBlock"},[_c('img',{attrs:{"src":"/soho/img/navbar/navbar_item2.jpg"}}),_c('div',[_c('p',{staticClass:"navbar_submenuProductAdBlockTitle"},[_vm._v(" 匠心工藝 最初風味 ")]),_c('p',[_vm._v("精選100% 新鮮芝麻，經多道研磨，形成質地細緻綿密，口感滑順的純黑芝麻醬。")]),_c('a',{staticClass:"navbar_submenuProductAdBlockLink",attrs:{"href":"/soho/productContent.html"}},[_vm._v("立即前往")])])])])])])]),_c('div',{staticClass:"menu_item"},[_c('div',{staticClass:"menu_itemContent"},[_c('a',{attrs:{"href":"/soho/news.html"}},[_c('div',{staticClass:"menu_itemText-zh"},[_vm._v(" 最新消息 ")]),_c('div',{staticClass:"menu_itemText-en"},[_vm._v(" NEWS ")])])])])])]),_c('a',{staticClass:"logo",attrs:{"href":"/soho/index.html"}},[_c('img',{attrs:{"src":"/soho/img/navbar/logo.png","alt":"藻作坊"}})]),_c('div',{staticClass:"ProjectHeader_area ProjectHeader_area-right"},[_c('div',{staticClass:"menu"},[_c('div',{staticClass:"menu_item"},[_c('div',{staticClass:"menu_itemContent"},[_c('a',{attrs:{"href":"/soho/seaweedList.html"}},[_c('div',{staticClass:"menu_itemText-zh"},[_vm._v(" 海藻學堂 ")]),_c('div',{staticClass:"menu_itemText-en"},[_vm._v(" SEAWEED ")])])])]),_c('div',{staticClass:"menu_item"},[_c('div',{staticClass:"menu_itemContent"},[_c('a',{attrs:{"href":"/soho/store.html"}},[_c('div',{staticClass:"menu_itemText-zh"},[_vm._v(" 門市據點 ")]),_c('div',{staticClass:"menu_itemText-en"},[_vm._v(" STORE ")])])])]),_c('div',{staticClass:"menu_item"},[_c('div',{staticClass:"menu_itemContent"},[_c('a',{attrs:{"href":"/soho/contact.html"}},[_c('div',{staticClass:"menu_itemText-zh"},[_vm._v(" 聯絡我們 ")]),_c('div',{staticClass:"menu_itemText-en"},[_vm._v(" CONTACT ")])])])])]),_c('div',{staticClass:"functionBar"},[_c('div',{staticClass:"functionBar_member",attrs:{"id":"functionBar_member"}},[_c('button',{staticClass:"navbar_btn functionBar_memberBtn",attrs:{"id":"navbar_memberBtn"}}),_c('div',{staticClass:"navbar_toolMember",attrs:{"id":"navbar_toolMember"}},[_c('div',{staticClass:"navbar_toolMemberMain"},[_c('a',{attrs:{"href":"/soho/orderStatus.html"}},[_c('img',{attrs:{"src":"/soho/img/navbar/navbar_memberItem1.png"}}),_c('span',[_vm._v("訂單查詢")])]),_c('a',{attrs:{"href":"/soho/cartProcess1.html"}},[_c('img',{attrs:{"src":"/soho/img/navbar/navbar_memberItem2.png"}}),_c('span',[_vm._v("我的購物車")])]),_c('a',{attrs:{"href":"/soho/member.html"}},[_c('img',{attrs:{"src":"/soho/img/navbar/navbar_memberItem3.png"}}),_c('span',[_vm._v("會員中心")])]),_c('a',{attrs:{"href":"/soho/member.html"}},[_c('img',{attrs:{"src":"/soho/img/navbar/navbar_memberItem4.png"}}),_c('span',[_vm._v("客服中心")])])]),_c('ul',{staticClass:"navbar_toolMemberSub"},[_c('li',[_c('a',{attrs:{"href":"/soho/collect.html"}},[_c('span',[_vm._v("我的收藏")])])]),_c('li',[_c('a',{attrs:{"href":"/soho/coupon.html"}},[_c('span',[_vm._v("我的折價券")])])]),_c('li',[_c('a',{attrs:{"href":"/soho/bonus.html"}},[_c('span',[_vm._v("我的紅利點數")])])]),_c('li',[_c('a',{attrs:{"href":"/soho/paymentInstructions.html"}},[_c('span',[_vm._v("付款說明")])])]),_c('li',[_c('a',{attrs:{"href":"/soho/returnsAndRefunds.html"}},[_c('span',[_vm._v("退換貨說明")])])])]),_c('div',{staticClass:"navbar_toolMemberStatus"},[_c('a',{attrs:{"href":"/soho"}},[_vm._v("登出")])])])]),_c('div',[_c('a',{staticClass:"navbar_btn functionBar_cartBtn",attrs:{"href":"/soho/cartProcess1.html"}})]),_c('div',[_c('div',{staticClass:"functionBar_search"},[_c('input',{attrs:{"type":"text","placeholder":"SEARCH..."}})])])])]),_c('button',{staticClass:"closeBtn",attrs:{"id":"navbar_closeBtn"}})]),_c('div',{staticClass:"container ProjectHeader-mobile"},[_c('div',{staticClass:"logo"},[_c('img',{attrs:{"src":"/soho/img/navbar/logo.png","alt":"藻作坊"}})]),_c('div',{staticClass:"right"},[_c('div',{staticClass:"functionBar"},[_c('a',{staticClass:"navbar_btn functionBar_cartBtn",attrs:{"href":"/soho/cartProcess1.html"}})]),_c('button',{staticClass:"hamburger",attrs:{"id":"hamburger"}},[_c('span'),_c('span'),_c('span'),_c('span')])])])])}]
 
 
-// CONCATENATED MODULE: ./src/components/ProjectHeader/index.vue?vue&type=template&id=bcd83b08
+// CONCATENATED MODULE: ./src/components/ProjectHeader/index.vue?vue&type=template&id=c35152f0
 
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--13-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/ProjectHeader/index.vue?vue&type=script&lang=js
+//
+//
+//
 //
 //
 //
@@ -687,8 +708,8 @@ var componentNormalizer = __webpack_require__("2877");
 
 var component = Object(componentNormalizer["a" /* default */])(
   components_ProjectHeadervue_type_script_lang_js,
-  ProjectHeadervue_type_template_id_bcd83b08_render,
-  ProjectHeadervue_type_template_id_bcd83b08_staticRenderFns,
+  ProjectHeadervue_type_template_id_c35152f0_render,
+  ProjectHeadervue_type_template_id_c35152f0_staticRenderFns,
   false,
   null,
   null,
@@ -985,12 +1006,12 @@ var MobileToolBar_component = Object(componentNormalizer["a" /* default */])(
 )
 
 /* harmony default export */ var MobileToolBar = (MobileToolBar_component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"724ef57f-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/FloatBtn/FloatBtn.vue?vue&type=template&id=fb7ad424
-var FloatBtnvue_type_template_id_fb7ad424_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)}
-var FloatBtnvue_type_template_id_fb7ad424_staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"FloatBtn"},[_c('a',{attrs:{"href":"javascript:;","target":"_blank"}},[_c('img',{attrs:{"src":"/soho/img/floatBtn_chat.png","alt":"chat"}})]),_c('a',{attrs:{"href":"javascript:;","target":"_blank"}},[_c('img',{attrs:{"src":"/soho/img/floatBtn_cart.png","alt":"cart"}})]),_c('button',{attrs:{"id":"btn__quickTop"}},[_c('img',{attrs:{"src":"/soho/img/floatBtn_up.png","alt":"up"}})])])}]
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"724ef57f-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/FloatBtn/FloatBtn.vue?vue&type=template&id=24973e47
+var FloatBtnvue_type_template_id_24973e47_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)}
+var FloatBtnvue_type_template_id_24973e47_staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"FloatBtn"},[_c('a',{attrs:{"href":"javascript:;","target":"_blank"}},[_c('img',{attrs:{"src":"/soho/img/floatBtn_chat.png","alt":"chat"}})]),_c('a',{attrs:{"href":"javascript:;","target":"_blank"}},[_c('img',{attrs:{"src":"/soho/img/floatBtn_cart.png","alt":"cart"}})]),_c('button',{attrs:{"id":"btn__quickTop"}},[_c('img',{attrs:{"src":"/soho/img/floatBtn_up.png","alt":"up"}})])])}]
 
 
-// CONCATENATED MODULE: ./src/components/FloatBtn/FloatBtn.vue?vue&type=template&id=fb7ad424
+// CONCATENATED MODULE: ./src/components/FloatBtn/FloatBtn.vue?vue&type=template&id=24973e47
 
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--13-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/FloatBtn/FloatBtn.vue?vue&type=script&lang=js
 //
@@ -1028,8 +1049,8 @@ var FloatBtnvue_type_template_id_fb7ad424_staticRenderFns = [function () {var _v
 });
 // CONCATENATED MODULE: ./src/components/FloatBtn/FloatBtn.vue?vue&type=script&lang=js
  /* harmony default export */ var FloatBtn_FloatBtnvue_type_script_lang_js = (FloatBtnvue_type_script_lang_js); 
-// EXTERNAL MODULE: ./src/components/FloatBtn/FloatBtn.vue?vue&type=style&index=0&id=fb7ad424&prod&lang=scss
-var FloatBtnvue_type_style_index_0_id_fb7ad424_prod_lang_scss = __webpack_require__("e727");
+// EXTERNAL MODULE: ./src/components/FloatBtn/FloatBtn.vue?vue&type=style&index=0&id=24973e47&prod&lang=scss
+var FloatBtnvue_type_style_index_0_id_24973e47_prod_lang_scss = __webpack_require__("d5fa");
 
 // CONCATENATED MODULE: ./src/components/FloatBtn/FloatBtn.vue
 
@@ -1042,8 +1063,8 @@ var FloatBtnvue_type_style_index_0_id_fb7ad424_prod_lang_scss = __webpack_requir
 
 var FloatBtn_component = Object(componentNormalizer["a" /* default */])(
   FloatBtn_FloatBtnvue_type_script_lang_js,
-  FloatBtnvue_type_template_id_fb7ad424_render,
-  FloatBtnvue_type_template_id_fb7ad424_staticRenderFns,
+  FloatBtnvue_type_template_id_24973e47_render,
+  FloatBtnvue_type_template_id_24973e47_staticRenderFns,
   false,
   null,
   null,
@@ -4281,12 +4302,12 @@ var ProductList_component = Object(componentNormalizer["a" /* default */])(
 )
 
 /* harmony default export */ var ProductList = (ProductList_component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"724ef57f-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/vue-loader/lib??vue-loader-options!./src/pages/Login/index.vue?vue&type=template&id=ae5132f8
-var Loginvue_type_template_id_ae5132f8_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"Login"},[_c('div',{staticClass:"container container-page"},[_c('div',{staticClass:"page_commonTitleArea"},[_c('Title',{attrs:{"en":"MEMBER LOGIN","zh":"會員登入"}}),_c('Breadcrumb',{attrs:{"link-data":[{title: 'MEMBER LOGIN', path: '/login.html'}]}})],1),_vm._m(0),_vm._m(1)])])}
-var Loginvue_type_template_id_ae5132f8_staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"LoginSignUp_links"},[_c('a',{attrs:{"href":"/soho/signup.html"}},[_vm._v("會員註冊")]),_c('a',{staticClass:"active",attrs:{"href":"/soho/login.html"}},[_vm._v("會員登入")])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"LoginSignUp_formWrap"},[_c('div',{staticClass:"LoginSignUp_socialMedia"},[_c('div',{staticClass:"LoginSignUp_title"},[_vm._v(" 社群帳號登入 / ")]),_c('button',{staticClass:"LoginSignUp_line"},[_c('img',{attrs:{"src":"/soho/img/login/login_line.jpg","alt":""}})])]),_c('div',{staticClass:"LoginSignUp_member"},[_c('div',{staticClass:"LoginSignUp_title"},[_vm._v(" 會員帳號登入 / ")]),_c('div',{staticClass:"LoginSignUp_member-form"},[_c('label',{attrs:{"for":""}},[_c('div',{staticClass:"name"},[_c('span',[_vm._v("電子信箱")])]),_c('input',{attrs:{"id":"","placeholder":"請輸入電子信箱","type":"text","name":""}})]),_c('label',{attrs:{"for":""}},[_c('div',{staticClass:"name"},[_vm._v("密碼")]),_c('input',{attrs:{"id":"","type":"password","name":""}})]),_c('div',{staticClass:"LoginSignUp_member-form-utils"},[_c('label',{staticClass:"checkbox_wrap"},[_c('input',{attrs:{"type":"checkbox","checked":"checked"}}),_vm._v("記住我 "),_c('span',{staticClass:"checkmark"})]),_c('div',[_c('a',{staticClass:"forgetPwd",attrs:{"href":""}},[_vm._v("忘記密碼？")])])]),_c('button',{staticClass:"LoginSignUp_member-form-btn"},[_vm._v(" 登"),_c('span'),_vm._v("入 ")]),_c('div',{staticClass:"LoginSignUp_member-form-divider"},[_c('span',[_vm._v("或是")])]),_c('button',{staticClass:"LoginSignUp_member-form-btn LoginSignvUp_member-form-btn-secondary"},[_vm._v(" 註"),_c('span'),_vm._v("冊 ")])])])])}]
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"724ef57f-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/vue-loader/lib??vue-loader-options!./src/pages/Login/index.vue?vue&type=template&id=8770f7cc
+var Loginvue_type_template_id_8770f7cc_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"Login"},[_c('div',{staticClass:"container container-page"},[_c('div',{staticClass:"page_commonTitleArea"},[_c('Title',{attrs:{"en":"MEMBER LOGIN","zh":"會員登入"}}),_c('Breadcrumb',{attrs:{"link-data":[{title: 'MEMBER LOGIN', path: '/login.html'}]}})],1),_vm._m(0),_vm._m(1)])])}
+var Loginvue_type_template_id_8770f7cc_staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"LoginSignUp_links"},[_c('a',{attrs:{"href":"/soho/signup.html"}},[_vm._v("會員註冊")]),_c('a',{staticClass:"active",attrs:{"href":"/soho/login.html"}},[_vm._v("會員登入")])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"LoginSignUp_formWrap"},[_c('div',{staticClass:"LoginSignUp_socialMedia"},[_c('div',{staticClass:"LoginSignUp_title"},[_vm._v(" 社群帳號登入 / ")]),_c('button',{staticClass:"LoginSignUp_line"},[_c('img',{attrs:{"src":"/soho/img/login/login_line.jpg","alt":""}})])]),_c('div',{staticClass:"LoginSignUp_member"},[_c('div',{staticClass:"LoginSignUp_title"},[_vm._v(" 會員帳號登入 / ")]),_c('div',{staticClass:"LoginSignUp_member-form"},[_c('label',{attrs:{"for":""}},[_c('div',{staticClass:"name"},[_c('span',[_vm._v("電子信箱")])]),_c('input',{attrs:{"id":"email","placeholder":"請輸入電子信箱","type":"text","name":""}})]),_c('label',{attrs:{"for":""}},[_c('div',{staticClass:"name"},[_vm._v("密碼")]),_c('input',{attrs:{"id":"","type":"password","name":""}})]),_c('div',{staticClass:"LoginSignUp_member-form-utils"},[_c('label',{staticClass:"checkbox_wrap"},[_c('input',{attrs:{"type":"checkbox","checked":"checked"}}),_vm._v("記住我 "),_c('span',{staticClass:"checkmark"})]),_c('div',[_c('a',{staticClass:"forgetPwd",attrs:{"href":""}},[_vm._v("忘記密碼？")])])]),_c('button',{staticClass:"LoginSignUp_member-form-btn"},[_vm._v(" 登"),_c('span'),_vm._v("入 ")]),_c('div',{staticClass:"LoginSignUp_member-form-divider"},[_c('span',[_vm._v("或是")])]),_c('button',{staticClass:"LoginSignUp_member-form-btn LoginSignvUp_member-form-btn-secondary"},[_vm._v(" 註"),_c('span'),_vm._v("冊 ")])])])])}]
 
 
-// CONCATENATED MODULE: ./src/pages/Login/index.vue?vue&type=template&id=ae5132f8
+// CONCATENATED MODULE: ./src/pages/Login/index.vue?vue&type=template&id=8770f7cc
 
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--13-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/vue-loader/lib??vue-loader-options!./src/pages/Login/index.vue?vue&type=script&lang=js
 //
@@ -4400,8 +4421,8 @@ var Login_stylevue_type_style_index_0_prod_lang_scss_external = __webpack_requir
 
 var Login_component = Object(componentNormalizer["a" /* default */])(
   pages_Loginvue_type_script_lang_js,
-  Loginvue_type_template_id_ae5132f8_render,
-  Loginvue_type_template_id_ae5132f8_staticRenderFns,
+  Loginvue_type_template_id_8770f7cc_render,
+  Loginvue_type_template_id_8770f7cc_staticRenderFns,
   false,
   null,
   null,
@@ -4410,12 +4431,12 @@ var Login_component = Object(componentNormalizer["a" /* default */])(
 )
 
 /* harmony default export */ var Login = (Login_component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"724ef57f-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/vue-loader/lib??vue-loader-options!./src/pages/SignUp/index.vue?vue&type=template&id=de11c8d2
-var SignUpvue_type_template_id_de11c8d2_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"SignUp"},[_c('div',{staticClass:"container container-page"},[_c('div',{staticClass:"page_commonTitleArea"},[_c('Title',{attrs:{"en":"SIGN UP","zh":"會員註冊"}}),_c('Breadcrumb',{attrs:{"link-data":[{title: 'SIGN UP', path: '/signup.html'}]}})],1),_vm._m(0),_vm._m(1)])])}
-var SignUpvue_type_template_id_de11c8d2_staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"LoginSignUp_links"},[_c('a',{staticClass:"active",attrs:{"href":"/soho/signup.html"}},[_vm._v("會員註冊")]),_c('a',{attrs:{"href":"/soho/login.html"}},[_vm._v("會員登入")])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"LoginSignUp_formWrap"},[_c('div',{staticClass:"LoginSignUp_socialMedia"},[_c('div',{staticClass:"LoginSignUp_title"},[_vm._v(" 社群帳號註冊 / ")]),_c('button',{staticClass:"LoginSignUp_line"},[_c('img',{attrs:{"src":"/soho/img/login/login_line.jpg","alt":""}})])]),_c('div',{staticClass:"LoginSignUp_member"},[_c('div',{staticClass:"LoginSignUp_title"},[_vm._v(" 會員註冊 / ")]),_c('div',{staticClass:"LoginSignUp_member-form"},[_c('label',{attrs:{"for":""}},[_c('div',{staticClass:"name"},[_c('span',[_vm._v("電子信箱")])]),_c('input',{attrs:{"id":"","placeholder":"請輸入電子信箱","type":"text","name":""}})]),_c('label',{attrs:{"for":""}},[_c('div',{staticClass:"name"},[_vm._v("密碼")]),_c('input',{attrs:{"id":"","type":"password","name":""}})]),_c('label',{attrs:{"for":""}},[_c('div',{staticClass:"name"},[_vm._v("重新輸入密碼")]),_c('input',{attrs:{"id":"","type":"password","name":""}})]),_c('label',{staticClass:"last",attrs:{"for":""}},[_c('div',{staticClass:"name"},[_c('span',[_vm._v("使用者名稱")])]),_c('input',{attrs:{"id":"","placeholder":"請輸入使用者名稱，字數限10字內","type":"text","name":""}})]),_c('button',{staticClass:"LoginSignUp_member-form-btn"},[_vm._v(" 註"),_c('span'),_vm._v("冊 ")]),_c('div',{staticClass:"SignUp_goLogin"},[_vm._v(" 已有帳號？"),_c('a',{attrs:{"href":"/soho/login.html"}},[_vm._v("立即登入")])])])])])}]
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"724ef57f-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/vue-loader/lib??vue-loader-options!./src/pages/SignUp/index.vue?vue&type=template&id=2c549b46
+var SignUpvue_type_template_id_2c549b46_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"SignUp"},[_c('div',{staticClass:"container container-page"},[_c('div',{staticClass:"page_commonTitleArea"},[_c('Title',{attrs:{"en":"SIGN UP","zh":"會員註冊"}}),_c('Breadcrumb',{attrs:{"link-data":[{title: 'SIGN UP', path: '/signup.html'}]}})],1),_vm._m(0),_vm._m(1)])])}
+var SignUpvue_type_template_id_2c549b46_staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"LoginSignUp_links"},[_c('a',{staticClass:"active",attrs:{"href":"/soho/signup.html"}},[_vm._v("會員註冊")]),_c('a',{attrs:{"href":"/soho/login.html"}},[_vm._v("會員登入")])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"LoginSignUp_formWrap"},[_c('div',{staticClass:"LoginSignUp_socialMedia"},[_c('div',{staticClass:"LoginSignUp_title"},[_vm._v(" 社群帳號註冊 / ")]),_c('button',{staticClass:"LoginSignUp_line"},[_c('img',{attrs:{"src":"/soho/img/login/login_line.jpg","alt":""}})])]),_c('div',{staticClass:"LoginSignUp_member"},[_c('div',{staticClass:"LoginSignUp_title"},[_vm._v(" 會員註冊 / ")]),_c('div',{staticClass:"LoginSignUp_member-form"},[_c('label',{attrs:{"for":""}},[_c('div',{staticClass:"name"},[_c('span',[_vm._v("電子信箱")])]),_c('input',{attrs:{"id":"","placeholder":"請輸入電子信箱","type":"text","name":""}})]),_c('label',{attrs:{"for":""}},[_c('div',{staticClass:"name"},[_vm._v("密碼")]),_c('input',{attrs:{"id":"password","type":"password","name":""}})]),_c('label',{attrs:{"for":""}},[_c('div',{staticClass:"name"},[_vm._v("重新輸入密碼")]),_c('input',{attrs:{"id":"reWritePassword","type":"password","name":""}})]),_c('label',{staticClass:"last",attrs:{"for":""}},[_c('div',{staticClass:"name"},[_c('span',[_vm._v("使用者名稱")])]),_c('input',{attrs:{"id":"username","placeholder":"請輸入使用者名稱，字數限10字內","type":"text","name":""}})]),_c('button',{staticClass:"LoginSignUp_member-form-btn"},[_vm._v(" 註"),_c('span'),_vm._v("冊 ")]),_c('div',{staticClass:"SignUp_goLogin"},[_vm._v(" 已有帳號？"),_c('a',{attrs:{"href":"/soho/login.html"}},[_vm._v("立即登入")])])])])])}]
 
 
-// CONCATENATED MODULE: ./src/pages/SignUp/index.vue?vue&type=template&id=de11c8d2
+// CONCATENATED MODULE: ./src/pages/SignUp/index.vue?vue&type=template&id=2c549b46
 
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--13-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/vue-loader/lib??vue-loader-options!./src/pages/SignUp/index.vue?vue&type=script&lang=js
 //
@@ -4533,8 +4554,8 @@ var SignUp_stylevue_type_style_index_0_prod_lang_scss_external = __webpack_requi
 
 var SignUp_component = Object(componentNormalizer["a" /* default */])(
   pages_SignUpvue_type_script_lang_js,
-  SignUpvue_type_template_id_de11c8d2_render,
-  SignUpvue_type_template_id_de11c8d2_staticRenderFns,
+  SignUpvue_type_template_id_2c549b46_render,
+  SignUpvue_type_template_id_2c549b46_staticRenderFns,
   false,
   null,
   null,
@@ -4715,12 +4736,12 @@ var Couponvue_type_template_id_63887502_staticRenderFns = [function () {var _vm=
 
 // CONCATENATED MODULE: ./src/pages/Coupon/index.vue?vue&type=template&id=63887502
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"724ef57f-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Tabs/index.vue?vue&type=template&id=12af2ef8
-var Tabsvue_type_template_id_12af2ef8_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"Tabs"},[_c('div',{staticClass:"Tabs__container"},[_c('div',{staticClass:"Tabs__content"},[_c('router-link',{class:{active: _vm.isActive('/member.html')},attrs:{"to":{ name: 'Member' }}},[_vm._v(" 會員中心 ")]),_c('router-link',{class:{active: _vm.isActive('/orderStatus.html')},attrs:{"to":{ name: 'OrderStatus' }}},[_vm._v(" 訂單查詢 ")]),_c('router-link',{class:{active: _vm.isActive('/collect.html')},attrs:{"to":{ name: 'Collect' }}},[_vm._v(" 我的收藏 ")]),_c('router-link',{class:{active: _vm.isActive('/coupon.html')},attrs:{"to":{ name: 'Coupon' }}},[_vm._v(" 我的折價券 ")]),_c('router-link',{class:{active: _vm.isActive('/bonus.html')},attrs:{"to":{ name: 'Bonus' }}},[_vm._v(" 我的紅利點數 ")])],1)])])}
-var Tabsvue_type_template_id_12af2ef8_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"724ef57f-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Tabs/index.vue?vue&type=template&id=13e3405c
+var Tabsvue_type_template_id_13e3405c_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"Tabs"},[_c('div',{staticClass:"Tabs__container"},[_c('div',{staticClass:"Tabs__content"},[_c('router-link',{class:{active: _vm.isActive('/member.html')},attrs:{"to":{ name: 'Member' }}},[_vm._v(" 會員中心 ")]),_c('router-link',{class:{active: _vm.isActive('/orderStatus.html')},attrs:{"to":{ name: 'OrderStatus' }}},[_vm._v(" 訂單查詢 ")]),_c('router-link',{class:{active: _vm.isActive('/collect.html')},attrs:{"to":{ name: 'Collect' }}},[_vm._v(" 我的收藏 ")]),_c('router-link',{class:{active: _vm.isActive('/coupon.html')},attrs:{"to":{ name: 'Coupon' }}},[_vm._v(" 我的折價券 ")]),_c('router-link',{class:{active: _vm.isActive('/bonus.html')},attrs:{"to":{ name: 'Bonus' }}},[_vm._v(" 我的紅利點數 ")])],1)])])}
+var Tabsvue_type_template_id_13e3405c_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/Tabs/index.vue?vue&type=template&id=12af2ef8
+// CONCATENATED MODULE: ./src/components/Tabs/index.vue?vue&type=template&id=13e3405c
 
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--13-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Tabs/index.vue?vue&type=script&lang=js
 //
@@ -4778,8 +4799,8 @@ var Tabsvue_type_template_id_12af2ef8_staticRenderFns = []
 });
 // CONCATENATED MODULE: ./src/components/Tabs/index.vue?vue&type=script&lang=js
  /* harmony default export */ var components_Tabsvue_type_script_lang_js = (Tabsvue_type_script_lang_js); 
-// EXTERNAL MODULE: ./src/components/Tabs/index.vue?vue&type=style&index=0&id=12af2ef8&prod&lang=scss
-var Tabsvue_type_style_index_0_id_12af2ef8_prod_lang_scss = __webpack_require__("da4d");
+// EXTERNAL MODULE: ./src/components/Tabs/index.vue?vue&type=style&index=0&id=13e3405c&prod&lang=scss
+var Tabsvue_type_style_index_0_id_13e3405c_prod_lang_scss = __webpack_require__("4495");
 
 // CONCATENATED MODULE: ./src/components/Tabs/index.vue
 
@@ -4792,8 +4813,8 @@ var Tabsvue_type_style_index_0_id_12af2ef8_prod_lang_scss = __webpack_require__(
 
 var Tabs_component = Object(componentNormalizer["a" /* default */])(
   components_Tabsvue_type_script_lang_js,
-  Tabsvue_type_template_id_12af2ef8_render,
-  Tabsvue_type_template_id_12af2ef8_staticRenderFns,
+  Tabsvue_type_template_id_13e3405c_render,
+  Tabsvue_type_template_id_13e3405c_staticRenderFns,
   false,
   null,
   null,
@@ -6963,13 +6984,6 @@ new vue_runtime_esm["default"]({
 
 /***/ }),
 
-/***/ "8a5e":
-/***/ (function(module, exports, __webpack_require__) {
-
-// extracted by mini-css-extract-plugin
-
-/***/ }),
-
 /***/ "8b6f":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -7106,6 +7120,17 @@ new vue_runtime_esm["default"]({
 
 /***/ }),
 
+/***/ "d5fa":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_9_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_9_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_9_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_9_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_1_0_node_modules_vue_loader_lib_index_js_vue_loader_options_FloatBtn_vue_vue_type_style_index_0_id_24973e47_prod_lang_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("1853");
+/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_9_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_9_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_9_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_9_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_1_0_node_modules_vue_loader_lib_index_js_vue_loader_options_FloatBtn_vue_vue_type_style_index_0_id_24973e47_prod_lang_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_mini_css_extract_plugin_dist_loader_js_ref_9_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_9_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_9_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_9_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_1_0_node_modules_vue_loader_lib_index_js_vue_loader_options_FloatBtn_vue_vue_type_style_index_0_id_24973e47_prod_lang_scss__WEBPACK_IMPORTED_MODULE_0__);
+/* unused harmony reexport * */
+
+
+/***/ }),
+
 /***/ "d6e6":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -7119,17 +7144,6 @@ new vue_runtime_esm["default"]({
 "use strict";
 /* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_9_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_9_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_9_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_9_oneOf_1_3_style_scss_vue_type_style_index_0_prod_lang_scss_external__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("28a0");
 /* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_9_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_9_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_9_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_9_oneOf_1_3_style_scss_vue_type_style_index_0_prod_lang_scss_external__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_mini_css_extract_plugin_dist_loader_js_ref_9_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_9_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_9_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_9_oneOf_1_3_style_scss_vue_type_style_index_0_prod_lang_scss_external__WEBPACK_IMPORTED_MODULE_0__);
-/* unused harmony reexport * */
-
-
-/***/ }),
-
-/***/ "da4d":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_9_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_9_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_9_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_9_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_1_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_id_12af2ef8_prod_lang_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("4528");
-/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_9_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_9_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_9_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_9_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_1_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_id_12af2ef8_prod_lang_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_mini_css_extract_plugin_dist_loader_js_ref_9_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_9_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_9_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_9_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_1_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_id_12af2ef8_prod_lang_scss__WEBPACK_IMPORTED_MODULE_0__);
 /* unused harmony reexport * */
 
 
@@ -7152,17 +7166,6 @@ new vue_runtime_esm["default"]({
 "use strict";
 /* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_9_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_9_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_9_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_9_oneOf_1_3_style_scss_vue_type_style_index_0_prod_lang_scss_external__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("648d");
 /* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_9_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_9_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_9_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_9_oneOf_1_3_style_scss_vue_type_style_index_0_prod_lang_scss_external__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_mini_css_extract_plugin_dist_loader_js_ref_9_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_9_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_9_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_9_oneOf_1_3_style_scss_vue_type_style_index_0_prod_lang_scss_external__WEBPACK_IMPORTED_MODULE_0__);
-/* unused harmony reexport * */
-
-
-/***/ }),
-
-/***/ "e727":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_9_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_9_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_9_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_9_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_1_0_node_modules_vue_loader_lib_index_js_vue_loader_options_FloatBtn_vue_vue_type_style_index_0_id_fb7ad424_prod_lang_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("8a5e");
-/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_9_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_9_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_9_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_9_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_1_0_node_modules_vue_loader_lib_index_js_vue_loader_options_FloatBtn_vue_vue_type_style_index_0_id_fb7ad424_prod_lang_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_mini_css_extract_plugin_dist_loader_js_ref_9_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_9_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_9_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_9_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_1_0_node_modules_vue_loader_lib_index_js_vue_loader_options_FloatBtn_vue_vue_type_style_index_0_id_fb7ad424_prod_lang_scss__WEBPACK_IMPORTED_MODULE_0__);
 /* unused harmony reexport * */
 
 

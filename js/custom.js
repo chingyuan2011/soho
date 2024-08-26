@@ -47,6 +47,7 @@
 })()
 
 const navbarHandler = () => {
+  const mobileBp = 1280
   // resize
   const reset = () => {
     $('body').css('overflow', 'auto')
@@ -71,7 +72,7 @@ const navbarHandler = () => {
     $('#menu_itemProducts').toggleClass('active')
 
     const ww = $(document).width()
-    if (ww <= 1360) {
+    if (ww <= mobileBp) {
       $('body').css('overflow', 'hidden')
       $('.ProjectHeader').addClass('mb-active')
     }
@@ -81,7 +82,7 @@ const navbarHandler = () => {
     $('#functionBar_member').toggleClass('active')
 
     const ww = $(document).width()
-    if (ww <= 1360) {
+    if (ww <= mobileBp) {
       $('body').css('overflow', 'hidden')
       $('.ProjectHeader').addClass('mb-active')
     }
