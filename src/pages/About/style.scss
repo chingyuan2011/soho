@@ -2,7 +2,7 @@
   position: relative;
   padding-bottom: 200px;
   overflow: hidden;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.6;
   color: #052d18;
   background-color: #ffffff;
@@ -10,26 +10,18 @@
   background-repeat: no-repeat, no-repeat;
   background-position: center top, center bottom;
   background-size: cover auto, cover auto;
-  @include screen(1360) {
-    font-size: 16px;
-  }
 
   .container {
-    max-width: 1480px;
-    padding: 0 40px;
-    @include screen(1360) {
-      padding: 20px 20px 40px;
-    }
+    max-width: 1300px;
+    padding: 0px 20px;
   }
 
   &_info {
     position: relative;
     justify-content: flex-start;
-    margin-top: 100px;
-    padding: 80px 0 140px;
+    margin: 180px 0;
     @include screen(1366) {
-      margin-top: 0;
-      padding: 0px;
+      margin: 0;
     }
 
     .container {
@@ -41,25 +33,23 @@
       width: 44%;
       padding-top: 70px;
       padding-right: 80px;
-      font-size: 20px;
 
       .title {
         display: flex;
         flex-shrink: 0;
         flex-wrap: wrap;
         align-content: flex-start;
-        margin-bottom: 100px;
+        margin-bottom: 40px;
       }
 
       h1 {
         font-size: 55px;
-        font-weight: 700;
       }
 
       .establish {
-        margin-left: auto;
-        padding-top: 16px;
-        font-size: 40px;
+        margin-left: 10px;
+        padding-top: 30px;
+        font-size: 28px;
       }
 
       .note {
@@ -85,11 +75,11 @@
         .establish {
           margin-left: 0;
           padding-top: 0;
-          font-size: 22px;
+          font-size: 20px;
         }
 
         .note {
-          font-size: 22px;
+          font-size: 20px;
         }
       }
       @include screen(960) {
@@ -119,8 +109,11 @@
   }
 
   &_mission {
-    padding: 240px 0 160px;
-    @include screen(1600) {
+    padding: 150px 0;
+    @include screen(1366) {
+      padding: 100px 0;
+    }
+    @include screen(960) {
       padding: 60px 0;
     }
 
@@ -148,8 +141,12 @@
     }
 
     p {
-      font-size: 20px;
       color: #523628;
+    }
+    @include screen(960) {
+      p {
+        margin-top: 20px;
+      }
     }
   }
 
@@ -166,9 +163,21 @@
   &_slogan {
     display: flex;
     justify-content: center;
-    padding: 200px 20px 150px;
+    padding: 200px 20px;
+
     @include screen(1366) {
-      padding: 100px 40px;
+      padding: 150px 20px;
+    }
+
+    >div {
+      width: 600px;
+      max-width: 50%;
+    }
+
+    @include screen(960) {
+      >div {
+        max-width: 100%;
+      }
     }
   }
 
@@ -181,7 +190,7 @@
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      padding: 260px 20px 200px;
+      padding: 200px 20px;
       @include screen(1366) {
         min-height: 500px;
         padding: 100px 20px;
@@ -191,33 +200,28 @@
     h2 {
       position: relative;
       display: inline;
-      font-size: 75px;
-      font-weight: 700;
+      font-size: 45px;
 
       &::after {
         content: '';
         position: absolute;
-        top: 50%;
-        left: calc(100% + 50px);
-        width: 280px;
-        height: 6px;
+        top: calc(50% - 2px);
+        left: calc(100% + 30px);
+        width: 200px;
+        height: 4px;
         background-color: #0e2a1e;
       }
     }
 
     .note {
       display: flex;
-      gap: 20px;
+      gap: 10px;
       align-items: center;
-      font-size: 30px;
+      font-size: 28px;
       font-weight: 700;
 
       .highlight {
-        font-size: 60px;
-      }
-
-      .small {
-        font-size: 30px;
+        font-size: 50px;
       }
     }
 
@@ -226,9 +230,9 @@
       gap: 20px;
       align-items: center;
       justify-content: center;
-      margin-top: 30px;
-      padding: 0 90px;
-      font-size: 24px;
+      margin-top: 20px;
+      padding: 0px 90px;
+      font-size: 20px;
       font-weight: 700;
       background-color: #d3875a;
       border-radius: 15px;
@@ -264,7 +268,7 @@
     }
 
     @include screen(1366) {
-      background-position: 20% center;
+      background-position: 35% center;
 
       h2 {
         font-size: 50px;
@@ -309,8 +313,7 @@
   }
 
   &_lineGift {
-    padding-top: 0px;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: bold;
     color: #fff4e5;
     background-color: #9caca3;
@@ -325,16 +328,16 @@
     }
 
     h2 {
-      font-size: 65px;
+      font-size: 55px;
       color: #ffffff;
     }
 
     .highlight {
-      font-size: 60px;
+      font-size: 55px;
     }
 
     @include screen(1366) {
-      font-size: 24px;
+      font-size: 20px;
 
       .container {
         gap: 20px;
@@ -346,7 +349,7 @@
       }
 
       .highlight {
-        font-size: 24px;
+        font-size: 40px;
       }
     }
 
@@ -359,20 +362,18 @@
 
       .container {
         gap: 5px;
-        padding: 20px;
         font-size: 20px;
         line-height: 1.6em;
       }
 
       .highlight {
-        font-size: 40px;
+        font-size: 30px;
       }
     }
   }
 
   &_good {
     display: flex;
-    font-size: 24px;
     color: #523628;
 
     &Item {
@@ -385,7 +386,7 @@
     }
 
     .title {
-      font-size: 30px;
+      font-size: 28px;
       font-weight: 700;
       color: #052d18;
     }
@@ -401,8 +402,8 @@
     }
 
     .benefit {
-      margin-left: 50px;
-      font-size: 36px;
+      margin-left: 40px;
+      font-size: 30px;
       font-weight: 700;
     }
 
@@ -410,7 +411,7 @@
       flex-wrap: wrap;
 
       .note {
-        padding: 40px;
+        padding: 20px;
       }
 
       .benefit {
@@ -420,18 +421,8 @@
     }
 
     @include screen(960) {
-      font-size: 18px;
-
-      .note {
-        padding: 20px;
-      }
-
       .title {
         font-size: 24px;
-      }
-
-      .benefit {
-        margin-left: 0px;
       }
     }
     @include screen(480) {
@@ -453,7 +444,7 @@
       justify-content: center;
       width: 50%;
       padding: 20px;
-      font-size: 35px;
+      font-size: 24px;
       font-weight: 700;
       background-color: #052d18;
 
@@ -464,20 +455,15 @@
 
     .arrow {
       position: relative;
+      top: -5px;
       left: 0;
       display: block;
-      width: 60px;
-      height: 15px;
+      width: 50px;
+      height: 12px;
       border-right: 2px solid #d3875a;
       border-bottom: 2px solid #d3875a;
       transition: left .3s;
       transform: skew(40deg);
-    }
-
-    @include screen(1366) {
-      a {
-        font-size: 22px;
-      }
     }
 
     @include screen(960) {

@@ -6,6 +6,7 @@
   background-size: cover auto, cover auto;
 
   .container {
+    max-width: 1300px;
     padding-top: 50px;
     padding-bottom: 200px;
     @include screen(1360) {
@@ -14,7 +15,7 @@
   }
 
   &__wrap {
-    width: 70%;
+    // width: 70%;
     margin: 0 auto;
 
     @include screen(lg) {
@@ -23,8 +24,7 @@
   }
 
   &__title {
-    padding: 0 10px;
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 700;
     color: #002c18;
   }
@@ -34,10 +34,9 @@
     gap: 10px;
     align-items: center;
     margin-top: 20px;
-    padding: 0 10px;
 
     button {
-      padding: 0 20px;
+      padding: 5px 20px 0;
       font-size: 15px;
       font-weight: 700;
       color: #666;
@@ -51,16 +50,19 @@
   }
 
   &__search {
-    padding: 40px 10px 0;
+    display: flex;
+    margin-top: 20px;
 
     &Input {
+      flex-shrink: 1;
       padding: 5px 20px;
       border: 1px solid #002c18;
       border-radius: 8px;
     }
 
     &Btn {
-      margin-left: 10px;
+      flex-shrink: 0;
+      margin-left: 5px;
       padding: 5px 25px;
       font-size: 15px;
       font-weight: 700;
@@ -68,18 +70,24 @@
       background-color: #9caca3;
       border-radius: 8px;
     }
+    @include screen(960) {
+      &Input {
+        width: 100%;
+      }
+    }
   }
 
   &__couponList {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
-    padding-top: 20px;
+    max-width: 1000px;
+    margin: 40px auto 0;
 
-    @include screen(1200) {
+    @include screen(960) {
       grid-template-columns: repeat(1, 1fr);
       max-width: 500px;
-      margin: 0 auto;
+      margin: 40px auto 0;
     }
 
     @include screen(sm) {

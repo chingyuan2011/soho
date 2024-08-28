@@ -1,5 +1,6 @@
 .Collect {
   overflow: hidden;
+  font-size: 18px;
   background-color: #fff;
   background-image: url('/soho/img/collect/bg_contentHeader.png'), url('/soho/img/collect/bg_down.png');
   background-repeat: no-repeat, no-repeat;
@@ -26,37 +27,22 @@
   &__title {
     margin-bottom: 40px;
     padding: 0 10px;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 700;
     color: #002c18;
 
-    @include screen(xl) {
+    @include screen(1366) {
       margin-bottom: 20px;
       font-size: 24px;
     }
   }
 
-  &_cart {
-    margin-bottom: 40px;
-
-    @include screen(lg) {
-      margin-bottom: 20px;
-    }
-  }
-
   &_cart-header {
-    font-size: 16pt;
     font-weight: 700;
-    line-height: 2;
     color: #002c18;
-    text-align: center;
     background-color: #fff;
 
-    @include screen(xl) {
-      font-size: 16px;
-    }
-
-    @include screen(lg) {
+    @include screen(960) {
       display: none !important;
     }
   }
@@ -64,7 +50,7 @@
   &_cart-row {
     display: flex;
 
-    @include screen(lg) {
+    @include screen(960) {
       position: relative;
       flex-wrap: wrap;
     }
@@ -72,7 +58,6 @@
 
   &_cart-body {
     color: #002c18;
-    letter-spacing: .08em;
 
     .Collect_cart-row {
       background-color: #fff;
@@ -93,31 +78,19 @@
 
     .product_name {
       width: 100%;
-      font-size: 22pt;
+      font-size: 20px;
       font-weight: 700;
       text-align: center;
-      @include screen(xl) {
-        font-size: 22px;
-      }
     }
 
     .product_amount {
       width: 100%;
-      font-size: 20pt;
       font-weight: 700;
       @include custom-select(#cbd3ce, transparent, #002c18, #002c18);
-      @include screen(xl) {
-        font-size: 20px;
-      }
     }
 
     .product_price {
-      font-size: 20pt;
       font-weight: 700;
-
-      @include screen(xl) {
-        font-size: 22px;
-      }
     }
 
     .product_status {
@@ -127,8 +100,7 @@
         display: block;
         width: 100%;
         margin-bottom: 20px;
-        padding: 10px;
-        font-size: 16pt;
+        padding: 5px 10px;
         font-weight: 700;
         color: #fff;
         text-align: center;
@@ -140,7 +112,7 @@
           background-color: #9caca3;
         }
 
-        @include screen(xl) {
+        @include screen(960) {
           margin-bottom: 10px;
           padding: 5px 10px;
           font-size: 16px;
@@ -217,7 +189,7 @@
       width: 8%;
     }
 
-    @include screen (lg) {
+    @include screen (960) {
       padding: 5px 20px;
 
       &:nth-child(1) {
