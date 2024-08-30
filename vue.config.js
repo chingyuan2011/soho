@@ -76,7 +76,8 @@ module.exports = {
         '/storeContent.html',
         '/paymentInstructions.html',
         '/returnsAndRefunds.html',
-        '/about.html'
+        '/about.html',
+        '/seaweed.html'
       ]
 
       const prerender = new PrerenderSPAPlugin({

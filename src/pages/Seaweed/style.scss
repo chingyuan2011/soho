@@ -1,0 +1,192 @@
+.Seaweed {
+  position: relative;
+  overflow: hidden;
+  background-color: #ffffff;
+  background-image: url('/soho/img/returnsAndRefunds/bg_contentHeader.png'), url('/soho/img/returnsAndRefunds/login_bgDown.png');
+  background-repeat: no-repeat, no-repeat;
+  background-position: center top, center bottom;
+  background-size: cover auto, cover auto;
+  @include screen(1360) {
+    font-size: 16px;
+  }
+
+  .container {
+    max-width: 1400px;
+    padding: 70px 40px 200px;
+    @include screen(1360) {
+      padding: 50px 20px 100px;
+    }
+    @include screen(960) {
+      max-width: 600px;
+    }
+  }
+
+  &_list {
+    margin-bottom: 40px;
+  }
+
+  &_item ~ &_item {
+    border-top: 1px solid #052d18;
+  }
+
+  &_item {
+    &:hover {
+      .Seaweed_picArrow {
+        opacity: 1;
+      }
+
+      .Seaweed_arrow {
+        opacity: 0;
+      }
+    }
+  }
+
+  &_link {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    padding: 50px 30px;
+    @include screen(1280) {
+      gap: 20px;
+      padding: 30px 20px;
+    }
+    @include screen(960) {
+      flex-direction: column;
+      gap: 10px;
+      padding: 20px 0px;
+    }
+  }
+
+  &_time {
+    flex-shrink: 0;
+    width: 100px;
+    font-size: 20px;
+    font-weight: 500;
+    @include screen(960) {
+      width: 100%;
+      font-size: 16px;
+    }
+  }
+
+  &_pic {
+    position: relative;
+    flex-shrink: 0;
+    width: 380px;
+
+    img {
+      width: 100%;
+    }
+
+    @include screen(1280) {
+      width: 250px;
+    }
+
+    @include screen(960) {
+      width: 100%;
+    }
+  }
+
+  &_picArrow {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #dd855f;
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity .3s;
+    transform: translate(40%, 40%);
+
+    span {
+      position: relative;
+      display: block;
+      width: 60%;
+      height: 20%;
+      border-right: 2px solid #fff;
+      border-bottom: 2px solid #fff;
+      transform: skew(45deg) translate(-8%, -30%);
+    }
+
+    @include screen(1280) {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  &_content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    justify-content: center;
+
+    h2 {
+      display: -webkit-box;
+      margin-bottom: 10px;
+      overflow: hidden;
+      font-size: 28px;
+      white-space: pre-line;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 1;
+    }
+
+    p {
+      display: -webkit-box;
+      overflow: hidden;
+      font-size: 20px;
+      white-space: pre-line;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+    }
+    @include screen(960) {
+      padding-bottom: 20px;
+
+      h2 {
+        margin-bottom: 0;
+        font-size: 22px;
+        -webkit-line-clamp: 2;
+      }
+
+      p {
+        font-size: 18px;
+        -webkit-line-clamp: 3;
+      }
+    }
+  }
+
+  &_arrow {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: block;
+    width: 60px;
+    height: 15px;
+    border-right: 2px solid #dd855f;
+    border-bottom: 2px solid #dd855f;
+    transition: opacity .3s;
+    transform: skew(45deg);
+    animation: ani-arrow 2s infinite;
+    @keyframes ani-arrow {
+      0% {
+        right: 0px;
+      }
+
+      50% {
+        right: 10px;
+      }
+
+      80% {
+        right: 00px;
+      }
+    }
+
+    @include screen(1280) {
+      width: 40px;
+      height: 10px;
+    }
+  }
+}

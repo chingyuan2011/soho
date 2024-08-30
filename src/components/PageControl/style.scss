@@ -10,10 +10,6 @@
     margin: 0  auto;
   }
 
-  @include screen(md) {
-    justify-content: center;
-  }
-
   &-pages {
     display: flex;
     flex-wrap: wrap;

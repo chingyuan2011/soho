@@ -20,6 +20,7 @@ import OrderStatus from '@/pages/OrderStatus'
 import Store from '@/pages/Store'
 import StoreContent from '@/pages/StoreContent'
 import About from '@/pages/About'
+import Seaweed from '@/pages/Seaweed'
 
 Vue.use(VueRouter)
 
@@ -123,6 +124,11 @@ const routes = [
     path: '/about.html',
     name: 'About',
     component: About
+  },
+  {
+    path: '/seaweed.html',
+    name: 'Seaweed',
+    component: Seaweed
   },
   {
     path: '*',
