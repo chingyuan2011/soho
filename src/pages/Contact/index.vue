@@ -17,11 +17,11 @@
           <span>For more information, please contact us.</span>
         </div>
         <div>
-          <div class="Contact_note">
+          <div class="Contact_note wow fadeIn">
             「藻作坊的企業使命與社會責任」<br>
             「藻作坊有限公司」於2018年正式成立，並於嘉義市檜意森活村成立第一家門市。
           </div>
-          <div class="Contact_content">
+          <div class="Contact_content wow fadeIn">
             <div class="Contact_contentCompany">
               <div class="Contact_contentTitle">
                 總公司
@@ -72,7 +72,7 @@
         <div class="Contact_title">
           SEND US MESSAGE
         </div>
-        <div class="Contact_formContent">
+        <div class="Contact_formContent wow fadeIn">
           <div class="Contact_formItem">
             <label>
               <div class="Contact_formQuestion">*姓名</div>
@@ -129,29 +129,35 @@
     </div>
     <div class="Contact_links">
       <div class="Contact_item">
-        <div class="Contact_linkTitle">
-          ONLINE<br>
-          SHOP
-          <br>
-          <span>線上門市</span>
+        <div class="wow fadeInLeft">
+          <div class="Contact_linkTitle">
+            ONLINE<br>
+            SHOP
+            <br>
+            <span>線上門市</span>
+          </div>
+          <a
+            class="Contact_linkA"
+            href="/soho/store.html"
+          >立即前往</a>
         </div>
-        <a
-          class="Contact_linkA"
-          href="/soho/store.html"
-        >立即前往</a>
       </div>
       <div class="Contact_item">
-        <div class="Contact_linkTitle">
-          DISCOUNT
-          <br>
-          INFORMATION
-          <br>
-          <span>優惠資訊</span>
+        <div
+          class="wow fadeInLeft"
+        >
+          <div class="Contact_linkTitle">
+            DISCOUNT
+            <br>
+            INFORMATION
+            <br>
+            <span>優惠資訊</span>
+          </div>
+          <a
+            class="Contact_linkA"
+            href="/soho/store.html"
+          >前往優惠</a>
         </div>
-        <a
-          class="Contact_linkA"
-          href="/soho/store.html"
-        >前往優惠</a>
       </div>
     </div>
   </div>
