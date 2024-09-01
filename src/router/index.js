@@ -21,6 +21,7 @@ import Store from '@/pages/Store'
 import StoreContent from '@/pages/StoreContent'
 import About from '@/pages/About'
 import Seaweed from '@/pages/Seaweed'
+import Contact from '@/pages/Contact'
 
 Vue.use(VueRouter)
 
@@ -129,6 +130,11 @@ const routes = [
     path: '/seaweed.html',
     name: 'Seaweed',
     component: Seaweed
+  },
+  {
+    path: '/contact.html',
+    name: 'Contact',
+    component: Contact
   },
   {
     path: '*',

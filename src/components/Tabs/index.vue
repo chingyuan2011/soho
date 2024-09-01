@@ -74,6 +74,7 @@ export default {
     @include screen(768) {
       flex-direction: column;
       gap: 10px;
+      align-items: flex-start;
       padding: 10px;
       font-size: 18px;
     }

@@ -1,5 +1,5 @@
 <template>
-  <div class="CartProcess1">
+  <div class="CartProcess1 Page">
     <div class="container container-page">
       <div class="page_commonTitleArea">
         <Title

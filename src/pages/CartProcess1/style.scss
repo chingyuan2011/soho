@@ -1,13 +1,7 @@
 .CartProcess1 {
-  overflow: hidden;
-  background-image: url('/soho/img/cartProcess1/bg_contentHeader.png'), url('/soho/img/cartProcess1/bg_content.png');
-  background-repeat: no-repeat, no-repeat;
-  background-position: center top, center bottom;
-  background-size: cover auto, cover auto;
-
   .container {
     padding-bottom: 200px;
-    @include screen(1360) {
+    @include screen(1366) {
       padding-bottom: 40px;
     }
   }
@@ -39,15 +33,15 @@
 
   &_title {
     margin-bottom: 20px;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 700;
     color: #002c18;
     letter-spacing: .2em;
-    @include screen(1360) {
+    @include screen(1366) {
       padding: 0px;
     }
 
-    @include screen(md) {
+    @include screen(960) {
       margin-bottom: 10px;
       font-size: 24px;
     }
@@ -59,15 +53,15 @@
     margin-bottom: 40px;
     padding-bottom: 120px;
     border-bottom: 1px solid #8ca097;
-    @include screen(1360) {
+    @include screen(1366) {
       padding-bottom: 40px;
     }
-    @include screen(xl) {
+    @include screen(1200) {
       flex-wrap: wrap;
       justify-content: center;
     }
 
-    @include screen(md) {
+    @include screen(960) {
       margin-bottom: 20px;
       padding: 0 0px 20px 0px;
     }
@@ -76,7 +70,7 @@
   &_orderList {
     width: 48%;
 
-    @include screen(xl) {
+    @include screen(1200) {
       width: 100%;
       margin-bottom: 40px;
     }
@@ -109,7 +103,7 @@
     &-info {
       flex: 1;
       padding: 40px 10px 40px 0;
-      font-size: 18px;
+      font-size: 16px;
       font-weight: 700;
       line-height: 1.8;
       color: #523628;
@@ -120,7 +114,7 @@
       display: flex;
       width: 100%;
       margin-bottom: 20px;
-      font-size: 20px;
+      font-size: 18px;
 
       div:first-child {
         margin-right: 25%;
@@ -157,6 +151,7 @@
     }
 
     &-amount {
+      font-size: 16px;
       @include custom-select(#CCD0CF, transparent, #523628, #523628);
     }
 
@@ -188,19 +183,19 @@
   &_discount {
     width: 48%;
     padding-bottom: 20px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
     color: #002c18;
     letter-spacing: .15em;
     background-color: #fff;
 
-    @include screen(xl) {
+    @include screen(1200) {
       width: 100%;
     }
 
     &-title {
       padding: 10px 30px;
-      font-size: 20px;
+      font-size: 18px;
       font-weight: 700;
       color: #fff;
       background-color: #002c18;
@@ -236,7 +231,7 @@
       }
     }
 
-    @include screen(md) {
+    @include screen(960) {
       font-size: 16px;
 
       &-title {
@@ -283,10 +278,11 @@
 
       &-input {
         display: flex;
+        gap: 5px;
+        width: 50%;
         margin-bottom: 5px;
 
         input {
-          flex: 1;
           height: 28px;
           font-size: 14px;
           font-weight: 400;
@@ -297,6 +293,7 @@
         }
 
         button {
+          flex-shrink: 0;
           width: auto;
         }
       }

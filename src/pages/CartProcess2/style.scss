@@ -1,29 +1,20 @@
 .CartProcess2 {
-  overflow: hidden;
-  color: #002c18;
-  background-color: #fff;
-  background-image: url('/soho/img/cartProcess2/bg_contentHeader.png'), url('/soho/img/cartProcess2/bg_content.png');
-  background-repeat: no-repeat, no-repeat;
-  background-position: center top, center bottom;
-  background-size: cover auto, cover auto;
-
   .container {
     padding-bottom: 200px;
-    @include screen(1360) {
+    @include screen(1366) {
       padding-bottom: 40px;
     }
   }
 
   &_title {
     margin-bottom: 20px;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 700;
-    color: #002c18;
     letter-spacing: .2em;
 
-    @include screen(md) {
+    @include screen(960) {
       margin-bottom: 10px;
-      font-size: 20px;
+      font-size: 24px;
     }
   }
 
@@ -126,10 +117,7 @@
   }
 
   &_cart-header {
-    font-size: 18pt;
     font-weight: 700;
-    line-height: 2;
-    color: #002c18;
     text-align: center;
 
     @include screen(xl) {
@@ -174,7 +162,6 @@
 
     .product_content {
       width: 100%;
-      font-size: 12px;
     }
 
     .product_discount {
@@ -189,12 +176,7 @@
     .product_price,
     .product_amount,
     .product_total-price {
-      font-size: 24px;
       font-weight: 700;
-
-      @include screen(xl) {
-        font-size: 20px;
-      }
     }
   }
 
@@ -288,33 +270,29 @@
 
   &_discount {
     width: 100%;
-    padding-bottom: 20px;
-    font-weight: 700;
-    color: #002c18;
-    letter-spacing: .15em;
     background-color: #fff;
     border-bottom: 1px solid #002c18;
 
     &-title {
       padding: 10px 30px;
-      font-size: 20pt;
+      font-size: 20px;
       font-weight: 700;
       color: #fff;
+      letter-spacing: .15em;
       background-color: #002c18;
     }
 
     &-list {
-      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 20px;
     }
 
     &-item {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      margin-bottom: 20px;
-      font-size: 20px;
-      font-weight: 500;
-      letter-spacing: .1em;
 
       &:last-child {
         margin-bottom: 0;
@@ -323,7 +301,6 @@
 
     &-itemTitle {
       &-sub {
-        // font-size: 14pt;
         color: #898989;
       }
 
@@ -374,13 +351,11 @@
     min-width: 500px;
     margin-bottom: 40px;
     margin-left: auto;
-    font-size: 20px;
     font-weight: 500;
     line-height: 2;
-    letter-spacing: .1em;
 
     &-price {
-      padding: 40px;
+      padding: 20px;
       border-bottom: 1px solid #002c18;
     }
 
@@ -390,10 +365,10 @@
     }
 
     &-coupon {
-      padding: 40px;
+      padding: 20px;
     }
 
-    @include screen(md) {
+    @include screen(960) {
       width: 100%;
       min-width: auto;
       margin-bottom: 10px;
@@ -448,7 +423,6 @@
     display: flex;
     justify-content: center;
     padding: 10px 20px;
-    font-size: 24px;
     font-weight: 700;
     text-align: center;
     letter-spacing: .1em;
@@ -606,8 +580,7 @@
 
   &-form-item {
     margin-bottom: 20px;
-    font-size: 16pt;
-    letter-spacing: .1em;
+    font-size: 16px;
 
     &.required {
       label::after {
@@ -748,7 +721,6 @@
 
   a,
   button {
-    font-size: 22pt;
     font-weight: 700;
     letter-spacing: .1em;
   }

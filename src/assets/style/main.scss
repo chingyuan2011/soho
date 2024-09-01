@@ -19,7 +19,7 @@ body {
   color: #052d18;
   background-color: #f5f5f5;
 
-  @include screen(1360) {
+  @include screen(1366) {
     padding-bottom: 70px;
   }
 }
@@ -52,11 +52,26 @@ ul {
   padding: 0;
 }
 
+.Page {
+  position: relative;
+  overflow: hidden;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #052d18;
+  background-color: #ffffff;
+  background-image: url('/soho/img/bg_contentHeader.png'), url('/soho/img/bg_down.png');
+  background-repeat: no-repeat, no-repeat;
+  background-position: center top, center bottom;
+  background-size: cover auto, cover auto;
+  @include screen(1366) {
+    font-size: 16px;
+  }
+}
 // 依照 navbar 控制 page 內 container 的上下 padding
 .container-page {
   padding-top: 240px;
 
-  @include screen(1360) {
+  @include screen(1366) {
     padding-top: 240px;
   }
 }
@@ -95,7 +110,7 @@ ul {
 
     &-icon {
       position: relative;
-      width: 25%;
+      width: 45px;
       max-width: 67px;
       margin-bottom: 20px;
       background-color: #acacac;
@@ -110,7 +125,7 @@ ul {
       width: 96%;
       height: 5px;
       background-color: #acacac;
-      transform: translate(-50%, 100%);
+      transform: translate(-50%, -100%);
     }
 
     p {
@@ -134,17 +149,16 @@ ul {
       }
     }
 
-    @include screen(md) {
+    @include screen(960) {
       width: 33%;
 
       &-icon {
+        width: 40px;
         margin-bottom: 10px;
       }
 
       &::before {
-        top: 20%;
-        width: 95%;
-        height: 2px;
+        height: 3px;
       }
 
       p {
