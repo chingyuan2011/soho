@@ -1,5 +1,5 @@
 <template>
-  <div class="Seaweed">
+  <div class="Seaweed Page">
     <div class="container-page">
       <div class="page_commonTitleArea">
         <Title

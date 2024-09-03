@@ -154,7 +154,7 @@
         <div class="menu">
           <div class="menu_item">
             <div class="menu_itemContent">
-              <a href="/soho/seaweedList.html">
+              <a href="/soho/seaweed.html">
                 <div class="menu_itemText-zh">
                   海藻學堂
                 </div>

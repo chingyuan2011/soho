@@ -27,7 +27,7 @@
                 href="/soho/news.html"
               >最新消息</a>
               <a
-                href="/soho/seaweedList.html"
+                href="/soho/seaweed.html"
               >海藻學堂</a>
             </div>
           </div>

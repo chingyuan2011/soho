@@ -78,6 +78,8 @@ module.exports = {
         '/returnsAndRefunds.html',
         '/about.html',
         '/seaweed.html',
+        '/seaweedContent.html',
+        '/newsContent.html',
         '/contact.html'
       ]
 

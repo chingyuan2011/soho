@@ -32,9 +32,7 @@
     >
       <div class="productIntro_marque">
         <div
-          class="marque wow fadeInRight"
-          data-wow-duration="1.2s"
-          data-wow-delay=".1s"
+          class="marque"
         >
           <div
             class="marque_wrap"
