@@ -5,6 +5,7 @@ import Header from '@/pages/Header'
 import Footer from '@/pages/Footer'
 import CartProcess1 from '@/pages/CartProcess1'
 import CartProcess2 from '@/pages/CartProcess2'
+import CartProcess3 from '@/pages/CartProcess3'
 import ProductContent from '@/pages/ProductContent'
 import ProductList from '@/pages/ProductList'
 import Login from '@/pages/Login'
@@ -52,6 +53,11 @@ const routes = [
     path: '/cartProcess2.html',
     name: 'CartProcess2',
     component: CartProcess2
+  },
+  {
+    path: '/cartProcess3.html',
+    name: 'CartProcess3',
+    component: CartProcess3
   },
   {
     path: '/productList.html',

@@ -62,6 +62,7 @@ module.exports = {
         '/index.html',
         '/cartProcess1.html',
         '/cartProcess2.html',
+        '/cartProcess3.html',
         '/productList.html',
         '/productContent.html',
         '/signup.html',
