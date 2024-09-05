@@ -121,4 +121,8 @@ const cartProcess2Handler = () => {
       $('.CartProcess2_client-creditCard').removeClass('active')
     }
   })
+  $('#CartProcess2_toggle-cartBtn').on('click', function (e) {
+    $('#CartProcess2_toggle-cartBtn').toggleClass('active')
+    $('#CartProcess2_cart').toggleClass('active')
+  })
 }

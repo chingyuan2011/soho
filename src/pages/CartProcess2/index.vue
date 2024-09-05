@@ -56,10 +56,16 @@
         </div>
         <div class="CartProcess2_total-cart">
           <span>購物車 共<span class="num">3</span>件</span>
-          <button id="CartProcess2_toggle-cart"></button>
+          <button
+            id="CartProcess2_toggle-cartBtn"
+            class="CartProcess2_toggle-cartBtn"
+          ></button>
         </div>
       </div>
-      <div class="CartProcess2_cart">
+      <div
+        id="CartProcess2_cart"
+        class="CartProcess2_cart active"
+      >
         <div class="CartProcess2_cart-row CartProcess2_cart-header">
           <div class="CartProcess2_cart-cell">
             商品資料
@@ -248,7 +254,7 @@
           </div>
         </div>
       </div>
-      <button class="CartProcess2_divide-btn"></button>
+      <!-- <button class="CartProcess2_divide-btn"></button> -->
       <div class="CartProcess2_client">
         <div class="CartProcess2_client-delivery">
           <div class="CartProcess2_title">
@@ -305,6 +311,24 @@
                 <span class="checkmark"></span>
               </label>
             </div>
+          </div>
+        </div>
+        <div class="CartProcess2_client-payment">
+          <div class="CartProcess2_client-paymentOptions">
+            <div class="CartProcess2_title">
+              付款方式 /
+            </div>
+            <button class="CartProcess2_client-paymentOption CartProcess2_client-payment-creditCard  active">
+              信用卡
+            </button><button class="CartProcess2_client-paymentOption CartProcess2_client-payment-ATM">
+              ATM匯款
+            </button>
+          </div>
+          <div class="CartProcess2_client-paymentData">
+            <div class="CartProcess2_title">
+              付款資料 /
+            </div>
+
             <div class="CartProcess2_client-form-item">
               <label>是否索取公司統編發票</label>
               <div class="CartProcess2_client-form-item-radio">
@@ -342,61 +366,6 @@
                 name="taxNumber"
                 placeholder="請填入8位數字公司統編"
               >
-            </div>
-          </div>
-        </div>
-        <div class="CartProcess2_client-payment">
-          <div class="CartProcess2_client-paymentOptions">
-            <div class="CartProcess2_title">
-              付款方式 /
-            </div>
-            <button class="CartProcess2_client-paymentOption CartProcess2_client-payment-creditCard  active">
-              信用卡
-            </button><button class="CartProcess2_client-paymentOption CartProcess2_client-payment-ATM">
-              ATM匯款
-            </button>
-          </div>
-          <div class="CartProcess2_client-creditCard active">
-            <div class="CartProcess2_title">
-              付款資料 /
-            </div>
-            <div class="CartProcess2_client-form">
-              <div class="CartProcess2_client-form-item required">
-                <label for="cardName">持卡人姓名</label>
-                <input
-                  id="cardName"
-                  type="text"
-                  name="cardName"
-                  placeholder="與信用卡上名稱相同"
-                >
-              </div>
-              <div class="CartProcess2_client-form-item required">
-                <label for="cartNumber">信用卡號碼</label>
-                <input
-                  id="cartNumber"
-                  type="text"
-                  name="cartNumber"
-                  placeholder="**** **** **** ****"
-                >
-              </div>
-              <div class="CartProcess2_client-form-item required">
-                <label for="expireDate">有效日期</label>
-                <input
-                  id="expireDate"
-                  type="text"
-                  name="expireDate"
-                  placeholder="MM/YY"
-                >
-              </div>
-              <div class="CartProcess2_client-form-item required">
-                <label for="cvc">安全碼（CVC）</label>
-                <input
-                  id="cvc"
-                  type="text"
-                  name="cvc"
-                  placeholder="後三碼"
-                >
-              </div>
             </div>
           </div>
           <div class="CartProcess2_client-agreement">
