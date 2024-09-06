@@ -1,0 +1,158 @@
+.News {
+  padding-bottom: 200px;
+
+  .container {
+    max-width: 1300px;
+    padding: 0px 40px 0px;
+  }
+
+  &_followerWrap {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  &_follower {
+    position: relative;
+    width: 400px;
+    height: 225px;
+
+    &.active {
+      .News_followerArrow {
+        opacity: 1;
+      }
+
+      .News_followerVideo {
+        display: block;
+      }
+    }
+  }
+
+  &_followerArrow {
+    position: absolute;
+    top: calc(50% - 25px);
+    right: -25px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #df885c;
+    border-radius: 50%;
+    opacity: 0;
+
+    span {
+      display: block;
+      width: 30px;
+      height: 10px;
+      border-right: 2px solid #fff;
+      border-bottom: 2px solid #fff;
+      transform: translate(-5px, -50%) skew(45deg);
+    }
+  }
+
+  &_followerVideo {
+    position: absolute;
+    display: none;
+    width: 400px;
+    height: 225px;
+    pointer-events: none;
+    will-change: transform, opacity;
+
+    iframe {
+      display: block;
+      width: 400px;
+      height: 225px;
+      border: 0;
+    }
+  }
+
+  &_item {
+    display: flex;
+    gap: 20px;
+    padding: 60px 0;
+
+    & ~ .News_item {
+      border-top: 1px solid #334941;
+    }
+
+    &.active {
+      opacity: 1;
+    }
+  }
+
+  &_time {
+    flex-shrink: 0;
+    width: 100px;
+  }
+
+  &_title {
+    flex-shrink: 0;
+    width: 25%;
+    font-size: 30px;
+  }
+
+  &_content {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+  }
+
+  &_arrow {
+    width: 60px;
+    height: 10px;
+    margin-top: 30px;
+    margin-left: auto;
+    border-right: 2px solid #df885c;
+    border-bottom: 2px solid #df885c;
+    transform: skew(45deg);
+    animation: ani-arrow 1s infinite;
+  }
+
+  @keyframes ani-arrow {
+    0% {
+      transform: skew(45deg) translateX(0);
+    }
+
+    50% {
+      transform: skew(45deg) translateX(-10px);
+    }
+
+    100% {
+      transform: skew(45deg) translateX(0);
+    }
+  }
+
+  &_pageController {
+    margin-top: 80px;
+  }
+
+  @include screen(1366) {
+    padding-bottom: 100px;
+
+    .container {
+      padding: 0px 40px;
+    }
+  }
+
+  @include screen(960) {
+    &_item {
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 30px 0;
+    }
+
+    &_title {
+      width: 100%;
+    }
+
+    &_time {
+      width: 100%;
+    }
+  }
+}

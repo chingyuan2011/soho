@@ -9,7 +9,8 @@
     const pageHandlerMap = {
       index: indexHandler,
       productContent: productContentHandler,
-      cartProcess2: cartProcess2Handler
+      cartProcess2: cartProcess2Handler,
+      news: newsHandler
     }
     const pageRegex = /\/(\w+)\.html/
     const pageName = currentMap.match(pageRegex)[1]
@@ -124,5 +125,43 @@ const cartProcess2Handler = () => {
   $('#CartProcess2_toggle-cartBtn').on('click', function (e) {
     $('#CartProcess2_toggle-cartBtn').toggleClass('active')
     $('#CartProcess2_cart').toggleClass('active')
+  })
+}
+
+const newsHandler = () => {
+  const ww = $(document).width()
+  if (ww < 768) return
+
+  const follower = $('#News_follower')
+  const videoWrap = $('#News_followerVideo')
+  let videoDom = ''
+
+  document.addEventListener('mousemove', function (e) {
+    follower.css({
+      transform: 'translate(' + e.clientX + 'px, ' + e.clientY + 'px)'
+    })
+  })
+
+  const openVideo = (videoId) => {
+    $('#News_follower').addClass('active')
+    parentDom = videoWrap
+    videoDom = document.createElement('iframe')
+    videoDom.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&loop=1&controls=0`
+    videoDom.frameborder = '0'
+    videoDom.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+    parentDom.append(videoDom)
+  }
+
+  const closeVideo = () => {
+    $('#News_follower').removeClass('active')
+    $(videoDom).remove()
+  }
+
+  $('.News_item').on({
+    mouseenter: function () {
+      const href = $(this).data('youtube-id')
+      if (href) openVideo(href)
+    },
+    mouseleave: closeVideo
   })
 }

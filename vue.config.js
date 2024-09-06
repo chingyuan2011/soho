@@ -80,6 +80,7 @@ module.exports = {
         '/about.html',
         '/seaweed.html',
         '/seaweedContent.html',
+        '/news.html',
         '/newsContent.html',
         '/contact.html'
       ]
