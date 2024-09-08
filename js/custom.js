@@ -9,7 +9,9 @@
     const pageHandlerMap = {
       index: indexHandler,
       productContent: productContentHandler,
-      cartProcess2: cartProcess2Handler
+      cartProcess2: cartProcess2Handler,
+      news: newsHandler,
+      detection: detectionHandler
     }
     const pageRegex = /\/(\w+)\.html/
     const pageName = currentMap.match(pageRegex)[1]
@@ -102,7 +104,7 @@ const indexHandler = () => {
     dots: true,
     infinite: true,
     speed: 3000,
-    // autoplay: true,
+    autoplay: true,
     arrows: true
   })
 }
@@ -124,5 +126,78 @@ const cartProcess2Handler = () => {
   $('#CartProcess2_toggle-cartBtn').on('click', function (e) {
     $('#CartProcess2_toggle-cartBtn').toggleClass('active')
     $('#CartProcess2_cart').toggleClass('active')
+  })
+}
+
+const newsHandler = () => {
+  const ww = $(document).width()
+  if (ww < 768) return
+
+  const follower = $('#News_follower')
+  const videoWrap = $('#News_followerVideo')
+  let videoDom = ''
+
+  document.addEventListener('mousemove', function (e) {
+    follower.css({
+      transform: 'translate(' + e.clientX + 'px, ' + e.clientY + 'px)'
+    })
+  })
+
+  const openVideo = (videoId) => {
+    $('#News_follower').addClass('active')
+    parentDom = videoWrap
+    videoDom = document.createElement('iframe')
+    videoDom.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&loop=1&controls=0`
+    videoDom.frameborder = '0'
+    videoDom.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+    parentDom.append(videoDom)
+  }
+
+  const closeVideo = () => {
+    $('#News_follower').removeClass('active')
+    $(videoDom).remove()
+  }
+
+  $('.News_item').on({
+    mouseenter: function () {
+      const href = $(this).data('youtube-id')
+      if (href) openVideo(href)
+    },
+    mouseleave: closeVideo
+  })
+}
+
+const detectionHandler = () => {
+  $('#Detection_sliderContent').slick({
+    dots: false,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    infinite: true,
+    speed: 500,
+    autoSpeed: 5000,
+    arrows: false,
+    centerMode: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1
+        }
+      }
+    ]
+  })
+
+  $('.Detection_sliderDot').on('click', function () {
+    const dom = $(this)
+    const index = dom.data('slider-index')
+    $('#Detection_sliderContent').slick('slickGoTo', index)
+  })
+
+  $('#Detection_sliderPrev').on('click', function () {
+    $('#Detection_sliderContent').slick('slickPrev')
+  })
+
+  $('#Detection_sliderNext').on('click', function () {
+    $('#Detection_sliderContent').slick('slickNext')
   })
 }
