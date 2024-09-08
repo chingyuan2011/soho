@@ -1,5 +1,5 @@
 <template>
-  <div class="Login">
+  <div class="Login Page">
     <div class="container container-page">
       <div class="page_commonTitleArea">
         <Title

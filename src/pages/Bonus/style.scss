@@ -1,11 +1,4 @@
 .Bonus {
-  overflow: hidden;
-  background-color: #fff;
-  background-image: url('/soho/img/bonus/bg_contentHeader.png'), url('/soho/img/bonus/login_bgDown.png');
-  background-repeat: no-repeat, no-repeat;
-  background-position: center top, center bottom;
-  background-size: cover auto, cover auto;
-
   .container {
     max-width: 1300px;
     padding-top: 50px;
@@ -172,7 +165,7 @@
         width: 100%;
 
         &::before {
-          content: '獲得 / 使用紀錄';
+          content: '連結到訂單';
         }
       }
 

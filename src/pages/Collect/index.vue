@@ -1,5 +1,5 @@
 <template>
-  <div class="Collect">
+  <div class="Collect Page">
     <div class="container-page">
       <div class="page_commonTitleArea">
         <Title

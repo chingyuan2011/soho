@@ -26,6 +26,7 @@ import SeaweedContent from '@/pages/SeaweedContent'
 import NewsContent from '@/pages/NewsContent'
 import Contact from '@/pages/Contact'
 import News from '@/pages/News'
+import Detection from '@/pages/Detection'
 
 Vue.use(VueRouter)
 
@@ -159,6 +160,11 @@ const routes = [
     path: '/contact.html',
     name: 'Contact',
     component: Contact
+  },
+  {
+    path: '/detection.html',
+    name: 'Detection',
+    component: Detection
   },
   {
     path: '*',

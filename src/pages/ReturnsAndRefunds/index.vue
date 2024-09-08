@@ -1,5 +1,5 @@
 <template>
-  <div class="ReturnsAndRefunds">
+  <div class="ReturnsAndRefunds Page">
     <div class="container-page">
       <div class="page_commonTitleArea">
         <Title

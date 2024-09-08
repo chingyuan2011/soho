@@ -1,5 +1,5 @@
 <template>
-  <div class="Coupon">
+  <div class="Coupon Page">
     <div class="container-page">
       <div class="page_commonTitleArea">
         <Title

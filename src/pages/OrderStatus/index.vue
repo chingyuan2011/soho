@@ -1,5 +1,5 @@
 <template>
-  <div class="OrderStatus">
+  <div class="OrderStatus Page">
     <div class="container-page">
       <div class="page_commonTitleArea">
         <Title

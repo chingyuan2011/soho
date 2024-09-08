@@ -1,0 +1,288 @@
+.Detection {
+  padding-bottom: 200px;
+  font-size: 20px;
+
+  .container {
+    position: relative;
+    max-width: 1300px;
+  }
+
+  &_block {
+    position: relative;
+
+    & ~ .Detection_block {
+      margin-top: 100px;
+    }
+  }
+
+  .Detection_mainTitle {
+    position: relative;
+    z-index: 1;
+    font-size: 36px;
+  }
+
+  .Detection_note {
+    position: relative;
+    z-index: 1;
+  }
+
+  .Detection_decoration {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    z-index: 0;
+    width: 150px;
+  }
+
+  .Detection_video {
+    position: relative;
+
+    iframe {
+      width: 100%;
+      height: 600px;
+    }
+  }
+
+  .Detection_item {
+    display: flex;
+
+    .Detection_content {
+      display: flex;
+      flex-grow: 1;
+      align-items: center;
+      justify-content: flex-end;
+
+      >div {
+        padding-right: 20px;
+        padding-left: 20px;
+      }
+    }
+
+    .Detection_title {
+      font-size: 28px;
+
+      span {
+        font-size: 34px;
+      }
+    }
+
+    .Detection_links {
+      display: flex;
+      gap: 20px;
+      align-items: flex-end;
+      margin-top: 40px;
+      font-weight: bold;
+
+      a {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        margin-bottom: 20px;
+        color: #df885c;
+      }
+
+      .arrow {
+        display: block;
+        width: 40px;
+        height: 10px;
+        border-right: 2px solid #df885c;
+        border-bottom: 2px solid #df885c;
+        transform: skew(45deg);
+        animation: ani-arrow 1s infinite;
+      }
+      @keyframes ani-arrow {
+        0% {
+          transform: skew(45deg) translateX(0);
+        }
+
+        50% {
+          transform: skew(45deg) translateX(-10px);
+        }
+
+        100% {
+          transform: skew(45deg) translateX(0);
+        }
+      }
+    }
+
+    .Detection_img {
+      flex-shrink: 0;
+      width: 50%;
+    }
+  }
+
+  .Detection_itemPureText {
+    width: 100%;
+
+    .Detection_content > div {
+      width: 100%;
+      max-width: 1550px;
+      margin: 0 auto;
+      padding: 60px 0;
+    }
+  }
+
+  .Detection_slogan {
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 1300px;
+      margin: 0 auto;
+    }
+
+    .text {
+      margin: 20px 0 40px auto;
+      font-size: 40px;
+      font-weight: 500;
+    }
+
+    .textPic {
+      margin-top: 100px;
+    }
+  }
+
+  @include screen(960) {
+    padding-bottom: 100px;
+    font-size: 18px;
+
+    &_block {
+      margin: 40px 0;
+
+      & ~ .Detection_block {
+        margin-top: 0;
+      }
+    }
+
+    .Detection_mainTitle {
+      font-size: 28px;
+    }
+
+    .Detection_decoration {
+      display: none;
+    }
+
+    .Detection_video {
+      margin-top: 0;
+
+      iframe {
+        height: 300px;
+      }
+    }
+
+    .Detection_item {
+      flex-direction: column;
+
+      .Detection_title {
+        font-size: 24px;
+
+        span {
+          font-size: 28px;
+        }
+      }
+
+      .Detection_links {
+        gap: 10px;
+        margin-top: 20px;
+        font-size: 16px;
+
+        img {
+          width: 100px;
+        }
+      }
+
+      .Detection_img {
+        width: 100%;
+        margin-top: 20px;
+      }
+    }
+
+    .Detection_itemPureText {
+      padding: 0 20px;
+    }
+
+    .Detection_slogan {
+      .text {
+        margin: 20px 0 10px auto;
+        font-size: 30px;
+      }
+
+      .textPic {
+        max-width: 600px;
+      }
+    }
+  }
+
+  &_slider {
+    padding-top: 100px;
+    background-image: url('/soho/img/detection/detection_sliderBg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &ContentWrap {
+      position: relative;
+      max-width: 1600px;
+      margin: 0 auto;
+    }
+
+    &Prev {
+      position: absolute;
+      top: 50%;
+      left: 40px;
+      z-index: 1;
+    }
+
+    &Next {
+      position: absolute;
+      top: 50%;
+      right: 40px;
+      z-index: 1;
+    }
+
+    &Item {
+      padding: 0 10px;
+      transition: transform .3s;
+      transform: scale(.8);
+
+      &.slick-current {
+        transform: scale(1.1);
+      }
+    }
+
+    &Dots {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin-top: 50px;
+    }
+
+    &Dot {
+      width: 100px;
+      height: 100px;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-position: center;
+        object-fit: cover;
+      }
+    }
+    @include screen(768) {
+      &Item {
+        transform: scale(1);
+
+        &.slick-current {
+          transform: scale(1);
+        }
+      }
+
+      &Dot {
+        width: 60px;
+        height: 60px;
+      }
+    }
+  }
+}

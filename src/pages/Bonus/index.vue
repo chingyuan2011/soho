@@ -1,5 +1,5 @@
 <template>
-  <div class="Bonus">
+  <div class="Bonus Page">
     <div class="container-page">
       <div class="page_commonTitleArea">
         <Title
@@ -29,7 +29,7 @@
               訂單編號
             </div>
             <div class="Bonus_table-cell">
-              獲得 / 使用紀錄
+              連結到訂單
             </div>
             <div class="Bonus_table-cell">
               轉入點數
@@ -55,6 +55,7 @@
               </div>
               <div class="Bonus_table-cell">
                 <div class="text">
+                  <a href="/soho/orderStatus.html">DW123456</a>
                 </div>
               </div>
               <div class="Bonus_table-cell">
@@ -86,7 +87,7 @@
               </div>
               <div class="Bonus_table-cell">
                 <div class="text">
-                  618年中慶健康禮盒
+                  <a href="/soho/orderStatus.html">HP234567</a>
                 </div>
               </div>
               <div class="Bonus_table-cell">
@@ -118,7 +119,7 @@
               </div>
               <div class="Bonus_table-cell">
                 <div class="text">
-                  感恩回饋
+                  <a href="/soho/orderStatus.html">-</a>
                 </div>
               </div>
               <div class="Bonus_table-cell">
@@ -150,7 +151,7 @@
               </div>
               <div class="Bonus_table-cell">
                 <div class="text">
-                  紅利過期
+                  <a href="/soho/orderStatus.html">-</a>
                 </div>
               </div>
               <div class="Bonus_table-cell">
@@ -182,7 +183,7 @@
               </div>
               <div class="Bonus_table-cell">
                 <div class="text">
-                  新加入會員
+                  <a href="/soho/orderStatus.html">LO345678</a>
                 </div>
               </div>
               <div class="Bonus_table-cell">

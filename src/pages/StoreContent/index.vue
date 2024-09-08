@@ -1,5 +1,5 @@
 <template>
-  <div class="StoreContent">
+  <div class="StoreContent Page">
     <div class="container-page">
       <div class="page_commonTitleArea">
         <Title

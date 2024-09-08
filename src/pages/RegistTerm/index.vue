@@ -1,5 +1,5 @@
 <template>
-  <div class="RegistTerm">
+  <div class="RegistTerm Page">
     <div class="container container-page">
       <div class="page_commonTitleArea">
         <Title

@@ -1,17 +1,4 @@
 .Store {
-  position: relative;
-  overflow: hidden;
-  line-height: 1.6;
-  color: #052d18;
-  background-color: #ffffff;
-  background-image: url('/soho/img/returnsAndRefunds/bg_contentHeader.png'), url('/soho/img/returnsAndRefunds/login_bgDown.png');
-  background-repeat: no-repeat, no-repeat;
-  background-position: center top, center bottom;
-  background-size: cover auto, cover auto;
-  @include screen(1360) {
-    font-size: 16px;
-  }
-
   .container {
     max-width: 1300px;
     padding: 50px 40px 200px;

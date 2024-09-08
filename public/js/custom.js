@@ -10,7 +10,8 @@
       index: indexHandler,
       productContent: productContentHandler,
       cartProcess2: cartProcess2Handler,
-      news: newsHandler
+      news: newsHandler,
+      detection: detectionHandler
     }
     const pageRegex = /\/(\w+)\.html/
     const pageName = currentMap.match(pageRegex)[1]
@@ -103,7 +104,7 @@ const indexHandler = () => {
     dots: true,
     infinite: true,
     speed: 3000,
-    // autoplay: true,
+    autoplay: true,
     arrows: true
   })
 }
@@ -163,5 +164,40 @@ const newsHandler = () => {
       if (href) openVideo(href)
     },
     mouseleave: closeVideo
+  })
+}
+
+const detectionHandler = () => {
+  $('#Detection_sliderContent').slick({
+    dots: false,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    infinite: true,
+    speed: 500,
+    autoSpeed: 5000,
+    arrows: false,
+    centerMode: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1
+        }
+      }
+    ]
+  })
+
+  $('.Detection_sliderDot').on('click', function () {
+    const dom = $(this)
+    const index = dom.data('slider-index')
+    $('#Detection_sliderContent').slick('slickGoTo', index)
+  })
+
+  $('#Detection_sliderPrev').on('click', function () {
+    $('#Detection_sliderContent').slick('slickPrev')
+  })
+
+  $('#Detection_sliderNext').on('click', function () {
+    $('#Detection_sliderContent').slick('slickNext')
   })
 }

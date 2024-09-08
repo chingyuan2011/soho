@@ -164,11 +164,6 @@
         {{ new Date().getFullYear() }} © 藻作坊 Designed By 禾藝叁陸巷有限公司
       </div>
     </div>
-    <!-- <div class="helper">
-      <img
-        src="/soho/img/footer/footer_layout.jpg"
-      >
-    </div> -->
   </footer>
 </template>
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="ProductList">
+  <div class="ProductList Page">
     <div class="container container-page">
       <div class="page_commonTitleArea">
         <Title
@@ -85,39 +85,13 @@
                     </option>
                   </select>
                 </div>
-                <div class="ProductList_content-product-filter price-filter active">
-                  <button>金額範圍</button>
-                </div>
-                <div class="ProductList_content-product-filter select">
-                  <select>
-                    <option
-                      value=""
-                      selected
-                    >
-                      商品評分
-                    </option>
-                  </select>
-                </div>
-              </div>
-              <div class="ProductList_content-product-filter-advanced price">
-                <label class="inputWrap">
-                  <span>最低價格</span><span class="symbol">$</span><input
-                    inputmode="numeric"
-                    value="0"
-                  >
-                </label>
-                <span> - </span>
-                <label class="inputWrap">
-                  <span>最高價格</span><span class="symbol">$</span><input
-                    inputmode="numeric"
-                    value="2000"
-                  >
-                </label>
-                <button>搜尋</button>
               </div>
             </div>
             <div class="ProductList_content-product-list">
-              <div class="ProductList_content-product-item">
+              <a
+                href="/soho/productContent.html"
+                class="ProductList_content-product-item"
+              >
                 <div class="productPic">
                   <img
                     src="/soho/img/productList/productList_item1.png"
@@ -142,8 +116,11 @@
                     <button>加入購物車</button>
                   </div>
                 </div>
-              </div>
-              <div class="ProductList_content-product-item">
+              </a>
+              <a
+                href="/soho/productContent.html"
+                class="ProductList_content-product-item"
+              >
                 <div class="productPic">
                   <img
                     src="/soho/img/productList/productList_item2.png"
@@ -168,8 +145,11 @@
                     <button>加入購物車</button>
                   </div>
                 </div>
-              </div>
-              <div class="ProductList_content-product-item">
+              </a>
+              <a
+                href="/soho/productContent.html"
+                class="ProductList_content-product-item"
+              >
                 <div class="productPic">
                   <img
                     src="/soho/img/productList/productList_item3.png"
@@ -194,8 +174,11 @@
                     <button>加入購物車</button>
                   </div>
                 </div>
-              </div>
-              <div class="ProductList_content-product-item">
+              </a>
+              <a
+                href="/soho/productContent.html"
+                class="ProductList_content-product-item"
+              >
                 <div class="productPic">
                   <img
                     src="/soho/img/productList/productList_item4.png"
@@ -220,8 +203,11 @@
                     <button>加入購物車</button>
                   </div>
                 </div>
-              </div>
-              <div class="ProductList_content-product-item">
+              </a>
+              <a
+                href="/soho/productContent.html"
+                class="ProductList_content-product-item"
+              >
                 <div class="productPic">
                   <img
                     src="/soho/img/productList/productList_item5.png"
@@ -246,8 +232,11 @@
                     <button>加入購物車</button>
                   </div>
                 </div>
-              </div>
-              <div class="ProductList_content-product-item">
+              </a>
+              <a
+                href="/soho/productContent.html"
+                class="ProductList_content-product-item"
+              >
                 <div class="productPic">
                   <img
                     src="/soho/img/productList/productList_item6.png"
@@ -272,8 +261,11 @@
                     <button>加入購物車</button>
                   </div>
                 </div>
-              </div>
-              <div class="ProductList_content-product-item">
+              </a>
+              <a
+                href="/soho/productContent.html"
+                class="ProductList_content-product-item"
+              >
                 <div class="productPic">
                   <img
                     src="/soho/img/productList/productList_item7.png"
@@ -298,8 +290,11 @@
                     <button>加入購物車</button>
                   </div>
                 </div>
-              </div>
-              <div class="ProductList_content-product-item">
+              </a>
+              <a
+                href="/soho/productContent.html"
+                class="ProductList_content-product-item"
+              >
                 <div class="productPic">
                   <img
                     src="/soho/img/productList/productList_item8.png"
@@ -324,8 +319,11 @@
                     <button>加入購物車</button>
                   </div>
                 </div>
-              </div>
-              <div class="ProductList_content-product-item">
+              </a>
+              <a
+                href="/soho/productContent.html"
+                class="ProductList_content-product-item"
+              >
                 <div class="productPic">
                   <img
                     src="/soho/img/productList/productList_item9.png"
@@ -350,14 +348,12 @@
                     <button>加入購物車</button>
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
             <PageControl></PageControl>
           </div>
         </div>
       </div>
-    </div>
-    <div class="helper">
     </div>
   </div>
 </template>

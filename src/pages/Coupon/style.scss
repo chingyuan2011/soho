@@ -1,10 +1,4 @@
 .Coupon {
-  overflow: hidden;
-  background-image: url('/soho/img/signup/bg_contentHeader.png'), url('/soho/img/signup/signup_bgDown.png');
-  background-repeat: no-repeat, no-repeat;
-  background-position: center top, center bottom;
-  background-size: cover auto, cover auto;
-
   .container {
     max-width: 1300px;
     padding-top: 50px;
@@ -15,7 +9,6 @@
   }
 
   &__wrap {
-    // width: 70%;
     margin: 0 auto;
 
     @include screen(lg) {

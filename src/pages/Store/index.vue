@@ -1,5 +1,5 @@
 <template>
-  <div class="Store">
+  <div class="Store Page">
     <div class="container-page">
       <div class="page_commonTitleArea">
         <Title
@@ -39,7 +39,6 @@
             </div>
             <div class="Store_contentLink">
               <a
-                class=""
                 href="/soho/storeContent.html"
               ></a>
             </div>
@@ -73,7 +72,6 @@
             </div>
             <div class="Store_contentLink">
               <a
-                class=""
                 href="/soho/storeContent.html"
               ></a>
             </div>
@@ -107,7 +105,6 @@
             </div>
             <div class="Store_contentLink">
               <a
-                class=""
                 href="/soho/storeContent.html"
               ></a>
             </div>

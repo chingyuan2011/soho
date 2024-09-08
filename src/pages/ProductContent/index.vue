@@ -1,5 +1,5 @@
 <template>
-  <div class="ProductContent">
+  <div class="ProductContent Page">
     <div class="productHeader"></div>
     <div class="productTop">
       <div class="container">
@@ -17,43 +17,56 @@
     <div class="productIntro">
       <div class="container">
         <div class="productIntro_wrap">
-          <div class="navigation">
-            <div class="title">
+          <div class="ProductContent_content-menu">
+            <div class="ProductContent_content-menuTitle">
               產品資訊
             </div>
-            <ul>
-              <li class="level level-1">
-                <a>查看全部</a>
-              </li>
-              <li class="level level-1 active hasChild isOpened">
-                <a>
-                  【9/01-9/14】中秋禮盒-送你送健康
-                </a>
-                <ul>
-                  <li class="level level-2 active">
-                    <a>海藻</a>
-                  </li>
-                  <li class="level level-2">
-                    <a>醬料</a>
-                  </li>
-                  <li class="level level-2">
-                    <a>高湯</a>
-                  </li>
-                  <li class="level level-2">
-                    <a>組合搭配</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="level level-1 hasChild">
-                <a>新品上市</a>
-              </li>
-              <li class="level level-1">
-                <a>暢銷熱賣</a>
-              </li>
-              <li class="level level-1">
-                <a>囤貨必備</a>
-              </li>
-            </ul>
+            <div class="ProductContent_content-menuItemList">
+              <div class="ProductContent_content-menuItem active">
+                <div class="ProductContent_content-menuItemTitle">
+                  查看全部
+                </div>
+              </div>
+              <div class="ProductContent_content-menuItem ProductContent_content-menuItem-toggle active">
+                <div class="ProductContent_content-menuItemTitle">
+                  <span>【 9/01-9/14 】中秋禮盒 - 送你送健康</span>
+                </div>
+                <div class="ProductContent_content-menuItemSub">
+                  <div class="ProductContent_content-menuItemSubItem active">
+                    海藻
+                  </div>
+                  <div class="ProductContent_content-menuItemSubItem">
+                    醬料
+                  </div>
+                  <div class="ProductContent_content-menuItemSubItem">
+                    高湯
+                  </div>
+                  <div class="ProductContent_content-menuItemSubItem">
+                    組合搭配
+                  </div>
+                </div>
+              </div>
+              <div class="ProductContent_content-menuItem ProductContent_content-menuItem-toggle">
+                <div class="ProductContent_content-menuItemTitle">
+                  <span>新品上市</span>
+                </div>
+                <div class="ProductContent_content-menuItemSub">
+                  <div class="ProductContent_content-menuItemSubItem">
+                    新品一
+                  </div>
+                </div>
+              </div>
+              <div class="ProductContent_content-menuItem ">
+                <div class="ProductContent_content-menuItemTitle">
+                  <span>暢銷熱賣</span>
+                </div>
+              </div>
+              <div class="ProductContent_content-menuItem ">
+                <div class="ProductContent_content-menuItemTitle">
+                  <span>囤貨必備</span>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="introduce">
             <div class="introduce_slider">

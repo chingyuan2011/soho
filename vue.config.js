@@ -82,7 +82,8 @@ module.exports = {
         '/seaweedContent.html',
         '/news.html',
         '/newsContent.html',
-        '/contact.html'
+        '/contact.html',
+        '/detection.html'
       ]
 
       const prerender = new PrerenderSPAPlugin({

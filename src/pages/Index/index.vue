@@ -667,9 +667,6 @@
           >
         </a>
       </div>
-      <!-- <div class="helper">
-        <img src="/soho/img/layout_index_3.jpg">
-      </div> -->
     </div>
     <div class="productGift">
       <div
@@ -909,9 +906,6 @@
             ></a>
           </div>
         </div>
-        <!-- <div class="helper">
-        <img src="/soho/img/layout_index_6.jpg">
-      </div> -->
       </div>
       <div class="productAll">
         <div class="container">

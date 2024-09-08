@@ -1,5 +1,5 @@
 <template>
-  <div class="PaymentInstructions">
+  <div class="PaymentInstructions Page">
     <div class="container-page">
       <div class="page_commonTitleArea">
         <Title
