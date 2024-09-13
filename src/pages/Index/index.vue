@@ -49,7 +49,8 @@
         <div class="container">
           <div class="productList">
             <div class="productList_container">
-              <div
+              <a
+                href="/soho/productContent.html"
                 class="productItem"
               >
                 <div class="productItem_desc">
@@ -59,22 +60,19 @@
                       六色海藻
                     </div>
                     <div class="productDesc_desc">
-                      嚴選六種優質海藻,方便簡單的料理方式
-                      來補足現代人忙碌而無法攝取到足夠的
+                      嚴選六種優質海藻,方便簡單的料理方式來補足現代人忙碌而無法攝取到足夠的
                     </div>
                     <div class="productDesc_price">
                       <div class="price">
                         售價<span>$330</span>
                       </div>
                       <div class="action">
-                        <a
-                          href=""
+                        <button
                           class="action_icon action_icon-cart"
-                        ></a>
-                        <a
-                          href=""
+                        ></button>
+                        <button
                           class="action_icon action_icon-bag"
-                        ></a>
+                        ></button>
                       </div>
                     </div>
                     <div class="productDesc_deco">
@@ -91,8 +89,9 @@
                     <img src="/soho/img/index/product1_item1.png">
                   </div>
                 </div>
-              </div>
-              <div
+              </a>
+              <a
+                href="/soho/productContent.html"
                 class="productItem"
               >
                 <div class="productItem_desc">
@@ -109,14 +108,12 @@
                         售價<span>$330</span>
                       </div>
                       <div class="action">
-                        <a
-                          href=""
+                        <button
                           class="action_icon action_icon-cart"
-                        ></a>
-                        <a
-                          href=""
+                        ></button>
+                        <button
                           class="action_icon action_icon-bag"
-                        ></a>
+                        ></button>
                       </div>
                     </div>
                     <div class="productDesc_deco">
@@ -133,8 +130,9 @@
                     <img src="/soho/img/index/product1_item2.png">
                   </div>
                 </div>
-              </div>
-              <div
+              </a>
+              <a
+                href="/soho/productContent.html"
                 class="productItem"
               >
                 <div class="productItem_desc">
@@ -144,22 +142,19 @@
                       六色海藻
                     </div>
                     <div class="productDesc_desc">
-                      嚴選六種優質海藻,方便簡單的料理方式
-                      來補足現代人忙碌而無法攝取到足夠的
+                      嚴選六種優質海藻,方便簡單的料理方式來補足現代人忙碌而無法攝取到足夠的
                     </div>
                     <div class="productDesc_price">
                       <div class="price">
                         售價<span>$330</span>
                       </div>
                       <div class="action">
-                        <a
-                          href=""
+                        <button
                           class="action_icon action_icon-cart"
-                        ></a>
-                        <a
-                          href=""
+                        ></button>
+                        <button
                           class="action_icon action_icon-bag"
-                        ></a>
+                        ></button>
                       </div>
                     </div>
                     <div class="productDesc_deco">
@@ -176,8 +171,9 @@
                     <img src="/soho/img/index/product1_item1.png">
                   </div>
                 </div>
-              </div>
-              <div
+              </a>
+              <a
+                href="/soho/productContent.html"
                 class="productItem"
               >
                 <div class="productItem_desc">
@@ -194,20 +190,16 @@
                         售價<span>$330</span>
                       </div>
                       <div class="action">
-                        <a
-                          href=""
+                        <button
                           class="action_icon action_icon-cart"
-                        ></a>
-                        <a
-                          href=""
+                        ></button>
+                        <button
                           class="action_icon action_icon-bag"
-                        ></a>
+                        ></button>
                       </div>
                     </div>
                     <div class="productDesc_deco">
-                      <div
-                        class="deco move-x"
-                      ></div>
+                      <div class="deco move-x"></div>
                     </div>
                   </div>
                 </div>
@@ -220,95 +212,11 @@
                     <img src="/soho/img/index/product1_item2.png">
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
             <div class="productList_container">
-              <div
-                class="productItem"
-              >
-                <div class="productItem_desc">
-                  <div class="productDesc">
-                    <i class="productDesc_icon"></i>
-                    <div class="productDesc_title">
-                      六色海藻2
-                    </div>
-                    <div class="productDesc_desc">
-                      嚴選六種優質海藻,方便簡單的料理方式
-                      來補足現代人忙碌而無法攝取到足夠的
-                    </div>
-                    <div class="productDesc_price">
-                      <div class="price">
-                        售價<span>$330</span>
-                      </div>
-                      <div class="action">
-                        <a
-                          href=""
-                          class="action_icon action_icon-cart"
-                        ></a>
-                        <a
-                          href=""
-                          class="action_icon action_icon-bag"
-                        ></a>
-                      </div>
-                    </div>
-                    <div class="productDesc_deco">
-                      <div class="deco move-x"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="productItem_thumb">
-                  <div
-                    class="productThumb wow flipInX"
-                    data-wow-duration="1s"
-                    data-wow-delay=".2s"
-                  >
-                    <img src="/soho/img/index/product1_item1.png">
-                  </div>
-                </div>
-              </div>
-              <div
-                class="productItem"
-              >
-                <div class="productItem_desc">
-                  <div class="productDesc">
-                    <i class="productDesc_icon"></i>
-                    <div class="productDesc_title">
-                      昆布鹽
-                    </div>
-                    <div class="productDesc_desc">
-                      昆布鹽使用於料理前後皆可使用 例：炒菜、鹽漬、熬湯、沾肉皆可提升食材的
-                    </div>
-                    <div class="productDesc_price">
-                      <div class="price">
-                        售價<span>$330</span>
-                      </div>
-                      <div class="action">
-                        <a
-                          href=""
-                          class="action_icon action_icon-cart"
-                        ></a>
-                        <a
-                          href=""
-                          class="action_icon action_icon-bag"
-                        ></a>
-                      </div>
-                    </div>
-                    <div class="productDesc_deco">
-                      <div class="deco move-x"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="productItem_thumb">
-                  <div
-                    class="productThumb wow flipInX"
-                    data-wow-duration="1s"
-                    data-wow-delay=".2s"
-                  >
-                    <img src="/soho/img/index/product1_item2.png">
-                  </div>
-                </div>
-              </div>
-              <div
+              <a
+                href="/soho/productContent.html"
                 class="productItem"
               >
                 <div class="productItem_desc">
@@ -318,22 +226,19 @@
                       六色海藻
                     </div>
                     <div class="productDesc_desc">
-                      嚴選六種優質海藻,方便簡單的料理方式
-                      來補足現代人忙碌而無法攝取到足夠的
+                      嚴選六種優質海藻,方便簡單的料理方式來補足現代人忙碌而無法攝取到足夠的
                     </div>
                     <div class="productDesc_price">
                       <div class="price">
                         售價<span>$330</span>
                       </div>
                       <div class="action">
-                        <a
-                          href=""
+                        <button
                           class="action_icon action_icon-cart"
-                        ></a>
-                        <a
-                          href=""
+                        ></button>
+                        <button
                           class="action_icon action_icon-bag"
-                        ></a>
+                        ></button>
                       </div>
                     </div>
                     <div class="productDesc_deco">
@@ -350,8 +255,9 @@
                     <img src="/soho/img/index/product1_item1.png">
                   </div>
                 </div>
-              </div>
-              <div
+              </a>
+              <a
+                href="/soho/productContent.html"
                 class="productItem"
               >
                 <div class="productItem_desc">
@@ -368,103 +274,12 @@
                         售價<span>$330</span>
                       </div>
                       <div class="action">
-                        <a
-                          href=""
+                        <button
                           class="action_icon action_icon-cart"
-                        ></a>
-                        <a
-                          href=""
+                        ></button>
+                        <button
                           class="action_icon action_icon-bag"
-                        ></a>
-                      </div>
-                    </div>
-                    <div class="productDesc_deco">
-                      <div
-                        class="deco move-x"
-                      ></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="productItem_thumb">
-                  <div
-                    class="productThumb wow flipInX"
-                    data-wow-duration="1s"
-                    data-wow-delay=".2s"
-                  >
-                    <img src="/soho/img/index/product1_item2.png">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="productList_container">
-              <div
-                class="productItem"
-              >
-                <div class="productItem_desc">
-                  <div class="productDesc">
-                    <i class="productDesc_icon"></i>
-                    <div class="productDesc_title">
-                      六色海藻3
-                    </div>
-                    <div class="productDesc_desc">
-                      嚴選六種優質海藻,方便簡單的料理方式
-                      來補足現代人忙碌而無法攝取到足夠的
-                    </div>
-                    <div class="productDesc_price">
-                      <div class="price">
-                        售價<span>$330</span>
-                      </div>
-                      <div class="action">
-                        <a
-                          href=""
-                          class="action_icon action_icon-cart"
-                        ></a>
-                        <a
-                          href=""
-                          class="action_icon action_icon-bag"
-                        ></a>
-                      </div>
-                    </div>
-                    <div class="productDesc_deco">
-                      <div class="deco move-x"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="productItem_thumb">
-                  <div
-                    class="productThumb wow flipInX"
-                    data-wow-duration="1s"
-                    data-wow-delay=".2s"
-                  >
-                    <img src="/soho/img/index/product1_item1.png">
-                  </div>
-                </div>
-              </div>
-              <div
-                class="productItem"
-              >
-                <div class="productItem_desc">
-                  <div class="productDesc">
-                    <i class="productDesc_icon"></i>
-                    <div class="productDesc_title">
-                      昆布鹽
-                    </div>
-                    <div class="productDesc_desc">
-                      昆布鹽使用於料理前後皆可使用 例：炒菜、鹽漬、熬湯、沾肉皆可提升食材的
-                    </div>
-                    <div class="productDesc_price">
-                      <div class="price">
-                        售價<span>$330</span>
-                      </div>
-                      <div class="action">
-                        <a
-                          href=""
-                          class="action_icon action_icon-cart"
-                        ></a>
-                        <a
-                          href=""
-                          class="action_icon action_icon-bag"
-                        ></a>
+                        ></button>
                       </div>
                     </div>
                     <div class="productDesc_deco">
@@ -481,8 +296,9 @@
                     <img src="/soho/img/index/product1_item2.png">
                   </div>
                 </div>
-              </div>
-              <div
+              </a>
+              <a
+                href="/soho/productContent.html"
                 class="productItem"
               >
                 <div class="productItem_desc">
@@ -492,22 +308,19 @@
                       六色海藻
                     </div>
                     <div class="productDesc_desc">
-                      嚴選六種優質海藻,方便簡單的料理方式
-                      來補足現代人忙碌而無法攝取到足夠的
+                      嚴選六種優質海藻,方便簡單的料理方式來補足現代人忙碌而無法攝取到足夠的
                     </div>
                     <div class="productDesc_price">
                       <div class="price">
                         售價<span>$330</span>
                       </div>
                       <div class="action">
-                        <a
-                          href=""
+                        <button
                           class="action_icon action_icon-cart"
-                        ></a>
-                        <a
-                          href=""
+                        ></button>
+                        <button
                           class="action_icon action_icon-bag"
-                        ></a>
+                        ></button>
                       </div>
                     </div>
                     <div class="productDesc_deco">
@@ -524,8 +337,9 @@
                     <img src="/soho/img/index/product1_item1.png">
                   </div>
                 </div>
-              </div>
-              <div
+              </a>
+              <a
+                href="/soho/productContent.html"
                 class="productItem"
               >
                 <div class="productItem_desc">
@@ -542,20 +356,16 @@
                         售價<span>$330</span>
                       </div>
                       <div class="action">
-                        <a
-                          href=""
+                        <button
                           class="action_icon action_icon-cart"
-                        ></a>
-                        <a
-                          href=""
+                        ></button>
+                        <button
                           class="action_icon action_icon-bag"
-                        ></a>
+                        ></button>
                       </div>
                     </div>
                     <div class="productDesc_deco">
-                      <div
-                        class="deco move-x"
-                      ></div>
+                      <div class="deco move-x"></div>
                     </div>
                   </div>
                 </div>
@@ -568,7 +378,7 @@
                     <img src="/soho/img/index/product1_item2.png">
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
         </div>
@@ -577,7 +387,7 @@
     <div class="ad">
       <div class="container">
         <a
-          href=""
+          href="/soho/productContent.html"
           class="ad_img wow fadeIn"
           data-wow-duration="1.5s"
           data-wow-delay=".1s"
@@ -587,7 +397,7 @@
           >
         </a>
         <a
-          href=""
+          href="/soho/productContent.html"
           class="ad_img wow fadeIn"
           data-wow-duration="1.5s"
           data-wow-delay=".1s"
@@ -597,7 +407,7 @@
           >
         </a>
         <a
-          href=""
+          href="/soho/productContent.html"
           class="ad_img wow fadeIn"
           data-wow-duration="1.5s"
           data-wow-delay=".1s"
@@ -607,7 +417,7 @@
           >
         </a>
         <a
-          href=""
+          href="/soho/productContent.html"
           class="ad_img wow fadeIn"
           data-wow-duration="1.5s"
           data-wow-delay=".1s"
@@ -617,7 +427,7 @@
           >
         </a>
         <a
-          href=""
+          href="/soho/productContent.html"
           class="ad_img wow fadeIn"
           data-wow-duration="1.5s"
           data-wow-delay=".1s"
@@ -627,7 +437,7 @@
           >
         </a>
         <a
-          href=""
+          href="/soho/productContent.html"
           class="ad_img wow fadeIn"
           data-wow-duration="1.5s"
           data-wow-delay=".1s"
@@ -637,7 +447,7 @@
           >
         </a>
         <a
-          href=""
+          href="/soho/productContent.html"
           class="ad_img wow fadeIn"
           data-wow-duration="1.5s"
           data-wow-delay=".1s"
@@ -647,7 +457,7 @@
           >
         </a>
         <a
-          href=""
+          href="/soho/productContent.html"
           class="ad_img wow fadeIn"
           data-wow-duration="1.5s"
           data-wow-delay=".1s"
@@ -657,7 +467,7 @@
           >
         </a>
         <a
-          href=""
+          href="/soho/productContent.html"
           class="ad_img wow fadeIn"
           data-wow-duration="1.5s"
           data-wow-delay=".1s"
@@ -680,7 +490,7 @@
         <div class="container">
           <div class="setList">
             <a
-              href=""
+              href="/soho/productContent.html"
               class="setItem wow fadeInLeft"
               data-wow-duration="1.2s"
               data-wow-delay=".1s"
@@ -692,14 +502,12 @@
                   >
                   <div class="setThumb_action">
                     <div class="action">
-                      <a
-                        href=""
+                      <button
                         class="action_icon action_icon-cart"
-                      ></a>
-                      <a
-                        href=""
+                      ></button>
+                      <button
                         class="action_icon action_icon-bag"
-                      ></a>
+                      ></button>
                     </div>
                   </div>
                 </div>
@@ -729,7 +537,7 @@
               </div>
             </a>
             <a
-              href=""
+              href="/soho/productContent.html"
               class="setItem wow fadeInRight"
               data-wow-duration="1.2s"
               data-wow-delay=".2s"
@@ -741,14 +549,12 @@
                   >
                   <div class="setThumb_action">
                     <div class="action">
-                      <a
-                        href=""
+                      <button
                         class="action_icon action_icon-cart"
-                      ></a>
-                      <a
-                        href=""
+                      ></button>
+                      <button
                         class="action_icon action_icon-bag"
-                      ></a>
+                      ></button>
                     </div>
                   </div>
                 </div>
@@ -781,7 +587,7 @@
       <div class="productGiftPromote">
         <div class="container">
           <a
-            href=""
+            href="/soho/productContent.html"
             class="wow fadeInUp"
             data-wow-duration="1.2s"
             data-wow-delay=".1s"
@@ -901,8 +707,7 @@
               </div>
             </div>
             <a
-              href="javascript:;"
-              target="_blank"
+              href="/soho/productContent.html"
             ></a>
           </div>
         </div>
@@ -910,8 +715,13 @@
       <div class="productAll">
         <div class="container">
           <div class="productAll_list">
-            <div class="productAll_item">
-              <div class="productAll_itemWrap">
+            <a
+              href="/soho/productContent.html"
+              class="productAll_item"
+            >
+              <div
+                class="productAll_itemWrap"
+              >
                 <div class="productAll_itemTop">
                   <div
                     class="productAll_itemTop-pic wow zoomIn"
@@ -945,7 +755,6 @@
                     </div>
                   </div>
                 </div>
-                <a href="javascript:;"></a>
               </div>
               <div class="productAll_itemBtns">
                 <button class="productAll_itemBtns-cart">
@@ -953,9 +762,14 @@
                 <button class="productAll_itemBtns-bag">
                 </button>
               </div>
-            </div>
-            <div class="productAll_item">
-              <div class="productAll_itemWrap">
+            </a>
+            <a
+              href="/soho/productContent.html"
+              class="productAll_item"
+            >
+              <div
+                class="productAll_itemWrap"
+              >
                 <div class="productAll_itemTop">
                   <div
                     class="productAll_itemTop-pic wow zoomIn"
@@ -989,7 +803,6 @@
                     </div>
                   </div>
                 </div>
-                <a href="javascript:;"></a>
               </div>
               <div class="productAll_itemBtns">
                 <button class="productAll_itemBtns-cart">
@@ -997,9 +810,14 @@
                 <button class="productAll_itemBtns-bag">
                 </button>
               </div>
-            </div>
-            <div class="productAll_item">
-              <div class="productAll_itemWrap">
+            </a>
+            <a
+              href="/soho/productContent.html"
+              class="productAll_item"
+            >
+              <div
+                class="productAll_itemWrap"
+              >
                 <div class="productAll_itemTop">
                   <div
                     class="productAll_itemTop-pic wow zoomIn"
@@ -1033,7 +851,6 @@
                     </div>
                   </div>
                 </div>
-                <a href="javascript:;"></a>
               </div>
               <div class="productAll_itemBtns">
                 <button class="productAll_itemBtns-cart">
@@ -1041,9 +858,14 @@
                 <button class="productAll_itemBtns-bag">
                 </button>
               </div>
-            </div>
-            <div class="productAll_item">
-              <div class="productAll_itemWrap">
+            </a>
+            <a
+              href="/soho/productContent.html"
+              class="productAll_item"
+            >
+              <div
+                class="productAll_itemWrap"
+              >
                 <div class="productAll_itemTop">
                   <div
                     class="productAll_itemTop-pic wow zoomIn"
@@ -1077,7 +899,6 @@
                     </div>
                   </div>
                 </div>
-                <a href="javascript:;"></a>
               </div>
               <div class="productAll_itemBtns">
                 <button class="productAll_itemBtns-cart">
@@ -1085,9 +906,14 @@
                 <button class="productAll_itemBtns-bag">
                 </button>
               </div>
-            </div>
-            <div class="productAll_item">
-              <div class="productAll_itemWrap">
+            </a>
+            <a
+              href="/soho/productContent.html"
+              class="productAll_item"
+            >
+              <div
+                class="productAll_itemWrap"
+              >
                 <div class="productAll_itemTop">
                   <div
                     class="productAll_itemTop-pic wow zoomIn"
@@ -1121,7 +947,6 @@
                     </div>
                   </div>
                 </div>
-                <a href="javascript:;"></a>
               </div>
               <div class="productAll_itemBtns">
                 <button class="productAll_itemBtns-cart">
@@ -1129,9 +954,14 @@
                 <button class="productAll_itemBtns-bag">
                 </button>
               </div>
-            </div>
-            <div class="productAll_item">
-              <div class="productAll_itemWrap">
+            </a>
+            <a
+              href="/soho/productContent.html"
+              class="productAll_item"
+            >
+              <div
+                class="productAll_itemWrap"
+              >
                 <div class="productAll_itemTop">
                   <div
                     class="productAll_itemTop-pic wow zoomIn"
@@ -1165,7 +995,6 @@
                     </div>
                   </div>
                 </div>
-                <a href="javascript:;"></a>
               </div>
               <div class="productAll_itemBtns">
                 <button class="productAll_itemBtns-cart">
@@ -1173,9 +1002,14 @@
                 <button class="productAll_itemBtns-bag">
                 </button>
               </div>
-            </div>
-            <div class="productAll_item">
-              <div class="productAll_itemWrap">
+            </a>
+            <a
+              href="/soho/productContent.html"
+              class="productAll_item"
+            >
+              <div
+                class="productAll_itemWrap"
+              >
                 <div class="productAll_itemTop">
                   <div
                     class="productAll_itemTop-pic wow zoomIn"
@@ -1209,7 +1043,6 @@
                     </div>
                   </div>
                 </div>
-                <a href="javascript:;"></a>
               </div>
               <div class="productAll_itemBtns">
                 <button class="productAll_itemBtns-cart">
@@ -1217,9 +1050,14 @@
                 <button class="productAll_itemBtns-bag">
                 </button>
               </div>
-            </div>
-            <div class="productAll_item">
-              <div class="productAll_itemWrap">
+            </a>
+            <a
+              href="/soho/productContent.html"
+              class="productAll_item"
+            >
+              <div
+                class="productAll_itemWrap"
+              >
                 <div class="productAll_itemTop">
                   <div
                     class="productAll_itemTop-pic wow zoomIn"
@@ -1253,7 +1091,6 @@
                     </div>
                   </div>
                 </div>
-                <a href="javascript:;"></a>
               </div>
               <div class="productAll_itemBtns">
                 <button class="productAll_itemBtns-cart">
@@ -1261,9 +1098,14 @@
                 <button class="productAll_itemBtns-bag">
                 </button>
               </div>
-            </div>
-            <div class="productAll_item">
-              <div class="productAll_itemWrap">
+            </a>
+            <a
+              href="/soho/productContent.html"
+              class="productAll_item"
+            >
+              <div
+                class="productAll_itemWrap"
+              >
                 <div class="productAll_itemTop">
                   <div
                     class="productAll_itemTop-pic wow zoomIn"
@@ -1297,7 +1139,6 @@
                     </div>
                   </div>
                 </div>
-                <a href="javascript:;"></a>
               </div>
               <div class="productAll_itemBtns">
                 <button class="productAll_itemBtns-cart">
@@ -1305,9 +1146,14 @@
                 <button class="productAll_itemBtns-bag">
                 </button>
               </div>
-            </div>
-            <div class="productAll_item">
-              <div class="productAll_itemWrap">
+            </a>
+            <a
+              href="/soho/productContent.html"
+              class="productAll_item"
+            >
+              <div
+                class="productAll_itemWrap"
+              >
                 <div class="productAll_itemTop">
                   <div
                     class="productAll_itemTop-pic wow zoomIn"
@@ -1341,7 +1187,6 @@
                     </div>
                   </div>
                 </div>
-                <a href="javascript:;"></a>
               </div>
               <div class="productAll_itemBtns">
                 <button class="productAll_itemBtns-cart">
@@ -1349,7 +1194,7 @@
                 <button class="productAll_itemBtns-bag">
                 </button>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </div>

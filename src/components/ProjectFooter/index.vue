@@ -37,16 +37,16 @@
             </div>
             <div class="ProjectFooter_linkList">
               <a
-                href="/soho/certification.html"
+                href="/soho/detection.html"
               >檢驗認證</a>
               <a
                 href="/soho/productList.html"
               >產品總覽</a>
               <a
-                href="/soho/index.html"
+                href="/soho/productList.html"
               >分類一</a>
               <a
-                href="/soho/index.html"
+                href="/soho/productList.html"
               >分類二</a>
             </div>
           </div>

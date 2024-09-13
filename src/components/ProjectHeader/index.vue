@@ -29,7 +29,7 @@
           </div>
           <div
             id="menu_itemProducts"
-            class="menu_item menu_itemProducts"
+            class="menu_item menu_itemProducts menu_itemSubMenu"
           >
             <div class="menu_itemContent">
               <div>

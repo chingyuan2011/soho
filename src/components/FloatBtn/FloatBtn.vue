@@ -10,8 +10,7 @@
       >
     </a>
     <a
-      href="javascript:;"
-      target="_blank"
+      href="/soho/cartProcess1.html"
     >
       <img
         src="/soho/img/floatBtn_cart.png"
