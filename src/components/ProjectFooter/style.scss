@@ -1,28 +1,36 @@
 .ProjectFooter {
   position: relative;
   min-height: 626px;
-  padding-top: 100px;
-  font-weight: bold;
+  padding-top: 40px;
   color: #fff;
   background-color: #002d18;
-  @include screen(xl) {
-    padding-top: 60px;
-  }
 
   .container {
     max-width: 1600px;
   }
 
   &_content {
-    // padding: 0 25px;
     padding-bottom: 120px;
-    @include screen(xl) {
+
+    @include screen(1366) {
       padding-bottom: 60px;
     }
   }
 
   &_logoWrap {
     margin-bottom: 40px;
+
+    .ProjectFooter_pic {
+      width: 120px;
+    }
+
+    @include screen(960) {
+      margin-bottom: 20px;
+
+      .ProjectFooter_pic {
+        width: 90px;
+      }
+    }
   }
 
   &_linkPart {
@@ -40,20 +48,20 @@
   }
 
   &_linkTitle {
-    margin-bottom: 15px;
-    font-size: 22px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
     color: #9fa49f;
-
-    @include screen(md) {
-      font-size: 18px;
-    }
   }
 
   &_linkList {
-    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 16px;
     line-height: 1.6;
     letter-spacing: .2rem;
-    @include screen(md) {
+    @include screen(960) {
       font-size: 14px;
     }
 
