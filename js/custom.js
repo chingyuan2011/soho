@@ -107,6 +107,20 @@ const indexHandler = () => {
     autoplay: true,
     arrows: true
   })
+
+  //
+  $('.action_icon-cart').on('click', function (e) {
+    e.preventDefault()
+  })
+  $('.action_icon-bag').on('click', function (e) {
+    e.preventDefault()
+  })
+  $('.productAll_itemBtns-cart').on('click', function (e) {
+    e.preventDefault()
+  })
+  $('.productAll_itemBtns-bag').on('click', function (e) {
+    e.preventDefault()
+  })
 }
 
 const productContentHandler = () => {}
