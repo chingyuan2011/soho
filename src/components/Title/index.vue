@@ -69,7 +69,7 @@ export default {
     }
   }
 
-  @include screen(md) {
+  @include screen(960) {
     font-size: 30px;
 
     &_zh {

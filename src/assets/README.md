@@ -42,7 +42,7 @@ color: color(gray, 100);      // color: #F3F3F3;
 ```scss
 // xxl | xl | lg | md | sm
 
-@include screen (md) {
+@include screen (960) {
   // @content
 }
 

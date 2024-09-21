@@ -10,15 +10,6 @@ $containerW: (
   sm: 100%,
 );
 
-.container {
-  max-width: 1600px;
-  margin: 0 auto;
-  padding: 0 40px;
-  @include screen(md) {
-    padding: 0 20px;
-  }
-}
-
 @each $key, $value in $containerW {
   @media (max-width: #{map-get($breakpoints, $key)}px) {
     .container {

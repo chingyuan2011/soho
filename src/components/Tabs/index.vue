@@ -71,25 +71,22 @@ export default {
     gap: 6%;
     justify-content: center;
 
-    @include screen(768) {
+    @include screen(960) {
       flex-direction: column;
-      gap: 10px;
+      gap: 0px;
       align-items: flex-start;
-      padding: 10px;
+      padding: 10px 0px;
       font-size: 18px;
     }
 
     a {
       position: relative;
       padding: 20px 0;
-      font-size: 18px;
+      font-size: 16px;
       color: #333;
 
-      @include screen(1600) {
-        font-size: 18px;
-      }
-      @include screen(768) {
-        padding: 0;
+      @include screen(960) {
+        padding: 5px 0;
       }
     }
 

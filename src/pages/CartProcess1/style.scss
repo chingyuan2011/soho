@@ -1,13 +1,9 @@
 .CartProcess1 {
-  .container {
-    padding-bottom: 200px;
-    @include screen(1366) {
-      padding-bottom: 40px;
-    }
-  }
+  padding-top: 50px;
+  padding-bottom: 100px;
 
   &_btn {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 700;
     line-height: 2;
     color: #002c18;
@@ -20,30 +16,17 @@
       padding: 0 20px;
       font-size: 14px;
     }
-
-    @include screen(md) {
-      font-size: 20px;
-
-      &-small {
-        padding: 0 20px;
-        font-size: 14px;
-      }
-    }
   }
 
   &_title {
     margin-bottom: 20px;
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 700;
     color: #002c18;
     letter-spacing: .2em;
     @include screen(1366) {
-      padding: 0px;
-    }
-
-    @include screen(960) {
       margin-bottom: 10px;
-      font-size: 24px;
+      padding: 0px;
     }
   }
 
@@ -51,26 +34,24 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 40px;
-    padding-bottom: 120px;
+    padding-bottom: 40px;
     border-bottom: 1px solid #8ca097;
-    @include screen(1366) {
-      padding-bottom: 40px;
-    }
-    @include screen(1200) {
+
+    @include screen(1280) {
       flex-wrap: wrap;
       justify-content: center;
     }
 
     @include screen(960) {
       margin-bottom: 20px;
-      padding: 0 0px 20px 0px;
+      padding-bottom: 20px;
     }
   }
 
   &_orderList {
     width: 48%;
 
-    @include screen(1200) {
+    @include screen(1280) {
       width: 100%;
       margin-bottom: 40px;
     }
@@ -101,8 +82,10 @@
     }
 
     &-info {
+      display: flex;
       flex: 1;
-      padding: 40px 10px 40px 0;
+      flex-direction: column;
+      justify-content: center;
       font-size: 16px;
       font-weight: 700;
       line-height: 1.8;
@@ -113,8 +96,6 @@
     &-price {
       display: flex;
       width: 100%;
-      margin-bottom: 20px;
-      font-size: 18px;
 
       div:first-child {
         margin-right: 25%;
@@ -231,7 +212,7 @@
       }
     }
 
-    @include screen(960) {
+    @include screen(480) {
       font-size: 16px;
 
       &-title {
@@ -305,7 +286,7 @@
         letter-spacing: .05em;
       }
 
-      @include screen(md) {
+      @include screen(960) {
         .customSelect {
           width: 100%;
 
@@ -331,37 +312,29 @@
       .CartProcess1_discount-itemTitle {
         margin-bottom: 10px;
       }
-
-      @include screen(md) {
-        .CartProcess1_discount-itemTitle {
-          margin-bottom: 5px;
-        }
-      }
     }
 
     &-itemTag {
       width: 55%;
       margin-left: auto;
-      font-size: 16px;
+      font-size: 14px;
       line-height: 2;
       color: #fff;
       text-align: center;
       background-color: #db895b;
 
-      @include screen(md) {
+      @include screen(960) {
         width: 100%;
-        margin-bottom: 10px;
-        font-size: 14px;
       }
     }
 
     .CartProcess1_btn-go-product {
       display: block;
-      margin-right: 30px;
+      margin-right: 20px;
       margin-left: auto;
       padding: 0 40px;
       font-size: 18px;
-      @include screen(md) {
+      @include screen(960) {
         margin-right: auto;
         padding: 0 20px;
       }
@@ -378,23 +351,20 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 10px;
-    font-size: 24px;
+    font-size: 16px;
     font-weight: 700;
     color: #002c18;
     letter-spacing: .1em;
 
     &-data {
       margin-left: 80px;
-      font-size: 41px;
+      font-size: 28px;
       color: #db895b;
     }
 
-    @include screen(md) {
-      font-size: 20px;
-
+    @include screen(960) {
       &-data {
         margin-left: 5px;
-        font-size: 30px;
       }
     }
   }
@@ -404,7 +374,7 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 40px;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 700;
     color: #898989;
     letter-spacing: .1em;
@@ -413,7 +383,7 @@
       margin-left: 30px;
     }
 
-    @include screen(md) {
+    @include screen(960) {
       margin-bottom: 20px;
       font-size: 16px;
 

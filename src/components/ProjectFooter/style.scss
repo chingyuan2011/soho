@@ -1,20 +1,9 @@
 .ProjectFooter {
-  position: relative;
-  min-height: 626px;
   padding-top: 40px;
   color: #fff;
   background-color: #002d18;
 
-  .container {
-    max-width: 1600px;
-  }
-
   &_content {
-    padding-bottom: 120px;
-
-    @include screen(1366) {
-      padding-bottom: 60px;
-    }
   }
 
   &_logoWrap {
@@ -42,7 +31,7 @@
     flex-shrink: 0;
     margin-right: 58px;
     margin-bottom: 20px;
-    @include screen(md) {
+    @include screen(960) {
       margin-right: 38px;
     }
   }
@@ -61,9 +50,6 @@
     font-size: 16px;
     line-height: 1.6;
     letter-spacing: .2rem;
-    @include screen(960) {
-      font-size: 14px;
-    }
 
     a {
       display: flex;
@@ -87,9 +73,11 @@
   }
 
   &_note {
+    margin-top: 40px;
     padding: 15px 0;
+    font-size: 16px;
     border-top: 2px solid #fff;
-    @include screen(md) {
+    @include screen(960) {
       font-size: 14px;
     }
   }

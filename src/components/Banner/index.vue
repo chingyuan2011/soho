@@ -56,7 +56,7 @@ export default {
     transform: translateY(-50%);
   }
 
-  @include screen(lg) {
+  @include screen(1366) {
     padding-top: 18%;
 
     &__title {

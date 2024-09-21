@@ -51,7 +51,7 @@ export default {
     background-color: transparent;
   }
 
-  @include screen(lg) {
+  @include screen(1366) {
     right: 10px;
     max-width: 80px;
 

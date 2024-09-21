@@ -1,14 +1,6 @@
 .Seaweed {
-  .container {
-    max-width: 1400px;
-    padding: 70px 40px 200px;
-    @include screen(1360) {
-      padding: 50px 20px 100px;
-    }
-    @include screen(960) {
-      max-width: 600px;
-    }
-  }
+  padding-bottom: 100px;
+  font-size: 16px;
 
   &_list {
     margin-bottom: 40px;
@@ -34,7 +26,7 @@
     display: flex;
     gap: 50px;
     align-items: center;
-    padding: 50px 30px;
+    padding: 20px 30px;
     @include screen(1280) {
       gap: 20px;
       padding: 30px 20px;
@@ -52,7 +44,6 @@
     font-weight: 500;
     @include screen(960) {
       width: 100%;
-      font-size: 16px;
     }
   }
 
@@ -116,7 +107,7 @@
       display: -webkit-box;
       margin-bottom: 10px;
       overflow: hidden;
-      font-size: 24px;
+      font-size: 20px;
       white-space: pre-line;
       -webkit-box-orient: vertical;
       -webkit-line-clamp: 1;
@@ -134,12 +125,10 @@
 
       h2 {
         margin-bottom: 0;
-        font-size: 22px;
         -webkit-line-clamp: 2;
       }
 
       p {
-        font-size: 18px;
         -webkit-line-clamp: 3;
       }
     }

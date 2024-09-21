@@ -162,10 +162,13 @@
       }
     }
 
-    &Text {
-      &-en {
-        font-weight: 500;
-      }
+    &Text-zh {
+      font-size: 16px;
+    }
+
+    &Text-en {
+      font-size: 14px;
+      font-weight: 500;
     }
   }
 
@@ -263,6 +266,7 @@
 
       input {
         width: 100px;
+        font-size: 16px;
         font-weight: 500;
         color: #fff;
         letter-spacing: .1rem;
@@ -378,6 +382,7 @@
       > div {
         display: flex;
         gap: 10px;
+        align-items: center;
       }
     }
 
@@ -524,7 +529,7 @@
 
     &Status {
       margin-top: 10px;
-      font-size: 12px;
+      font-size: 14px;
 
       a {
         display: block;
@@ -659,11 +664,12 @@
     &HotType {
       display: flex;
       flex-direction: column;
-      gap: 30px;
+      flex-shrink: 0;
+      gap: 20px;
       align-items: flex-start;
       width: 25%;
-      padding: 80px 50px 50px 30px;
-      font-size: 18px;
+      padding: 20px 20px;
+      font-size: 16px;
       border-right: 1px solid #fff;
 
       .navbar_submenu-highlight {
@@ -710,16 +716,16 @@
     gap: 20px;
     align-items: flex-start;
     width: 20%;
-    padding: 160px 50px 50px 50px;
-    font-size: 18px;
+    padding: 20px 30px;
+    font-size: 16px;
     border-right: 1px solid #fff;
   }
 
   .navbar_submenuProductAd {
     display: flex;
     flex-grow: 1;
-    gap: 80px;
-    padding: 80px 80px 50px;
+    gap: 40px;
+    padding: 20px 40px;
     font-size: 14px;
 
     .navbar_submenuProductAdBlock {
@@ -727,15 +733,15 @@
     }
 
     .navbar_submenuProductAdBlockTitle {
-      margin-top: 20px;
-      margin-bottom: 10px;
+      margin-top: 10px;
+      margin-bottom: 0px;
       font-size: 20px;
       font-weight: 700;
     }
 
     .navbar_submenuProductAdBlockLink {
       width: 100%;
-      margin-top: 20px;
+      margin-top: 10px;
       padding: 3px 10px;
       font-size: 16px;
       color: #002c18;

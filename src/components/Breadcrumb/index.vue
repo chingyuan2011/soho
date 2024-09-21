@@ -57,7 +57,7 @@ export default {
     }
   }
 
-  @include screen(md) {
+  @include screen(960) {
     &_item,
     &_item > a {
       font-size: 13px;

@@ -117,7 +117,7 @@ export default {
     box-shadow: -5px 5px 0 #000;
   }
 
-  @include screen(md) {
+  @include screen(960) {
     font-size: 16px;
   }
 

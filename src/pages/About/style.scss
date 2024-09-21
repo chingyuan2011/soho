@@ -1,15 +1,10 @@
 .About {
-  padding-bottom: 200px;
-
-  .container {
-    max-width: 1300px;
-    padding: 0px 20px;
-  }
+  padding-bottom: 100px;
 
   &_info {
     position: relative;
     justify-content: flex-start;
-    margin: 180px 0;
+    margin: 160px 0;
     @include screen(1366) {
       margin: 0;
     }
@@ -21,7 +16,7 @@
 
     &Text {
       width: 44%;
-      padding-top: 70px;
+      padding-top: 80px;
       padding-right: 80px;
 
       .title {
@@ -29,21 +24,21 @@
         flex-shrink: 0;
         flex-wrap: wrap;
         align-content: flex-start;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
       }
 
       h1 {
-        font-size: 55px;
+        font-size: 40px;
       }
 
       .establish {
         margin-left: 10px;
-        padding-top: 30px;
-        font-size: 28px;
+        padding-top: 20px;
+        font-size: 24px;
       }
 
       .note {
-        font-size: 28px;
+        font-size: 24px;
       }
 
       .text {
@@ -51,7 +46,7 @@
       }
 
       @include screen(1366) {
-        padding: 20px;
+        padding: 0 20px 0 0;
 
         .title {
           flex-direction: column;
@@ -59,17 +54,17 @@
         }
 
         h1 {
-          font-size: 40px;
+          font-size: 30px;
         }
 
         .establish {
           margin-left: 0;
           padding-top: 0;
-          font-size: 20px;
+          font-size: 18px;
         }
 
         .note {
-          font-size: 20px;
+          font-size: 16px;
         }
       }
       @include screen(960) {
@@ -111,18 +106,17 @@
       display: flex;
       @include screen(960) {
         flex-wrap: wrap;
-        padding: 20px;
       }
     }
 
     h2 {
       flex-shrink: 0;
-      width: 40%;
+      width: 400px;
       padding-right: 20px;
-      font-size: 55px;
+      font-size: 40px;
       @include screen(1366) {
         width: auto;
-        font-size: 40px;
+        font-size: 30px;
       }
       @include screen(960) {
         width: 100%;
@@ -143,9 +137,11 @@
   &_image {
     display: flex;
     gap: 50px;
-    padding: 0 50px;
+    padding: 0 60px;
     @include screen(1366) {
       gap: 20px;
+    }
+    @include screen(960) {
       padding: 0 20px;
     }
   }
@@ -153,10 +149,10 @@
   &_slogan {
     display: flex;
     justify-content: center;
-    padding: 200px 20px;
+    padding: 200px 60px;
 
     @include screen(1366) {
-      padding: 150px 20px;
+      padding: 100px 40px;
     }
 
     >div {
@@ -180,17 +176,17 @@
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      padding: 200px 20px;
+      padding: 200px 60px;
       @include screen(1366) {
         min-height: 500px;
-        padding: 100px 20px;
+        padding: 100px 60px;
       }
     }
 
     h2 {
       position: relative;
       display: inline;
-      font-size: 45px;
+      font-size: 40px;
 
       &::after {
         content: '';
@@ -207,22 +203,22 @@
       display: flex;
       gap: 10px;
       align-items: center;
-      font-size: 28px;
+      font-size: 18px;
       font-weight: 700;
 
       .highlight {
-        font-size: 50px;
+        font-size: 40px;
       }
     }
 
     .link {
       display: flex;
-      gap: 20px;
+      gap: 10px;
       align-items: center;
       justify-content: center;
       margin-top: 20px;
-      padding: 0px 90px;
-      font-size: 20px;
+      padding: 5px 90px;
+      font-size: 18px;
       font-weight: 700;
       background-color: #d3875a;
       border-radius: 15px;
@@ -233,7 +229,7 @@
       }
 
       .highlight {
-        font-size: 40px;
+        font-size: 28px;
       }
 
       .arrow {
@@ -261,7 +257,7 @@
       background-position: 35% center;
 
       h2 {
-        font-size: 50px;
+        font-size: 30px;
 
         &::after {
           left: calc(100% + 20px);
@@ -273,26 +269,12 @@
       .note {
         flex-wrap: wrap;
         gap: 10px;
-        font-size: 22px;
-
-        .highlight {
-          font-size: 36px;
-        }
-
-        .small {
-          font-size: 22px;
-        }
       }
 
       .link {
         gap: 15px;
         margin-top: 0;
         padding: 5px 30px 0;
-        font-size: 24px;
-
-        .highlight {
-          font-size: 30px;
-        }
 
         .arrow {
           width: 30px;
@@ -303,7 +285,7 @@
   }
 
   &_lineGift {
-    font-size: 28px;
+    font-size: 20px;
     font-weight: bold;
     color: #fff4e5;
     background-color: #9caca3;
@@ -314,20 +296,20 @@
       gap: 30px;
       align-items: center;
       justify-content: center;
-      padding: 10px 0;
+      padding: 10px 60px;
     }
 
     h2 {
-      font-size: 55px;
+      font-size: 40px;
       color: #ffffff;
     }
 
     .highlight {
-      font-size: 55px;
+      font-size: 40px;
     }
 
     @include screen(1366) {
-      font-size: 20px;
+      font-size: 18px;
 
       .container {
         gap: 20px;
@@ -335,29 +317,23 @@
       }
 
       h2 {
-        font-size: 40px;
+        font-size: 30px;
       }
 
       .highlight {
-        font-size: 40px;
+        font-size: 30px;
       }
     }
 
     @include screen(960) {
       h2 {
         width: 100%;
-        font-size: 28px;
         text-align: center;
       }
 
       .container {
         gap: 5px;
-        font-size: 20px;
         line-height: 1.6em;
-      }
-
-      .highlight {
-        font-size: 30px;
       }
     }
   }
@@ -372,11 +348,11 @@
     }
 
     .note {
-      padding: 50px 20px 50px 100px;
+      padding: 20px 20px 40px 100px;
     }
 
     .title {
-      font-size: 28px;
+      font-size: 20px;
       font-weight: 700;
       color: #052d18;
     }
@@ -388,12 +364,12 @@
     }
 
     .originPrice {
+      margin-right: 40px;
       text-decoration: line-through;
     }
 
     .benefit {
-      margin-left: 40px;
-      font-size: 30px;
+      font-size: 18px;
       font-weight: 700;
     }
 
@@ -403,18 +379,8 @@
       .note {
         padding: 20px;
       }
-
-      .benefit {
-        margin-left: 20px;
-        font-size: 24px;
-      }
     }
 
-    @include screen(960) {
-      .title {
-        font-size: 24px;
-      }
-    }
     @include screen(480) {
       &Item {
         width: 100%;
@@ -434,7 +400,7 @@
       justify-content: center;
       width: 50%;
       padding: 20px;
-      font-size: 24px;
+      font-size: 20px;
       font-weight: 700;
       background-color: #052d18;
 

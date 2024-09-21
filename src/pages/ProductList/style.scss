@@ -1,18 +1,13 @@
 .ProductList {
-  .container {
-    max-width: 1300px;
-    padding-bottom: 200px;
-    @include screen(1360) {
-      padding-bottom: 100px;
-    }
-  }
+  padding-bottom: 100px;
+  font-size: 16px;
 
   &_content {
     display: flex;
     padding: 80px 0;
     color: #002c18;
 
-    @include screen(xl) {
+    @include screen(1366) {
       flex-wrap: wrap;
       justify-content: center;
       padding: 0;
@@ -27,29 +22,24 @@
     font-weight: 700;
     letter-spacing: .1em;
 
-    @include screen(xl) {
+    @include screen(1366) {
       width: 100%;
       margin-bottom: 20px;
       padding: 0;
     }
 
     &Title {
-      margin-bottom: 30px;
-      font-size: 24px;
-
-      @include screen(xl) {
-        font-size: 20px;
-      }
+      margin-bottom: 20px;
+      font-size: 20px;
     }
 
     &Item {
-      margin-bottom: 20px;
-      font-size: 20px;
+      margin-bottom: 10px;
+      font-size: 16px;
       cursor: pointer;
 
-      @include screen(xl) {
+      @include screen(1366) {
         margin-bottom: 5px;
-        font-size: 18px;
       }
 
       &.ProductList_content-menuItem-toggle {
@@ -73,7 +63,7 @@
         .ProductList_content-menuItemSub {
           display: none;
           padding: 10px 20px;
-          font-size: 18px;
+          font-size: 16px;
           line-height: 2;
           color: rgba($color: #657e70, $alpha: .4);
 
@@ -82,7 +72,7 @@
             color: #657e70;
           }
 
-          @include screen(xl) {
+          @include screen(1366) {
             padding: 10px;
             font-size: 16px;
           }
@@ -121,7 +111,7 @@
       }
       margin-bottom: 20px;
 
-      @include screen(xl) {
+      @include screen(1366) {
         margin: 0 auto 10px auto;
       }
     }
@@ -135,7 +125,7 @@
         justify-content: flex-end;
       }
 
-      @include screen(md) {
+      @include screen(960) {
         > div:first-child {
           flex-wrap: wrap;
           justify-content: space-between;
@@ -151,7 +141,7 @@
       border: 1px solid #002c18;
       border-radius: 40px;
 
-      @include screen(md) {
+      @include screen(960) {
         width: 100%;
         margin-bottom: 5px;
         margin-left: 0;
@@ -197,15 +187,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 80px;
 
-    @include screen(xl) {
-      margin: 0 auto 80px auto;
-    }
-
-    @include screen(md) {
+    @include screen(960) {
       justify-content: space-between;
-      margin-bottom: 0px;
     }
   }
 
@@ -215,9 +199,9 @@
     margin-bottom: 20px;
     border-radius: 40px;
 
-    @include screen(md) {
+    @include screen(960) {
       width: 50%;
-      height: 480px;
+      height: auto;
       margin-bottom: 10px;
     }
 
@@ -240,7 +224,7 @@
       border-bottom-right-radius: 25px;
       border-bottom-left-radius: 25px;
 
-      @include screen(md) {
+      @include screen(960) {
         padding: 10px 10px 20px 10px;
       }
     }
@@ -248,7 +232,7 @@
     .productName {
       position: relative;
       padding-top: 40px;
-      font-size: 20px;
+      font-size: 18px;
       font-weight: 700;
       color: #523628;
       text-align: center;
@@ -268,9 +252,8 @@
         transform: translateX(-50%);
       }
 
-      @include screen(md) {
+      @include screen(960) {
         padding-top: 30px;
-        // font-size: 18px;
 
         &::before {
           width: 20px;
@@ -281,13 +264,12 @@
     .productIntro {
       position: relative;
       margin-bottom: 20px;
-      font-size: 18px;
       color: #523628;
       letter-spacing: .1em;
 
       @include text-overflow(2);
 
-      @include screen(md) {
+      @include screen(960) {
         margin-bottom: 10px;
       }
     }
@@ -343,58 +325,6 @@
             border: 1px solid #9caca3;
           }
         }
-      }
-    }
-  }
-
-  &_content-product-pageControl {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    // max-width: 978px;
-    font-weight: 700;
-    @include screen(xl) {
-      margin: 0  auto;
-    }
-
-    @include screen(md) {
-      justify-content: center;
-    }
-
-    &-pages {
-      display: flex;
-      gap: 10px;
-      font-size: 20pt;
-
-      >button {
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-
-        &.active,
-        &:hover {
-          background-color: #a9b7b7;
-        }
-      }
-
-      @include screen(md) {
-        font-size: 16px;
-
-        >button {
-          width: 30px;
-          height: 30px;
-        }
-      }
-    }
-
-    >button {
-      padding: 5px 20px;
-      font-size: 14px;
-      border: 1px solid #002c18;
-      border-radius: 5px;
-
-      @include screen(md) {
-        display: none;
       }
     }
   }

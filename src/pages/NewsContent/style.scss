@@ -1,11 +1,10 @@
 .NewsContent {
-  padding-bottom: 200px;
-  background-color: transparent;
+  font-size: 16px;
 
   .NewsContent_content {
     display: flex;
     flex-wrap: wrap;
-    padding: 100px 0 200px;
+    padding: 100px 0;
     @include screen(960) {
       padding: 0px 0 100px;
     }
@@ -56,10 +55,7 @@
   }
 
   .NewsContent_title {
-    font-size: 36px;
-    @include screen(1366) {
-      font-size: 28px;
-    }
+    font-size: 24px;
   }
 
   .NewsContent_tool {
@@ -127,7 +123,7 @@
     flex-shrink: 0;
     width: 25%;
     padding: 40px 5% 40px 20px;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: bold;
     text-align: right;
 
@@ -155,7 +151,7 @@
     --color: #052d18;
     --color2: #dd855f;
     display: flex;
-    padding: 40px 40px 40px 0;
+    padding: 20px 40px 20px 0;
     color: var(--color);
     transition: background-color .3s;
 
@@ -210,7 +206,7 @@
 
   .NewsContent_recommendSubTitle {
     margin-bottom: 10px;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     @include screen(960) {
       margin-bottom: 0;
