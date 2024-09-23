@@ -74,9 +74,12 @@
     }
 
     @include screen(1280) {
+      gap: 10px;
       margin-top: 20px;
 
       li {
+        min-width: auto;
+        padding: 5px 10px;
         font-size: 16px;
       }
     }
@@ -174,6 +177,17 @@
     @include screen(1280) {
       gap: 10px;
       margin-top: 20px;
+
+      a {
+        gap: 10px;
+        padding: 10px 5px;
+      }
+
+      .StoreContent_mainLinkArrow {
+        width: 30px;
+        height: 10px;
+        margin-top: -5px;
+      }
     }
   }
 

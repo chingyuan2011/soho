@@ -25,15 +25,16 @@
   &_linkPart {
     display: flex;
     flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 80px;
+    @include screen(960) {
+      gap: 20px;
+      margin-bottom: 40px;
+    }
   }
 
   &_linkCategory {
     flex-shrink: 0;
-    margin-right: 58px;
-    margin-bottom: 20px;
-    @include screen(960) {
-      margin-right: 38px;
-    }
   }
 
   &_linkTitle {
@@ -41,6 +42,10 @@
     font-size: 18px;
     font-weight: bold;
     color: #9fa49f;
+    @include screen(960) {
+      margin-bottom: 5px;
+      font-size: 16px;
+    }
   }
 
   &_linkList {
@@ -64,11 +69,20 @@
         margin-right: 5px;
       }
     }
+
+    @include screen(960) {
+      font-size: 14px;
+    }
   }
 
   &_socialMedia {
     a {
       margin-right: 10px;
+    }
+    @include screen(960) {
+      a {
+        width: 35px;
+      }
     }
   }
 

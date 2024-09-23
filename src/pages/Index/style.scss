@@ -155,7 +155,8 @@
       }
 
       @include screen(960) {
-        padding: 12px 0 12px 10px;
+        height: 55px;
+        padding: 10px 0 10px 10px;
 
         &::before {
           top: -3px;
