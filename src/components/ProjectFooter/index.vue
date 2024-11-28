@@ -33,7 +33,7 @@
           </div>
           <div class="ProjectFooter_linkCategory">
             <div class="ProjectFooter_linkTitle notoSerif">
-              藻藻帶回家
+              商品 / 藻點帶回家
             </div>
             <div class="ProjectFooter_linkList">
               <a
@@ -52,7 +52,7 @@
           </div>
           <div class="ProjectFooter_linkCategory">
             <div class="ProjectFooter_linkTitle notoSerif">
-              藻門市吧
+              門市 / 快來藻我
             </div>
             <div class="ProjectFooter_linkList">
               <a

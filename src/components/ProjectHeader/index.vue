@@ -146,7 +146,7 @@
         href="/soho/index.html"
       >
         <img
-          src="/soho/img/navbar/logo.png"
+          src="/soho/img/navbar/logo.svg"
           alt="藻作坊"
         >
       </a>

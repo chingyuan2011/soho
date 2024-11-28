@@ -17,7 +17,7 @@
           href="/soho/login.html"
         >會員登入</a>
       </div>
-      <div class="LoginSignUp_formWrap">
+      <form class="LoginSignUp_formWrap">
         <div class="LoginSignUp_socialMedia">
           <div class="LoginSignUp_title">
             社群帳號註冊 /
@@ -79,7 +79,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </form>
     </div>
   </div>
 </template>

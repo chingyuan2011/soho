@@ -241,34 +241,6 @@
   }
 }
 
-.Member_line {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  padding: 40px;
-  background-color: rgba($color: #b7b7b7, $alpha: .3);
-  border-radius: 10px;
-
-  button {
-    flex-shrink: 0;
-    color: #fff;
-    background-color: #002d18;
-  }
-
-  @include screen(1366) {
-    flex-wrap: wrap;
-    padding: 20px;
-
-    &-pic {
-      margin-bottom: 20px;
-    }
-
-    button {
-      width: 100%;
-    }
-  }
-}
-
 .Member_footer {
   display: flex;
   align-items: center;

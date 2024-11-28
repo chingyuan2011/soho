@@ -14,7 +14,7 @@
 
     <Tabs></Tabs>
     <div class="container">
-      <div class="Member__wrap">
+      <form class="Member__wrap">
         <div class="Member_avatar">
           <div class="Member_avatar-pic">
             <img
@@ -182,22 +182,6 @@
                 >
               </div>
             </div>
-            <div class="Member_info-socialMedia active">
-              <div class="Member_title">
-                社群帳號 /
-              </div>
-              <div class="Member_line">
-                <div class="Member_line-pic">
-                  <img
-                    src="/soho/img/member/member_line.png"
-                    alt=""
-                  >
-                </div>
-                <button>
-                  解除綁定
-                </button>
-              </div>
-            </div>
           </div>
         </div>
         <div class="Member_footer">
@@ -208,7 +192,7 @@
             更 新
           </button>
         </div>
-      </div>
+      </form>
     </div>
   </div>
 </template>

@@ -27,7 +27,7 @@
             >
           </button>
         </div>
-        <div class="LoginSignUp_member">
+        <form class="LoginSignUp_member">
           <div class="LoginSignUp_title">
             會員帳號登入 /
           </div>
@@ -74,7 +74,7 @@
               註<span></span>冊
             </button>
           </div>
-        </div>
+        </form>
       </div>
     </div>
   </div>
