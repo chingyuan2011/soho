@@ -64,7 +64,7 @@
                     </div>
                     <div class="productDesc_price">
                       <div class="price">
-                        售價<span>$330</span>
+                        定價<span>$330</span>
                       </div>
                       <div class="action">
                         <button
@@ -105,7 +105,7 @@
                     </div>
                     <div class="productDesc_price">
                       <div class="price">
-                        售價<span>$330</span>
+                        定價<span>$330</span>
                       </div>
                       <div class="action">
                         <button
@@ -146,7 +146,7 @@
                     </div>
                     <div class="productDesc_price">
                       <div class="price">
-                        售價<span>$330</span>
+                        定價<span>$330</span>
                       </div>
                       <div class="action">
                         <button
@@ -187,7 +187,7 @@
                     </div>
                     <div class="productDesc_price">
                       <div class="price">
-                        售價<span>$330</span>
+                        定價<span>$330</span>
                       </div>
                       <div class="action">
                         <button
@@ -230,7 +230,7 @@
                     </div>
                     <div class="productDesc_price">
                       <div class="price">
-                        售價<span>$330</span>
+                        定價<span>$330</span>
                       </div>
                       <div class="action">
                         <button
@@ -271,7 +271,7 @@
                     </div>
                     <div class="productDesc_price">
                       <div class="price">
-                        售價<span>$330</span>
+                        定價<span>$330</span>
                       </div>
                       <div class="action">
                         <button
@@ -312,7 +312,7 @@
                     </div>
                     <div class="productDesc_price">
                       <div class="price">
-                        售價<span>$330</span>
+                        定價<span>$330</span>
                       </div>
                       <div class="action">
                         <button
@@ -353,7 +353,7 @@
                     </div>
                     <div class="productDesc_price">
                       <div class="price">
-                        售價<span>$330</span>
+                        定價<span>$330</span>
                       </div>
                       <div class="action">
                         <button
@@ -524,10 +524,10 @@
                   </div>
                   <div class="setDesc_price">
                     <div class="price price--delete">
-                      售價<span>$980</span>
+                      定價<span>$980</span>
                     </div>
                     <div class="price">
-                      售價<span>$900</span>
+                      定價<span>$900</span>
                     </div>
                   </div>
                   <div class="setDesc_deco">
@@ -569,10 +569,10 @@
                   </div>
                   <div class="setDesc_price">
                     <div class="price price--delete">
-                      售價<span>$1080</span>
+                      定價<span>$1080</span>
                     </div>
                     <div class="price">
-                      售價<span>$990</span>
+                      定價<span>$990</span>
                     </div>
                   </div>
                   <div class="setDesc_deco">

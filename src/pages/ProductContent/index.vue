@@ -127,10 +127,10 @@
                 </div>
                 <div class="desc_price">
                   <div class="price price--delete">
-                    售價<span>$330</span>
+                    定價<span>$330</span>
                   </div>
                   <div class="price">
-                    售價<span>$330</span>
+                    定價<span>$330</span>
                   </div>
                 </div>
                 <div class="desc_mount">
