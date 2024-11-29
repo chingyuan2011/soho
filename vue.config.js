@@ -83,7 +83,8 @@ module.exports = {
         '/news.html',
         '/newsContent.html',
         '/contact.html',
-        '/detection.html'
+        '/detection.html',
+        '/giftList.html'
       ]
 
       const prerender = new PrerenderSPAPlugin({

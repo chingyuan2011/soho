@@ -490,7 +490,7 @@
         <div class="container">
           <div class="setList">
             <a
-              href="/soho/productContent.html"
+              href="/soho/giftList.html"
               class="setItem wow fadeInLeft"
               data-wow-duration="1.2s"
               data-wow-delay=".1s"
@@ -537,7 +537,7 @@
               </div>
             </a>
             <a
-              href="/soho/productContent.html"
+              href="/soho/giftList.html"
               class="setItem wow fadeInRight"
               data-wow-duration="1.2s"
               data-wow-delay=".2s"
@@ -587,7 +587,7 @@
       <div class="productGiftPromote">
         <div class="container">
           <a
-            href="/soho/productContent.html"
+            href="/soho/giftList.html"
             class="wow fadeInUp"
             data-wow-duration="1.2s"
             data-wow-delay=".1s"
@@ -707,7 +707,7 @@
               </div>
             </div>
             <a
-              href="/soho/productContent.html"
+              href="/soho/giftList.html"
             ></a>
           </div>
         </div>
@@ -716,7 +716,7 @@
         <div class="container">
           <div class="productAll_list">
             <a
-              href="/soho/productContent.html"
+              href="/soho/giftList.html"
               class="productAll_item"
             >
               <div
@@ -764,7 +764,7 @@
               </div>
             </a>
             <a
-              href="/soho/productContent.html"
+              href="/soho/giftList.html"
               class="productAll_item"
             >
               <div
@@ -812,7 +812,7 @@
               </div>
             </a>
             <a
-              href="/soho/productContent.html"
+              href="/soho/giftList.html"
               class="productAll_item"
             >
               <div
@@ -860,7 +860,7 @@
               </div>
             </a>
             <a
-              href="/soho/productContent.html"
+              href="/soho/giftList.html"
               class="productAll_item"
             >
               <div
@@ -908,7 +908,7 @@
               </div>
             </a>
             <a
-              href="/soho/productContent.html"
+              href="/soho/giftList.html"
               class="productAll_item"
             >
               <div
@@ -956,7 +956,7 @@
               </div>
             </a>
             <a
-              href="/soho/productContent.html"
+              href="/soho/giftList.html"
               class="productAll_item"
             >
               <div
@@ -1004,7 +1004,7 @@
               </div>
             </a>
             <a
-              href="/soho/productContent.html"
+              href="/soho/giftList.html"
               class="productAll_item"
             >
               <div
@@ -1052,7 +1052,7 @@
               </div>
             </a>
             <a
-              href="/soho/productContent.html"
+              href="/soho/giftList.html"
               class="productAll_item"
             >
               <div
@@ -1100,7 +1100,7 @@
               </div>
             </a>
             <a
-              href="/soho/productContent.html"
+              href="/soho/giftList.html"
               class="productAll_item"
             >
               <div
@@ -1148,7 +1148,7 @@
               </div>
             </a>
             <a
-              href="/soho/productContent.html"
+              href="/soho/giftList.html"
               class="productAll_item"
             >
               <div
