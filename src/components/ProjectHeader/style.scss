@@ -82,7 +82,7 @@
     z-index: 1;
     flex-basis: 10%;
     min-width: 120px;
-    padding: 20px 1% 0;
+    padding: 20px 0;
     text-align: center;
 
     img {
@@ -232,6 +232,8 @@
     }
 
     .functionBar_memberBtn {
+      width: 38px;
+      height: 38px;
       background-image: url('/soho/img/navbar/navbar_member.png');
     }
 
@@ -308,7 +310,7 @@
         order: -1;
         width: 70px;
         min-width: auto;
-        padding-top: 0;
+        padding: 0;
       }
 
       .closeBtn {
@@ -421,7 +423,7 @@
 
       .logo {
         flex-basis: auto;
-        width: 50px;
+        width: 70px;
         min-width: auto;
         padding: 0;
 
