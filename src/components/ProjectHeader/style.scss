@@ -40,6 +40,7 @@
       z-index: 0;
       width: 200%;
       height: 50px;
+      pointer-events: none;
       background: linear-gradient(180deg, rgba(0, 0, 0, .6) 0%, rgba(255, 255, 255, 0) 100%);
     }
     @include screen(1280) {
@@ -280,6 +281,27 @@
           border: none;
           outline: none;
         }
+      }
+    }
+  }
+
+  @include screen(1500) {
+    height: 70px;
+
+    .logo {
+      padding: 10px 0;
+
+      img {
+        max-width: 100px;
+      }
+    }
+
+    .menu_item {
+      .menu_itemContent {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        padding: 0;
       }
     }
   }
