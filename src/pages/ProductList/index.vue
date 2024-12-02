@@ -13,7 +13,7 @@
             產品資訊
           </div>
           <div class="ProductList_content-menuItemList">
-            <div class="ProductList_content-menuItem active">
+            <div class="ProductList_content-menuItem">
               <div class="ProductList_content-menuItemTitle">
                 查看全部
               </div>
@@ -35,6 +35,11 @@
                 <div class="ProductList_content-menuItemSubItem">
                   組合搭配
                 </div>
+              </div>
+            </div>
+            <div class="ProductList_content-menuItem ">
+              <div class="ProductList_content-menuItemTitle">
+                <span>送禮專區</span>
               </div>
             </div>
             <div class="ProductList_content-menuItem ProductList_content-menuItem-toggle">

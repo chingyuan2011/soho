@@ -79,11 +79,13 @@
         }
       }
 
-      &.ProductList_content-menuItem-toggle.active {
+      &.ProductList_content-menuItem.active {
         .ProductList_content-menuItemTitle {
           color: #ea9564;
         }
+      }
 
+      &.ProductList_content-menuItem-toggle.active {
         .ProductList_content-menuItemTitle span::after {
           content: '-';
         }

@@ -51,6 +51,12 @@
                     【9/01-9/14】中秋禮盒 - <br>送你送健康
                   </a>
                   <a
+                    href="/soho/giftList.html"
+                    class="navbar_submenuItem"
+                  >
+                    送禮專區
+                  </a>
+                  <a
                     href="/soho/productList.html"
                     class="navbar_submenuItem"
                   >
