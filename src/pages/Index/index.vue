@@ -4,27 +4,10 @@
       class="kv"
       data-wow-duration="1.5s"
     >
-      <div class="kv_content">
-        <picture>
-          <source
-            srcset="/soho/img/index/kv1-mobile.jpg"
-            media="(max-width: 600px)"
-          >
-          <img
-            src="/soho/img/index/kv1.jpg"
-            alt="昆布芽"
-          >
-        </picture>
-        <picture>
-          <source
-            srcset="/soho/img/index/kv2-mobile.jpg"
-            media="(max-width: 600px)"
-          >
-          <img
-            src="/soho/img/index/kv2.jpg"
-            alt="海藻製造所"
-          >
-        </picture>
+      <div
+        id="indexKvSlider"
+        class="kv_content"
+      >
       </div>
     </div>
     <div

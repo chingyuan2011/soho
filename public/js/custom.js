@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-(function () {
+;(function () {
   document.addEventListener('DOMContentLoaded', function () {
     new WOW().init()
     navbarHandler()
@@ -20,9 +20,12 @@
     // scroll top
     $(document).on('click', '#btn__quickTop', function (e) {
       e.preventDefault()
-      $([document.documentElement, document.body]).animate({
-        scrollTop: 0
-      }, 500)
+      $([document.documentElement, document.body]).animate(
+        {
+          scrollTop: 0
+        },
+        500
+      )
     })
 
     // Page - ProductContent
@@ -92,13 +95,20 @@ const navbarHandler = () => {
 }
 
 const indexHandler = () => {
-  $('.kv_content').slick({
-    dots: true,
-    infinite: true,
-    speed: 3000,
-    autoplay: true,
-    arrows: false
-  })
+  // 1/15 輪播器調整 - 主頁首圖
+  const indexKvData = [
+    {
+      srcset: '/soho/img/index/kv1-mobile.jpg',
+      src: '/soho/img/index/kv1.jpg',
+      alt: '昆布芽'
+    },
+    {
+      srcset: '/soho/img/index/kv2-mobile.jpg',
+      src: '/soho/img/index/kv2.jpg',
+      alt: '海藻製造所'
+    }
+  ]
+  initIndexKvSlider(indexKvData)
 
   $('.productList').slick({
     dots: true,
@@ -120,6 +130,38 @@ const indexHandler = () => {
   })
   $('.productAll_itemBtns-bag').on('click', function (e) {
     e.preventDefault()
+  })
+}
+
+const initIndexKvSlider = (data) => {
+  const Dom = $('#indexKvSlider')
+  Dom.html('')
+  let htmlString = ''
+
+  const getTemplate = (item) => {
+    return `
+      <picture>
+        <source
+          srcset="${item.srcset}"
+          media="(max-width: 600px)"
+        >
+        <img
+          src="${item.src}"
+          alt="${item.alt}"
+        >
+      </picture>
+    `
+  }
+
+  data.forEach(item => { htmlString += getTemplate(item) })
+  Dom.html(htmlString)
+
+  Dom.slick({
+    dots: true,
+    infinite: true,
+    speed: 3000,
+    autoplay: true,
+    arrows: false
   })
 }
 
@@ -163,7 +205,8 @@ const newsHandler = () => {
     videoDom = document.createElement('iframe')
     videoDom.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&loop=1&controls=0`
     videoDom.frameborder = '0'
-    videoDom.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+    videoDom.allow =
+      'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
     parentDom.append(videoDom)
   }
 
