@@ -98,13 +98,13 @@ const indexHandler = () => {
   // 1/15 輪播器調整 - 主頁首圖
   const indexKvData = [
     {
-      srcset: '/soho/img/index/kv1-mobile.jpg',
-      src: '/soho/img/index/kv1.jpg',
+      srcset: '/img/index/kv1-mobile.jpg',
+      src: '/img/index/kv1.jpg',
       alt: '昆布芽'
     },
     {
-      srcset: '/soho/img/index/kv2-mobile.jpg',
-      src: '/soho/img/index/kv2.jpg',
+      srcset: '/img/index/kv2-mobile.jpg',
+      src: '/img/index/kv2.jpg',
       alt: '海藻製造所'
     }
   ]
