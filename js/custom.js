@@ -8,10 +8,10 @@
     const currentMap = window.location.pathname
     const pageHandlerMap = {
       index: indexHandler,
-      productContent: productContentHandler,
       cartProcess2: cartProcess2Handler,
       news: newsHandler,
-      detection: detectionHandler
+      detection: detectionHandler,
+      productContent: productContentHandler,
     }
     const pageRegex = /\/(\w+)\.html/
     const pageName = currentMap.match(pageRegex)[1]
@@ -22,31 +22,10 @@
       e.preventDefault()
       $([document.documentElement, document.body]).animate(
         {
-          scrollTop: 0
+          scrollTop: 0,
         },
         500
       )
-    })
-
-    // Page - ProductContent
-    $('.slider_main').slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
-
-      infinite: false,
-      arrows: false,
-      asNavFor: '.slider_sub'
-      // dots: true,
-    })
-    $('.slider_sub').slick({
-      slidesToShow: 4,
-      slidesToScroll: 1,
-      dots: false,
-      infinite: false,
-      arrows: false,
-      asNavFor: '.slider_main',
-      focusOnSelect: true,
-      centerMode: false
     })
   })
 })()
@@ -95,30 +74,24 @@ const navbarHandler = () => {
 }
 
 const indexHandler = () => {
-  // 1/15 輪播器調整 - 主頁首圖
-  const indexKvData = [
-    {
-      srcset: '/img/index/kv1-mobile.jpg',
-      src: '/img/index/kv1.jpg',
-      alt: '昆布芽'
-    },
-    {
-      srcset: '/img/index/kv2-mobile.jpg',
-      src: '/img/index/kv2.jpg',
-      alt: '海藻製造所'
-    }
-  ]
-  initIndexKvSlider(indexKvData)
-
-  $('.productList').slick({
+  // 1/16 輪播器調整 - 主頁首圖
+  $('#indexKvSlider').slick({
     dots: true,
     infinite: true,
     speed: 3000,
     autoplay: true,
-    arrows: true
+    arrows: false,
   })
 
-  //
+  // 1/16 輪播器調整 - 第二單元
+  $('#productList').slick({
+    dots: true,
+    infinite: true,
+    speed: 3000,
+    autoplay: true,
+    arrows: true,
+  })
+
   $('.action_icon-cart').on('click', function (e) {
     e.preventDefault()
   })
@@ -132,40 +105,6 @@ const indexHandler = () => {
     e.preventDefault()
   })
 }
-
-const initIndexKvSlider = (data) => {
-  const Dom = $('#indexKvSlider')
-  Dom.html('')
-  let htmlString = ''
-
-  const getTemplate = (item) => {
-    return `
-      <picture>
-        <source
-          srcset="${item.srcset}"
-          media="(max-width: 600px)"
-        >
-        <img
-          src="${item.src}"
-          alt="${item.alt}"
-        >
-      </picture>
-    `
-  }
-
-  data.forEach(item => { htmlString += getTemplate(item) })
-  Dom.html(htmlString)
-
-  Dom.slick({
-    dots: true,
-    infinite: true,
-    speed: 3000,
-    autoplay: true,
-    arrows: false
-  })
-}
-
-const productContentHandler = () => {}
 
 const cartProcess2Handler = () => {
   $('.CartProcess2_client-paymentOption').on('click', function (e) {
@@ -195,7 +134,7 @@ const newsHandler = () => {
 
   document.addEventListener('mousemove', function (e) {
     follower.css({
-      transform: 'translate(' + e.clientX + 'px, ' + e.clientY + 'px)'
+      transform: 'translate(' + e.clientX + 'px, ' + e.clientY + 'px)',
     })
   })
 
@@ -220,11 +159,12 @@ const newsHandler = () => {
       const href = $(this).data('youtube-id')
       if (href) openVideo(href)
     },
-    mouseleave: closeVideo
+    mouseleave: closeVideo,
   })
 }
 
 const detectionHandler = () => {
+  // 1/16 輪播器調整 - 檢驗認證
   $('#Detection_sliderContent').slick({
     dots: false,
     slidesToShow: 3,
@@ -238,10 +178,10 @@ const detectionHandler = () => {
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 1
-        }
-      }
-    ]
+          slidesToShow: 1,
+        },
+      },
+    ],
   })
 
   $('.Detection_sliderDot').on('click', function () {
@@ -256,5 +196,22 @@ const detectionHandler = () => {
 
   $('#Detection_sliderNext').on('click', function () {
     $('#Detection_sliderContent').slick('slickNext')
+  })
+}
+
+const productContentHandler = () => {
+  //1/16 輪播器調整 - 產品資訊
+  const DOM = $('#productMain')
+  DOM.slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+
+    arrows: false,
+  })
+
+  $('.productContent_thumbnail').on('click', function () {
+    const dom = $(this)
+    const index = dom.data('slider-index')
+    DOM.slick('slickGoTo', index)
   })
 }

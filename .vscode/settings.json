@@ -64,5 +64,6 @@
   "scss.validate": false,
   "html.format.endWithNewline": true,
   "tailwindCSS.emmetCompletions": true,
-  "git.ignoreLimitWarning": true
+  "git.ignoreLimitWarning": true,
+  "liveServer.settings.port": 5501
 }
