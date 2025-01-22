@@ -1,0 +1,29 @@
+.Forgot {
+  padding-bottom: 160px;
+
+  .container {
+    max-width: 1000px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .LoginSignUp_member-form {
+    margin-top: 40px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+  }
+
+  .btnWrap {
+    display: flex;
+    justify-content: center;
+  }
+
+  .LoginSignUp_member-form-btn {
+    width: 160px;
+    margin-top: 80px;
+  }
+}

@@ -254,7 +254,7 @@
           </div>
         </div>
       </div>
-      <!-- <button class="CartProcess2_divide-btn"></button> -->
+
       <div class="CartProcess2_client">
         <div class="CartProcess2_client-delivery">
           <div class="CartProcess2_title">
@@ -286,6 +286,54 @@
                 type="text"
                 name="phone"
                 placeholder="請填入手機號碼"
+              >
+            </div>
+            <div class="CartProcess2_client-form-item required">
+              <label for="phone">收件地址</label>
+              <div class="customSelect address">
+                <select>
+                  <option
+                    selected
+                    disabled
+                    value=""
+                  >
+                    請選擇縣市
+                  </option>
+                  <option value="台北市">
+                    台北市
+                  </option>
+                  <option value="新北市">
+                    新北市
+                  </option>
+                  <option value="高雄市">
+                    高雄市
+                  </option>
+                </select>
+              </div>
+              <div class="customSelect address">
+                <select>
+                  <option
+                    selected
+                    disabled
+                    value=""
+                  >
+                    請選擇區域
+                  </option>
+                  <option value="大安區">
+                    大安區
+                  </option>
+                  <option value="文山區">
+                    文山區
+                  </option>
+                  <option value="萬華區">
+                    萬華區
+                  </option>
+                </select>
+              </div>
+              <input
+                class="address"
+                type="text"
+                placeholder="街道地址"
               >
             </div>
             <div class="CartProcess2_client-form-item">

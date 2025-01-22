@@ -28,6 +28,7 @@ import Contact from '@/pages/Contact'
 import News from '@/pages/News'
 import Detection from '@/pages/Detection'
 import GiftList from '@/pages/GiftList'
+import Forgot from '@/pages/Forgot'
 
 Vue.use(VueRouter)
 
@@ -171,6 +172,11 @@ const routes = [
     path: '/giftList.html',
     name: 'GiftList',
     component: GiftList
+  },
+  {
+    path: '/forgot.html',
+    name: 'Forgot',
+    component: Forgot
   },
   {
     path: '*',

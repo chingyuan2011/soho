@@ -688,6 +688,19 @@
       }
     }
   }
+
+  .address ~ .address {
+    margin-top: 10px;
+  }
+
+  .customSelect select {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #f6f6f6;
+    border: 0px;
+    border-color: transparent;
+    border-radius: 10px;
+  }
 }
 
 .CartProcess2_footer {
